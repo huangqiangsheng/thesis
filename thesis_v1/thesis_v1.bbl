@@ -1,7 +1,62 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem{Zuffada2012}
+M.~Zuffada.
+\newblock The industrialization of the silicon photonics: Technology road map
+  and applications[C]//Solid-State Device Research Conference (ESSDERC), 2012
+  Proceedings of the European.
+\newblock Sept 2012:7--13.
+
+\bibitem{Shah2005}
+J.~Shah.
+\newblock {DARPA'S EPIC} program: electronic and photonic integrated circuits
+  on {S}i[C]//Group IV Photonics, 2005. 2nd IEEE International Conference on.
+\newblock Sept 2005:1--3.
+
+\bibitem{HELIOS}
+HELIOS project.
+\newblock http://www.helios-project.eu/.
+
+\bibitem{Arakawa2013Silicon}
+Y.~Arakawa, T.~Nakamura, Y.~Urino, T.~Fujita.
+\newblock Silicon photonics for next generation system integration platform[J].
+\newblock Communications Magazine, IEEE, March 2013.
+\newblock 51(3):72--77.
+
+\bibitem{miller1969}
+Stewart~E Miller.
+\newblock Integrated optics: an introduction[J].
+\newblock Bell System Technical Journal, 1969.
+\newblock 48(7):2059--2069.
+
+\bibitem{Soref1993}
+Richard~A. Soref.
+\newblock Silicon-based optoelectronics[J].
+\newblock Proceedings of the IEEE, Dec 1993.
+\newblock 81(12):1687--1706.
+\newblock \doi{10.1109/5.248958}.
+
+\bibitem{Paniccia2011}
+Mario~J. Paniccia.
+\newblock A perfect marriage: optics and silicon[J].
+\newblock Optik \& Photonik, 2011.
+\newblock 6(2):34--38.
+
+\bibitem{Assefa2012}
+S.~Assefa, S.~Shank, W.~Green, el~al.
+\newblock A 90nm cmos integrated nano-photonics technology for 25gbps wdm
+  optical communications applications[C]//Electron Devices Meeting (IEDM), 2012
+  IEEE International.
+\newblock Dec 2012:33.8.1--33.8.3.
+
+\bibitem{sun2015single}
+Chen Sun, Mark~T Wade, Yunsup Lee, et~al.
+\newblock Single-chip microprocessor that communicates directly using light[J].
+\newblock Nature, 2015.
+\newblock 528(7583):534--538.
 
 \end{thebibliography}

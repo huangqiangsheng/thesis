@@ -11,6 +11,4 @@ A level-1 auxiliary file: ./Chapters/chap6.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./Chapters/resume.aux
 A level-1 auxiliary file: ./Chapters/publications.aux
-I found no \citation commands---while reading file thesis_v1.aux
 Database file #1: thesisbib.bib
-(There was 1 error message)
