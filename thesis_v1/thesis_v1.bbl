@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
@@ -10,6 +10,18 @@ M.~Zuffada.
   and applications[C]//Solid-State Device Research Conference (ESSDERC), 2012
   Proceedings of the European.
 \newblock Sept 2012:7--13.
+
+\bibitem{Meint2014an}
+Meint Smit, Xaveer Leijtens, Huub Ambrosius, et~al.
+\newblock An introduction to inp-based generic integration technology[J].
+\newblock Semiconductor Science and Technology, 2014.
+\newblock 29(8):083001.
+
+\bibitem{Tsuyoshi2016low}
+Tsuyoshi Horikawa, Daisuke Shimura, Tohru Mogami.
+\newblock Low-loss silicon wire waveguides for optical integrated circuits[J].
+\newblock MRS Communications, 2016.
+\newblock FirstView:1--7.
 
 \bibitem{Shah2005}
 J.~Shah.
@@ -58,5 +70,62 @@ Chen Sun, Mark~T Wade, Yunsup Lee, et~al.
 \newblock Single-chip microprocessor that communicates directly using light[J].
 \newblock Nature, 2015.
 \newblock 528(7583):534--538.
+
+\bibitem{xu2005micrometre}
+Qianfan Xu, Bradley Schmidt, Sameer Pradhan, Michal Lipson.
+\newblock Micrometre-scale silicon electro-optic modulator[J].
+\newblock nature, 2005.
+\newblock 435(7040):325--327.
+
+\bibitem{liu2004high}
+Ansheng Liu, Richard Jones, Ling Liao, et~al.
+\newblock A high-speed silicon optical modulator based on a
+  metal--oxide--semiconductor capacitor[J].
+\newblock Nature, 2004.
+\newblock 427(6975):615--618.
+
+\bibitem{Midrio2012graphene}
+Michele Midrio, Stefano Boscolo, Michele Moresco, et~al.
+\newblock Graphene--assisted critically--coupled optical ring modulator[J].
+\newblock Opt. Express, Oct 2012.
+\newblock 20(21):23144--23155.
+
+\bibitem{phare2015graphene}
+Christopher~T Phare, Yoon-Ho~Daniel Lee, Jaime Cardenas, Michal Lipson.
+\newblock Graphene electro-optic modulator with 30 ghz bandwidth[J].
+\newblock Nature Photonics, 2015.
+\newblock 9(8):511--514.
+
+\bibitem{tang201150}
+Yongbo Tang, Hui-Wen Chen, Siddharth Jain, et~al.
+\newblock 50 gb/s hybrid silicon traveling-wave electroabsorption modulator[J].
+\newblock Optics express, 2011.
+\newblock 19(7):5811--5816.
+
+\bibitem{Dong2012coherent}
+Po~Dong, Chongjin Xie, Long Chen, et~al.
+\newblock 112-gb/s monolithic pdm-qpsk modulator in silicon[J].
+\newblock Opt. Express, Dec 2012.
+\newblock 20(26):B624--B629.
+
+\bibitem{tang2012energy}
+Yongbo Tang, Jonathan Peters, John~E Bowers.
+\newblock Energy efficient hybrid silicon electroabsorption modulator for 40
+  gb/s, 1-volt uncooled operation[J].
+\newblock IEEE Photonics Technololy Letters, 2012.
+\newblock 24(19).
+
+\bibitem{tang2012over}
+Yongbo Tang, Jonathan~D Peters, John~E Bowers.
+\newblock Over 67 ghz bandwidth hybrid silicon electroabsorption modulator with
+  asymmetric segmented electrode for 1.3 $\mu$m transmission[J].
+\newblock Optics express, 2012.
+\newblock 20(10):11529--11535.
+
+\bibitem{chen2011forty}
+Hui-Wen Chen, Jonathan~D Peters, John~E Bowers.
+\newblock Forty gb/s hybrid silicon mach-zehnder modulator with low chirp[J].
+\newblock Optics express, 2011.
+\newblock 19(2):1455--1460.
 
 \end{thebibliography}
