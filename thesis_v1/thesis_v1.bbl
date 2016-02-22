@@ -60,9 +60,9 @@ Mario~J. Paniccia.
 
 \bibitem{Assefa2012}
 S.~Assefa, S.~Shank, W.~Green, el~al.
-\newblock A 90nm cmos integrated nano-photonics technology for 25gbps wdm
-  optical communications applications[C]//Electron Devices Meeting (IEDM), 2012
-  IEEE International.
+\newblock A 90nm {CMOS} integrated {N}ano-{P}hotonics technology for 25 {G}bps
+  {WDM} optical communications applications[C]//Electron Devices Meeting
+  (IEDM), 2012 IEEE International.
 \newblock Dec 2012:33.8.1--33.8.3.
 
 \bibitem{sun2015single}
@@ -70,6 +70,13 @@ Chen Sun, Mark~T Wade, Yunsup Lee, et~al.
 \newblock Single-chip microprocessor that communicates directly using light[J].
 \newblock Nature, 2015.
 \newblock 528(7583):534--538.
+
+\bibitem{o1981kramers}
+M~O’Donnell, ET~Jaynes, JG~Miller.
+\newblock Kramers--{K}ronig relationship between ultrasonic attenuation and
+  phase velocity[J].
+\newblock The Journal of the Acoustical Society of America, 1981.
+\newblock 69(3):696--701.
 
 \bibitem{xu2005micrometre}
 Qianfan Xu, Bradley Schmidt, Sameer Pradhan, Michal Lipson.
@@ -92,40 +99,208 @@ Michele Midrio, Stefano Boscolo, Michele Moresco, et~al.
 
 \bibitem{phare2015graphene}
 Christopher~T Phare, Yoon-Ho~Daniel Lee, Jaime Cardenas, Michal Lipson.
-\newblock Graphene electro-optic modulator with 30 ghz bandwidth[J].
+\newblock Graphene electro-optic modulator with 30 {GH}z bandwidth[J].
 \newblock Nature Photonics, 2015.
 \newblock 9(8):511--514.
 
 \bibitem{tang201150}
 Yongbo Tang, Hui-Wen Chen, Siddharth Jain, et~al.
-\newblock 50 gb/s hybrid silicon traveling-wave electroabsorption modulator[J].
+\newblock 50 {G}b/s hybrid silicon traveling-wave electroabsorption
+  modulator[J].
 \newblock Optics express, 2011.
 \newblock 19(7):5811--5816.
 
 \bibitem{Dong2012coherent}
 Po~Dong, Chongjin Xie, Long Chen, et~al.
-\newblock 112-gb/s monolithic pdm-qpsk modulator in silicon[J].
+\newblock 112-{G}b/s monolithic {PDM-QPSK} modulator in silicon[J].
 \newblock Opt. Express, Dec 2012.
 \newblock 20(26):B624--B629.
 
 \bibitem{tang2012energy}
 Yongbo Tang, Jonathan Peters, John~E Bowers.
 \newblock Energy efficient hybrid silicon electroabsorption modulator for 40
-  gb/s, 1-volt uncooled operation[J].
+  {G}b/s, 1-{V}olt uncooled operation[J].
 \newblock IEEE Photonics Technololy Letters, 2012.
 \newblock 24(19).
 
 \bibitem{tang2012over}
 Yongbo Tang, Jonathan~D Peters, John~E Bowers.
-\newblock Over 67 ghz bandwidth hybrid silicon electroabsorption modulator with
-  asymmetric segmented electrode for 1.3 $\mu$m transmission[J].
+\newblock Over 67 {GH}z bandwidth hybrid silicon electroabsorption modulator
+  with asymmetric segmented electrode for 1.3 $\mu$m transmission[J].
 \newblock Optics express, 2012.
 \newblock 20(10):11529--11535.
 
 \bibitem{chen2011forty}
 Hui-Wen Chen, Jonathan~D Peters, John~E Bowers.
-\newblock Forty gb/s hybrid silicon mach-zehnder modulator with low chirp[J].
+\newblock Forty {G}b/s hybrid silicon mach-zehnder modulator with low chirp[J].
 \newblock Optics express, 2011.
 \newblock 19(2):1455--1460.
+
+\bibitem{soref1987electrooptical}
+Richard~A Soref, Brian~R Bennett.
+\newblock Electrooptical effects in silicon[J].
+\newblock Quantum Electronics, IEEE Journal of, 1987.
+\newblock 23(1):123--129.
+
+\bibitem{cocorullo1992thermo}
+G~Cocorullo, I~Rendina.
+\newblock Thermo-optical modulation at 1.5 $\mu$m in silicon etalon[J].
+\newblock Electronics Letters, 1992.
+\newblock 28(1):83--85.
+
+\bibitem{manipatruni2007high}
+Sasikanth Manipatruni, Qianfan Xu, Bradley Schmidt, Jagat Shakya, Michal
+  Lipson.
+\newblock High speed carrier injection 18 {G}b/s silicon micro-ring
+  electro-optic modulator[J].
+\newblock Lasers and Electro-Optics Society, 2007:537--538.
+
+\bibitem{fujikata201025}
+Junichi Fujikata, Jun Ushida, Takahiro Nakamura, Yu~Ming-Bin, Zhu ShiYang, Ding
+  Liang, Patrick~Lo Guo-Qiang, Dim-Lee Kwong.
+\newblock 25 {GH}z operation of silicon optical modulator with projection {MOS}
+  structure[C]//Optical Fiber Communication Conference.
+\newblock Optical Society of America, 2010:OMI3.
+
+\bibitem{Xiao201360}
+Xi~Xiao, Hao Xu, Xianyao Li, Zhiyong Li, Tao Chu, Jinzhong Yu, Yude Yu.
+\newblock 60 {G}bit/s silicon modulators with enhanced electro-optical
+  efficiency[C]//Optical Fiber Communication Conference.
+\newblock Optical Society of America, 2013:OW4J--3.
+
+\bibitem{Imec}
+Imec-e{PIX}fab.
+\newblock http://www.europractice-ic.com/siphotonics\_general.php.
+
+\bibitem{absil2015silicon}
+Philippe~P Absil, Peter Verheyen, Peter De~Heyn, et~al.
+\newblock Silicon photonics integrated circuits: a manufacturing platform for
+  high density, low power optical i/o’s[J].
+\newblock Optics express, 2015.
+\newblock 23(7):9369--9378.
+
+\bibitem{novack201330}
+Ari Novack, Yang Liu, Ran Ding, Michael Gould, Tom Baehr-Jones, Qi~Li, Yisu
+  Yang, Yangjin Ma, Yi~Zhang, Kishore Padmaraju, et~al.
+\newblock A 30 {GH}z silicon photonic platform[C]//SPIE Optics+
+  Optoelectronics.
+\newblock International Society for Optics and Photonics, 2013:878107--878107.
+
+\bibitem{narasimha2006high}
+S~Narasimha, Kohei Onishi, HM~Nayfeh, et~al.
+\newblock High performance 45-nm soi technology with enhanced strain, porous
+  low-k beol, and immersion lithography[C]//Electron Devices Meeting, 2006.
+  IEDM'06. International.
+\newblock IEEE, 2006:1--4.
+
+\bibitem{xu2012high}
+Hao Xu, Xi~Xiao, Xianyao Li, et~al.
+\newblock High speed silicon {M}ach--{Z}ehnder modulator based on interleaved
+  {PN} junctions[J].
+\newblock Optics express, 2012.
+\newblock 20(14):15093--15099.
+
+\bibitem{xiao2013high}
+Xi~Xiao, Hao Xu, Xianyao Li, Zhiyong Li, Tao Chu, Yude Yu, Jinzhong Yu.
+\newblock High-speed, low-loss silicon {M}ach--{Z}ehnder modulators with doping
+  optimization[J].
+\newblock Optics express, 2013.
+\newblock 21(4):4116--4125.
+
+\bibitem{timurdogan2014ultralow}
+Erman Timurdogan, Cheryl~M Sorace-Agaskar, Jie Sun, et~al.
+\newblock An ultralow power athermal silicon modulator[J].
+\newblock Nature communications, 2014.
+\newblock 5.
+
+\bibitem{shakoor2014ultra}
+Abdul Shakoor, Kengo Nozaki, Eiichi Kuramochi, Katsuhiko Nishiguchi, Akihiko
+  Shinya, Masaya Notomi.
+\newblock Ultra-low energy 1{D} silicon photonic crystal electro-optic
+  modulator with sub-100-mv switching voltage[C]//Integrated Photonics
+  Research, Silicon and Nanophotonics.
+\newblock Optical Society of America, 2014:IW3A--6.
+
+\bibitem{Pantouvaki201556}
+M.~Pantouvaki, P.~Verheyen, J.~De~Coster, et~al.
+\newblock 56 {G}b/s ring modulator on a 300mm silicon photonics
+  platform[C]//Optical Communication (ECOC), 2015 European Conference on.
+\newblock Sept 2015:1--3.
+
+\bibitem{Ziebell201240}
+Melissa Ziebell, Delphine Marris-Morini, Gilles Rasigade, et~al.
+\newblock 40 {G}bit/s low-loss silicon optical modulator based on a pipin
+  diode[J].
+\newblock Opt. Express, May 2012.
+\newblock 20(10):10591--10596.
+
+\bibitem{Baba201350}
+Takeshi Baba, Suguru Akiyama, Masahiko Imai, et~al.
+\newblock 50-{G}b/s ring-resonator-based silicon modulator[J].
+\newblock Opt. Express, May 2013.
+\newblock 21(10):11869--11876.
+
+\bibitem{Ding2013electro}
+Jianfeng Ding, Ruiqiang Ji, Lei Zhang, Lin Yang.
+\newblock Electro-optical response analysis of a 40 {G}b/s silicon
+  {M}ach-{Z}ehnder optical modulator[J].
+\newblock J. Lightwave Technol., Jul 2013.
+\newblock 31(14):2434--2440.
+
+\bibitem{reed2010silicon}
+Graham~T Reed, G~Mashanovich, FY~Gardes, DJ~Thomson.
+\newblock Silicon optical modulators[J].
+\newblock Nature photonics, 2010.
+\newblock 4(8):518--526.
+
+\bibitem{frova1965franz}
+Andrea Frova, Paul Handler.
+\newblock Franz-{K}eldysh effect in the space-charge region of a germanium p- n
+  junction[J].
+\newblock Physical Review, 1965.
+\newblock 137(6A):A1857.
+
+\bibitem{liu2008waveguide}
+Jifeng Liu, Mark Beals, Andrew Pomerene, Sarah Bernardis, Rong Sun, Jing Cheng,
+  Lionel~C Kimerling, Jurgen Michel.
+\newblock Waveguide-integrated, ultralow-energy {G}e{S}i electro-absorption
+  modulators[J].
+\newblock Nature Photonics, 2008.
+\newblock 2(7):433--437.
+
+\bibitem{kuo2005strong}
+Yu-Hsuan Kuo, Yong~Kyu Lee, Yangsi Ge, et~al.
+\newblock Strong quantum-confined {S}tark effect in germanium quantum-well
+  structures on silicon[J].
+\newblock Nature, 2005.
+\newblock 437(7063):1334--1336.
+
+\bibitem{rong2010quantum}
+Yiwen Rong, Yangsi Ge, Yijie Huo, Marco Fiorentino, M~Tan, T~Kamins, Tomasz~J
+  Ochalski, Guillaume Huyet, JS~Harris.
+\newblock Quantum-confined {S}tark effect in {G}e/{S}i{G}e quantum wells on
+  si[J].
+\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2010.
+\newblock 16(1):85--92.
+
+\bibitem{Srinivasan201656}
+S.A. Srinivasan, M.~Pantouvaki, S.~Gupta, et~al.
+\newblock 56 {G}b/s germanium waveguide electro-absorption modulator[J].
+\newblock Lightwave Technology, Journal of, Jan 2016.
+\newblock 34(2):419--424.
+
+\bibitem{Dazeng2013high}
+Dazeng Feng, Wei Qian, Hong Liang, et~al.
+\newblock High-speed {G}e{S}i electroabsorption modulator on the {SOI}
+  waveguide platform[J].
+\newblock Selected Topics in Quantum Electronics, IEEE Journal of, Nov 2013.
+\newblock 19(6):64--73.
+
+\bibitem{chaisakul201223}
+Papichaya Chaisakul, Delphine Marris-Morini, Mohamed-Sa{\"\i}d Rouifed, et~al.
+\newblock 23 {GH}z {G}e/{S}i{G}e multiple quantum well electro-absorption
+  modulator[J].
+\newblock Optics express, 2012.
+\newblock 20(3):3219--3224.
 
 \end{thebibliography}
