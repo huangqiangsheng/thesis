@@ -303,4 +303,58 @@ Papichaya Chaisakul, Delphine Marris-Morini, Mohamed-Sa{\"\i}d Rouifed, et~al.
 \newblock Optics express, 2012.
 \newblock 20(3):3219--3224.
 
+\bibitem{liu2011graphene}
+Ming Liu, Xiaobo Yin, Erick Ulin-Avila, et~al.
+\newblock A graphene-based broadband optical modulator[J].
+\newblock Nature, 2011.
+\newblock 474(7349):64--67.
+
+\bibitem{liu2012double}
+Ming Liu, Xiaobo Yin, Xiang Zhang.
+\newblock Double-layer graphene optical modulator[J].
+\newblock Nano letters, 2012.
+\newblock 12(3):1482--1485.
+
+\bibitem{hu2014broadband}
+YT~Hu, M~Pantouvaki, S~Brems, et~al.
+\newblock Broadband 10gb/s graphene electro-absorption modulator on silicon for
+  chip-level optical interconnects[C]//Electron Devices Meeting (IEDM).
+\newblock 2014.
+
+\bibitem{palmer2014high}
+Robert Palmer, Sebastian Koeber, Delwin~L Elder, Markus Woessner, Wolfgang
+  Heni, Dietmar Korn, Matthias Lauermann, Wim Bogaerts, Larry Dalton, Wolfgang
+  Freude, et~al.
+\newblock High-speed, low drive-voltage silicon-organic hybrid modulator based
+  on a binary-chromophore electro-optic material[J].
+\newblock Journal of Lightwave Technology, 2014.
+\newblock 32(16):2726--2734.
+
+\bibitem{koeber2015femtojoule}
+Sebastian Koeber, Robert Palmer, Matthias Lauermann, et~al.
+\newblock Femtojoule electro-optic modulation using a silicon-organic hybrid
+  device[J].
+\newblock Light Sci. Appl, 2015.
+\newblock 4(2):e255.
+
+\bibitem{heni2015high}
+W~Heni, C~Hoessbacher, C~Haffner, et~al.
+\newblock High speed plasmonic modulator array enabling dense optical
+  interconnect solutions[J].
+\newblock Optics express, 2015.
+\newblock 23(23):29746--29757.
+
+\bibitem{chen2014hybrid}
+Li~Chen, Qiang Xu, Michael~G Wood, Ronald~M Reano.
+\newblock Hybrid silicon and lithium niobate electro-optical ring modulator[J].
+\newblock Optica, 2014.
+\newblock 1(2):112--118.
+
+\bibitem{xiong2014active}
+Chi Xiong, Wolfram~HP Pernice, Joseph~H Ngai, et~al.
+\newblock Active silicon integrated nanophotonics: ferroelectric {B}a{T}io3
+  devices[J].
+\newblock Nano letters, 2014.
+\newblock 14(3):1419--1425.
+
 \end{thebibliography}
