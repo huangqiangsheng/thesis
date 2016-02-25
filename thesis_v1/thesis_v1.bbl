@@ -303,6 +303,12 @@ Papichaya Chaisakul, Delphine Marris-Morini, Mohamed-Sa{\"\i}d Rouifed, et~al.
 \newblock Optics express, 2012.
 \newblock 20(3):3219--3224.
 
+\bibitem{novoselov2004electric}
+Kostya~S Novoselov, Andre~K Geim, SV~Morozov, et~al.
+\newblock Electric field effect in atomically thin carbon films[J].
+\newblock science, 2004.
+\newblock 306(5696):666--669.
+
 \bibitem{liu2011graphene}
 Ming Liu, Xiaobo Yin, Erick Ulin-Avila, et~al.
 \newblock A graphene-based broadband optical modulator[J].
@@ -317,9 +323,10 @@ Ming Liu, Xiaobo Yin, Xiang Zhang.
 
 \bibitem{hu2014broadband}
 YT~Hu, M~Pantouvaki, S~Brems, et~al.
-\newblock Broadband 10gb/s graphene electro-absorption modulator on silicon for
-  chip-level optical interconnects[C]//Electron Devices Meeting (IEDM).
-\newblock 2014.
+\newblock Broadband 10{G}b/s graphene electro-absorption modulator on silicon
+  for chip-level optical interconnects[C]//Electron Devices Meeting (IEDM),
+  2014 IEEE International.
+\newblock IEEE, 2014:5--6.
 
 \bibitem{hu2016broadband}
 Yingtao Hu, Marianna Pantouvaki, Joris Campenhout, et~al.
@@ -486,6 +493,12 @@ Guang-Hua Duan, Christophe Jany, Alban Le~Liepvre, et~al.
 \newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2014.
 \newblock 20(4):158--170.
 
+\bibitem{pasquariello2002plasma}
+Donato Pasquariello, Klas Hjort.
+\newblock Plasma-assisted {I}n{P}-to-{S}i low temperature wafer bonding[J].
+\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2002.
+\newblock 8(1):118--131.
+
 \bibitem{fang2006electrically}
 Alexander~W Fang, Hyundai Park, Oded Cohen, et~al.
 \newblock Electrically pumped hybrid {A}l{G}a{I}n{A}s-silicon evanescent
@@ -493,12 +506,37 @@ Alexander~W Fang, Hyundai Park, Oded Cohen, et~al.
 \newblock Optics express, 2006.
 \newblock 14(20):9203--9210.
 
+\bibitem{kuo2008high}
+Ying-hao Kuo, Hui-Wen Chen, John~E Bowers.
+\newblock High speed hybrid silicon evanescent electroabsorption modulator[J].
+\newblock Optics express, 2008.
+\newblock 16(13):9936--9941.
+
+\bibitem{roelkens2015iii}
+Gunther Roelkens, Amin Abassi, Paolo Cardile, et~al.
+\newblock {III-V-on-S}ilicon photonic devices for optical communication and
+  sensing[J].
+\newblock Photonics, 2015.
+\newblock 2(3):969.
+
 \bibitem{stankovic2010evanescently}
-Stevan Stankovi{\'c}, G{\"u}nther Roelkens, Dries Van~Thourhout, R~Jones,
-  M~Sysak, J~Heck.
-\newblock Evanescently-coupled hybrid iii-v/silicon laser based on dvs-bcb
+Stevan Stankovi{\'c}, G{\"u}nther Roelkens, Dries Van~Thourhout, et~al.
+\newblock Evanescently-coupled hybrid {III-V}/silicon laser based on {DVS-BCB}
   bonding[C]//15th Annual symposium of the IEEE Photonics Benelux Chapter 2010.
 \newblock TNO, 2010:77--80.
+
+\bibitem{gunther2007}
+Gunther Roelkens.
+\newblock Heterogeneous {III-V/S}ilicon Photonics: Bonding Technology and
+  Integrated Devices[D].
+\newblock Belgium:Ghent University, 2007.
+
+\bibitem{Srinivasan2012micro}
+S.~Srinivasan, Di~Liang, M.~Fiorentino, et~al.
+\newblock Micro-ring resonator based electro-absorption modulators on the
+  hybrid {III-V} on silicon platform[C]//Optical Interconnects Conference, 2012
+  IEEE.
+\newblock May 2012:22--23.
 
 \bibitem{fu20155}
 Xin Fu, Jianxin Cheng, Qiangsheng Huang, et~al.
@@ -507,12 +545,5 @@ Xin Fu, Jianxin Cheng, Qiangsheng Huang, et~al.
   multiplexer[J].
 \newblock Optics express, 2015.
 \newblock 23(14):18686--18693.
-
-\bibitem{Srinivasan2012micro}
-S.~Srinivasan, Di~Liang, M.~Fiorentino, et~al.
-\newblock Micro-ring resonator based electro-absorption modulators on the
-  hybrid {III-V} on silicon platform[C]//Optical Interconnects Conference, 2012
-  IEEE.
-\newblock May 2012:22--23.
 
 \end{thebibliography}
