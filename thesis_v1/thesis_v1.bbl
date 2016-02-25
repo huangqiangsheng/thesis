@@ -321,10 +321,20 @@ YT~Hu, M~Pantouvaki, S~Brems, et~al.
   chip-level optical interconnects[C]//Electron Devices Meeting (IEDM).
 \newblock 2014.
 
+\bibitem{hu2016broadband}
+Yingtao Hu, Marianna Pantouvaki, Joris Campenhout, et~al.
+\newblock Broadband 10 {G}b/s operation of graphene electro-absorption
+  modulator on silicon[J].
+\newblock Laser \& Photonics Reviews, 2016.
+
+\bibitem{lee2002broadband}
+Mark Lee, Howard~E Katz, Christoph Erben, et~al.
+\newblock Broadband modulation of light by using an electro-optic polymer[J].
+\newblock Science, 2002.
+\newblock 298(5597):1401--1403.
+
 \bibitem{palmer2014high}
-Robert Palmer, Sebastian Koeber, Delwin~L Elder, Markus Woessner, Wolfgang
-  Heni, Dietmar Korn, Matthias Lauermann, Wim Bogaerts, Larry Dalton, Wolfgang
-  Freude, et~al.
+Robert Palmer, Sebastian Koeber, Delwin~L Elder, et~al.
 \newblock High-speed, low drive-voltage silicon-organic hybrid modulator based
   on a binary-chromophore electro-optic material[J].
 \newblock Journal of Lightwave Technology, 2014.
@@ -336,6 +346,25 @@ Sebastian Koeber, Robert Palmer, Matthias Lauermann, et~al.
   device[J].
 \newblock Light Sci. Appl, 2015.
 \newblock 4(2):e255.
+
+\bibitem{haffner2015all}
+C~Haffner, W~Heni, Y~Fedoryshyn, et~al.
+\newblock All-plasmonic {M}ach--{Z}ehnder modulator enabling optical high-speed
+  communication at the microscale[J].
+\newblock Nature Photonics, 2015.
+\newblock 9(8):525--528.
+
+\bibitem{almeida2004guiding}
+Vilson~R Almeida, Qianfan Xu, Carlos~A Barrios, Michal Lipson.
+\newblock Guiding and confining light in void nanostructure[J].
+\newblock Optics letters, 2004.
+\newblock 29(11):1209--1211.
+
+\bibitem{liu2015recent}
+Jialei Liu, Guangming Xu, Fenggang Liu, et~al.
+\newblock Recent advances in polymer electro-optic modulators[J].
+\newblock Rsc Advances, 2015.
+\newblock 5(21):15784--15794.
 
 \bibitem{heni2015high}
 W~Heni, C~Hoessbacher, C~Haffner, et~al.
@@ -356,5 +385,134 @@ Chi Xiong, Wolfram~HP Pernice, Joseph~H Ngai, et~al.
   devices[J].
 \newblock Nano letters, 2014.
 \newblock 14(3):1419--1425.
+
+\bibitem{george2015lanthanide}
+JP~George, PF~Smet, Jonas Botterman, et~al.
+\newblock Lanthanide-assisted deposition of strongly electro-optic {PZT} thin
+  films on silicon: Toward integrated active nanophotonic devices[J].
+\newblock ACS applied materials \& interfaces, 2015.
+\newblock 7(24):13350--13359.
+
+\bibitem{miller1984band}
+DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann, TH~Wood, CA~Burrus.
+\newblock Band-edge electroabsorption in quantum well structures: the
+  quantum-confined stark effect[J].
+\newblock Physical Review Letters, 1984.
+\newblock 53(22):2173.
+
+\bibitem{wood1984high}
+TH~Wood, CA~Burrus, DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann.
+\newblock High-speed optical modulation with gaas/gaalas quantum wells in
+  ap-i-n diode structure[J].
+\newblock Applied Physics Letters, 1984.
+\newblock 44(1):16--18.
+
+\bibitem{chacinski2009monolithically}
+Marek Chaci{\'n}ski, Urban Westergren, Bj{\"o}rn Stoltz, et~al.
+\newblock Monolithically integrated 100 {GH}z {DFB-TWEAM}[J].
+\newblock Journal of Lightwave Technology, 2009.
+\newblock 27(16):3410--3415.
+
+\bibitem{kazmierski2009100}
+Christophe Kazmierski, Agnieszka Konczykowska, Filipe Jorge, et~al.
+\newblock 100 {G}b/s operation of an {A}l{G}a{I}n{A}s semi-insulating buried
+  heterojunction {EML}[C]//Optical Fiber Communication Conference.
+\newblock Optical Society of America, 2009:OThT7.
+
+\bibitem{poirier2015inp}
+Maxime Poirier, Marcel Boudreau, Yu-Min Lin, et~al.
+\newblock In{P} integrated coherent transmitter for 100 {G}b/s {DP-QPSK}
+  transmission[C]//Optical Fiber Communication Conference.
+\newblock Optical Society of America, 2015:Th4F--1.
+
+\bibitem{miller1985electric}
+DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann, TH~Wood, CA~Burrus.
+\newblock Electric field dependence of optical absorption near the band gap of
+  quantum-well structures[J].
+\newblock Physical Review B, 1985.
+\newblock 32(2):1043.
+
+\bibitem{welstand1996dual}
+RB~Welstand, SA~Pappert, CK~Sun, JT~Zhu, YZ~Liu, PKL Yu.
+\newblock Dual-function electroabsorption waveguide modulator/detector for
+  optoelectronic transceiver applications[J].
+\newblock Photonics Technology Letters, IEEE, 1996.
+\newblock 8(11):1540--1542.
+
+\bibitem{chen2016wavelength}
+K.~Chen, Q.~Huang, J.~Zhang, et~al.
+\newblock Wavelength-multiplexed duplex transceiver based on {III-V/S}i hybrid
+  integration for off-chip and on-chip optical interconnects[J].
+\newblock Photonics Journal, IEEE, Feb 2016.
+\newblock 8(1):1--10.
+
+\bibitem{zhou2014compact}
+Pei Zhou, Shilong Pan, Dan Zhu, Ronghui Guo, Fangzheng Zhang, Yongjiu Zhao.
+\newblock A compact optoelectronic oscillator based on an electroabsorption
+  modulated laser[J].
+\newblock Photonics Technology Letters, IEEE, 2014.
+\newblock 26(1):86--88.
+
+\bibitem{wang2015room}
+Zhechao Wang, Bin Tian, Marianna Pantouvaki, et~al.
+\newblock Room-temperature {I}n{P} distributed feedback laser array directly
+  grown on silicon[J].
+\newblock Nature Photonics, 2015.
+\newblock 9(12):837--842.
+
+\bibitem{liang2010hybrid}
+Di~Liang, Gunther Roelkens, Roel Baets, John~E Bowers.
+\newblock Hybrid integrated platforms for silicon photonics[J].
+\newblock Materials, 2010.
+\newblock 3(3):1782--1802.
+
+\bibitem{roelkens2010iii}
+G{\"u}nther Roelkens, Liu Liu, Di~Liang, et~al.
+\newblock {III-V}/silicon photonics for on-chip and intra-chip optical
+  interconnects[J].
+\newblock Laser \& Photonics Reviews, 2010.
+\newblock 4(6):751--779.
+
+\bibitem{liang2010recent}
+Di~Liang, John~E Bowers.
+\newblock Recent progress in lasers on silicon[J].
+\newblock Nature Photonics, 2010.
+\newblock 4(8):511--517.
+
+\bibitem{duan2014hybrid}
+Guang-Hua Duan, Christophe Jany, Alban Le~Liepvre, et~al.
+\newblock Hybrid {III}--{V} on silicon lasers for photonic integrated circuits
+  on silicon[J].
+\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2014.
+\newblock 20(4):158--170.
+
+\bibitem{fang2006electrically}
+Alexander~W Fang, Hyundai Park, Oded Cohen, et~al.
+\newblock Electrically pumped hybrid {A}l{G}a{I}n{A}s-silicon evanescent
+  laser[J].
+\newblock Optics express, 2006.
+\newblock 14(20):9203--9210.
+
+\bibitem{stankovic2010evanescently}
+Stevan Stankovi{\'c}, G{\"u}nther Roelkens, Dries Van~Thourhout, R~Jones,
+  M~Sysak, J~Heck.
+\newblock Evanescently-coupled hybrid iii-v/silicon laser based on dvs-bcb
+  bonding[C]//15th Annual symposium of the IEEE Photonics Benelux Chapter 2010.
+\newblock TNO, 2010:77--80.
+
+\bibitem{fu20155}
+Xin Fu, Jianxin Cheng, Qiangsheng Huang, et~al.
+\newblock 5 x 20 {G}b/s heterogeneously integrated {III-V} on silicon
+  electro-absorption modulator array with arrayed waveguide grating
+  multiplexer[J].
+\newblock Optics express, 2015.
+\newblock 23(14):18686--18693.
+
+\bibitem{Srinivasan2012micro}
+S.~Srinivasan, Di~Liang, M.~Fiorentino, et~al.
+\newblock Micro-ring resonator based electro-absorption modulators on the
+  hybrid {III-V} on silicon platform[C]//Optical Interconnects Conference, 2012
+  IEEE.
+\newblock May 2012:22--23.
 
 \end{thebibliography}

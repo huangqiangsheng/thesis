@@ -164,7 +164,7 @@
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=15cm]{./Pictures/fig_silicon_mod.jpg}
-	\caption{ (a) 60 Gbps的MZI纯硅基光调制器\cite{Xiao201360}；(b)能耗0.1 fJ/bit的光子晶体纯硅基光调制器\cite{shakoor2014ultra}；(c)60 Gbps的锯齿掺杂微环纯硅基光调制器\cite{Xiao201360}}
+	\caption{ (a) 60 Gbps的MZI纯硅基光调制器\cite{Xiao201360}；(b)能耗0.1 fJ/bit的光子晶体纯硅基光调制器\cite{shakoor2014ultra}；(c) 60 Gbps的锯齿掺杂微环纯硅基光调制器\cite{Xiao201360}}
 	\label{fig_silicon_mod}
 \end{figure}
 \subsection{硅基外延锗硅光调制器}
@@ -196,6 +196,7 @@
 	\label{fig_ge_mod}
 \end{figure}
 \subsection{硅基石墨烯光调制器}
+石墨烯自从2004年被英国的研究人员发现\cite{bibid}，就在各个领域内被广泛应用。硅基石墨烯光调制器首次由是美国伯克利大学张翔小组实现，结构如图\ref{sil_graphene_mod}(a)所示，实现了小信号的3dB调制带宽达到了1.2 GHz.虽然首次展示的硅基石墨烯光调制器的速度受到器件的电容和电阻制约，但是石墨烯光调制器具有结构紧凑(40 $\mu m$),插入损耗低(2.4 dB)，光学带宽大(>180 nm)的特点。随后很多研究人员，投入到高速石墨烯光调制器的研究中。
 {
 	\begin{table}[htb]
 		\zihao{5}
@@ -209,26 +210,28 @@
 			Graphene EAM\cite{liu2011graphene} & >180 nm & LE  & 40 $\mu m$ & 1.2 GHz & - & 2.4 dB & - & 3 V\\
 			Graphene EAM\cite{liu2012double} & -  & LE  & 40 $\mu m$ & 1 GHz & 1 pJ/bit & 6.5 dB & 4 dB & 3 V\\
 			Graphene EAM\cite{hu2014broadband} & >80 nm & LE  & 50 $\mu m$ & 10 Gbps & 350 fJ/bit & 2.5 dB & 4 dB& 2.5 V\\
-			Graphene EOM\cite{phare2015graphene} & - & LE (Term) & 30 $\mu m$ & 22 Gbps & 800 fJ/bit & - & -14 dB & 7.5 V\\
+			Graphene Ring\cite{phare2015graphene} & - & LE (Term) & 30 $\mu m$ & 22 Gbps & 800 fJ/bit & - & -14 dB & 7.5 V\\
 			\hline
 		\end{tabular}
 	\end{table}
 }
 
+表\ref{sil_graphene_mod}展示具有代表性的硅基石墨烯光调制器。双层石墨烯调制器，如图\ref{sil_graphene_mod}(b)所示，增加了光与石墨烯的相互作用，提高了的石墨烯光调制器的调制深度。随后，比利时的Imec提出的如图\ref{sil_graphene_mod}(c)所示的硅基石墨烯光调制器，通过合理设计硅波导的掺杂浓度和尺寸，以及石墨烯的和硅之间间隔，将调制器的调制速度提高到了10 Gbps\cite{liu2011graphene, hu2016broadband}。最近美国康奈尔大学的Lipson小组利用石墨烯调制微环的损耗从而影响微环的临界耦合系数，而微环的透射谱对临界耦合系数很敏感，进而实现30 GHz的石墨烯光调制器，结构如图\ref{sil_graphene_mod}(d)所示。该石墨烯的光调制器虽然制作于氮化硅的衬底，但是这种结构也可以应用于未来的高速硅基石墨烯光调制器。
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/fig_graphene_mod.jpg}
-	\caption{ (a) 硅基单层石墨烯光调制器\cite{liu2011graphene}；(b)硅基双层石墨烯光调制器\cite{liu2012double}；(c)硅基单层石墨烯光调制器\cite{hu2014broadband}；(d)氮化硅基石墨烯光调制器\cite{phare2015graphene}}
+	\caption{ (a) 硅基单层石墨烯光调制器\cite{liu2011graphene}；(b)硅基双层石墨烯光调制器\cite{liu2012double}；(c)硅基单层石墨烯光调制器\cite{hu2014broadband, hu2016broadband}；(d)氮化硅基石墨烯光调制器\cite{phare2015graphene}}
 	\label{fig_ge_mod}
 \end{figure}
 
 \subsection{硅基聚合物光调制器}
-
+聚合物光调制器一直是研究的热点。目前世界上所有平台中的光调制器，调制速度最快的就是基于聚合物的光调制器。这个光调制速是在2002年由美国贝尔实验室实现的，调制带宽达到了1.6 THz\cite{lee2002broadband}。目前世界上硅基平台上的所有光调制器，调制速度最快的并且调制区域尺寸最小的也是基于聚合物的光调制器。这个光调制器是在2015年由瑞士苏黎世理工实现的，利用表面等离子体槽型波导，将光约束到纳米尺度，调制器的微波小信号3 dB带宽大于70 GHz，调制速度达到了72 Gbps，调制区域的尺寸只有6  $\mu m$。 聚合物除了速度快，其电光系数也很高，达到了230 pm/V \cite{palmer2014high}，这与目前最好的纯硅光调制器的电光系数250 pm/V \cite{timurdogan2014ultralow}相当。
 {
 	\begin{table}[htb]
 		\zihao{5}
 		\caption{硅基聚合物光调制器。MZM:  Mach–Zehnder modulator；SOH： Silicon-Organic Hybrid Modulator}
-		\label{sil_graphene_mod}
+		\label{sil_polymer_mod}
 		\centering
 		\begin{tabular}[t]{p{1.5cm}cp{1.2cm}ccccccc}
 			\hline
@@ -237,25 +240,26 @@
 			SOH\cite{palmer2014high} & LE  & 0.25 $mm$ & 40 Gbps & 420 fJ/bit & 9 dB & 6 dB & 2.1 V\\
 			SOH\cite{palmer2014high} & TW  & 1.0 $mm$ & 40 Gbps & - & 8.9 dB & 6 dB & 1.5 V\\	
 			SOH\cite{koeber2015femtojoule} & LE  & 1.0 $mm$ & 12.5 Gbps & 0.7 fJ/bit & -B & 6 dB & 1.5 V\\			
-			Plamonic MZM\cite{heni2015high} & LE  & 10 $\mu m$ & 72 Gbps & 25 fJ/bit & - & 8 dB & 6 V\\
+			Plamonic MZM\cite{haffner2015all} & LE  & 6 $\mu m$ & 72 Gbps & 25 fJ/bit & - & 8 dB & 6 V\\
 			\hline
 		\end{tabular}
 	\end{table}
 }
-
+表\ref{sil_polymer_mod}展示了最近硅基聚合物光调制器的性能。传统的硅基聚合物光调制器是用槽型波导\cite{almeida2004guiding}，将大部分光强约束到中间的聚合物中，如图\ref{fig_polymer_mod}(a)所示\cite{palmer2014high,liu2015recent}。传统的硅基聚合物光调制器利用MZI结构，如图\ref{fig_polymer_mod}(b)所示，速度能达到了40 Gbps。这类光调制器能耗最低达到0.7 fJ/bit.而最近采用表面等离子体槽型槽型波导结构，将调制器的尺寸从$10^3 \mu m$量级缩小到$\mu m$量级，速度也提高到了72 Gbps(受到测试仪器的带宽限制)\cite{haffner2015all}。这种调制器的器件结构和波导界面模场分布如图\ref{fig_polymer_mod}(c, d)所示。目前这种调制器阵列也被制作出来，展示了 4 $\times$ 36 Gbps的发射阵列\cite{heni2015high}。不过，硅基基于表面等离子体槽型波导的聚合物光调制器仍然需要进一步降低能耗，降低驱动电压，提高这类调制器的竞争力。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/fig_polymer_mod.jpg}
-	\caption{ (a) 硅基聚合物光调制器结构图\cite{palmer2014high}；(b)硅基槽型波导模场分布\cite{palmer2014high}；(c)硅基表面等离子体波导聚合物型光调制器结构图\cite{heni2015high}；(d)硅基槽型表面等离子体波导模场分布图\cite{heni2015high}}
+	\caption{ (a) 硅基聚合物光调制器结构图\cite{palmer2014high}；(b)硅基槽型波导模场分布\cite{palmer2014high}；(c)硅基基于表面等离子体槽型波导聚合物型光调制器结构图\cite{haffner2015all}；(d)硅基槽型表面等离子体波导模场分布图\cite{haffner2015all}}
 	\label{fig_polymer_mod}
 \end{figure}
 
 \subsection{硅基其他电光材料光调制器}
+目前主干网的光通信网络中，光调制器依旧大量采用铌酸锂(LiNbO3)光调制器。因此，很多研究人员尝试将铌酸锂等高电光系数的固体材料集成到硅平台上。表\ref{sil_others_mod}展示了最近将铌酸锂和钛酸钡(BaTiO3)薄膜混合集成到硅平台上，实现光调制器的性能。
 {
 	\begin{table}[htb]
 		\zihao{5}
-		\caption{硅基BaTiO3和LiNbO3的光调制器。}
-		\label{sil_graphene_mod}
+		\caption{硅基铌酸锂和钛酸钡的光调制器。}
+		\label{sil_others_mod}
 		\centering
 		\begin{tabular}[t]{p{1.5cm}cp{1.2cm}ccccccc}
 			\hline
@@ -267,6 +271,7 @@
 		\end{tabular}
 	\end{table}
 }
+从表\ref{sil_others_mod}可以看出，这些材料的硅基光调制器性能还未完全开发。硅基铌酸锂光调制器采用铌酸锂薄膜放置到硅波导上表面，波导界面模场和器件结构图见图\ref{fig_othter_mod.jpg}(a,b)。这种光调制器最好的调制和能耗性能只有 9 Gbps和4.4 pJ/bit。最近高电光细数的钛酸钡被用于硅基光调制器，其电光系数达到了213 ± 49 pm/V \cite{xiong2014active}，这种光调制器的结构和波导界面模场分布图如\ref{fig_othter_mod.jpg}(c-e)所示。虽然此光调制器速度目前只有 300 Mbps，通过合理设计电极仍然有提高的趋势。除此之外，压电陶瓷薄膜具有高电光系数(240 pm/V)也成功被溅射到了硅衬底上\cite{george2015lanthanide}，这也是实现硅基新电光材料光调制器的新方案。未来将会有越来越多的新电光材料集成到硅平台上。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/fig_othter_mod.jpg}
@@ -274,6 +279,51 @@
 	\label{fig_othter_mod.jpg}
 \end{figure}
 \subsection{硅基混合集成III-V光调制器}
+自从1984年贝尔实验的研究人员发现了III-V多量子阱中有强烈的量子束缚Stark效应(Quantum Confined Stark Effect, QCSE)，可以实现电吸收调制器调\cite{miller1984band, wood1984high}。到如今, InP衬底的电吸收光调制器速度不仅达到了100 Gbps，并且与III-V激光器单片集成到了一起\cite{chacinski2009monolithically, kazmierski2009100}。另外根据Kramers-Kronig，材料折射率虚部的变化也会影响材料折射率实部，电吸收调制器不仅能做强度调制器，也能做相位调制器。文献[\citenum{poirier2015inp}]中，研究人员展示了单片集成III-V激光器和III-V相位调制器，实现了100 Gbps的双极化正交相移键控(Dual Polarization Quadrature Phase-Shift Keying, DP-QPSK)调制的发射器\cite{poirier2015inp}。 除此之外，高速电吸收调制器还有一个独特用处，可以同时作为高速探测器\cite{miller1985electric}。基于电吸收调制器这个特点，实现了单片集成的光收发模块\cite{welstand1996dual,chen2016wavelength},单片集成的光电光转化的微波发生器\cite{zhou2014compact}。
+
+将III-V和Si混合集成在一起，一直是研究人员的梦想。可是III-V和Si的晶格不匹配，在Si上无法完美长出大面积III-V晶体。最近在硅基上虽然可以通过利用缓冲层和限制缺陷扩展的结构，外延生长InP的纳米线，实现了光泵浦激光器\cite{wang2015room}，但是距离直接生长出III-V多量子阱结构还差距很远。因此，目前是研究人员还是采用键合的方式将III-V和Si混合集成在一起，利用III-V直接带隙的特点，实现在硅基上电泵浦激光器，高速电吸收调制器，高速光探测器和半导体放大器\cite{liang2010hybrid,roelkens2010iii,liang2010recent,duan2014hybrid}。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/fig_bonding_methods.jpg}
+	\caption{ (a) III-V和Si直接键合的工艺流程 \cite{liang2010hybrid, roelkens2010iii}；(b) III-V和Si沾粘键合的工艺流程 \cite{liang2010hybrid, roelkens2010iii}}
+\label{fig_bonding_methods}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_hybrid_wg_cross.jpg}
+	\caption{ (a) III-V/Si直接键合的混合集成波导截面结构和模场分布图\cite{fang2006electrically}；(b) III-V/Si沾粘键合的混合波导模场分布图(左)和截面结构图(右)\cite{stankovic2010evanescently}；(c) 用于调制器的III-V/Si直接键合的混合集成波导截面结构和模场分布图\cite{tang201150}；(d) 用于调制器的III-V/Si沾粘键合的混合集成波导截面结构和模场分布图}
+	\label{fig_hybrid_wg_cross}
+\end{figure}
+
+{
+	\begin{table}[htb]
+		\zihao{5}
+		\caption{硅基混合集成III-V光调制器研究进程}
+		\label{sil_IIIV_mod}
+		\centering
+		\begin{tabular}[t]{p{2cm}p{1cm}p{1cm}p{1.2cm}cccp{1cm}c}
+			\hline
+			键合方式  & \tabincell{c}{工作 \\ 方式} &\tabincell{c}{电极 \\ 结构}  & \tabincell{c}{调制区 \\ 尺寸} & 调制速度 & 动态能耗 & 消光比 & \tabincell{c}{插入 \\ 损耗} & 调制电压\\
+			\hline
+			直接键合\cite{tang201150} & EAM & TW & 100 $\mu m$ & 50 Gbps & 400 fJ/bit & 8.8 dB & 5 dB & 2 V\\
+			直接键合\cite{tang2012over} & EAM & STLE & 100 $\mu m$ & 50 Gbps & 484 fJ/bit & 9.6 dB & 5 dB & 6.6 V\\
+			直接键合\cite{tang2012energy} & EAM & LE & 100 $\mu m$ & 40 Gbps & 20 fJ/bit & 5 dB & 9 dB & 0.5 V\\
+			直接键合\cite{chen2011forty} & EOM & CLTWE & 500 $\mu m$ & 40 Gbps & - & 6 dB & 9 dB & 4 V\\
+			直接键合\cite{Srinivasan2012micro} & \tabincell{c}{EOM \\ Ring} & LE & 24 $\mu m$ & - & 60 fJ/bit & - & - & 4 V\\
+			沾粘键合\cite{fu20155} & EAM & LE  & 100 $\mu m$ & 28 Gbps & 200 fJ/bit & 5 dB & 1.2 dB & 2.4 V\\
+			\tabincell{c}{沾粘键合 \\ (本论文工作)} & EAM & LE  & 80 $\mu m$ & 1.25 Gbps & 0.29 fJ/bit & 6.3 dB & 5 dB & 0.05 V\\
+			\hline
+		\end{tabular}
+	\end{table}
+}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_eam_ring.jpg}
+	\caption{ (a, b) 硅基混合集成III-V微环型光调制器的结构示意图和器件实际图\cite{Srinivasan2012micro}}
+	\label{fig_eam_ring}
+\end{figure}
 
 \subsection{国内硅基光调制器的进展}
 \section{论文的内容和创新点}

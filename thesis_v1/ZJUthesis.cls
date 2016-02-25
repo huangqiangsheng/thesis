@@ -108,6 +108,8 @@ includehead, includefoot]{geometry}
     \fi
   \fi}
 
+% 定义表格内换行
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 % 这个地方定义一页中浮动对象可占的最大比例
 \renewcommand{\textfraction}{0.15}
 \renewcommand{\topfraction}{0.85}
