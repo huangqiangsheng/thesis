@@ -163,7 +163,7 @@ Junichi Fujikata, Jun Ushida, Takahiro Nakamura, Yu~Ming-Bin, Zhu ShiYang, Ding
 \newblock Optical Society of America, 2010:OMI3.
 
 \bibitem{Xiao201360}
-Xi~Xiao, Hao Xu, Xianyao Li, Zhiyong Li, Tao Chu, Jinzhong Yu, Yude Yu.
+Xi~Xiao, Hao Xu, Xianyao Li, et~al.
 \newblock 60 {G}bit/s silicon modulators with enhanced electro-optical
   efficiency[C]//Optical Fiber Communication Conference.
 \newblock Optical Society of America, 2013:OW4J--3.
@@ -180,8 +180,7 @@ Philippe~P Absil, Peter Verheyen, Peter De~Heyn, et~al.
 \newblock 23(7):9369--9378.
 
 \bibitem{novack201330}
-Ari Novack, Yang Liu, Ran Ding, Michael Gould, Tom Baehr-Jones, Qi~Li, Yisu
-  Yang, Yangjin Ma, Yi~Zhang, Kishore Padmaraju, et~al.
+Ari Novack, Yang Liu, Ran Ding, et~al.
 \newblock A 30 {GH}z silicon photonic platform[C]//SPIE Optics+
   Optoelectronics.
 \newblock International Society for Optics and Photonics, 2013:878107--878107.
@@ -201,7 +200,7 @@ Hao Xu, Xi~Xiao, Xianyao Li, et~al.
 \newblock 20(14):15093--15099.
 
 \bibitem{xiao2013high}
-Xi~Xiao, Hao Xu, Xianyao Li, Zhiyong Li, Tao Chu, Yude Yu, Jinzhong Yu.
+Xi~Xiao, Hao Xu, Xianyao Li, et~al.
 \newblock High-speed, low-loss silicon {M}ach--{Z}ehnder modulators with doping
   optimization[J].
 \newblock Optics express, 2013.
@@ -261,8 +260,7 @@ Andrea Frova, Paul Handler.
 \newblock 137(6A):A1857.
 
 \bibitem{liu2008waveguide}
-Jifeng Liu, Mark Beals, Andrew Pomerene, Sarah Bernardis, Rong Sun, Jing Cheng,
-  Lionel~C Kimerling, Jurgen Michel.
+Jifeng Liu, Mark Beals, Andrew Pomerene, et~al.
 \newblock Waveguide-integrated, ultralow-energy {G}e{S}i electro-absorption
   modulators[J].
 \newblock Nature Photonics, 2008.
@@ -401,14 +399,14 @@ JP~George, PF~Smet, Jonas Botterman, et~al.
 \newblock 7(24):13350--13359.
 
 \bibitem{miller1984band}
-DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann, TH~Wood, CA~Burrus.
+DAB Miller, DS~Chemla, TC~Damen, et~al.
 \newblock Band-edge electroabsorption in quantum well structures: the
   quantum-confined stark effect[J].
 \newblock Physical Review Letters, 1984.
 \newblock 53(22):2173.
 
 \bibitem{wood1984high}
-TH~Wood, CA~Burrus, DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann.
+TH~Wood, CA~Burrus, DAB Miller, et~al.
 \newblock High-speed optical modulation with gaas/gaalas quantum wells in
   ap-i-n diode structure[J].
 \newblock Applied Physics Letters, 1984.
@@ -440,7 +438,7 @@ DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann, TH~Wood, CA~Burrus.
 \newblock 32(2):1043.
 
 \bibitem{welstand1996dual}
-RB~Welstand, SA~Pappert, CK~Sun, JT~Zhu, YZ~Liu, PKL Yu.
+RB~Welstand, SA~Pappert, CK~Sun, et~al.
 \newblock Dual-function electroabsorption waveguide modulator/detector for
   optoelectronic transceiver applications[J].
 \newblock Photonics Technology Letters, IEEE, 1996.
@@ -454,7 +452,7 @@ K.~Chen, Q.~Huang, J.~Zhang, et~al.
 \newblock 8(1):1--10.
 
 \bibitem{zhou2014compact}
-Pei Zhou, Shilong Pan, Dan Zhu, Ronghui Guo, Fangzheng Zhang, Yongjiu Zhao.
+Pei Zhou, Shilong Pan, Dan Zhu, et~al.
 \newblock A compact optoelectronic oscillator based on an electroabsorption
   modulated laser[J].
 \newblock Photonics Technology Letters, IEEE, 2014.
