@@ -544,4 +544,45 @@ Xin Fu, Jianxin Cheng, Qiangsheng Huang, et~al.
 \newblock Optics express, 2015.
 \newblock 23(14):18686--18693.
 
+\bibitem{keldysh1958effect}
+LV~Keldysh.
+\newblock The effect of a strong electric field on the optical properties of
+  insulating crystals[J].
+\newblock Sov. Phys. JETP, 1958.
+\newblock 7(5):788--790.
+
+\bibitem{franz1958einfluss}
+Walter Franz.
+\newblock Einfluss eines elektrischen feldes auf eine optische
+  absorptionskante[J].
+\newblock Zeitschrift f{\"u}r Naturforschung A, 1958.
+\newblock 13(6):484--489.
+
+\bibitem{chao1993momentum}
+Calvin Yi-Ping Chao, Shun~Lien Chuang.
+\newblock Momentum-space solution of exciton excited states and
+  heavy-hole--light-hole mixing in quantum wells[J].
+\newblock Physical Review B, 1993.
+\newblock 48(11):8210.
+
+\bibitem{chuang1995physics}
+Shun~Lien Chuang, Shun~L Chuang.
+\newblock Physics of optoelectronic devices[M].
+\newblock United States of America:Wiley New York, 1995.
+
+\bibitem{li2000material}
+E~Herbert Li.
+\newblock Material parameters of ingaasp and inalgaas systems for use in
+  quantum well structures at low and room temperatures[J].
+\newblock Physica E: Low-dimensional systems and Nanostructures, 2000.
+\newblock 5(4):215--273.
+
+\bibitem{eppenga1987new}
+R.~Eppenga, M.~F.~H. Schuurmans, S.~Colak.
+\newblock New \textit{k\ensuremath{\cdot}p} theory for
+  {G}a{A}s/{G}a$_{1\mathrm{-}\mathrm{x}}${A}$1_{\mathrm{x}}$as-type quantum
+  wells[J].
+\newblock Phys. Rev. B, Jul 1987.
+\newblock 36:1554--1564.
+
 \end{thebibliography}

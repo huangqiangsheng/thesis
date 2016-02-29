@@ -1,6 +1,87 @@
 \chapter{硅基混合集成III-V波导}
-\section{多量子阱结构的设计}
+\section{量子阱结构的设计}
+本论文的硅基混合集成III-V光调制器是基于多量子阱(Multiple Quantum Well, MQW)的电吸收效应，这个效应也被成为量子束缚Stark(Quantum Confined Stark Effect, QCSE)现象。而对于块状材料，电吸收效应被称作Franz-Keldysh效应\cite{keldysh1958effect,franz1958einfluss}。Franz-Keldysh效应是指在外界电场的作用下，材料的能带发生倾斜，吸收峰往长波漂移，即能量低于导带和价带间隔的光子依旧能使电子从价带激发到导带。在激发的过程中，也需要考虑导带的空穴和价带的电子之间的库仑相互左右，而形成的激子。由于激子效应，吸收谱的末端处有强烈的吸收峰。对于块材料，激子效应只在没有偏压下才会明显。而在有偏压的情况下，电子和空穴受到外界电场的左右，互相分离，导致激子无法形成。对于量子结构，电子和空穴都被约束在有势垒的量子阱中。即使在外界电场的作用下，能带发生倾斜，电子和空穴在量子阱中的寿命仍然很长，依旧可以在吸收谱上观测到激子效应。另外由于量子阱中势垒的作用，电子和空穴都在分立的能级。而外界电场引起量子阱能带的倾斜，使电子和空穴分立能级的间隔缩小，从而使吸收峰快速往长波漂移。在量子阱中，这种在外界电压下，吸收峰快速往长波漂移，并且保持激子吸收的现象称之为量子束缚Stark(Quantum Confined Stark Effect, QCSE)现象\cite{miller1984band,miller1985electric}。因此，基于QCSE的电吸收光调制器具有驱动电压小，小尺寸的特点。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_band_lineup.jpg}
+	\caption{ 量子阱的能带和波函数的示意图(a)有外界加电场下；(b)在外界电场的时候}
+	\label{fig_ch2_band_lineup}
+\end{figure}
+
+图\ref{fig_ch2_band_lineup}(a)展示了没有外界偏压下量子阱的导带和价带，电子和空穴的波函数在空间上相互重叠，此时激子效应强度最大。当在外界电场的相互作用下，可以看到电子和空穴的分立能级的间隔变小，并且两者的波函数在空间上相错，此时激子效应的强度减弱。图\ref{fig_ch2_absorption_spec}(a,b)展示了实验测的不同偏振下量子阱的吸收谱随着外界电场的变化而变化\cite{chao1993momentum}。从中我们可以看出，外界电场使吸收谱往红移动，然后吸收谱边缘的激子吸收峰逐渐减弱，并且不同偏振下的吸收谱不同。图\ref{fig_ch2_absorption_spec}(c,d)展示了根据实验数据，里面计算得到的结果\cite{chao1993momentum}。可以看到理论和实验吻合的很好。关于量子阱中QCSE现象自从1984年在半导体量子阱材料被发现以来调\cite{miller1984band, wood1984high}，依旧构建了多套完整的物理模型\cite{chuang1995physics}。下面，我们将介绍本论文采用的物理模型和计算方法。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_absorption_spec.jpg}
+	\caption{ (a,b) 实验测量的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}；(c,d) 理论计算的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}}
+	\label{fig_ch2_absorption_spec}
+\end{figure}
+
 \subsection{基本物理和数值模型}
+计算外界电场下的量子阱的吸收谱，需要求解电子，空穴在此环境中的薛定谔方程\ref{Equ:Schro}得到能量和波函数。 
+\begin{equation}
+\label{Equ:Schro}
+(\frac{\hbar^2}{2m}\Delta^2+V(z)+eFz)\phi=E\phi
+\end{equation}
+在求解这个方程之前，我们需要需要计算材料的能带边沿结构。量子阱是由两种材料间隔排列而成。图\ref{fig_ch2_band_diagram}展示了在材料应力情况下量子阱能带边沿结构的变化\cite{chuang1995physics}。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_band_diagram.jpg}
+	\caption{有应力量子阱中的能带边沿图，(a)压缩应变；(b)张力应变}
+	\label{fig_ch2_band_diagram}
+\end{figure}
+
+假设势阱中材料的晶格常熟为$a$，它在衬底晶格常数为$a_{0}$的材料上生长。那么我们可以用三个方向的应力来表式：
+\begin{equation}
+\label{Equ:exx}
+\epsilon_{xx} = \epsilon_{yy} = \frac{a_{0}-a}{a}
+\end{equation}
+\begin{equation}
+\label{Equ:ezz}
+\epsilon_{zz} = -2\frac{C_{12}}{C_{11}}\epsilon_{xx}
+\end{equation}
+其中$C_{11}$和$C_{12}$是材料的弹性刚性常数(Elastic Stiffness Constants)。当$\epsilon_{zz}>0$时，材料处于压缩应变(Compressive Strain)；当$\epsilon_{zz}>0$时，材料处于拉伸应变(Tensile Strain)。图\ref{fig_ch2_band_diagram}(a,b)展示了量子阱在有压缩应变和无应变情况下的能带的变化。通过比较，我们可以看到，导带上能带边沿$E_c$在受到压缩应变时，移动了$P_{c}$。表达式如下：
+\begin{equation}
+\label{Equ:Pc}
+P_{c} = a_{c}(\epsilon_{xx}+\epsilon_{yy}+\epsilon_{zz})
+\end{equation}
+\begin{equation}
+\label{Equ:Econ}
+E_{c} = E_{v}^{0}(x)+E_{g}(x)+P_{c}
+\end{equation}
+其中$a_{c}$是导带的变形势能(Deformation Potentials)，$E_v^0(x)$是材料在没有应变时导带的边沿，$E_{g}(x)$是材料没有应变时的导带和价带间隔，他们需要通过实验测试或者依旧材料的基本组分x查表拟合获得\cite{chuang1995physics,li2000material}。
+
+在价带上，收到应变的影响，空穴分裂成重空穴和轻空穴,能带边沿分别是$E_{vH}$和$E_{vL}$。它们能带边沿的均值移动量是$P_{\epsilon}$，裂量是$Q_{\epsilon}$。具体表达式如下：
+\begin{equation}
+\label{Equ:Pe}
+P_{\epsilon} = -a_{v}(\epsilon_{xx}+\epsilon_{yy}+\epsilon_{zz})
+\end{equation}
+\begin{equation}
+\label{Equ:Qe}
+Q_{\epsilon} = -\frac{b}{2}(\epsilon_{xx}+\epsilon_{yy}-2\epsilon_{zz})
+\end{equation}
+\begin{equation}
+\label{Equ:EvH}
+E_{vH} = E_{v}^{0}(x)-P_{\epsilon}-Q_{\epsilon}
+\end{equation}
+\begin{equation}
+\label{Equ:EvL}
+E_{vL} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
+\end{equation}
+其中$a_{v}$和$b$是变形势能。利用公式\ref{Equ:Econ}，\ref{Equ:EvH}、\ref{Equ:EvL}计算量子阱两种材料的能带边缘，就可以获得薛定谔方程中的电子，轻空穴和重空穴的势能$V(z)$。
+
+在应力作用下，重空穴和轻空穴产生劈裂，其等效质量，我们需要采用Luttinger parameters$\gamma_1, \gamma_2$计算。如下式所示：
+\begin{equation}
+\label{Equ:eff_mass_z}
+\frac{m_{vh}^z}{m_0}=\frac{1}{\gamma_1-2\gamma_2}~~~~~~~~~~\frac{m_{lh}^z}{m_0}=\frac{1}{\gamma_1+2\gamma_2}
+\end{equation}
+\begin{equation}
+\label{Equ:eff_mass_xy}
+\frac{m_{vh}^z}{m_0}=\frac{1}{\gamma_1-2\gamma_2}~~~~~~~~~~\frac{m_{lh}^z}{m_0}=\frac{1}{\gamma_1+2\gamma_2}
+\end{equation}
+其中公式\ref{Equ:eff_mass_z}和公式\ref{Equ:eff_mass_xy}分别是计算垂直与量子阱方向(即z方向)和水平方向重空穴和轻空穴的等效质量\cite{eppenga1987new}。
+
 \subsection{优化设计}
 \subsection{测试结果}
 \section{波导尺寸的设计}
