@@ -1,10 +1,12 @@
-\documentclass{ZJUthesis}
-\hypersetup{colorlinks=false}
 \begin{document}
-\classification{TM863}
-\serialnumber{10335}
-\SecretLevel{绝密}
-\PersonalID{12345678}
-\title{论文题目}
-\makeCoverPage
+\usepackage{multirow}
+	\begin{tabular}{cc|c|c|c|c|l}
+		\cline{3-6}
+		& & \multicolumn{4}{|c|}{Jimmy} \\ \cline{3-6}
+		& & Canada & China & Ontario & Hamilton \\ \cline{1-6}
+		\multicolumn{1}{|c|}{\multirow{2}{*}{McMaster}} &
+		\multicolumn{1}{|c|}{MS} & Mon & T & Wed & Thu & DeGroote School of Business\\ \cline{2-6}
+		\multicolumn{1}{|c|}{}                          &
+		\multicolumn{1}{|c|}{IS} & Jan & Feb & Mar & Apr & DeGroote School of Business \\ \cline{1-6}
+	\end{tabular}...
 \end{document}

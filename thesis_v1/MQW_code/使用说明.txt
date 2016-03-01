@@ -1,0 +1,17 @@
+1.首先运行creat文件夹中的creat_*.m文件。
+2.将生产的结构文.mat件拷贝到外面的文件夹
+3.运行FKE，获得空穴与电子的波函数与能级
+4.运行ExcitionsEffect.m，获得激子能级
+5.运行Absorption.m，获得吸收谱
+6.Absorption 的数据是大概值，不精确。
+
+利用退火算法优化量子阱的文件
+利用Matlab的优化GUI，将optimproblem_InGaAsP导入到优化GUI中，即可。
+test_opti.m 优化的主函数
+opti_output.m 优化输出函数
+optimproblem_InGaAsP.mat 保存的优化参数设置
+
+creat文件中
+creat_PIN.m文件是用于计算PIN节内的电场分布
+黄强盛
+2012年2月27日

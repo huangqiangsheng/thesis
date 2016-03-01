@@ -21,35 +21,35 @@
 \contentsline {subsection}{\numberline {1.3.2}本论文的主要创新点}{20}{subsection.1.3.2}
 \contentsline {chapter}{\numberline {2\hspace {0.3em}}硅基混合集成III-V波导}{23}{chapter.2}
 \contentsline {section}{\numberline {2.1}量子阱结构的设计}{23}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}基本物理和数值模型}{24}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}优化设计}{26}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}测试结果}{26}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}波导尺寸的设计}{26}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}光学性能的设计}{26}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}电学性能的设计}{26}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}本章小结}{26}{section.2.3}
-\contentsline {chapter}{\numberline {3\hspace {0.3em}}低驱动电压硅基电吸收调制器}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}低驱动电压光调制器概述}{27}{section.3.1}
-\contentsline {section}{\numberline {3.2}混合集成调制器的设计}{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}混合集成调制器的制作}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}性能测试}{27}{section.3.4}
-\contentsline {section}{\numberline {3.5}电吸收调制器的双工作模式}{27}{section.3.5}
-\contentsline {section}{\numberline {3.6}硅基单片集成的光收发模块}{27}{section.3.6}
-\contentsline {chapter}{\numberline {4\hspace {0.3em}}硅基反射微环的光调制器}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}反射环概述}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}可调反射率微环}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}光栅反射微环}{29}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}可调反射率微环调制器的设计}{29}{section.4.2}
-\contentsline {section}{\numberline {4.3}光栅反射微环调制器的设计}{29}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}光栅反射环的设计}{29}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}光栅反射环的制作}{29}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}无源性能测试}{29}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5\hspace {0.3em}}高速光调制器电极的设计}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}高速光调制器概述}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}电极设计}{31}{section.5.2}
-\contentsline {section}{\numberline {5.3}电吸收调制器不同电极的比较}{31}{section.5.3}
-\contentsline {chapter}{\numberline {6\hspace {0.3em}}总结与展望}{33}{chapter.6}
-\contentsline {chapter}{参考文献}{35}{chapter*.30}
-\contentsline {chapter}{索引}{41}{section*.31}
-\contentsline {chapter}{作者简历}{43}{appendix*.32}
-\contentsline {chapter}{发表文章目录}{45}{appendix*.33}
+\contentsline {subsection}{\numberline {2.1.1}基本物理和数值计算}{24}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}优化设计}{29}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}测试结果}{29}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}波导尺寸的设计}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}光学性能的设计}{29}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}电学性能的设计}{29}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}本章小结}{29}{section.2.3}
+\contentsline {chapter}{\numberline {3\hspace {0.3em}}低驱动电压硅基电吸收调制器}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}低驱动电压光调制器概述}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}混合集成调制器的设计}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}混合集成调制器的制作}{31}{section.3.3}
+\contentsline {section}{\numberline {3.4}性能测试}{31}{section.3.4}
+\contentsline {section}{\numberline {3.5}电吸收调制器的双工作模式}{31}{section.3.5}
+\contentsline {section}{\numberline {3.6}硅基单片集成的光收发模块}{31}{section.3.6}
+\contentsline {chapter}{\numberline {4\hspace {0.3em}}硅基反射微环的光调制器}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}反射环概述}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}可调反射率微环}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}光栅反射微环}{33}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}可调反射率微环调制器的设计}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}光栅反射微环调制器的设计}{33}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}光栅反射环的设计}{33}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}光栅反射环的制作}{33}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}无源性能测试}{33}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5\hspace {0.3em}}高速光调制器电极的设计}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}高速光调制器概述}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}电极设计}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}电吸收调制器不同电极的比较}{35}{section.5.3}
+\contentsline {chapter}{\numberline {6\hspace {0.3em}}总结与展望}{37}{chapter.6}
+\contentsline {chapter}{参考文献}{39}{chapter*.34}
+\contentsline {chapter}{索引}{47}{section*.35}
+\contentsline {chapter}{作者简历}{49}{appendix*.36}
+\contentsline {chapter}{发表文章目录}{51}{appendix*.37}

@@ -1,0 +1,21 @@
+well = AlGaAs_params(0,1550);
+barrier = AlGaAs_params(0.32,1550);
+well.Ec = 1.426;
+well.EvL = 0;
+well.EvH = 0;
+well.epsr = 12.15;
+barrier.mHHz = 0.34+0.42*0.32;
+barrier.mLHz = 0.094+0.43*0.32;
+barrier.Ec = 1.426+1.247*0.32*0.67;
+barrier.EvL = -1.247*0.32*0.33;
+barrier.EvH = barrier.EvL -0.0045;
+MQW.barrier = barrier;
+MQW.well = well;
+MQW.tb = 104e-10;
+MQW.tw = 98e-10;
+MQW.num_w = 1;
+MQW.num_b = 2;
+MQW.t = MQW.num_b*MQW.tb+MQW.num_w*MQW.tw;
+MQW.period = MQW.tb + MQW.tw;
+
+save AlGaAs MQW;
