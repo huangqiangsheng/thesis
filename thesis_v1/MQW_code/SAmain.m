@@ -1,9 +1,10 @@
 clear;
 number = 4;
 problem.objective = @test_opti;
-problem.x0 =[59,9,52,16];
-problem.lb =[35 1 35 1 ];
-problem.ub =[ 99.9 99.9 99.9 99.9 ];
+problem.x0 =[59,9,52,16 100];
+% problem.x0 =[ 52.2898    1.3112   39.1975    6.0604   84.8563];
+problem.lb =[35 1 35 1 80];
+problem.ub =[ 99.9 99.9 99.9 99.9 150];
 problem.rngstate= [];
 problem.solver='simulannealbnd';
 oldopts  = saoptimset('simulannealbnd');

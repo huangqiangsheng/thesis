@@ -4,7 +4,7 @@
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_band_lineup.jpg}
+	\includegraphics[width=14cm]{./Pictures/fig_ch2_band_lineup.jpg}
 	\caption{ 量子阱的能带和波函数的示意图(a)有外界加电场下；(b)在外界电场的时候}
 	\label{fig_ch2_band_lineup}
 \end{figure}
@@ -12,7 +12,7 @@
 图\ref{fig_ch2_band_lineup}(a)展示了没有外界偏压下量子阱的导带和价带，电子和空穴的波函数在空间上相互重叠，此时激子效应强度最大。当在外界电场的相互作用下，可以看到电子和空穴的分立能级的间隔变小，并且两者的波函数在空间上相错，此时激子效应的强度减弱。图\ref{fig_ch2_absorption_spec}(a,b)展示了实验测的不同偏振下量子阱的吸收谱随着外界电场的变化而变化\cite{chao1993momentum}。从中我们可以看出，外界电场使吸收谱往红移动，然后吸收谱边缘的激子吸收峰逐渐减弱，并且不同偏振下的吸收谱不同。图\ref{fig_ch2_absorption_spec}(c,d)展示了根据实验数据，里面计算得到的结果\cite{chao1993momentum}。可以看到理论和实验吻合的很好。关于量子阱中QCSE现象自从1984年在半导体量子阱材料被发现以来调\cite{miller1984band, wood1984high}，依旧构建了多套完整的物理模型\cite{chuang1995physics}。下面，我们将介绍本论文采用的物理模型和计算方法。
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_absorption_spec.jpg}
+	\includegraphics[width=14cm]{./Pictures/fig_ch2_absorption_spec.jpg}
 	\caption{ (a,b) 实验测量的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}；(c,d) 理论计算的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}}
 	\label{fig_ch2_absorption_spec}
 \end{figure}
@@ -21,7 +21,7 @@
 目前计算量子阱的吸收谱商业上的软件只有一款昂贵的Harold EAM\cite{HarolEAM}软件。在此，我们采用文献[\citenum{chuang1995physics, mares1993modeling, roy1993modified, chuang1991exciton}]的方法，计算外界电场下的量子阱的吸收谱。计算吸收谱需要采用四个步骤，如图\ref{fig_ch2_flow_chart}(a)所示。通过第一步和第二布求解电子，空穴在外界下电场下的薛定谔方程\ref{Equ:Schro}得到本征能量$E$和波函数$\psi(z)$，如图\ref{fig_ch2_flow_chart}(b)所示。通过第三步和第四步求解出包含激子效应量子阱的吸收谱。
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_flow_chart.jpg}
+	\includegraphics[width=16cm]{./Pictures/fig_ch2_flow_chart.jpg}
 	\caption{(a)量子阱吸收谱的数值计算步骤；(b)第一和第二步的计算得到的电子，重空穴和轻空穴的能量和波函数；(c)第三和第四步计算得到的TE和TM偏振光的吸收谱}
 	\label{fig_ch2_flow_chart}
 \end{figure}
@@ -34,7 +34,7 @@
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_band_diagram.jpg}
+	\includegraphics[width=14cm]{./Pictures/fig_ch2_band_diagram.jpg}
 	\caption{有应力量子阱中的能带边沿图，(a)压缩应变；(b)张力应变}
 	\label{fig_ch2_band_diagram}
 \end{figure}
@@ -59,7 +59,7 @@ E_{c} = E_{v}^{0}(x)+E_{g}(x)+P_{c}
 \end{equation}
 其中$a_{c}$是导带的变形势能(Deformation Potentials)，$E_v^0(x)$是材料在没有应变时导带的边沿，$E_{g}(x)$是材料没有应变时的导带和价带间隔，他们需要通过实验测试或者依旧材料的基本组分x查表拟合获得\cite{chuang1995physics,li2000material}。
 
-在价带上，收到应变的影响，空穴分裂成重空穴和轻空穴,能带边沿分别是$E_{vH}$和$E_{vL}$。它们能带边沿的均值移动量是$P_{\epsilon}$，裂量是$Q_{\epsilon}$。具体表达式如下：
+在价带上，收到应变的影响，空穴分裂成重空穴和轻空穴,能带边沿分别是$E_{hh}$和$E_{lh}$。它们能带边沿的均值移动量是$P_{\epsilon}$，裂量是$Q_{\epsilon}$。具体表达式如下：
 \begin{equation}
 \label{Equ:Pe}
 P_{\epsilon} = -a_{v}(\epsilon_{xx}+\epsilon_{yy}+\epsilon_{zz})
@@ -69,36 +69,36 @@ P_{\epsilon} = -a_{v}(\epsilon_{xx}+\epsilon_{yy}+\epsilon_{zz})
 Q_{\epsilon} = -\frac{b}{2}(\epsilon_{xx}+\epsilon_{yy}-2\epsilon_{zz})
 \end{equation}
 \begin{equation}
-\label{Equ:EvH}
-E_{vH} = E_{v}^{0}(x)-P_{\epsilon}-Q_{\epsilon}
+\label{Equ:Ehh}
+E_{hh} = E_{v}^{0}(x)-P_{\epsilon}-Q_{\epsilon}
 \end{equation}
 \begin{equation}
-\label{Equ:EvL}
-E_{vL} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
+\label{Equ:Elh}
+E_{lh} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
 \end{equation}
-其中$a_{v}$和$b$是变形势能。利用公式\ref{Equ:Econ}，\ref{Equ:EvH}、\ref{Equ:EvL}计算量子阱两种材料的能带边缘，就可以获得薛定谔方程中的电子，轻空穴和重空穴的势能$V(z)$。
+其中$a_{v}$和$b$是变形势能。利用公式\ref{Equ:Econ}，\ref{Equ:Ehh}、\ref{Equ:Elh}计算量子阱两种材料的能带边缘，就可以获得薛定谔方程中的电子，轻空穴和重空穴的势能$V(z)$。
 
 在应力作用下，由于重空穴和轻空穴产的能带生劈裂，其等效质量，我们需要采用Luttinger parameters$\gamma_1, \gamma_2$计算。如下式所示：
 \begin{equation}
 \label{Equ:eff_mass_z}
-\frac{m_{vH}^z}{m_0}=\frac{1}{\gamma_1-2\gamma_2}~~~~~~~~~~\frac{m_{vL}^z}{m_0}=\frac{1}{\gamma_1+2\gamma_2}
+\frac{m_{hh}^z}{m_0}=\frac{1}{\gamma_1-2\gamma_2}~~~~~~~~~~\frac{m_{lh}^z}{m_0}=\frac{1}{\gamma_1+2\gamma_2}
 \end{equation}
 \begin{equation}
 \label{Equ:eff_mass_xy}
-\frac{m_{vH}^{xy}}{m_0}=\frac{1}{\gamma_1+\gamma_2}~~~~~~~~~~\frac{m_{vL}^{xy}}{m_0}=\frac{1}{\gamma_1-\gamma_2}
+\frac{m_{hh}^{xy}}{m_0}=\frac{1}{\gamma_1+\gamma_2}~~~~~~~~~~\frac{m_{lh}^{xy}}{m_0}=\frac{1}{\gamma_1-\gamma_2}
 \end{equation}
 其中公式\ref{Equ:eff_mass_z}和公式\ref{Equ:eff_mass_xy}分别是计算垂直与量子阱方向(即z方向)和水平方向重空穴和轻空穴的等效质量\cite{eppenga1987new}。
 
-我们用于硅基混合集成III-V电吸收光调制器的多量子阱中，单个量子阱的势阱(Well)和势垒(Barrier)分别是：In\SB{0.65}Al\SB{0.09}Ga\SB{0.26}As和In\SB{0.42}Al\SB{0.17}Ga\SB{0.39}As。从文献[\citenum{chuang1995physics,li2000material}]，根据它们各个元素，再依据\ref{Equ:Econ}，\ref{Equ:EvH}、\ref{Equ:EvL}、\ref{Equ:eff_mass_z}、\ref{Equ:eff_mass_xy}式可以获得如下表\ref{QWmaterial}的量子阱材料数据。其中势阱受到了0.82\%的压缩应变，势垒受到了0.73\%的拉伸应变。
+我们用于硅基混合集成III-V电吸收光调制器的多量子阱中，单个量子阱的势阱(Well)和势垒(Barrier)分别是：In\SB{0.65}Al\SB{0.09}Ga\SB{0.26}As和In\SB{0.42}Al\SB{0.17}Ga\SB{0.39}As。从文献[\citenum{chuang1995physics,li2000material}]，根据它们各个元素，再依据\ref{Equ:Econ}，\ref{Equ:Ehh}、\ref{Equ:Elh}、\ref{Equ:eff_mass_z}、\ref{Equ:eff_mass_xy}式可以获得如下表\ref{QWmaterial}的量子阱材料数据。其中势阱受到了0.82\%的压缩应变，势垒受到了0.73\%的拉伸应变。
 {
 	\begin{table}[htb]
 		\zihao{5}
-		\caption{量子阱材料数据。E\SB{vL}：轻空穴的能带边沿；E\SB{vH}：重空穴的能带边沿；E\SB{c}：导带的能带边沿；$m_{vL}^z$：轻空穴z向等效质量；$m_{vL}^{xy}$：轻空穴xy向等效质量；$m_{vH}^z$：重空穴z向等效质量；$m_{vH}^{xy}$：重空穴xy向等效质量；$m_e$：电子等效质量；$m_0$：电子质量。}
+		\caption{量子阱材料数据。E\SB{lh}：轻空穴的能带边沿；E\SB{hh}：重空穴的能带边沿；E\SB{c}：导带的能带边沿；$m_{lh}^z$：轻空穴z向等效质量；$m_{lh}^{xy}$：轻空穴xy向等效质量；$m_{hh}^z$：重空穴z向等效质量；$m_{hh}^{xy}$：重空穴xy向等效质量；$m_e$：电子等效质量；$m_0$：电子质量。}
 		\label{QWmaterial}
 		\centering
 		\begin{tabular}[t]{ccccccccc}
 			\hline
-			类型  & E\SB{vL}(eV) & E\SB{vH}(eV) & E\SB{c}(eV) & $m_{vL}^z$ ($m_0$) & $m_{vL}^{xy}$ ($m_0$) & $m_{vH}^{z}$ ($m_0$) & $m_{vH}^{xy} $ ($m_0$) & $m_e$ ($m_0$)\\
+			类型  & E\SB{lh}(eV) & E\SB{hh}(eV) & E\SB{c}(eV) & $m_{lh}^z$ ($m_0$) & $m_{lh}^{xy}$ ($m_0$) & $m_{hh}^{z}$ ($m_0$) & $m_{hh}^{xy} $ ($m_0$) & $m_e$ ($m_0$)\\
 			\hline
 			Well & -6.7220 & -6.6695 & -5.9031 & 0.0374 & 0.1216 & 0.4874 & 0.0486 & 0.0457\\
 			Barrier& -6.7573 & -6.8114 & -5.7680 & 0.0481 & 0.1498 & 0.5080 & 0.0621 & 0.0641\\
@@ -115,7 +115,7 @@ E_{vL} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
 	\label{fig_ch2_divide_potential}
 \end{figure}
 
-假设在区域$l$，$z_{l-1} \leqslant z \leqslant z_{l}$,势能为$V_l$，粒子质量为$m_l$，那么其波函数$\psi(z)$的解为：
+假设在区域$l$，$z_{l-1} \leqslant z \leqslant z_{l}$,势能为$V_l$，粒子质量为$m_l$，那么其波函数$\psi(z)$的通解为：
 \begin{equation}
 \label{Equ:generalsolutionsch}
 \psi(z) = A_le^{ik_l(z-z_l)}+B_le^{-ik_l(z-zl)}
@@ -188,13 +188,113 @@ B_{0}
 \label{Equ:sloveE}
 f_{22}(E) = 0
 \end{equation}
-利用牛顿迭代法或者其他数值方法我们可以获得$E$的数值。然后公式\ref{Equ:kl}，\ref{Equ:Pdetail}，\ref{Equ:Fdetail}反推得到$\textbf{F}$。再假设$B_{0}$的数值，利用公式\ref{Equ:Fmulti}，我们就可以得到每个区域波函数$\psi(z)$。最后，根据粒子在整个空间出现的概率为1，对波函数进行归一化。图\ref{fig_ch2_bias_wavefunction}(a,b)分别展示了在没有偏压和2 KV/cm的偏压下，利用传输矩阵，计算得到的电子，重空穴，轻空穴的最低能级和对应波函数。在没有偏压下，电子和重空穴之间的能量间隔是$E_{e-vH} = 0.7997 eV$，当偏压为2 KV/cm时，其间隔变为$E_{e-vH} = 0.7979$，标明吸收峰蓝移了$\Delta E_{e-vH} = 1.8 meV$。电子和轻空穴在没有和2 KV/cm下的能量间隔$E_{e-vL}$分别是$0.8649 eV$和$0.8612 eV$，蓝移量为 $\Delta E_{e-vL} = 3.7 mV$。$\Delta E_{e-vL}$ 大于 $\Delta E_{e-vH}$是由于，如表\ref{QWmaterial}所示，轻空穴的等效质量少于重空穴，并且轻空穴的势垒和势阱的能带变差相比重空穴而言更小，因此轻空穴更容易受到势能变化的影响。
+利用牛顿迭代法或者其他数值方法我们可以获得$E$的数值。然后公式\ref{Equ:kl}，\ref{Equ:Pdetail}，\ref{Equ:Fdetail}反推得到$\textbf{F}$。再假设$B_{0}$的数值，利用公式\ref{Equ:Fmulti}，我们就可以得到每个区域波函数$\psi(z)$。最后，根据粒子在整个空间出现的概率为1，对波函数进行归一化。图\ref{fig_ch2_bias_wavefunction}(a,b)分别展示了在没有偏压和2 KV/cm的偏压下，利用传输矩阵，计算得到的电子，重空穴，轻空穴的最低能级和对应波函数。在没有偏压下，电子和重空穴之间的能量间隔是$E_{e-hh} = 0.7997 eV$，当偏压为18 KV/cm时，其间隔变为$E_{e-hh} = 0.7982$，表明吸收峰红移了$\Delta E_{e-hh} = 1.5 meV$。电子和轻空穴在没有偏压和18 KV/cm下的能量间隔$E_{e-lh}$分别是$0.8649 eV$和$0.8597 eV$，红移量为 $\Delta E_{e-lh} = 5.2 mV$。$\Delta E_{e-lh}$ 大于 $\Delta E_{e-hh}$是由于，如表\ref{QWmaterial}所示，轻空穴的等效质量少于重空穴，并且轻空穴的势垒和势阱的能带变差相比重空穴而言更小，因此轻空穴更容易受到势能变化的影响。从图\ref{fig_ch2_bias_wavefunction}(b)的最后一幅轻空穴的波函数图中可以看出，轻空穴即将突破量子阱势垒的束缚。当外界电场很强时，由于粒子会有部分从势阱里逃逸，此时波函数无法用公式\ref{Equ:generalsolutionsch}来表示，需要采用Airy方程表示此时波函数的通解\cite{chuang1991exciton}。
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=14cm]{./Pictures/fig_ch2_bias_wavefunction.jpg}
+	\includegraphics[width=16cm]{./Pictures/fig_ch2_bias_wavefunction.jpg}
 	\caption{在不同偏压下电子，重空穴和轻空穴能带边沿，波函数，能级的变化，(a)无电场；(b)电场强度为2 KV/cm}
 	\label{fig_ch2_bias_wavefunction}
 \end{figure}
+
+第三步求解激子的束缚能$E_B$和激子波函数$\psi(\rho)$。$\rho$是电子和空穴的xy平面上的距离。量子阱吸收谱的边缘处的能量$E_{e-h}$由能带间隔$E_g$，电子的能级$E_e$,空穴的能级$E_h$,激子束缚能$E_B$确定的，如下式所示：
+\begin{equation}
+\label{Equ:Eeh}
+E_{e-h} = E_g + E_e + E_h + E_B
+\end{equation}
+
+求解$E_B$和$\psi(\rho)$需要解含电子空穴在库仑动能中的薛定谔方程\cite{mares1993modeling}。可以通过变法发求解这个方程\cite{miller1985electric, mares1993modeling}。最后可以转化为求解公式\ref{Equ:EB_lambda}的最小值问题。
+\begin{equation}
+\label{Equ:EB_lambda}
+E_B(\lambda)=\frac{\hbar^2}{2\mu\lambda^2}-\frac{e^2}{4\pi\epsilon_r\epsilon_0}\int_{ - \infty }^{ \infty } {dz_e}\int_{ - \infty }^{ \infty } {dz_h	\left| \psi_e(z_e) \right|^2\left| \psi_h(z_h) \right|^2}\int_{ 0 }^{ \infty }{dq\frac{e^{-q\left| z_e-z_h \right|}}{\left[1+\left( \lambda q/2 \right) ^2 \right]^{3/2}}}
+\end{equation}
+其中$\lambda$是变分法中的变分参数。激子波函数$\psi(\rho)$可以用变分参数$\lambda$表示为：
+\begin{equation}
+\label{Equ:psirho}
+\psi(\rho)=\sqrt{2/\pi}\left(e^{-\rho/\lambda}/\lambda \right)
+\end{equation}
+
+图\ref{fig_ch2_ex_abs}展示了，在有激子和没有激子效应下，量子阱中$E_{e-hh}$与$E_{e-lh}$所对应的吸收峰边沿随外界电场的漂移。可以看出不考虑激子效应的吸收峰边沿比实际的吸收峰往短波偏，但是两者的吸收峰边沿在外界电压的变化下，都以二次函数的关系进行红移。可以总结出，激子的束缚能随外界电场的变化量远小于电子和空穴能级间隔的变化量。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=16cm]{./Pictures/fig_ch2_ex_abs.jpg}
+	\caption{(a)$E_{e-hh}$所和(b)$E_{e-lh}$所对应吸收峰边沿没有和存在激子效应下，随外界电场的变化}
+	\label{fig_ch2_ex_abs}
+\end{figure}
+
+第四步求解量子阱带间跃迁的吸收谱。带间电子能级$n$和空穴能级$m$的跃迁吸收谱可以简化成两个部分，第一个部分是带间连续跃迁导致的连续吸收谱，如公式\ref{Equ:continuum}所示；第二个部分是激子跃迁产生的激子吸收谱，如公式\ref{Equ:excitonabs}所示。
+\begin{equation}
+\label{Equ:continuumabs}
+\begin{aligned}
+\alpha(\omega) = &\frac{\omega \mu e^2}{n_rc\epsilon_0\pi m_0^2 L_p} \sum_m\sum_n\left| I_{nm} \right|^2\left| M_{AVG} \right|^2 \\ & \int_{0}^{\infty}\frac{dE~M(E)S_{nm}\Gamma}{(E_g+E_m+E_n+E)^2[(E_g+E_m+E_n+E-\hbar\omega)^2+\Gamma^2]}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{Equ:excitonabs}
+\alpha(\omega) = \frac{2\omega e^2 \hbar^2}{n_r c \epsilon_0 m_0^2 L_p} \sum_{mn}\frac{M(E)|M_{AVG}|^2|I_{nm}|^2|\psi(\rho = 0)^2|^2\Gamma}{(E_g+E_m+E_n+E_B)^2[(E_g+E_m+E_n+E_B-\hbar\omega)^2+\Gamma^2]}
+\end{equation}
+其中，$I_{nm}$是电子和空穴对应能级的波函数的重叠积分
+\begin{equation}
+\label{Equ:Imn}
+I_{nm} = \left< \psi_n(z)|\psi_m(z)\right>,
+\end{equation}
+$|M_{AVG}| ^2$是布洛赫模式的平均矩阵量
+\begin{equation}
+\label{Equ:MAVG}
+\left| M_{AVG} \right| ^2 = \frac{m_0}{6} \left( \frac{m_0}{m^*}-1\right)\frac{E_g(E_g+\Delta)}{E_g+(2\Delta/3)},
+\end{equation}
+其中，$\Delta$是自旋轨道分裂能(spin-orbit split-off energy)，$L_p$是量子阱的单个周期长度，$m_0$是电子的静止能量，$\mu = (1/m_e+1/m_{h}^xy)$是约化有效质量, $S_{nm}$是库仑增强因子，$M(E)$具有偏振相关性\cite{chuang1991exciton, yamanishi1984comment, asada1984gain}。对于TE偏振的$M(E)$见表\ref{METE}：
+{
+	\begin{table}[htb]
+		\zihao{5}
+		\caption{TE偏振的$M(E)$}
+		\label{METE}
+		\centering
+		\begin{tabular}[t]{p{3cm}cc}
+			\hline
+			     & 重空穴 & 轻空穴 \\
+			\hline
+			连续跃迁  & $\frac{3}{4} \left[ 1+ \left( \frac{E_m + E_n}{E_m+E_n+E}\right)\right]$ & $\frac{1}{4} \left[ 5-3 \left( \frac{E_m + E_n}{E_m+E_n+E}\right)\right]$ \\
+			激子跃迁  & $\frac{3}{2}$ & $\frac{1}{2}$\\
+			\hline
+		\end{tabular}
+	\end{table}
+}
+
+对于TM偏振的$M(E)$见表\ref{METM}：
+{
+	\begin{table}[htb]
+		\zihao{5}
+		\caption{TM偏振的$M(E)$}
+		\label{METM}
+		\centering
+		\begin{tabular}[t]{p{3cm}cc}
+			\hline
+			& 重空穴 & 轻空穴 \\
+			\hline
+			连续跃迁  & $\frac{3}{2} \left[ 1- \left( \frac{E_m + E_n}{E_m+E_n+E}\right)\right]$ & $\frac{1}{2} \left[ 1+3 \left( \frac{E_m + E_n}{E_m+E_n+E}\right)\right]$ \\
+			激子跃迁  & 0 & 2\\
+			\hline
+		\end{tabular}
+	\end{table}
+}
+
+结合公式\ref{Equ:continuumabs}和公式\ref{Equ:excitonabs}我们可以获得量子阱在电场下的总吸收谱。我们仿真量子阱(In\SB{0.65}Al\SB{0.09}Ga\SB{0.26}As和In\SB{0.42}Al\SB{0.17}Ga\SB{0.39}As分别作为势阱和势垒)的TE模式的吸收谱见图\ref{fig_ch2_te_abs}，TM模式的吸收谱见图\ref{fig_ch2_tm_abs}。作为电吸收光调制器，我们最关注的是吸收谱边沿的变化，因此仿真吸收谱时，我们只考虑了电子，重空穴和轻空穴最低的能级和对应的波函数。吸收谱的宽度因子$\Gamma$根据实验数据拟合，其随外界电场的变化而展宽；外界电场为0时，$ \Gamma = 1 meV$；外界电场为32 KV时，$ \Gamma = 1.3 meV$。库仑增强因子是1~2的范围内\cite{mares1993modeling, chuang1995physics}，在此我们取2。公式\cite{Equ:MAVG}中的等效质量$m^* = 0.14m_e—well$ ($m_{e-well}$是势阱中的等效电子质量)。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_te_abs.jpg}
+	\caption{TE模式的吸收谱}
+	\label{fig_ch2_te_abs}
+\end{figure}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_tm_abs.jpg}
+	\caption{TM模式的吸收谱}
+	\label{fig_ch2_tm_abs}
+\end{figure}
+
+从图\ref{fig_ch2_te_abs}我们可以看出，量子阱TE偏振吸收谱边沿有强烈的激子吸收峰，并且随着电场的增强往长波移动，其对应的是电子和重空穴跃迁的能量$E_{e-hh}$如图\ref{fig_ch2_ex_abs}(a)所示。而1.45 $\mu m$处对应的小吸收峰是电子和轻空穴跃迁的能量$E_{e-lh}$如图\ref{fig_ch2_ex_abs}(b)。除此之外，激子吸收峰的强度在电场的作用下从$265 mm^{-1}$减弱到$147 mm^{-1}$。从图\ref{fig_ch2_tm_abs}我们可以看出，量子阱TM偏振吸收谱对应的是$E_{e-lh}$，激子吸收峰的强度从$473 mm^{-1}$减弱到$70 mm^{-1}$，这是由于轻空穴在强外界电场下从势阱中逃逸，导致轻空穴和电子波函数的叠加积分迅速降低，激子效应减弱。因此，在外界强电场下，高的势垒能，大的空穴与电子等效质量，能保持激子吸收峰的强度，但同时减弱了激子吸收峰随电场的偏移量。这也说明了电吸收调制器中，基于QCSE效应下，在相同长度的材料中，不采用谐振结构时，同时实现高消光比和低驱动电压的光调制器的矛盾。
 
 \subsection{优化设计}
 \subsection{测试结果}

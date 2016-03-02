@@ -7,20 +7,20 @@ well_w = x(1)/100;
 well_v = x(2)/100;
 barrier_w = x(3)/100;
 barrier_v = x(4)/100;
-ww = 110;
-goal_lambda_CHH = 1550;
-goal_lambda_CLH= 1485;
+ww = x(5)*1e-10;
+goal_lambda_CHH = 1530;
+goal_lambda_CLH= 1530;
 CTE = 20;
-CTM = 0;
-CD = 0;
-Coef_width = 0;
-Coef_ezz = 0;%500
+CTM = 20;
+CD = 100;
+Coef_width = 10;
+Coef_ezz = 500;%500
 Coef_DEc = 0;
 Coef_DEvH = 0;
 Coef_DEvL = 0;
 Coef_WEg = 0;
 
-ww = ww*1e-10;
+% ww = ww*1e-10;
 bw = ww;%假设量子阱的宽度相等
 well = InAlGaAs_params(well_w,well_v,1550);
 barrier = InAlGaAs_params(barrier_w,barrier_v,1550);
@@ -104,11 +104,11 @@ if flag1 ~= 1
                CD*((MQW.PL_cHH - MQW.PL_cLH))^2+...
                Coef_ezz * abs(MQW.well.ezz-0.009)*1e3+...
                Coef_ezz * abs(MQW.barrier.ezz+0.009)*1e3+...
-               (Coef_width *((ww-110e-10)*1e9))^2 + ...
-               (Coef_WEg*(evnm/MQW.well.Eg-1550)^2)+...
-               (Coef_DEvH *(-(MQW.barrier.EvH -MQW.well.EvH) -0.12))^2+...
-               (Coef_DEvL*(-(MQW.barrier.EvL -MQW.well.EvL) - 0.12))^2+...
-               (Coef_DEc*((MQW.barrier.Ec -MQW.well.Ec) - 0.14))^2;
+               (Coef_width *((ww-110e-10)*1e9))^2 ;%+ ...
+%                (Coef_WEg*(evnm/MQW.well.Eg-1550)^2)+...
+%                (Coef_DEvH *(-(MQW.barrier.EvH -MQW.well.EvH) -0.12))^2+...
+%                (Coef_DEvL*(-(MQW.barrier.EvL -MQW.well.EvL) - 0.12))^2+...
+%                (Coef_DEc*((MQW.barrier.Ec -MQW.well.Ec) - 0.14))^2;
     else
         val = 1e10;
     end

@@ -16,12 +16,12 @@ function [MQW] = Absorption(MQW,lambda)
     evnm =1239.842;%
     %32 153TE   %82 767 %106 882
 
-    S0H = 0;%1 (106)%2;(82)%2; %(32)%Smmerfeld enhancement factor. modified according to your expriment data
-    S0L = 0;%1 (106)%6;(82)%6; %(32)
+    S0H = 2;%1 (106)%2;(82)%2; %(32)%Smmerfeld enhancement factor. modified according to your expriment data
+    S0L = 2;%1 (106)%6;(82)%6; %(32)
 %     gammaH = (6-(106-MQW.Ebias/1e5)/(106-32)*(6-2))*1e-3*q;
 %     gammaH = 1e-3*q; Ebias = 0
     gammaH = (1e-3+(MQW.Ebias/4e6)^2*0.4e-3)*q;
-    gammaL = 3*1e-3*q;
+    gammaL = (1e-3+(MQW.Ebias/4e6)^2*0.4e-3)*q;
     me_start = MQW.well.me*0.14;
     Lp = MQW.tw;
 %     gammaH =2e-3*q; %16e-3*q;  (106)%7e-3*q;(82)%2e-3*q;%(32)%(2.5e-3+(MQW.Ebias-32e5)/(106e5-32e5)*5.5e-3)*q;%2.5e-3*q(32),8e-3*q;(106) % Linewidth,modified according to your expriment data
