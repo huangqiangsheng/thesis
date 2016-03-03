@@ -1,4 +1,5 @@
-x=[ 52.2898    1.3112   39.1975    6.0604   84.8563];
+% x=[ 52.2898    1.3112   39.1975    6.0604   84.8563];
+x = [ 49.5374    1.0012   52.0912    7.7658   94.6374];
 well_w = x(1)/100;
 well_v = x(2)/100;
 barrier_w = x(3)/100;
@@ -55,15 +56,14 @@ for iter = 1:SweepNum
 %     plot((Ebias(iter)/1e5-27)/20,Absorption2dB(TEalpha(index,iter),Length,To_TE,C),'*');
 end
 figure(10);
-plot(lambda*1e6, abs(TEalpha)/1e3,'LineWidth',2);
+plot(lambda*1e6, abs(TEalpha)/1e3,'LineWidth',2,'k*');
 xlabel('\lambda (\mum)');
 ylabel('TE Absorption Coefficient (1/mm)')
-legend('0 KV/cm', '16 KV/cm', '32 KV/cm');
-figure(11);
+hold on;
 plot(lambda*1e6, abs(TMalpha)/1e3,'LineWidth',2);
 xlabel('\lambda (\mum)');
 ylabel('TM Absorption Coefficient (1/mm)')
-legend('0 KV/cm', '16 KV/cm', '32 KV/cm');
+legend('TE','TM');
 
 % figure;plot(Ebias/1e5,[PL_cHH1;PL_cHH],'Linewidth',2);
 % xlabel('Electric Field (KV/cm)');

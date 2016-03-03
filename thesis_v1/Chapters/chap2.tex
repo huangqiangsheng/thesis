@@ -283,22 +283,46 @@ $|M_{AVG}| ^2$是布洛赫模式的平均矩阵量
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_te_abs.jpg}
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_te_abs.eps}
 	\caption{TE模式的吸收谱}
 	\label{fig_ch2_te_abs}
 \end{figure}
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=12cm]{./Pictures/fig_ch2_tm_abs.jpg}
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_tm_abs.eps}
 	\caption{TM模式的吸收谱}
 	\label{fig_ch2_tm_abs}
 \end{figure}
 
 从图\ref{fig_ch2_te_abs}我们可以看出，量子阱TE偏振吸收谱边沿有强烈的激子吸收峰，并且随着电场的增强往长波移动，其对应的是电子和重空穴跃迁的能量$E_{e-hh}$如图\ref{fig_ch2_ex_abs}(a)所示。而1.45 $\mu m$处对应的小吸收峰是电子和轻空穴跃迁的能量$E_{e-lh}$如图\ref{fig_ch2_ex_abs}(b)。除此之外，激子吸收峰的强度在电场的作用下从$265 mm^{-1}$减弱到$147 mm^{-1}$。从图\ref{fig_ch2_tm_abs}我们可以看出，量子阱TM偏振吸收谱对应的是$E_{e-lh}$，激子吸收峰的强度从$473 mm^{-1}$减弱到$70 mm^{-1}$，这是由于轻空穴在强外界电场下从势阱中逃逸，导致轻空穴和电子波函数的叠加积分迅速降低，激子效应减弱。因此，在外界强电场下，高的势垒能，大的空穴与电子等效质量，能保持激子吸收峰的强度，但同时减弱了激子吸收峰随电场的偏移量。这也说明了电吸收调制器中，基于QCSE效应下，在相同长度的材料中，不采用谐振结构时，同时实现高消光比和低驱动电压的光调制器的矛盾。
 
-\subsection{优化设计}
-\subsection{测试结果}
+\subsection{基于退火算法的优化设计}
+在设计量子阱时，我们关注的是吸收谱边沿的位置，而设计量子阱的吸收谱边沿是一个多参数优化的问题，吸收谱的位置和量子阱中势阱的宽度$w$，以及材料的组分有关。比如我们采用的量子阱是In\SB{x}Al\SB{y}Ga\SB{1-x-y}As材料，势阱和势垒都需要2个参数确定。因此，设计量子阱的吸收谱边沿需要5个参数。在此我们采用了退火算法(Simulated annealing, SA)\cite{Kirkpatrick671}设计量子阱结构。退火算法可用于在受约束条件下寻找多参数的全局最优解。在使用退火算法时，需要注意约束条件的设计和权值函数的设计。合理的约束条件和权值函数能加快退火算法的收敛。
+
+在此利用退火算法，设计了对TE和TM偏振有相同吸收边沿波长位于1530 nm的量子阱，用于实现偏振不敏感的光调制。本文采用对材料的约束条件是势阱和势垒材料的约束条件相同：0.35 < x < 0.99，0.01 < y < 0.99。量子阱中势阱宽度的约束条件：8 nm < $w$ < 15 nm。我们的权值$f_{val}$的表达式如公式\ref{Equ:SAfunvalue}所示。
+\begin{equation}
+\label{Equ:SAfunvalue}
+f_{val} = C_{TE}(\lambda_{TE}-\lambda_{0})^2 + C_{TM}(\lambda_{TM}-\lambda_{0})^2 + C_{diff}(\lambda_{TE}-\lambda_{TM})^2 + C_{w}(w-w_{0})^2,
+\end{equation}
+其中$C_{TE}, C_{TM}$ 为计算得到的吸收峰边沿$\lambda_{TE}, \lambda_{TM}$与设计值$\lambda_{0}$偏差的权值函数； $C_{diff}$为TE和TM偏振吸收峰之间的距离的权值函数；$C_{w}$为优化得到的量子阱势阱宽度$w$和设计值之间的偏差的权值函数；在此我们取：$C_{TE} = C_{TM} = 20; C_{diff} = 100; C_{w} = 10$。由于退火算法是包含随机性，因此每次优化的时间都有所不同。图\ref{fig_ch2_fast_annealing}展示了退火算法的优化过程，可以看到经过了200次迭代，权值函数就已经达到稳定值236。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_fast_annealing.eps}
+	\caption{退火算法的权值函数的优化过程}
+	\label{fig_ch2_fast_annealing}
+\end{figure}
+此时对应量子阱的参数是:势阱$x = 0.495$， $y  = 0.01$；势垒$x = 0.521$，$y = 0.077$；量子阱势阱宽度$w = 9.5 nm$。其对应两个偏振吸收峰边沿的波长分别是$ \lambda_{TE} =1529.99 nm, \lambda_{TM} =  1529.96 nm$，两者差值只有0.03nm。在考虑激子效应后，两者波长的分别是$ \lambda_{TE-ex} =1537.58 nm, \lambda_{TM-ex} =  1538.49 nm$，两者相差也只有0.91nm。沿用之前计算吸收谱的参数，此量子阱的吸收谱如图\ref{fig_ch2_opt_abs_tetm}，可以看到两个吸收峰位置几乎完全重合，而吸收谱强度的高低主要是由于轻空穴和重空穴波函数的不同，以及$M(E)$见表\ref{METE}和\ref{METM}。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/fig_ch2_opt_abs_tetm.eps}
+	\caption{最后优化的量子阱对TE和TM偏振的吸收谱}
+	\label{fig_ch2_opt_abs_tetm}
+\end{figure}
+
+多量子阱应力方面的内容
 \section{波导尺寸的设计}
 \subsection{光学性能的设计}
 \subsection{电学性能的设计}
+\subsection{优化设计}
+
 \section{本章小结}
