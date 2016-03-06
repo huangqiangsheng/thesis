@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
@@ -621,5 +621,68 @@ Masahiro Asada, Atsushi Kameyama, Yasuharu Suematsu.
 \newblock Gain and intervalence band absorption in quantum-well lasers[J].
 \newblock Quantum Electronics, IEEE Journal of, 1984.
 \newblock 20(7):745--753.
+
+\bibitem{Kirkpatrick671}
+S.~Kirkpatrick, C.~D. Gelatt, M.~P. Vecchi.
+\newblock Optimization by simulated annealing[J].
+\newblock Science, 1983.
+\newblock 220(4598):671--680.
+
+\bibitem{chen2011high}
+Hui-Wen Chen.
+\newblock High-Speed Hybrid Silicon Mach-Zehnder Modulator and Tunable
+  Microwave Filter[D].
+\newblock California, USA:University of California Santa Barbara, 2011.
+
+\bibitem{yongbophd}
+唐涌波.
+\newblock
+  硅基波导光栅耦合器与高速电吸收光调制器的研究[D].
+\newblock 中国杭州:浙江大学, 2011.
+
+\bibitem{zhang1999traveling}
+Shengzhong Zhang.
+\newblock Traveling-wave electroabsorption modulators[D].
+\newblock California, USA:University of California Santa Barbara, 1999.
+
+\bibitem{Robertphd}
+Robert Lew{\'e}n.
+\newblock High-{S}peed Electroabsorption Modulators and p-i-n Photodiodes for
+  Fiber-Optic Communications[D].
+\newblock Stockholm, Sweden:Royal Institute of Technology, 2003.
+
+\bibitem{yuphd}
+于弋川.
+\newblock 高速半导体电吸收光调制器与MSM光探测器研究[D].
+\newblock 中国杭州:浙江大学, 2007.
+
+\bibitem{chiu2005enhanced}
+Yi-Jen Chiu, Tsu-Hsiu Wu, Wen-Chin Cheng, et~al.
+\newblock Enhanced performance in traveling-wave electroabsorption modulators
+  based on undercut-etching the active-region[J].
+\newblock Photonics Technology Letters, IEEE, 2005.
+\newblock 17(10):2065--2067.
+
+\bibitem{modesolution}
+Lumerical~MODE Solutions.
+\newblock https://www.lumerical.com/tcad-products/mode/.
+
+\bibitem{ansyshfss}
+ANSYS HFSS.
+\newblock http://www.ansys.com/products/electronics/ansys-hfss.
+
+\bibitem{li1999ultrahigh}
+GL~Li, CK~Sun, SA~Pappert, et~al.
+\newblock Ultrahigh-speed traveling-wave electroabsorption modulator-design and
+  analysis[J].
+\newblock Microwave Theory and Techniques, IEEE Transactions on, 1999.
+\newblock 47(7):1177--1183.
+
+\bibitem{tang2008design}
+Yongbo Tang, Yichuan Yu, Yuqian Ye, et~al.
+\newblock Design and optimization of an arbitrarily segmented traveling wave
+  electrode for an ultrahigh speed electroabsorption modulator[J].
+\newblock Optics Communications, 2008.
+\newblock 281(20):5177--5182.
 
 \end{thebibliography}

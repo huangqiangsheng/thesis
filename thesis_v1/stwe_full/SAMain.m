@@ -1,0 +1,9 @@
+    problem.objective = @SAIv1;
+    problem.x0 =[270,45,400,530 ];
+    problem.lb =[0 0 0 0];
+    problem.ub =[600,100,1000,1000];
+    problem.rngstate= [];
+    problem.solver='simulannealbnd';
+    oldopts  = saoptimset('simulannealbnd');
+    problem.options = saoptimset(oldopts,'PlotFcns',@saplotbestf);
+    [x,fval,exitflag,output] = simulannealbnd(problem); m m
