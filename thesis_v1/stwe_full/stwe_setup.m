@@ -22,14 +22,14 @@ global passive active optical stwe_setup_flag
 % set active Zc and gamma
 flag_Rs_Ci = 0; % 0 using Rs = 3; Ci = 1pF; 1 using Calculated data
 %run .\HFSS_0224\active_2013_6_3_hmetal_1
-run ucsb_chapt2
+run ucsb_ms_chapt2
 Zcm = transpose(active_data(:,2));
 gammam = transpose(active_data(:,3));
 freq = transpose(active_data(:,1))*1e9;
 RcpDC = 1/4.1e7/(3e-6*8e-6+1e-6*4e-6+2e-6*2e-6);
 clear active_data
 
-run ucsb_chapt2
+run ucsb_ms_chapt2
 passive_data = active_data;
 Zcp = transpose(passive_data(:,2));
 gammap = transpose(passive_data(:,3));

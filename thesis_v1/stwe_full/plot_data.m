@@ -27,12 +27,13 @@ plot(freq/1e9, S21_TW,'LineWidth',2);
 line([0,100],[-3,-3],'Color','k')
 ylim([-4,0.5]);xlim([0,100]);
 xlabel('f(GHz)');
-ylabel('E\O Response R_E_O [dB]');
+ylabel('R_E_O [dB]');
 
 figure(2)
 plot(freq/1e9, S11_TW,'LineWidth',2);
 ylim([-50,0]);
 xlim([0,100]);
+line([0,100],[-25,-25],'Color','k')
 xlabel('f(GHz)');
 ylabel('Microwave Reflection |S11| [dB]');
 
