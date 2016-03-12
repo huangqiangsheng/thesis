@@ -352,7 +352,7 @@ III-V外延结构，不仅包含量子阱的设计，也也包p型重掺杂的�
 	\label{fig_ch2_banddiagram}
 \end{figure}
 
-图\cite{fig_ch2_banddiagram}(b)展示了多量子阱的能带示意图，其中量子阱区域能带的弯曲是由于内部p-i-n结的内建电场导致的。多量子阱是由多个量子阱叠加而成的，除了要设计单个单个量子阱的吸收峰外，我们还需要考虑实际工艺中多量子阱中的应力问题。虽然单个量子阱中势阱的应力无法避免，但是通过合理设计势垒的应力以及它的宽度，使总应力$S_{total}$变为0，能增强材料的可靠性\cite{chen2011high}。
+图\ref{fig_ch2_banddiagram}(b)展示了多量子阱的能带示意图，其中量子阱区域能带的弯曲是由于内部p-i-n结的内建电场导致的。多量子阱是由多个量子阱叠加而成的，除了要设计单个单个量子阱的吸收峰外，我们还需要考虑实际工艺中多量子阱中的应力问题。虽然单个量子阱中势阱的应力无法避免，但是通过合理设计势垒的应力以及它的宽度，使总应力$S_{total}$变为0，能增强材料的可靠性\cite{chen2011high}。
 \begin{equation}
 \label{Equ:strain_net}
 S_{total} = t_{w}\epsilon_{w}+t_b\epsilon_b
@@ -550,7 +550,7 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 \end{figure}
 		
 \subsection{蘑菇型波导的设计}
-蘑菇型波导是利用MQW和SCH材料与InP有选择性腐蚀的特点，实现MQW和SCH区域的宽度小于p-InP层的宽度，从而降低波导的结电容$C_j$。蘑菇型波导可以先定义宽的波导掩膜，或者直接用比较宽的p-InP作为掩膜，再利用选择性腐蚀液，将量子阱区域内掏(undercut)变窄，从而降低了光刻精度，可用接触式光刻制作，因此被广泛用于电吸收光调制器\cite{chiu2005enhanced，kuo2008high, tang201150, tang2012over, tang2012energy, chen2011forty}。
+蘑菇型波导是利用MQW和SCH材料与InP有选择性腐蚀的特点，实现MQW和SCH区域的宽度小于p-InP层的宽度，从而降低波导的结电容$C_j$。蘑菇型波导可以先定义宽的波导掩膜，或者直接用比较宽的p-InP作为掩膜，再利用选择性腐蚀液，将量子阱区域内掏(undercut)变窄，从而降低了光刻精度，可用接触式光刻制作，因此被广泛用于电吸收光调制器\cite{chiu2005enhanced, kuo2008high, tang201150, tang2012over, tang2012energy, chen2011forty}。
 
 蘑菇型波导的截面图如图\ref{fig_ch2_ms_structure_mode}(a)所示。相比矩形波导，蘑菇型波导的宽度有更多的待定参数，在此我们限定p-InP的宽度为2.5$\mu m$，这个尺寸是可以用接触式光刻达到。而蘑菇型波导的宽度$w_{wg}$，我们定义为多量子阱区域的宽度。其他的结构参数的定义和矩形波导保持一制，见图\ref{fig_ch2_ms_structure_mode}(a)。我们首先考虑$w_{wg}$和$h_{mqw}$对波导光学性能上的影响。图\ref{fig_ch2_ms_structure_mode}(b)展示了当$w_{wg} = 2 ~\mu m, h_{mqw} = 0.15 ~\mu m$， 工作波长$\lambda_0 = 1.55~\mu m$时的模场分布。可以看到大部分光场集中在多量子阱区域。不过相比矩形波导的模式\ref{fig_ch2_rect_structure_mode}(b)，蘑菇型波导中有部分光约束在硅波导中。
 \begin{figure}[htb]
