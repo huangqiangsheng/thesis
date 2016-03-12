@@ -685,4 +685,37 @@ Yongbo Tang, Yichuan Yu, Yuqian Ye, et~al.
 \newblock Optics Communications, 2008.
 \newblock 281(20):5177--5182.
 
+\bibitem{kurczveil2013characterization}
+Geza Kurczveil, Paolo Pintus, Martijn~JR Heck, Jonathan~D Peters, John~E
+  Bowers.
+\newblock Characterization of insertion loss and back reflection in passive
+  hybrid silicon tapers[J].
+\newblock Photonics Journal, IEEE, 2013.
+\newblock 5(2):6600410--6600410.
+
+\bibitem{keyvaninia2009engineering}
+Shahram Keyvaninia, G{\"u}nther Roelkens, Dries Van~Thourhout.
+\newblock Engineering the heterogeneously integrated {III-V/SOI} tunable
+  laser[C]//Proceedings of 14th Ann. Symp. IEEE Photonics Benelux Chapter.
+\newblock 2009:141--144.
+
+\bibitem{wang2012heterogeneous}
+Qian Wang, Doris Keh~Ting Ng, Yadong Wang, Yongqiang Wei, Jing Pu, Payam
+  Rabiei, Seng~Tiong Ho.
+\newblock Heterogeneous {S}i/{III-V} integration and the optical vertical
+  interconnect access[J].
+\newblock Optics Express, 2012.
+\newblock 20(15):16745--16756.
+
+\bibitem{sun2009adiabaticity}
+Xiankai Sun, Hsi-Chun Liu, Amnon Yariv.
+\newblock Adiabaticity criterion and the shortest adiabatic mode transformer in
+  a coupled-waveguide system[J].
+\newblock Optics letters, 2009.
+\newblock 34(3):280--282.
+
+\bibitem{fdtdsolution}
+Lumerical~FDTD Solutions.
+\newblock https://www.lumerical.com/tcad-products/fdtd/.
+
 \end{thebibliography}
