@@ -718,4 +718,52 @@ Xiankai Sun, Hsi-Chun Liu, Amnon Yariv.
 Lumerical~FDTD Solutions.
 \newblock https://www.lumerical.com/tcad-products/fdtd/.
 
+\bibitem{man2403}
+ma~N~2403.
+\newblock
+  http://www.microresist.de/en/products/negative-photoresists/e-beam-deep-uv-lithography/ma-n-2400-mr-ebl-6000-series.
+
+\bibitem{ZEP520}
+ZEP 520.
+\newblock http://www.zeonchemicals.com/electronicmaterials/.
+
+\bibitem{fukano2006very}
+Hideki Fukano, Takayuki Yamanaka, Munehisa Tamura, Yasuhiro Kondo.
+\newblock Very-low-driving-voltage electroabsorption modulators operating at 40
+  {G}b/s[J].
+\newblock Journal of Lightwave Technology, 2006.
+\newblock 24(5):2219.
+
+\bibitem{Marpaung2013integrated}
+D.~Marpaung, C.~Roeloffzen, R.~Heideman, A.~Leinse, S.~Sales, J.~Capmany.
+\newblock Integrated microwave photonics[J].
+\newblock Laser Photonics Rev., 2013.
+\newblock 7:506.
+
+\bibitem{gulow-voltage2013}
+Xiaodong Gu, Shoki Shimizu, Toshikazu Shimada, et~al.
+\newblock Low-voltage electro-absorption optical modulator based on slow-light
+  bragg reflector waveguide[J].
+\newblock Applied Physics Letters, 2013.
+\newblock 102(3):031118.
+
+\bibitem{livescu1988free}
+Gabriela Livescu, David~AB Miller, DS~Chemla, et~al.
+\newblock Free carrier and many-body effects in absorption spectra of
+  modulation-doped quantum wells[J].
+\newblock IEEE J Quantum Electron, 1988.
+\newblock 24(8):1677--1689.
+
+\bibitem{coldren1995diode}
+L.~A. Coldren, S.~W. Corzine.
+\newblock Diode Lasers and Photonic Integrated Circuits[M].
+\newblock 1. New York:John Wiley \& Sons, Inc., 1995.
+
+\bibitem{kalinovsky1993free}
+VS~Kalinovsky, TV~Shubina, I~Yu Shvechikov, AA~Toropov.
+\newblock Free-carrier effects in {G}a{A}s single modulation-doped quantum well
+  as applied to active {Q}-switching of injection lasers[J].
+\newblock J PHYS III, 1993.
+\newblock 3(5):1021--1032.
+
 \end{thebibliography}

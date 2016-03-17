@@ -8,10 +8,13 @@ A level-1 auxiliary file: ./Chapters/chap3.aux
 A level-1 auxiliary file: ./Chapters/chap4.aux
 A level-1 auxiliary file: ./Chapters/chap5.aux
 A level-1 auxiliary file: ./Chapters/chap6.aux
+A level-1 auxiliary file: ./Chapters/chap7.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./Chapters/resume.aux
 A level-1 auxiliary file: ./Chapters/publications.aux
 Database file #1: thesisbib.bib
-Warning--I didn't find a database entry for "fig_ch2_banddiagram"
-Warning--I didn't find a database entry for "chiu2005enhanced，kuo2008high"
-(There were 2 warnings)
+Repeated entry---line 445 of file thesisbib.bib
+ : @article{welstand1996dual
+ :                          ,
+I'm skipping whatever remains of this entry
+(There was 1 error message)
