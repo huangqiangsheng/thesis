@@ -1,4 +1,4 @@
-\chapter{低驱动电压硅基混合集成电光吸收调制器}
+\chapter{低驱动电压硅基混合集成电吸收光调制器}
 基于QCSE效应的电吸收光调制器具有高速，低能耗，高消光比和小尺寸的特别点\cite{tang2012energy, fukano2006very}。因此电吸收光调制器被广泛应用于光通信领域。另外，电吸收调制器具有双工作模，还可以被用于高速的光探测器\cite{welstand1996dual}。基于这个特性，研究人员实现了光电振荡器(Optoelectronic Oscillators, OEO)\cite{zhou2014compact}。我们最近也实现了单片集成的光收发器\cite{chen2016wavelength}。最近，由于硅光子和晶体管在统一的半导体工艺线上制作，这给复杂的光电集成系统，比如集成光子微波系统\cite{Marpaung2013integrated}和芯片间的光互联系统\cite{sun2015single}，带来了希望。基于硅和III-V的键合技术，已经实现硅基混合集成III-V光调制器\cite{kuo2008high,tang201150,tang2012over,tang2012energy,chen2011forty,Srinivasan2012micro,fu20155}。不过，硅基光芯片中，低能耗是十分重要的指标。又因为电吸收光调制器的驱动电压与能耗成平方关系，见公式\ref{Equ:EC}。因此，硅基光芯片中低驱动电压的光调制器十分重要。另外，如果电吸收光调制器能够直接被来自逻辑电路的低电压信号驱动，那么消耗于电的放大器的能量也会被省下来。最近，研究人员们在纯硅上展示了100~mV一下的硅基光调制器，见表格\ref{sil_mod}。然而，这些硅的调制器都是基于光的谐振腔结构，见图\ref{fig_mod_opt_type}(a)所示，它们对工艺的要求十分苛刻，并且还不能用于光探测器。对于传统的基于QCSE的电吸收光调制器，降低驱动电压的同时保持同样的尺寸和插入损耗十分困难。尽管研究人员利用复杂的基于慢光效应的布拉格波导\cite{gulow-voltage2013}，降低了电吸收光调制器的驱动电压，但是这种结构的光调制器不仅无法和硅光子器件集成也无法将驱动电压降低到硅调制器层次。因此，我们需要寻找一种新的思路实现的驱动电压的光调制器。
 
 本章概述了基于能带填充效应的新型低驱动电吸收光调制器，首先介绍了低驱动电压电吸收调制器的理论原理。接着阐述了设计和和仿真结果。然后，详细接收了制作调制器的步骤。最后，在搭建的高速光调制器测试平台上，对低驱动电压光调制器的性能进行了测试。
@@ -21,7 +21,7 @@
 \label{Equ:E1EF}
 E_F = \pi\hbar^2d_xN/m_e+E_1,
 \end{equation}
-其中$d_x$是多量子阱中所有势阱的宽度\textsl{}。我们可以通过控制偏置电压，调节注入电流，从而调节量子阱区域的电子浓度。电流与载流子浓度的关系见公式\ref{Equ:VN}。
+其中$d_x$是多量子阱中所有势阱的宽度。我们可以通过控制偏置电压，调节注入电流，从而调节量子阱区域的电子浓度。电流与载流子浓度的关系见公式\ref{Equ:VN}。
 \begin{equation}
 \label{Equ:VN}
 N = \frac{\tau\eta I}{qV}
@@ -29,7 +29,7 @@ N = \frac{\tau\eta I}{qV}
 其中，$\tau$是载流子寿命，$\eta$是载流子注入效率，I是注入电流，V是调制器有源区体积，q是电子的基本电荷。因此，利用能带填充效应，多量子阱的激子吸收峰的位置就可以通过偏置电压来控制。利用调制掺杂的多量子阱中的能带填充效应，已经被应用于100~mV驱动电压的Q调制器的激光器\cite{kalinovsky1993free}。而我们在此展示的低驱动电压的电吸收光调制器是首个基于能带填充效应的光调制器。
 
 \section{调制器的设计与仿真}
-考虑到电子束光刻制作III-V和硅耦合结构工艺困难。我们设计的低驱动电压的硅基混合集成电吸收调制器将采用普通的接触式光刻工艺制作，并且波导加工将采用纯湿法腐蚀，降低工艺成本。因此，我们将采用蘑菇型的波导结构。波导截面结构示意图，如图\ref{}所示。硅波导的结构是380~nm厚，刻蚀深度160~nm的脊型波导。并且表面利用SiO\SB{2}进行平坦化。接下来是利用DVS-BCB和SiO\SB{2}的键合层。在往上是III-V结构，与图\ref{fig_ch2_banddiagram}相同。具体结构的组分如表\ref{epi_material}，各个组分的材料参数，比如折射率等，见表\ref{epi_structure}。
+考虑到电子束光刻制作III-V和硅耦合结构工艺困难。我们设计的低驱动电压的硅基混合集成电吸收调制器将采用普通的接触式光刻工艺制作，并且为了降低工艺成本，波导加工将采用纯湿法腐蚀。因此，我们将采用蘑菇型的波导结构。波导截面结构示意图，如图\ref{chapt4_structure_mode_profile}(a)所示。硅波导的结构是380~nm厚，刻蚀深度160~nm的脊型波导。并且表面利用SiO\SB{2}进行平坦化。上面是利用DVS-BCB和SiO\SB{2}的键合层。再往上是III-V结构，与图\ref{fig_ch2_banddiagram}(a)相同。具体结构的组分如表\ref{epi_material}，各个组分的材料参数，比如折射率等，见表\ref{epi_structure}。
 {
 	\begin{table}[htb]
 		\zihao{5}
@@ -58,5 +58,189 @@ N = \frac{\tau\eta I}{qV}
 		\end{tabular}
 	\end{table}
 }
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_structure_mode_profile.jpg}
+	\caption{ (a)硅基混合集成III-V调制的截面图；(b)硅基混合集成III-V调制器波导的基模电场强度图}
+	\label{chapt4_structure_mode_profile}
+\end{figure}
+
+在波导宽度方面的设计，考虑到接触式光刻的精度最小$1 \mu m$左右，我们将多量子阱区域的波导宽度设计为$1.5 \mu m$。此时光场在10层势阱中的限制因子大概达到24\%。模场分布图见图\ref{chapt4_structure_mode_profile}(b)所示。p-InP之所形成倒梯形，是由于湿法腐蚀各项异性导致的。如果p-InP波导的底部宽度为$1.5 \mu m$，那么$1.5 \mu m$厚的p-InP顶部就有$2.5 \mu m$的宽度。
+
+在电极方面的设计，根据之前小结\ref{electrostructure}对四种不同电极所需驱动电压的分析，我们采用了所需驱动电压最小的集总电极结构。我们选择n电极的与波导边缘的间距设置为$3\mu m$，之所以选择这个偏大的距离，是为了降低对套刻精度的要求，防止金属引起额外损耗。p电极的宽度我们也设计为$6 \mu m$。最后，我们根据测试所需探针为GSG的针间距为$50 \mu m$，设计了完整的电极结构，如图\ref{chapt4_3D_structure}所示。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt4_3D_structure.jpg}
+	\caption{ 硅基混合集成集总电极调制器的三维结构示意图}
+	\label{chapt4_3D_structure}
+\end{figure}
+
+在硅波导和混合集成III-V波导的耦合结构中，我们设计的依据是为了增加对加工误差的容忍度。因此通过延长了原来的三段使锥形的耦合结构到$45~\mu m$，将第一段和第二段结构合并，使三段式锥形耦合机构减小到两段式耦合结构。同时取消硅波导上的锥形结构，在III-V波导下面硅波导保持$1.5 \mu m$的宽度。这种结构使加工容忍度增大，让沿波导方向的套刻精度需求下降到最低，甚至在改变III-V的结构或者位置时，不需要再改变硅的结构。具体的设计参数中的一段锥形耦合结构的长度是$30~\mu m$，其中n-contact层的宽度保持不变，而MQW层和SCH层的宽度从$0.2 \mu m$线性变化到$1.5 \mu m$。而第二段锥形耦合结构的长度是$15~\mu m$，其中MQW层和SCH层的宽度保持$1.5~\mu m$的宽度，而p-cladding层和p-contace层的宽度从$0.2~\mu m$逐渐变化到$2.5~\mu m$。整个器件的示意图见图\ref{chapt4_3D_structure}。它在$1.55~\mu m$波长的耦合效率达到了98\%，硅波导和硅基III-V混合集成波导的模式耦合图，如图\ref{chapt4_taper_performance}(a)所示。
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_taper_performance.jpg}
+	\caption{两段式锥形耦合结构在$1.55 \mu m$的分析：(a)在光的模场传播图；(b)键合厚度$h_{BCB}$对耦合效率的影响；(c)III-V波导和硅波导的垂直波导方向的套刻误差对耦合性能的影响；(d)MQW层和SCH层锥形尖端宽度对耦合效率的影响}
+	\label{chapt4_taper_performance}
+\end{figure}
+接下来，我们分析这种结构对工艺误差的容忍度包含键合层的厚度$h_{BCB}$,III-V波导和硅波导的垂直波导方向的套刻误差，以及MQW层和SCH层锥形尖端宽度对耦合效率的影响，见图\ref{chapt4_taper_performance}(b-d)所示。可以看到当$h_{BCB} < 70 ~nm$时，耦合效率都有90\%以上。当III-V波导和硅波导垂直波导方向的套刻偏差小于300~nm时，耦合效率也能保持90\%以上。而MQW层和SCH层尖端宽度的变化，容易引起反射和激发出高阶模式，因此耦合效率随着尖端宽度从0.1~$\mu m$变化到0.5~$\mu m$会有震动。当锥形的宽度大于0.6~$\mu m$时，耦合效率就会急剧下降。
+
+调制器的总长度设计$80~\mu m$。由于III-V外延片是p-i-n结构，因此即使在无外界偏压的情况下，其内部依旧存在着内建电场，如图\ref{fig_ch2_banddiagram}(b)所示。当正向偏压为0.6V左右时，MQW层和SCH层才处于没有外界偏压的状态。我们用silvaco\cite{Silvaco}仿真不同偏压-1~V，0~V，0.6~V，1~V下的能带，如图\ref{chapt4_band_diagram}所示。当低于0.6V时，基于QCSE效应，倾斜能带的吸收谱可以利用公式\ref{Equ:excitonabs}进行计算，激子吸收峰随着外界电场的增强而往长波移动。当高于0.6V时，依据能带填充效应，电子准费米能级的升高导致吸收谱将快速往短波移动，吸收峰与和电压的漂移量可以利用公式\ref{Equ:DEEF}，\ref{Equ:E1EF}，\ref{Equ:VN}。在此，我们仿真了激子吸收峰随偏压移动的情况，如图\ref{chapt4_bandfilling_sim}。其中偏压小于0.6~V时，吸收谱的仿真参数与图\ref{fig_ch2_te_abs}所使用的参数相同。而大于0.6V时，基于能带填充效应，其参数是拟合实验结果获得的：$d_x = 11~nm, V = 80.4 \mu m^3, \eta = 0.3, \tau = 0.61~ns$以及此时的拟合电阻为66~$\Omega$。可以从图\ref{chapt4_bandfilling_sim}看到，在能带填充效应下，单位电压下吸收峰的移动速度达到50~nm/V，远大于在QCSE效应下吸收峰的移动速度，并且能带填充效应下，吸收峰的强度一直保持着，而QCES效应下吸收峰却随着反向偏压的增加而减弱。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_band_diagram.eps}
+	\caption{在不同偏压下，III-外延片多量子阱附近的能带图：(a)~-1~V；(b)~0~V；(c)~0.6~V；(d)~1~V}
+	\label{chapt4_band_diagram}
+\end{figure}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_bandfilling_sim.eps}
+	\caption{80~$\mu m$长的电吸收光调制器在不同偏压下，计算得到的激子吸收谱。当偏压大于0.6~V时，激子吸收峰的漂移是基于能带填充效应，并且激子吸收峰强度保持20~dB以上。而小于0.6~V时，激子吸收峰的漂移是基于QCSE效应，激子吸收峰强度随着反偏电压的增加而减弱}
+	\label{chapt4_bandfilling_sim}
+\end{figure}
+
 \section{混合集成调制器的制作}
+硅基混合集成电吸收光调制器的制作，主要分成三个部分，第一个部分是硅波导的制作；第二个部分是键合工艺，在此我们采用DVS-BCB的粘贴键合工艺；第三部分是III-V波导和电极制作部分。下面我们就详细介绍各个步骤的流程。
+\subsection{制作硅波导}
+在SOI上的硅波导目前，主要通过电子束光刻或者投影式光刻。电子束光刻是实验室中主要采用的步骤，适合小批量，加工时间紧急的制作要求。而投影式光刻，由于设备昂贵则需要委托半导体公司流片。适合大批量，加工周期一般比较长。这两种方式制作硅波导我们都尝试过。我们首先介绍电子束制作硅波导，在此我们采用的是负胶ma—N~2403，其工艺工艺步骤如下所示:
+\begin{enumerate}[(1)]
+	\item 匀保护胶。在大的SOI表面低速匀上保护的光刻胶，比如AZ~5214E，转速为2000~rpm，共30~s。这用于保护片子，防止在后面解离步骤时，产生的碎末吸附在SOI表面。
+	\item 解离SOI。用解离刀沿着晶向，划片子边沿，缺口长度尽可能小，大概3~mm左右即可，划的深度尽可能大。最后用解离钳解离片子。解离后的碎末用气枪吹干净。
+	\item 清洗SOI。由于表面有一层光刻胶，因此用丙酮，异丙醇即可把表面光刻胶去除干净。为了将片子上的有机物彻底去除赶紧，可以将片子放到刚配好的H\SB{2}SO\SB{4}:H\SB{2}O\SB{2} = 1:1的溶液中清洗，等待片子表面的气泡减少或者没有。
+	\item 片子表面处理。为了提高SOI片子对ma-N~2403的粘附性，将片子放置到BOE中5s，然后用去离子水冲洗，氮气吹干。再放到120~$^{\circ}$C热盘上15~min去除水汽。
+	\item 匀ma-N~2403胶。转速分别为 前转：1500~rpm， 3~s；后转：4000~rpm，30~s。分前转和后转是为了使光刻胶匀的更加均匀。
+	\item 前烘光刻胶。将匀好的片子，放在90~$^{\circ}$C热盘90~s，这是为了蒸发光刻胶中的溶剂。
+	\item 电子束曝光。 电子束的计量需要根据图形尺寸大小选择合适曝光计量，电子枪运动的方式和图形划分的方式。我们写1.5~$\mu m$宽直波导的参数是，电子枪是30~KV, 20~$\mu m$，具体其他的参数需要时时调整。
+	\item 显影。ma-N~2403 对应的显影液是Ma-D~525。在室温下，显影2min30~s，然后去离子水冲洗1~min，最用氮气吹干，就可以得到图形。显好后片子的截面示意图如图\ref{chapt4_3D_etch_siwg}(a)所示。
+	\item 后烘回流。将片子放置在110~$^{\circ}$C的热盘上30~min，用于减小侧壁粗糙度，提高胶的耐刻蚀性。
+	\item 刻蚀硅。将片子放在表面有很厚的SiO\SB{2}的Si托片上，再送入ICP中刻蚀， 刻蚀结束后的波导截面示意图如图\ref{chapt4_3D_etch_siwg}(b)所示。
+	\item 去胶。利用强力去胶剂和氧等离子体的去胶机，将已经部分碳化的硅波导上的光刻胶去除。去完胶的波导的截面示意图如如图\ref{chapt4_3D_etch_siwg}(c)所示，图\ref{chapt4_3D_etch_siwg}(d)是波导的电镜图。
+	\item 套刻。通常硅波导和光纤是通过光栅结构进行光的耦合。当光栅的刻蚀深度和波导的刻蚀深度不同时，需要套刻光栅。此时需要将负胶ma-N~2403换成正胶比如PMMA胶或者ZEP胶。然后根据这两种胶的特性，重复第4步至11步，将其中的参数调整到对应光刻胶和图形的最佳参数。
+\end{enumerate}
+
+接下来，我们介绍委托半导体公司流片的过程。我们委托流片的公司是Imec\cite{Imec}。首先根据对方提供的器件库或者每个图层对应的刻蚀深度和材料绘制我们的器件。绘制好图形后，利用对方推荐的绘图工具比如Cadence Virtuoso或者Klayout，设置各个图层的颜色和顺序，预测最终的器件加工完成的结构。在提交给对方工厂之前，我们还需要检查自己的图形是否符合对方工艺线流线，这就需要设计规则检查(Design Rule Check, DRC)检测。如果DRC检测通过，没有错误，那么就可以提交给对方公司流片。
+
+利用电子束光刻自己加工的硅波导，由于工艺不稳定性，每个片子都会有些许不同，而且最后片子表面是不平整的，硅波导是突出的，但是加工速度可以自己可控。委托半导体公司流片，虽然工艺稳定些，但是他们是将一个小结构(Die)拼凑成一个大晶片(Wafer)进行加工。因此在大晶片不同位置上的小结构，尺寸也会有些许变化的。不过，半导体公司流片，由于对方工艺成熟，大型设备多，会将片子表面用SiO\SB{2}进行平坦化，这有益于后面的键合过程。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_3D_etch_siwg.jpg}
+	\caption{(a)光刻胶定义图形；(b)通过干法刻蚀将图形转移到硅上；(c)去除光刻胶后，形成的硅波导；(d)实际硅波导的电镜图}
+	\label{chapt4_3D_etch_siwg}
+\end{figure}
+\subsection{基于DVS-BCB的粘贴键合的工艺}
+之所以使用基于DVS-BCB的粘贴键合工艺，是因为粘贴键合对片子表面的粗糙度要求低。即使是波导突出的SOI表面，粘贴键合依旧能完美地将III-V和SOI键合起来。粘贴键合主要分为四个步，具体步骤如下：
+\begin{enumerate}[(1)]
+	\item 清洗硅片表面的有机物。用丙酮，异丙醇清洗，然后用去离子冲洗，氮气吹干。
+	\item 清洗硅表面的颗粒。用标准的SC-1溶液(在75~$^{\circ}$C的NH\SB{3}:H\SB{2}O\SB{2}:H\SB{2}O = 1:1:5)清洗硅片15~min。用去离子冲洗1~min，氮气枪吹干。
+	\item 烘干硅表面。将硅片放置到120~$^{\circ}$C的热盘上3~min。
+	\item 旋涂BCB。我们采用稀释过的DVS-BCB使键合层的厚度小于50~nm\cite{keyvaninia2013ultra}。DVS-BCB : Mesitylene = 1:6的溶液，然后用转速3000~rpm， 时间40s。如果采用未被SiO\SB{2}平坦化后的硅片，则采用DVS-BCB(Cyclotene® 3022-35)\cite{dvsbcb35} : Mesitylene = 1:4的溶液,转速3000~rpm 40s。具体里的稀释比需要根据片子表面的高度差而定。
+	\item 前烘BCB。将片子放置到150~$^{\circ}$C的热盘上5~min，然后自然冷却到70~$^{\circ}$C。使DVS-BCB中的溶剂和Mesitylene挥发。如果是未被SiO\SB{2}平坦化后的硅片，则需要将片子放置到180~$^{\circ}$C的真空箱，或者氮气箱中，回流1~h，让片子表面的BCB变的更加平坦，最后也缓慢冷却到70~$^{\circ}$C。取出片子保存。此时硅片截面的示意图如图\ref{chapt4_bonding_diagram1}(a)所示。
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width=14cm]{./Pictures/chapt4_bonding_diagram1.jpg}
+		\caption{(a)匀上DVS-BCB的平坦化过的硅片截面示意图；(b)沉积SiO\SB{2}的III-V片子的截面示意图}
+		\label{chapt4_bonding_diagram1}
+	\end{figure}
+	\item 解离III-V片子。将III-V相对比较大的片子，匀上光刻胶。再解离成合适大小的片子，解离时候注意晶向。波导需要沿着[0~1~-1]晶向的方向，这是因为用湿法腐蚀工艺的话，此时波导才会形成倒梯形，相垂直的方向，波导会形成正梯形。
+	\item 清洗III-V片子。用丙酮和异丙醇，去除表面的光刻胶，然后吹干。在设计III-V的外延片时，我们一般还设计了两层200~nm厚的牺牲层InP/InGaAs。我们首先去除200~nm后的InP牺牲层，将III-V片子放置到纯HCl中10s，然后用去离子水冲洗1~min，氮气吹干。然后我们去除200~nm厚的InGaAs牺牲层，将III-V片子放置到H\SB{2}SO\SB{4}:H\SB{2}O\SB{2}:H\SB{2}O = 1:1:18的溶液中，腐蚀1~min，接下来用去离子水重新，氮气吹干。以上操作的溶液都是在20~$^{\circ}$C下进行。此时III-V表面露出感觉的n-contact层。
+	\item 沉积SiO\SB{2}。将III-V片子，放置到到120~$^{\circ}$C的热板上3~min，去除水汽。然后放置到PECVD中，沉积大概10~nm至20~nm的SiO\SB{2}。沉积SiO\SB{2}增加了III-V片子对DVS-BCB的粘附性。并且防止在湿法去除InP衬底时，HCl渗入BCB中，腐蚀n-contact层，导致键合的III-V片脱落。此时III-V片子的截面示意图如图\ref{chapt4_bonding_diagram1}(b)所示。
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width=14cm]{./Pictures/chapt4_bonding_diagram2.jpg}
+		\caption{(a,b)分别展示了夹在石英玻璃间垒好的硅片和III-V片子的侧视和俯视示意图；(c)玻璃化DVS-BCB过程中的温度，以及施加压力的时刻；(d)实际去除完衬底，键合好的硅基混合集成III-V片子。}
+		\label{chapt4_bonding_diagram2}
+	\end{figure}
+	\item 倒扣III-V片子到硅片上。在室温下，将III-V片子倒扣在硅片上。倒扣III-V片子，可以用弯曲的镊子夹住III-V片子边缘实现倒扣，也用真空洗笔吸附III-V片子背面将片子倒扣。倒扣III-V片子到硅片上后，可能III-V片子不再所想要的位置，此时，需要用薄镊子，小心将III-V片子推动到所需的硅片的位置上。以上操作也可以用商用的倒装键合(Flip Chip)机器实现。
+	\item 机器键合。我们使用商用的键合机器S{\"u}ss Microtec ELAN CB6L。由于这个商用键合机器是用于键合4英寸的片子，而我们的硅片也就5~cm$\times$5~cm以内。因此，我们需要将垒好的硅片和III-V片子，夹在4英寸的石英载玻片之前，如图\ref{chapt4_bonding_diagram2}(a,b)所示。随后，我们将其放入键合机的墙体内在真空环境中进行键合。我们可以控制腔体的温度，如图\ref{chapt4_bonding_diagram2}(c)所示，将DVS-BCB玻璃化。当温度上升到150~$^{\circ}$C时，DVS-BCB还是保持流动状态，因此我们在对两个石英片加入上下的压力，通过压力，能经一步减小III-V和硅片之间的BCB减薄，同时将III-V片子和硅片表面间的空隙被DVS-BCB填慢。当温度大于180~$^{\circ}$C时，我们释放压力，以防玻璃化后的DVS-BCB收到额外的应力。
+	\item 去除InP衬底。我们将键合好的片子放置到温度为40~$^{\circ}$C的HCl:H\SB{2}O=4:1的溶液中。当没有气泡产生时，表明衬底已经去除干净。如果III-V片子边缘依旧有残留的衬底，尤其沿着[0~1~1]方向。可以在匀上光刻胶后，用小刀刮掉，再用丙酮，异丙醇，去离子冲洗干净。键合后的III-V片子如图\ref{chapt4_bonding_diagram2}(d)所示。
+\end{enumerate}	
+
+虽然基于DVS-BCB的粘贴键合工艺对片子的粗糙度要求低，但是硅表面和III-V表面最好保持干净。因为在机器键合加压力时，脏颗粒，可能将局部的III-V顶破，甚至是局部脱落，或者引入气泡，如图\ref{chapt4_bonding_error}所示。这些现象，只有在去除完InP衬底后，才能看到。在键合过程中，除了保持硅片和III-V表面的干净，其中最终要的步骤，就是在III-V片子上表面沉积很薄的SiO\SB{2}，防止在去除InP衬底时，III-V片子脱落。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_bonding_error.jpg}
+	\caption{展示了由于键合前III-V表面没有长SiO\SB{2}导致键合失败的例子。(a)III-V片子边缘脱落；(b)III-V片子局部出现气泡鼓起。}
+	\label{chapt4_bonding_error}
+\end{figure}
+\subsection{制作III-V波导}
+我们根据现有的混合集成III-V波导的制作流程\cite{roelkens2015iii}，简化了工艺步骤，实现了全湿法制作混合集成III-V波导的新工艺流程。新的工艺详细步骤见图\ref{chapt4_III_V_wg_process}。下面将详细介绍每一步的工艺流程。下面的湿法步骤都是在溶液温度为20~$^{\circ}$C时进行的。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_wg_process.jpg}
+	\caption{制作硅基混合集成III-V波导的工艺流程示意图，展示了波导截面在不同步骤下的形貌示意图。}
+	\label{chapt4_III_V_wg_process}
+\end{figure}
+
+第一步，去牺牲层。将n—contact层上面的两层牺牲层湿法去除。去除第一层牺牲层InGaAs用H\SB{2}SO\SB{4} : H\SB{2}O\SB{2} : H\SB{2}O = 1 : 1 : 18的溶液中，腐蚀1~min。去除第二层牺牲层用纯HCl，腐蚀10s。去除结束的混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(a)所示。
+
+第二步，以硅片上的标记为基准，套刻第一层图像。我们先对n-contact表面进行处理，提高其对光刻胶的粘附性。我们先将片子防治到120~$^{\circ}$C的热盘上，烘烤3~min，再用增粘剂Ti Primer，转速 3000~rpm， 40~s，随后，烘烤120 ~$^{\circ}$C， 3~min。此时片子表面处理完，开始匀光刻胶AZ~5214E定义图像，图像最窄的线条宽度为$1 \mu m$。匀胶的转速为 3000~rpm，时间为 40~s。接下来，将片子放置到100~$^{\circ}$C的热盘上，烘烤 3~min。接下来，用接触式光刻机进行曝光。最后进行显影，等到片子表面的彩色条纹全部褪去。 此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(b)所示。
+
+第三步，湿法腐蚀n-contact层。我们以光刻胶为mask，湿法腐蚀InGaAs，溶液是H\SB{3}PO\SB{4} : H\SB{2}O\SB{2} : H\SB{2}O = 1 : 1 : 20。腐蚀过程中，准确控制腐蚀深度。以防湿法腐蚀过头，导致InGaAs宽度变窄。
+
+第四步，去除光刻胶。我们用丙酮，异丙醇清洗光刻胶AZ~5214E。为了保证光刻胶去除干净，我们用氧离子清洗机，清洗。
+
+第五步，湿法腐蚀p-cladding层。我们以n-tontact为掩膜，用HCl : H\SB{2}O = 1 : 1的溶液腐蚀p-InP层。腐蚀结束后，p-InP层会形成倒梯形。左右上顶角的角度为70°左右。此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(c)所示。在腐蚀结束后，第一层图形的锥形上的InGaAs会坠下来，落在SCH层上，如图\ref{chapt4_III_V_suspeneded_InGaAs}所示。由于InGaAs对$1.55 \mu m$的光波会有强烈的吸收，因此需要将悬挂InGaAs部分去除掉。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_suspeneded_InGaAs.jpg}
+	\caption{悬挂的InGaAs层。(a)显微镜图；(b)电镜图}
+	\label{chapt4_III_V_suspeneded_InGaAs}
+\end{figure}
+
+第六步，去除悬挂的InGaAs。去除悬挂可以采用一次光刻套刻，只露出悬挂部分的InGaAs，再湿法腐蚀将其去除。在此我们首次采用更为简单的超声法去除悬挂。由于超声会在液体中产生震动，对于悬挂的InGaAs薄膜很容易在震动中断裂。因此，可以用于去除悬挂的InGaAs。由于超声机产生的震动并不是均匀的，因此会导致部分悬挂去除，而其他地方的悬挂依旧保留的情况，甚至波导被震裂，如图\ref{chapt4_III_V_remove_InGaAs}所示。不过，通过合理控制超声功率，可以只将悬挂处的InGaAs去除。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_remove_InGaAs.jpg}
+	\caption{悬挂的InGaAs层。(a)显微镜图；(b)电镜图}
+	\label{chapt4_III_V_remove_InGaAs}
+\end{figure}
+
+第七步，套刻第二层MQW层和SCH层上的图形。我们也是与第二步相同，用Ti Primer对片子表面进行处理。然后，我们用更加厚的光刻胶AZ~9260(大概$5~\mu m$)，定义图形。转速是 6000~rpm,时间40~s。接下来，我们进行仔细的套刻，套刻偏差最佳小于200~nm。然后进行曝光显影。此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(d)所示。
+
+第八步，湿法腐蚀量子阱。我们采用柠檬酸(Citric) ： H\SB{2}O\SB{2} = 1 : 1的溶液晶向腐蚀。由于我们光刻胶定义的波导宽度大于实际宽度，因此我们需要内腐蚀(undercut)，使波导的变窄。在实验中，我们发现波导的斜率在腐蚀的过程中并不会改变。利用这个特点，我们可以在掩膜中将锥形的宽度展宽，长度延长。在内腐蚀后，波导宽度就会变窄，长度也会缩短。图\ref{chapt4_III_V_undercut_MQW}(a)展示了以SiO\SB{2}为掩膜时，内腐蚀过程中量子阱的宽度比掩膜的图形小。但是光刻胶为掩膜，我们无法观测到掩膜下面波导的宽度。因此我们采用如图\ref{chapt4_III_V_undercut_MQW}(b)宽度不同的直波导，当内腐蚀程度大于直波导的宽度，直播导胶飘落，因此可以来预测內腐蚀的程度。图\ref{chapt4_III_V_undercut_MQW}(c)展示了，腐蚀结束后的MQW层和SCH层的尖端。可看到，MQW层和SCH层也被腐蚀成了倒梯形。并且侧壁不是完美的光滑直线。因此这也会导致额外的损耗。做完这步后，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(d)所示。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_undercut_MQW.jpg}
+	\caption{悬挂的InGaAs层。(a)显微镜图；(b)电镜图}
+	\label{chapt4_III_V_undercut_MQW}
+\end{figure}
+
+第九步，定义n金属电极的图形。我们采用正胶Ti~35E。Ti~35E可以用于做图像反转，显影后形成倒梯形结构，适合做金属的Lift-off。先用丙酮，异丙醇和去离子水将片子表面的光刻胶去除干净，用氮气枪吹干。然后放置到温度为120 ~$^{\circ}$C的热板上烘干。解析来，我们用3000~rpm,40~s的参数匀上Ti~35E。先在100 ~$^{\circ}$C下，前烘3~min，再套刻曝光，静置10~min。随后，进行放置到123 ~$^{\circ}$C的热盘上，烘2~min。然后无掩膜的形式下曝光185~s。最后，进行显影。此时，可以在显微镜下观察，由于倒梯形的关系，光刻胶的图形边缘会有两层轮廓。
+
+第十步，溅射n金属，我们首先将显影结束的片子放置到反应等离子刻蚀机(Reactive Ion Etching，RIE)中，氧清洗30~s，确保溅射孔内的没有光刻胶残留。然后，用H\SB{2}SO\SB{4} : H\SB{2}O\SB{2} : H\SB{2}O = 1 : 1 : 50的溶液浸泡5~s。接下来，在溅射机中，溅射金属30~nm的Ni，20~nm的Ge，50~nm的金。最后，去除溅射好的片子，放置到丙酮中，剥离(Lift-off)金属。此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(f)所示。
+
+第十一步，定义n-contact图形。匀胶光刻和显影步骤与第七步相同。此时的波导结构如图\ref{chapt4_III_V_wg_process}(g)所示。
+
+第十二步，刻蚀n-contact层图形。n-contact层的材料也是InP，因此，我们采用HCl : H\SB{2}O = 1 : 1的溶液进行腐蚀。不过，我们实验发现，重掺n型的InP，其侧向的腐蚀速率比掺p型的InP的侧向腐蚀速率快。另外，金属附近的InP侧向腐蚀几乎没有。如果，对n-contact层的结构尺寸，比如也需要是锥形形状，可以采用干法刻蚀获得。此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(h)所示。
+
+第十三步，匀DVS-BCB进行平坦化。在匀DVS-BCB之前，我们需要去除III-V侧壁在空中产生的氧化层。我们将片放置在BOE : H\SB{2}O = 1 : 1 的溶液中浸泡1~min。由于我们III-V波导的台阶有3层，并且高度差也有$2 \mu m$以上，为了使DVS-BCB重复填充III-V波导，我们首先匀DVS-BCB35(Cyclotene® 3022-35)\cite{dvsbcb35} : Mesitylene = 1:4的溶液，转速1000~rpm， 40~s.然后匀纯的DVS-BCB46(Cyclotene® 3022-46)\cite{dvsbcb46}，转速3000~rpm， 40~s。然后将片子送入氮气箱，用图\ref{chapt4_bonding_diagram2}(c)的曲线，在不加压力的情况下玻璃化DVS-BCB。波导的截面示意图如图\ref{chapt4_III_V_wg_process}(i)所示。
+
+第十四步，反向刻DVS-BCB。我们使用ICP采用SF6 ： O\SB{2} = 50 ： 5的气体，刻蚀DVS-BCB。使BCB的上表面距离p-contact的上表面还剩下300~nm左右。波导的截面示意图如图\ref{chapt4_III_V_wg_process}(j)所示。
+
+第十五步，在p-contact上开孔。我们首先按照第九步的Ti~35E工艺配方，定义p-contact孔的图形。然后，用第十四步的刻蚀DVS-BCB的配方，将p-contact上的DVS-BCB刻蚀干净。波导的截面示意图如图\ref{chapt4_III_V_wg_process}(k)所示。
+
+第十六步，在n电极上开孔。与第十五步相同，以n电极的图形为掩膜，开孔。此时，波导截面的示意图如\ref{chapt4_III_V_wg_process}(l)所示。
+
+第十七步，定义p电极和接触电极。这步与第九步的工艺步骤相同。结束后，波导的截面示意图如图\ref{chapt4_III_V_wg_process}(m)所示。
+
+第十八步，溅射p电极和接触电极。我们首先将显影结束的片子放置到反应等离子刻蚀机(Reactive Ion Etching，RIE)中，氧清洗30~s，确保溅射孔内的没有光刻胶残留。然后用H\SB{2}SO\SB{4} : H\SB{2}O\SB{2} : H\SB{2}O = 1 : 1 : 50的溶液浸泡5~s。接下来，在溅射机中，溅射金属40~nm的Ti，1~$\mu m$的金。最后，将溅射好的片子放置到丙酮中，剥离(Lift-off)金属。此时，混合集成III-V片子的截面图，如图\ref{chapt4_III_V_wg_process}(n)所示。最后制作成功硅基混合集成调制器的电镜波导截面图和调制器整体结构显微镜图如图\ref{chapt4_III_V_results}所示。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt4_III_V_results.jpg}
+	\caption{硅基混合集成调制器(a)波导电镜截面图；(b)调制器整体结构显微镜图}
+	\label{chapt4_III_V_results}
+\end{figure}
+
+虽然纯湿法制作III-V波导能够简化工艺步骤，但是有三个步骤有一定的风险。第一个是第六步去除悬挂的InGaAs。如果超声不均匀可能将波导损坏，或者部分InGaAs可能落在III-V波导上，如图\ref{chapt4_III_V_wrong_results}(1)所示，从而导致额外的损耗。第二个是MQW层和SCH层的套刻精度，套刻偏差大，将导致硅波导到III-V波导的耦合效率降低，如图\ref{chapt4_III_V_wrong_results}(2)。第三个是腐蚀MQW层和SCH层如果用不正确的腐蚀液比如使用H\SB{3}PO\SB{4}，H\SB{2}O\SB{2},H\SB{2}O的混合液，就回到导致锥形结构的侧壁粗糙度显著增加，如图\ref{chapt4_III_V_wrong_results}(3)所示。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_wrong_results.jpg}
+	\caption{(a)悬挂的InGaAs掉落到SCH上；(b)MQW层和SCH层的套刻误差；(d)MQW层和SCH层锥形结构粗糙的侧壁}
+	\label{chapt4_III_V_wrong_results}
+\end{figure}
+\subsection{金属电极退火}
+
 \section{性能测试}

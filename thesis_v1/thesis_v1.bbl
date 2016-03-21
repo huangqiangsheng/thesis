@@ -766,4 +766,23 @@ VS~Kalinovsky, TV~Shubina, I~Yu Shvechikov, AA~Toropov.
 \newblock J PHYS III, 1993.
 \newblock 3(5):1021--1032.
 
+\bibitem{Silvaco}
+Silvaco.
+\newblock http://www.silvaco.com/index.html.
+
+\bibitem{keyvaninia2013ultra}
+Shahram Keyvaninia, Muhammad Muneeb, Stevan Stankovi{\'c}, et~al.
+\newblock Ultra-thin {DVS-BCB} adhesive bonding of {III-V} wafers, dies and
+  multiple dies to a patterned silicon-on-insulator substrate[J].
+\newblock Optical Materials Express, 2013.
+\newblock 3(1):35--46.
+
+\bibitem{dvsbcb35}
+Processing procedures for {CYCLOTENE} 3022-35 series dry~etch resins.
+\newblock http://www.dow.com/cyclotene/prod/302235.htm.
+
+\bibitem{dvsbcb46}
+Processing procedures for {CYCLOTENE} 3022-46 series dry~etch resins.
+\newblock http://www.dow.com/cyclotene/prod/302246.htm.
+
 \end{thebibliography}
