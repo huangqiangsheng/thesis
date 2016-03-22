@@ -13,8 +13,3 @@ The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./Chapters/resume.aux
 A level-1 auxiliary file: ./Chapters/publications.aux
 Database file #1: thesisbib.bib
-Repeated entry---line 462 of file thesisbib.bib
- : @article{welstand1996dual
- :                          ,
-I'm skipping whatever remains of this entry
-(There was 1 error message)

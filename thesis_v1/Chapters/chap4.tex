@@ -234,13 +234,21 @@ N = \frac{\tau\eta I}{qV}
 \end{figure}
 
 虽然纯湿法制作III-V波导能够简化工艺步骤，但是有三个步骤有一定的风险。第一个是第六步去除悬挂的InGaAs。如果超声不均匀可能将波导损坏，或者部分InGaAs可能落在III-V波导上，如图\ref{chapt4_III_V_wrong_results}(1)所示，从而导致额外的损耗。第二个是MQW层和SCH层的套刻精度，套刻偏差大，将导致硅波导到III-V波导的耦合效率降低，如图\ref{chapt4_III_V_wrong_results}(2)。第三个是腐蚀MQW层和SCH层如果用不正确的腐蚀液比如使用H\SB{3}PO\SB{4}，H\SB{2}O\SB{2},H\SB{2}O的混合液，就回到导致锥形结构的侧壁粗糙度显著增加，如图\ref{chapt4_III_V_wrong_results}(3)所示。
-
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_wrong_results.jpg}
 	\caption{(a)悬挂的InGaAs掉落到SCH上；(b)MQW层和SCH层的套刻误差；(d)MQW层和SCH层锥形结构粗糙的侧壁}
 	\label{chapt4_III_V_wrong_results}
 \end{figure}
-\subsection{金属电极退火}
 
+\subsection{金属电极退火}
+制作完硅基混合集成电吸收光调制器后，就需要进行I-V测试。由于III-V材料，整体是一个pin结构，因其I-V曲线也是标准的二极管曲线。当接触电阻过大时，我们就需要对器件进行快速退火，改善金属与p-contact，n-contact间的接触。在此我们采用的电压快速退火法。通过加载一个比较高的电压，利用焦耳热直接对电极进行退火。这种方法的优点是，可以对单个器件进行操作，不需要快速退火炉，直接在测试过程中进行退火，单个器件的退火速度快，适合实验中使用。缺点是电流太大可能将器件烧坏，如果所有器件都需要退火，那么这种方法退火速度慢。
+
+图\ref{chapt4_3D_resist}(a)中，退火前的曲线，是我们将电压从-1~V逐渐增高到2~V时获得的。可以看到，此时的正向导通电阻受到金属和半导体接触电阻的限制，有$3.5~ \Omega \cdot mm$。然后，我们将电压从-1~V提高到3~V，为了防止器件被烧坏，我们将电流最大值限制在50~mA，其I-V曲线见图\ref{chapt4_3D_resist}(b)。从中可以看到，当电压在2.3~V时，电流瞬间变大，相对应电阻瞬间减小，从而表明退火成功，接触电阻减小了。随后，我们在此将电压从-1~V提高到2~V，可以看到接触电阻减小到了$2.3~ \Omega \cdot mm$。
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=15cm]{./Pictures/chapt4_3D_resist.jpg}
+	\caption{(a)退火前和退火后调制器的I-V曲线；(b)利用电压快速退火法时，调制器的I-V曲线。在2.3~V出现电流突然增大，对应的电阻瞬间降低，从而说明退火成功，接触电阻减小}
+	\label{chapt4_3D_resist}
+\end{figure}
 \section{性能测试}
