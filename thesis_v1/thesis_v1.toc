@@ -41,24 +41,31 @@
 \contentsline {subsection}{\numberline {4.3.2}基于DVS-BCB的粘贴键合的工艺}{68}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}制作III-V波导}{71}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}金属电极退火}{76}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}性能测试}{77}{section.4.4}
-\contentsline {chapter}{\numberline {5\hspace {0.3em}}硅基混合集成电吸收光调制器的应用}{78}{chapter.5}
-\contentsline {section}{\numberline {5.1}电吸收调制器的双工作模式}{78}{section.5.1}
-\contentsline {section}{\numberline {5.2}硅基单片集成的光收发模块}{78}{section.5.2}
-\contentsline {section}{\numberline {5.3}改善性能的研究}{78}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}提高调制器的速度}{78}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}提高调制器的灵敏度}{78}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {6\hspace {0.3em}}硅基反射微环的光调制器}{79}{chapter.6}
-\contentsline {section}{\numberline {6.1}反射环概述}{79}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}可调反射率微环}{79}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}光栅反射微环}{79}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}可调反射率微环调制器的设计}{79}{section.6.2}
-\contentsline {section}{\numberline {6.3}光栅反射微环调制器的设计}{79}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}光栅反射环的设计}{79}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}光栅反射环的制作}{79}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}无源性能测试}{79}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7\hspace {0.3em}}总结与展望}{80}{chapter.7}
-\contentsline {chapter}{参考文献}{81}{chapter*.86}
-\contentsline {chapter}{索引}{89}{section*.87}
-\contentsline {chapter}{作者简历}{90}{appendix*.88}
-\contentsline {chapter}{发表文章目录}{91}{appendix*.89}
+\contentsline {section}{\numberline {4.4}硅基混合集成电吸收光调制器的性能测试}{77}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}静态性能}{77}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}动态性能}{79}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}硅基混合集成电吸收光电吸收光调制器的双工作模式}{81}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}光探测器的静态性能}{81}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}光探测器的动态性能}{81}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}单片集成的光收发模块}{83}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}本章小结}{86}{section.4.6}
+\contentsline {chapter}{\numberline {5\hspace {0.3em}}硅基混合集成电吸收光调制器的应用}{87}{chapter.5}
+\contentsline {section}{\numberline {5.1}电吸收调制器的双工作模式}{87}{section.5.1}
+\contentsline {section}{\numberline {5.2}硅基单片集成的光收发模块}{87}{section.5.2}
+\contentsline {section}{\numberline {5.3}改善性能的研究}{87}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}提高调制器的速度}{87}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}提高调制器的灵敏度}{87}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {6\hspace {0.3em}}硅基反射微环的光调制器}{88}{chapter.6}
+\contentsline {section}{\numberline {6.1}反射环概述}{88}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}可调反射率微环}{88}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}光栅反射微环}{88}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}可调反射率微环调制器的设计}{88}{section.6.2}
+\contentsline {section}{\numberline {6.3}光栅反射微环调制器的设计}{88}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}光栅反射环的设计}{88}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}光栅反射环的制作}{88}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}无源性能测试}{88}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7\hspace {0.3em}}总结与展望}{89}{chapter.7}
+\contentsline {chapter}{参考文献}{90}{chapter*.98}
+\contentsline {chapter}{索引}{98}{section*.99}
+\contentsline {chapter}{作者简历}{99}{appendix*.100}
+\contentsline {chapter}{发表文章目录}{100}{appendix*.101}
