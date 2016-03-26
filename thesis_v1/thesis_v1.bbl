@@ -785,4 +785,41 @@ Shahram Keyvaninia, Muhammad Muneeb, Stevan Stankovi{\'c}, et~al.
 {CYCLOTENE} 3022-46 series.
 \newblock http://www.dow.com/cyclotene/prod/302246.htm.
 
+\bibitem{yariv2006photonics}
+Amnon Yariv, Pochi Yeh.
+\newblock Photonics: optical electronics in modern communications[M].
+\newblock United States of America:Oxford University Press, Inc., 2006.
+
+\bibitem{haus1984waves}
+Hermann~A. Haus.
+\newblock Waves and fields in optoelectronics[M].
+\newblock United States of America:Prentice-Hall, Inc., 1984.
+
+\bibitem{Li2016design}
+Ang Li, Qiangsheng Huang, Wim Bogaerts.
+\newblock Design of a single all-silicon ring resonator with a 150 nm free
+  spectral range and a 100 nm tuning range around 1550 nm[J].
+\newblock Photon. Res., Apr 2016.
+\newblock 4(2):84--92.
+
+\bibitem{little1997microring}
+Brent~E Little, Sai~T Chu, Hermann~A Haus, et~al.
+\newblock Microring resonator channel dropping filters[J].
+\newblock Lightwave Technology, Journal of, 1997.
+\newblock 15(6):998--1005.
+
+\bibitem{zhu2010chip}
+Jiangang Zhu, Sahin~Kaya Ozdemir, Yun-Feng Xiao, Lin Li, Lina He, Da-Ren Chen,
+  Lan Yang.
+\newblock On-chip single nanoparticle detection and sizing by mode splitting in
+  an ultrahigh-{Q} microresonator[J].
+\newblock Nature Photonics, 2010.
+\newblock 4(1):46--49.
+
+\bibitem{qiangsheng2015fsr}
+Huang Qiangsheng, Keqi Ma, Sailing He.
+\newblock Fsr-free filter based on a coupled microring grating
+  system[C]//Optical Fiber Communication Conference.
+\newblock Optical Society of America, 2015:Tu3A--1.
+
 \end{thebibliography}
