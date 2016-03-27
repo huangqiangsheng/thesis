@@ -80,8 +80,218 @@ P_r=\frac{1}{4}-\frac{k_i^4}{4k_i^2+16r^2}
 利用微环内反射引起反射谱变化的现象，之前研究人员已经在超低损耗微盘中，利用微小颗粒附着微盘引起微环内部微小反射，从而使实现检测半径只有30~nm纳米颗粒\cite{zhu2010chip}。而对于当微环内部反射率很大时，高消光比的微环对耦合系数不敏感的现象，我们可以用于实现工艺容差大的光波长滤波器\cite{qiangsheng2015fsr}。
 
 我们在本论文中，我们将探讨调制微环内部反射率从而实现光调制器。不过下面我们先将对这个理论现象进行实验的验证。
-\section{微环内反射的设计与实验}
-\subsection{微环内反射的结构设计和仿真}
-\subsection{微环内反射的制作和实验结果}
+\section{含内部反射的微环的设计与实验}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt5_ring_grating_reflector_structure.jpg}
+	\caption{利用光栅结构在微环内引入反射的结构示意图}
+	\label{chapt5_ring_grating_reflector_structure}
+\end{figure}
+
+在实验分析微环内反射的影响时，我们也分析了不同反射强度和耦合系数对微环投射谱的影响。我们通过将微环内部加入光栅，具体结构示意图如图\ref{chapt5_ring_grating_reflector_structure}所示，从而引入反射。通过改变反射光栅的尺寸，调节反射强度。而波导与微环的耦合系数则通过波导和微环的距离调节。
+\subsection{结构参数设计和仿真}
+在设计这个结构时，我们采用的频域的传输矩阵法\cite{yariv2006photonics}。在图\ref{chapt5_ring_grating_reflector_structure}中的全局图中，$\tau$是波导的自耦合系数，$\kappa$是交叉耦合系数，$R$是微环半径。$\tau$和$\kappa$满足能量守恒关系$\tau^2+\kappa^2=1$。在光栅的第$i$个周期的局部小图中，$A_i, B_i$分别是正向和反向传播模式的振幅。$\Lambda$是光栅的周期，$l_g$是光栅齿的宽度，$h_g$是光栅齿的高度，$r$是单个光栅界面的反射率。另外我们定义光栅的占空比$D=l_g/\Lambda$。
+
+当$N$个光栅均匀分布在整个微环时，对于微环中m阶的谐振波长$\lambda_m$，若$N = 2m$，则谐振波长$\lambda_m$正好是光栅反射谱的中心波长。这是由于第m阶的谐振波长满足公式\ref{Equ:lambdam}：
+\begin{equation}
+\label{Equ:lambdam}
+m\lambda_m = 2n_{n_{eff}}\pi R
+\end{equation}
+其中$n_{eff}$为波导在$\lambda_m$的等效折射率。若$N=2m$，则公式\ref{Equ:lambdam}可以写成：
+\begin{equation}
+\label{Equ:grating}
+\frac{\lambda_m}{2}=\frac{2n_{eff}\pi R}{N}=n_{eff}\Lambda.
+\end{equation}
+
+公式\ref{Equ:grating}说明$\lambda_m$此时正好是光栅的布拉格波长(Bragg wavelength)，处于反射谱的中心。我们通过调节光栅的尺寸，进而调节$\lambda_m$处反射率的大小。而微环其他的谐振波长则不受到光栅反射的影响。 
+
+接下来，我们详细介绍利用传输矩阵计算包含光栅的微环的透射谱的方法。微环的传输矩阵可以写成公式\ref{Equ:ring_TMM}所示：
+\begin{equation}
+\label{Equ:ring_TMM}
+\begin{bmatrix}
+S_{i}\\
+S_{t}
+\end{bmatrix} =\frac{1}{k}\begin{bmatrix}
+1 & -\tau\\
+\tau & -1
+\end{bmatrix}
+\begin{bmatrix}
+A_{1}\\
+A_{n+1}
+\end{bmatrix}
+\end{equation}
+
+我们假设$A_1$与$A_{n+1}$的关系为$A_1=f(A_{n+1})$,那么微环的透射谱为公式\ref{Equ:ring_TMM_T}。
+\begin{equation}
+\label{Equ:ring_TMM_T}
+\frac{S_t}{S_i}=\frac{\tau f(A_{n+1})-A_{n+1}}{f(A_{n+1}-\tau A_{n+1})}
+\end{equation}
+
+我们再根据光栅的传输矩阵方程，计算得到$f(A_{n+1})$的形式。在第i个光栅周期中$A_i$，$B_i$，$A_{i+1}$，$B{i+1}$的关系如下：
+\begin{equation}
+\label{Equ:ithTMM}
+\begin{bmatrix}
+A_{i}\\
+B_{i}
+\end{bmatrix} 
+=
+\frac{1}{1-r^2}
+\begin{bmatrix}
+1 & r\\
+r & 1
+\end{bmatrix}
+\begin{bmatrix}
+e^{i\phi_1} & 0 \\
+0 & e^{-i\phi_1}
+\end{bmatrix}
+\begin{bmatrix}
+1 & r\\
+r & 1
+\end{bmatrix}
+\begin{bmatrix}
+e^{i\phi_2} & 0 \\
+0 & e^{-i\phi_2}
+\end{bmatrix}
+\begin{bmatrix}
+A_{i+1}\\
+B_{i+1}
+\end{bmatrix} 
+\end{equation}
+其中$\phi_1=D\pi/2$，$\phi_2=(1-D)\pi/2$。我们将中间的四个矩阵形式相乘，可以简化为公式\ref{Equ:ring_TMM_sim}的形式。
+\begin{equation}
+\label{Equ:ring_TMM_sim}
+\begin{bmatrix}
+A_{i}\\
+B_{i}
+\end{bmatrix} 
+=
+\begin{bmatrix}
+m_{11} & m_{12}\\
+m_{21} & m_{22}
+\end{bmatrix}
+\begin{bmatrix}
+A_{i+1}\\
+B_{i+1}
+\end{bmatrix}
+\end{equation}
+
+我们只需要把N个周期的光栅矩阵相乘就可以获得如$A_1$，$B_1$，$A_{N+1}$，$B_{N+1}$的关系：
+\begin{equation}
+\label{Equ:ring_TMM_multi}
+\begin{bmatrix}
+A_{1}\\
+B_{1}
+\end{bmatrix} 
+=
+\begin{bmatrix}
+m_{11} & m_{12}\\
+m_{21} & m_{22}
+\end{bmatrix}^N
+\begin{bmatrix}
+A_{N+1}\\
+B_{N+1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+M_{11} & M_{12}\\
+M_{21} & M_{22}
+\end{bmatrix}
+\begin{bmatrix}
+A_{N+1}\\
+B_{N+1}
+\end{bmatrix}
+=
+\textbf{M}
+\begin{bmatrix}
+A_{N+1}\\
+B_{N+1}
+\end{bmatrix}
+\end{equation}
+
+利用布洛赫波(Bloch Wave)的方法\cite{yariv2006photonics}，我们将最后的\textbf{M}矩阵写为：
+\begin{equation}
+\label{Equ:ring_bloch}
+\textbf{M}
+=
+\begin{bmatrix}
+m_{11}U_{N-1} - U_{N-1}& m_{12}U_{N-1}\\
+m_{21}U_{N-1} & m_{22}U_{N-1}-U_{N-2}
+\end{bmatrix}
+\end{equation}
+其中，
+\begin{equation}
+\label{Equ:UN}
+U_N = \frac{sin((N+1)K\Lambda)}{sin(K\Lambda)}
+\end{equation}
+\begin{equation}
+\label{Equ:KLambda}
+K\Lambda = cos^-1\left(\frac{m_{11}+m_{22}}{2}\right)
+\end{equation}
+
+为了求解$A_1$与$A_{N+1}$的关系，我们还需要$B_{1}$与$B_{N+1}$的关系，如公式\ref{Equ:B1BN1}所示。
+\begin{equation}
+\label{Equ:B1BN1}
+B_{N+1} = \tau B_1 
+\end{equation}
+利用公式\ref{Equ:ring_TMM_multi}，\ref{Equ:ring_bloch}，\ref{Equ:UN}，\ref{Equ:KLambda}，\ref{Equ:B1BN1}我们可以获得$A_1$与$A_{N+1}$的关系如公式\ref{Equ:A1relationAN}所示。
+\begin{equation}
+\label{Equ:A1relationAN}
+A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
+\end{equation}
+将公式\ref{Equ:A1relationAN}代入公式\ref{Equ:ring_TMM_T}我们就可以得到公式\ref{Equ:ring_grating_T}，用于计算含光栅微环的透射谱。
+\begin{equation}
+\label{Equ:ring_grating_T}
+\frac{S_t}{S_i}=\frac{\tau M_{11} + \tau M_{22} - \tau^2|\textbf{M}|-1}{M_{11}+\tau^2 M_{22}-2\tau}
+\end{equation}
+\begin{figure}[htb]
+	\small
+	\subfigure[]{
+		\begin{minipage}[]{0.5\textwidth}
+			\centering
+			\label{chapt5_grating_ring_single_small}
+			\includegraphics[width=8cm]{./Pictures/chapt5_grating_ring_single.eps}
+		\end{minipage}}
+	\subfigure[]{
+		\begin{minipage}[]{0.5\textwidth}
+			\centering
+			\label{chapt5_grating_ring_single_large} %% label for second subfigure
+			\includegraphics[width=8cm]{./Pictures/chapt5_grating_ring_single_large.eps}
+		\end{minipage}}
+	\caption{含光栅的微环的实验和理论的透射谱，其中红色虚线是理论计算结果，黑色实线是实验测试结果。(a)包含不同微环谐振波长的透射谱；(b)与光栅布拉格波长相同的谐振波的局部放大图}
+	\label{chapt5_grating_ring_single}	
+\end{figure}
+
+图\ref{chapt5_grating_ring_single}展示了，半径30~$\mu m$的光栅微环透射谱。其中红虚线部分是按公式\ref{Equ:ring_grating_T}计算的结果。而黑实线则是实验测试的结果。光栅的个数$N = 658$，对应的谐振波长$\lambda = 1541.1~nm$，占空比$D = 0.2$， 品质因子$Q = 100,000$，自耦合系数$\tau = 0.87$，单个周期的反射率$r = 0.000335$。从图\ref{chapt5_grating_ring_single_small}中可以看出，由于光栅只在谐振波长1541.1~nm处有反射，因此，此处谐振波长的消光与没有反射谐振峰的消光比有很大不同。由于微环Q值比较高，而此时自耦合系数比较小(意味着交叉耦合系数$k$远大于临界耦合系数)，根据图\ref{chapt5_r_k_Ex_alpha1e-4}可以知道，因此在1541.1~nm处大的反射率能引起此时较大的消光比。从图\ref{chapt5_grating_ring_single_large}可以看到理论计算结果和实际测试结果十分吻合。
+
+\subsection{结构制作和实验结果}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt5_ring_grating_reflector_structure_real.jpg}
+	\caption{含光栅微环的电镜图，右图是微环的局部放大图}
+	\label{chapt5_ring_grating_reflector_structure_real}
+\end{figure}
+包含光栅的微环结构，我们是采用电子束光刻机定义图形。工艺流程与第五章\ref{fab_siwg}小结相同。SOI最上层硅的厚度是220~nm。为了防止光栅结构引起微环侧壁粗糙导致损耗，我们采用浅刻蚀70~nm宽度为600~nm的脊形波导。光栅和微环是同时用电子束光刻机定义的，无需套刻。最后加工完成的期期间电镜图如图\ref{chapt5_ring_grating_reflector_structure_real}所示。我们也在输入输出波导端加上光栅耦合结构，用于和光纤的耦合。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt5_ring_grating_vary_reflector.jpg}
+	\caption{(a)含光栅微环的透射谱随不同反射率的关系，其中黑实线是实验测试的结果，红虚线是理论计算的结果；(b)和(c)分别是理论计算得的两个峰之间劈裂的距离和消光比随反射率的关系}
+	\label{chapt5_ring_grating_vary_reflector}
+\end{figure}
+
+图\ref{chapt5_ring_grating_vary_reflector}(a)展示的透射谱的变化是通过控制光栅的尺寸参数$h_g$从30~nm变化到80~nm来实现的，对应的单个周期的反射率是从0.0001736变化到0.00132。由于光栅尺寸的变化，以及工艺的不稳定性，谐振峰的波长会有所漂移。从图\ref{chapt5_ring_grating_vary_reflector}(b)我们可以看到当反射率增大时，谐振峰劈裂的间隔也会增加。虽然，在反射率小于一个临界值$\r_c$的时候，谐振峰看起来只有一个，没有劈裂，其实这是两个洛仑兹线性的谐振峰叠加在一起形成的。图\ref{chapt5_ring_grating_vary_reflector}(c)展示的反射率与消光比的关系，从中我们可以到，当反射率达到临界的$r_c$时，透射谱的消光比达到最高，并且随着反射率的增加，反射率将稳定在一个值。这个现象与我们之前用时域微分法的图\ref{chapt5_r_k_Ex_alpha1e-4}的有所差别。这是由于这里的反射率是单个周期的反射率，而图\ref{chapt5_r_k_Ex_alpha1e-4}的反射率是个整体的反射率。并且用频域的传输矩阵法，整体光栅的反射率将不仅包含对光振幅的反射，还有对光振幅相位的影响，而图\ref{chapt5_r_k_Ex_alpha1e-4}的反射率仅包含对光幅度的影响。因此，对与含光栅的微环结构，图\ref{chapt5_ring_grating_vary_reflector}(c)比图\ref{chapt5_r_k_Ex_alpha1e-4}的精确度更高。
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=12cm]{./Pictures/chapt5_ring_grating_vary_tau.jpg}
+	\caption{(a)含光栅微环的透射谱随不同自耦合系数$\tau$的关系，其中黑实线是实验测试的结果，红虚线是理论计算的结果；(b)和(c)分别是理论计算得的两个峰之间劈裂的距离和消光比随自耦合系数$\tau$的关系}
+	\label{chapt5_ring_grating_vary_tau}
+\end{figure}
+
+接下来，我们还分析了含光栅的微环的自耦合系数$\tau$的变化对透射谱的影响。我们将波导和微环的间隔从50~nm变化到300~nm，使其对应的自耦合系数$\tau$从0.3变化到0.9，即交叉耦合系数$\kappa$则从0.954变化到0.435。图\ref{chapt5_ring_grating_vary_tau}(a)展示了测量与理论的透射谱的变化与自耦合系数的关系。图\ref{chapt5_ring_grating_vary_tau}(b)中展示了，随着自耦合系数$\tau$的增加，刚开始两个劈裂的波长距离近，无法分辨。但是超过一个临界值$\tau_c$后，两个劈裂波长之间的距离，随着自耦合系数的增大而逐渐增加。当$\tau$趋向于1时，劈裂波长之间的距离将趋向于饱和。从图\ref{chapt5_ring_grating_vary_tau}(c)，我们可以看到随着自耦合系数$\tau$的增加，劈裂波长处的消光比先逐渐增加。当自耦合系数达到相同临界点$\tau_c$时，含光栅的微环的消光比达到最高。当自耦合系数超过$\tau_c$时，消光比又会回落。在图\ref{chapt5_ring_grating_vary_tau}(c)中的红线是不含反射的普通微环的消光比随自耦合系数的关系。通过比较，我们可以得到，微环中应入反射，将会使更大范围的自耦合系数$\tau$拥有高的消光比。
+
+通过比较图\ref{chapt5_ring_grating_vary_reflector}(b)和图\ref{chapt5_ring_grating_vary_tau}(b)我们可以发现，反射率$r$的大小决定了当自耦合系数趋向于1时，谐振峰劈裂的最大距离。通过比较图\ref{chapt5_ring_grating_vary_reflector}(c)和图\ref{chapt5_ring_grating_vary_tau}(c)我们可以发现自耦合系数$\tau$决定了当反射率大于临界值$r_c$时，最后的饱和消光比。
+
+如果利用微环加光栅的结构制作调制器，我们可以通过调节每个周期的反射率$r$，根据图\ref{chapt5_ring_grating_vary_reflector}(c)，使其工作在临界点$r_c$附近。制作这种结构的硅基光调制器，不仅对电极套刻要求很高，而且由于光栅宽度只有30~nm到80~nm，对掺杂的精度要求也高。这驱使我们设计新的结构以实现微环内部的反射率可调。
 \section{硅基可调反射镜的设计}
 \section{硅基可调反射镜的微环调制器的设计}

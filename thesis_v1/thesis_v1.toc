@@ -51,13 +51,13 @@
 \contentsline {section}{\numberline {4.6}本章小结}{86}{section.4.6}
 \contentsline {chapter}{\numberline {5\hspace {0.3em}}硅基反射微环的光调制器}{87}{chapter.5}
 \contentsline {section}{\numberline {5.1}微环内反射的理论分析}{87}{section.5.1}
-\contentsline {section}{\numberline {5.2}微环内反射的设计与实验}{91}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}微环内反射的结构设计和仿真}{91}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}微环内反射的制作和实验结果}{91}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}硅基可调反射镜的设计}{91}{section.5.3}
-\contentsline {section}{\numberline {5.4}硅基可调反射镜的微环调制器的设计}{91}{section.5.4}
-\contentsline {chapter}{\numberline {6\hspace {0.3em}}总结与展望}{92}{chapter.6}
-\contentsline {chapter}{参考文献}{93}{chapter*.102}
-\contentsline {chapter}{索引}{102}{section*.103}
-\contentsline {chapter}{作者简历}{103}{appendix*.104}
-\contentsline {chapter}{发表文章目录}{104}{appendix*.105}
+\contentsline {section}{\numberline {5.2}含内部反射的微环的设计与实验}{91}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}结构参数设计和仿真}{92}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}结构制作和实验结果}{94}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}硅基可调反射镜的设计}{96}{section.5.3}
+\contentsline {section}{\numberline {5.4}硅基可调反射镜的微环调制器的设计}{96}{section.5.4}
+\contentsline {chapter}{\numberline {6\hspace {0.3em}}总结与展望}{97}{chapter.6}
+\contentsline {chapter}{参考文献}{98}{chapter*.107}
+\contentsline {chapter}{索引}{107}{section*.108}
+\contentsline {chapter}{作者简历}{108}{appendix*.109}
+\contentsline {chapter}{发表文章目录}{109}{appendix*.110}
