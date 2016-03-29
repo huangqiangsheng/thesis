@@ -823,7 +823,23 @@ Huang Qiangsheng, Keqi Ma, Sailing He.
 \newblock Optical Society of America, 2015:Tu3A--1.
 
 \bibitem{interconnect}
-Lumerical~MODE Solutions.
+Lumerical~Interconnect Solutions.
 \newblock https://www.lumerical.com/tcad-products/interconnect/.
+
+\bibitem{li2009silicon}
+Zhi-Yong Li, Dan-Xia Xu, W~Ross McKinnon, Siegfried Janz, Jens~H Schmid, Pavel
+  Cheben, Jin-Zhong Yu.
+\newblock Silicon waveguide modulator based on carrier depletion in
+  periodically interleaved {PN} junctions[J].
+\newblock Optics express, 2009.
+\newblock 17(18):15947--15958.
+
+\bibitem{pantouvaki2013comparison}
+Marianna Pantouvaki, Hui Yu, Michal Rakowski, Phillip Christie, Peter Verheyen,
+  Guy Lepage, Nele Van~Hoovels, Philippe Absil, Joris Van~Campenhout.
+\newblock Comparison of silicon ring modulators with interdigitated and lateral
+  pn junctions[J].
+\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2013.
+\newblock 19(2):7900308--7900308.
 
 \end{thebibliography}
