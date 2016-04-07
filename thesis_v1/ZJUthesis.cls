@@ -634,6 +634,7 @@ includehead, includefoot]{geometry}
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
   % 修改目录的格式
+  \renewcommand\contentsname{目次}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
   \renewcommand{\cftchapdotsep}{\cftdotsep}
