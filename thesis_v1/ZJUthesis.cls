@@ -119,9 +119,9 @@ includehead, includefoot]{geometry}
 % 设置英文字体为Times New Roman
 \setmainfont{Times New Roman}
 
-\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
-\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
-\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 
 %\newcommand{\ZJUspace}{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
 \newcommand{\ZJUspace}{\hspace{2em}}
@@ -605,7 +605,7 @@ includehead, includefoot]{geometry}
 
 % 致谢
 \renewenvironment{thanks}
-  {\Nchapter{\ZJU@label@thanks}}
+  {\chapter[\ZJU@label@thankscont]{\ZJU@label@thanks}}
   {}
 
 % 序言
@@ -615,16 +615,15 @@ includehead, includefoot]{geometry}
 
 % 摘要
 \newenvironment{abstract}
-  {\Nchapter{\ZJU@label@abstract}}
+  {\chapter[\ZJU@label@abstractcont]{\ZJU@label@abstract}}
   {}
-
 %关键字
 \newcommand\keywords[1]{%
   \vspace{2ex}\noindent{\heiti \ZJU@label@keywords} #1}
 
 %英文摘要
 \newenvironment{englishabstract}
-  {\Nchapter{\ZJU@label@englishabstract}}
+  {\chapter[\ZJU@label@englishabstractcont]{\ZJU@label@englishabstract}}
   {}
 
 %英文关键字
@@ -634,7 +633,8 @@ includehead, includefoot]{geometry}
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
   % 修改目录的格式
-  \renewcommand\contentsname{目次}
+  %\renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
+  \renewcommand{\contentsname}{目次}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
   \renewcommand{\cftchapdotsep}{\cftdotsep}
@@ -650,8 +650,8 @@ includehead, includefoot]{geometry}
   \setlength{\cftbeforechapskip}{-2pt}
   \setlength{\cftbeforesecskip}{-2pt}
   \setlength{\cftbeforesubsecskip}{-2pt}
-  \setlength{\cftsecindent}{2em}
-  \setlength{\cftsubsecindent}{4em}
+  \setlength{\cftsecindent}{0em}
+  \setlength{\cftsubsecindent}{0em}
   \setcounter{tocdepth}{2}
   \addtocontents{toc}{\cftpagenumbersoff{chapter}}
   \tableofcontents
