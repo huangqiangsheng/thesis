@@ -123,9 +123,9 @@ includehead, includefoot]{geometry}
 % 设置英文字体为Times New Roman
 \setmainfont{Times New Roman}
 
-\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
-\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
-\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 
 \newcommand\ZJUspace{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
 \def\reserved@a#1 #2 #3\@nil{%
@@ -642,7 +642,7 @@ includehead, includefoot]{geometry}
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
   % 修改目录的格式
-%  \renewcommand{\contentsname}{目次}
+  \renewcommand{\contentsname}{目次}
   \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
