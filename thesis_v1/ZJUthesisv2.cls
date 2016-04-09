@@ -659,8 +659,8 @@ includehead, includefoot]{geometry}
   \setlength{\cftbeforechapskip}{-2pt}
   \setlength{\cftbeforesecskip}{-2pt}
   \setlength{\cftbeforesubsecskip}{-2pt}
-  \setlength{\cftsecindent}{2em}
-  \setlength{\cftsubsecindent}{4em}
+  \setlength{\cftsecindent}{0em}
+  \setlength{\cftsubsecindent}{0em}
   \setcounter{tocdepth}{2}
   \addtocontents{toc}{\cftpagenumbersoff{chapter}}
   \tableofcontents
