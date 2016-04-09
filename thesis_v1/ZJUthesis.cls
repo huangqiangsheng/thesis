@@ -536,6 +536,9 @@ includehead, includefoot]{geometry}
   \backmatter
 }
 
+\newcommand\FancheadCEName{
+	\ZJU@value@school\ZJU@value@degree\ZJU@label@thesis
+}
 % 空页眉页的格式定义
 % 每一个chapter开始的第一页的页眉页脚样式为plain样式
 \fancypagestyle{plain}{%
