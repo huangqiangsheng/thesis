@@ -18,7 +18,7 @@
 \end{equation}
 \begin{equation}
 \label{Equ:alpha_cw}
-\frac{d\alpha_-}{dt}=j\omega_0\alpha_--\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_--j\mu_r^*\alpha_-
+\frac{d\alpha_-}{dt}=j\omega_0\alpha_--\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_--j\mu_r^*\alpha_+
 \end{equation}
 \begin{equation}
 \label{Equ:St_Sr}
@@ -321,6 +321,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 	\caption{硅基可调反射镜在1540~nm处的反射率随其中一臂折射率变化的关系}
 	\label{chapt5_tunable_reflection_mirror_spec_single}
 \end{figure}
+
 我们采用的直波导，以及两臂上的相位调制波导的尺寸，都是依据Imec代工厂提供的数据\cite{Imec}。硅的直波导的参数是，220~nm厚深刻蚀450~nm宽的条形波导，其在1540~nm处的等效折射率$n_{eff}$为2.368，群折射率$n_{g}$为4.329，损耗是0.2~dB/mm。相位调制波导的参数是，215~nm厚浅刻蚀155~nm，450~nm宽的脊形波导。其在1540~nm处的等效折射率$n_{eff}$为2.450，群折射率$n_{g}$为4.0367，损耗是3~dB/mm。我们假设马赫曾德两臂上的相位调制波导的长度都为20~$\mu m$，回路反射镜的长度为50 $\mu m$，并且3~dB耦合器是理想的能量均分的耦合器，那么当在两臂不同的光程差分别为0和$\pi$时，可调反射镜反射谱和透射谱如图\ref{chapt5_tunable_reflection_mirror_spec}所示。可以看到，改变两臂的相位差，仿真的反射谱和透射谱既宽又平坦。不过在实际中，由于3~dB耦合器的带宽限制，会使反射谱和透射谱的带宽减小。接下来，我们扫描其中一个相位调制波导的等效折率，分析两臂的等效折射率差$\Delta n_{eff}$与1540~nm处的反射率和透射率的关系，如图\ref{chapt5_tunable_reflection_mirror_spec_single}所示。可以看到，当$\Delta n_{eff}$变化时，反射率和透射率的变化趋势是正弦函数，$\Delta n_{eff}$的变化周期为0.0385。
 
 \begin{figure}[htb]
@@ -329,7 +330,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 	\caption{硅基可调反射镜展开成两个级联的马赫曾德的结构图。中间波导的长度为回路反射镜的长度，右边马赫曾德的两臂长度与左面马赫曾德的两臂长度互换}
 	\label{chapt5_tunable_reflection_mirror_flatten}
 \end{figure}
-虽然商业软件能给我们准确的计算结果，但是我们无法直观了解，通过调整哪些参数能够改变器件的性能。在此，我们采用频域的传输矩阵计算可调反射镜的频谱响应，分析具体哪些参数能影响反射率。首先我们对可调反射镜的结构\ref{chapt5_tunable_reflection_mirror}进行镜像展开，等效成两个级联的马赫曾德结构，如图\ref{chapt5_tunable_reflection_mirror_flatten}所示。左边马赫曾德的上下两臂引入的相位分别是$\phi_1$，$\phi_2$。而由于回路反射镜的关系，右边马赫曾德的上下两臂引入的相位分别是是$\phi_2$， $\phi_1$。在理想的3~dB耦合器，无损耗的波导情况下，两个级联马赫曾德的传输矩阵如公式\ref{Equ:three_MZI}所示。
+虽然商业软件能给我们准确的计算结果，但是我们无法直观了解，通过调整哪些参数能够改变器件的性能。在此，我们采用频域的传输矩阵计算可调反射镜的频谱响应，分析具体哪些参数能影响反射率。首先我们对可调反射镜的结构，如图\ref{chapt5_tunable_reflection_mirror}所示，进行镜像展开，等效成两个级联的马赫曾德结构，如图\ref{chapt5_tunable_reflection_mirror_flatten}所示。左边马赫曾德的上下两臂引入的相位分别是$\phi_1$，$\phi_2$。而由于回路反射镜的关系，右边马赫曾德的上下两臂引入的相位分别是是$\phi_2$， $\phi_1$。在理想的3~dB耦合器，无损耗的波导情况下，两个级联马赫曾德的传输矩阵如公式\ref{Equ:three_MZI}所示。
 \begin{equation}
 \label{Equ:three_MZI}
 \begin{bmatrix}
@@ -372,7 +373,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 	\caption{硅基可调反射镜的微环光调制器的结构示意图}
 	\label{chapt5_tunable_reflection_ring_structure}
 \end{figure}
-我们将可调反射镜与微环相结合的结构如图\ref{chapt5_tunable_reflection_ring_structure}所示。当默认状态下可调反射镜的反射率为0，微环在谐振波长处有最大的消光比，当我们调制可调反射镜的一臂的等效折射率，使可调反射镜的反射率非0时，从而使输出的谐振波长处的消光比减小，实现谐振波长处光的调制器。从图\ref{chapt5_r_k_Ex_alpha1e-2}，\ref{chapt5_r_k_Ex_alpha1e-3}，\ref{chapt5_r_k_Ex_alpha1e-4}可以看出，当微环的损耗越小，Q值越高时，内部反射导致的消光比的变化越明显。
+我们将可调反射镜与微环相结合的结构如图\ref{chapt5_tunable_reflection_ring_structure}所示。当默认状态下可调反射镜的反射率为0，微环在谐振波长处有最大的消光比，当我们调制可调反射镜的一臂的等效折射率，使可调反射镜的反射率非0时，从而使输出的谐振波长处的消光比减小，实现谐振波长处光的调制器。从图\ref{chapt5_r_k_Ex_alpha1e-2}，图\ref{chapt5_r_k_Ex_alpha1e-3}，图\ref{chapt5_r_k_Ex_alpha1e-4}可以看出，当微环的损耗越小，Q值越高时，内部反射导致的消光比的变化越明显。
 
 我们设计的硅基可调反射镜中的相位调制区域只有20~$\mu m$，比微环调制和马赫曾德调制器中的调制区域长度都要短。这种新型调制器相比硅基马赫曾德光调制，无需实现相位调制区$\pi$相位的变化，就能实现高消光比。相比于微环光调制器，无需通过谐振峰的漂移，就能实现高相比。并且借助于可调反射镜宽光谱反射的特点，以及通过热调微环谐振峰，这种新型调制器有大的光学工作带宽。下面我们将详细介绍设计过程和调制带宽的仿真。
 
