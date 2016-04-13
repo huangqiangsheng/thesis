@@ -1,7 +1,22 @@
 \chapter{硅基反射微环的光调制器}
-纯硅基光调制器的进展我们已经在第一章\ref{pure_simodulator}小结中有所总结。纯硅基光调制器目前都是采用调节波导折射率，从而改变谐振腔的谐振峰，或者改变马赫曾德两臂的相位差实现光强的调制。谐振腔型硅基光调制器，可以采用微环或者光子晶体结构。这类光调制器具有尺寸小，速度快的特点，但是光学带宽受到谐振峰漂移量的限制。如果采用热调节微环谐振峰的位置，那么只有10~nm左右的漂移量。而硅基马赫曾德型光调制器具有光学带宽大，速度大的特点，但是调制区尺寸大。目前硅基微弱的等离子色散效应，至少需要500~$\mu m$的臂长才能达到$\pi$相位变化。
+纯硅基光调制器的进展我们已经在第一章\ref{pure_simodulator}小结中有所总结。纯硅基光调制器目前都是采用调节波导折射率，从而改变谐振腔的谐振峰，或者改变马赫曾德两臂的相位差实现光强的调制。谐振腔型硅基光调制器，可以采用微环或者光子晶体结构。这类光调制器具有尺寸小，驱动电压低的特点，但是光学带宽受到谐振峰漂移量的限制。如果采用热调节微环谐振峰的位置，那么只有10~nm左右的漂移量。虽然微环光调制器可以通过增加尺寸，减小自由光谱范围(Free Spectra Range, FSR)，实现宽光谱的调制，但是这样会增加微环光调制器的电容，减小调制带宽。增加尺寸也无助于降低驱动电压，这是由于微环光调制器谐振峰的偏移量$\Delta \lambda$由公式\ref{Equ:ring_tunning}决定。
+\begin{equation}
+\label{Equ:ring_tunning}
+\frac{\Delta \lambda}{\lambda} = \frac{\Delta n_{eff}}{n_g}
+\end{equation}
+其中$\lambda$为工作波长，$\Delta n_{eff}$为等效折射率的改变量，$n_g$为波导的群速度。可以看出谐振峰的漂移量与微环的长度无关。因此，减小微环的驱动电压只能通过提高波导的电光响应，以及降低波导的群速度实现。
 
-在本章中我们分析在微环内引入可调的反射镜，从而可以调制输出波导光的强度。首先我们对微环内反射的影响进行了理论分析。接下来，我们在微环内加工光栅，研究不同反射率下，微环透射谱的变化。随后，我们分析可调反射镜的性质。最后，我们设计了在微环中集成可调反射镜，实现了光的强度调制。
+硅基等臂马赫曾德型光调制器具有光学带宽大，速度大的特点，但是尺寸大。由于硅基微弱的等离子色散效应，目前性能优异的马赫曾德光调制器至少需要2 mm的臂长作为调制区域，才能在0.36 V的差分驱动以下获得5 dB左右的消光比\cite{Ding2013electro}。对于等臂马赫曾德光调制器，输出光强$P_{out}$由公式\ref{Equ:mzi_tunning}决定。
+\begin{equation}
+\label{Equ:mzi_tunning}
+P_{out} = \frac{1}{2}\left(1+cos\left(\frac{2\pi}{\lambda}\Delta n_{eff}L\right)\right)
+\end{equation}
+其中$L$为马赫曾德的臂长。相比与微环光调制器，降低马赫曾德光调制器的驱动电压，可以通过增加调制区域的长度来获得。不过，为了获得足够的消光比，驱动电压需要使马赫曾德光调制的调制区域有将近$\pi$的相位变化。
+
+在本章中，我们提出在微环中集成马赫曾德型可调反射镜的结构，无需使调制区拥有$\pi$的相位变化就能实现高消光比的光调制器。这种新型光调制器的尺寸介于微环光调制器和马赫曾德型光调制器之间。它的FSR小，通过热调节也能实现宽光谱的调制。这种新型光调制器为实现低驱动电压，大光学带宽的纯硅基光调制器提供了新的设计思路。
+
+在本章的内容组织上，首先我们对微环内反射的影响进行了理论分析。进而，我们在微环内加工光栅，研究不同反射率下，微环透射谱的变化。然后，我们分析可调反射镜的性质。最后，我们设计并且数值分析了在微环中集成可调反射镜的静态插入损耗，消光比和动态调制带宽。
+
 \section{微环内反射的理论分析}
 微环内反射对微环性能的影响可以从时域或者频域为切入点进行分析。以频域为切入点，需要采用传输矩阵模型\cite{yariv2006photonics}。而以时域为切入点，需要用时变的微分方程来分析\cite{haus1984waves}。由于频域模型下的传输矩阵模型需要考虑微环内部反射的具体结构，以及具体的工作波长，因此更适用于设计。而时域中的时变微分方程则更适合分析反射对微环的动态和静态性能的影响。下面我们首先介绍基于时变的微分方程法分析反射对微环透射谱的影响\cite{haus1984waves,Li2016design,little1997microring}。
 \begin{figure}[htb]
@@ -14,28 +29,28 @@
 基于时变的微分方程法又称作时域耦合模式理论(Temporal Coupled Mode Theory， tCMT)。当微环内部有反射时，微环内部就会有两个方向传播的光模式，如图\ref{chapt5_ring_reflector_structure}所示。我们根据其传播的方向，将其正向传播的幅值记为$\alpha_+$，将反向传播的幅值记为$\alpha_-$。而$|\alpha_+|^2$和$|\alpha_-|^2$表示正向传播和反向传播模式的能量。当微环中有反射时，这两个模式在反射处相互耦合，从而影响了微环的正常输出光谱，使其消光比发生变化，甚至谐振模式产生了劈裂。如果用tCMT方程描述这种情况就如公式\ref{Equ:alpha_ccw}，公式\ref{Equ:alpha_cw}和公式\ref{Equ:St_Sr}所示\cite{Li2016design}。
 \begin{equation}
 \label{Equ:alpha_ccw}
-\frac{d\alpha_+}{dt}=j\omega_0\alpha_+-\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_+-j\mu_iS_i-j\mu_r\alpha_-
+\frac{d\alpha_+}{dt}=j\omega_r\alpha_+-\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_+-j\mu_iS_i-j\mu_r\alpha_-
 \end{equation}
 \begin{equation}
 \label{Equ:alpha_cw}
-\frac{d\alpha_-}{dt}=j\omega_0\alpha_--\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_--j\mu_r^*\alpha_+
+\frac{d\alpha_-}{dt}=j\omega_r\alpha_--\left(\frac{1}{\tau_i}+\frac{1}{\tau_l}\right)\alpha_--j\mu_r^*\alpha_+
 \end{equation}
 \begin{equation}
 \label{Equ:St_Sr}
 S_t = S_i-j\mu_i\alpha_+ ~~~~~~~~~~~~ S_r = -j\mu_i\alpha_-
 \end{equation}
-其中$\omega_0$是微环的谐振频率。$S_i$表示输入光的振幅。$1/\tau_i$表示微环中光场耦合到波导导致的能量衰减率。$1/\tau_l$表示微环中的光场由于微环本身弯曲和材料等损耗$\alpha_l$导致的能量衰减率。$\mu_i$是波导和微环的波导耦合强度。$\mu_r$是$\alpha_+$和$\alpha_-$的反射耦合强度。其中，波导耦合强度$\mu_i$与衰减率$\tau_i$，损耗系数$\alpha_l$与衰减率$\tau_l$，反射耦合强度$\mu_r$与光场反射率$r$的关系分别如公式\ref{Equ:mu_tau}所示\cite{little1997microring}。
+其中$\omega_r$是微环的谐振频率。$S_i$表示输入光的振幅。$1/\tau_i$表示微环中光场耦合到波导导致的能量衰减率。$1/\tau_l$表示微环中的光场由于微环本身弯曲和材料等损耗$\alpha_l$导致的能量衰减率。$\mu_i$是波导和微环的波导耦合强度。$\mu_r$是$\alpha_+$和$\alpha_-$的反射耦合强度。其中，波导耦合强度$\mu_i$与衰减率$\tau_i$，损耗系数$\alpha_l$与衰减率$\tau_l$，反射耦合强度$\mu_r$与光场反射率$r$的关系分别如公式\ref{Equ:mu_tau}所示\cite{little1997microring}。
 \begin{equation}
 \label{Equ:mu_tau}
 \mu_i^2=k_i^2\frac{c}{n_gL}=\frac{2}{\tau_i}~~~~~~~~~~~~\alpha_l^2\frac{c}{n_gL}=\frac{2}{\tau_l}~~~~~~~~~~~~\mu_r^2=r^2\frac{c}{n_gL}^2
 \end{equation}
-其中$c$是真空中的光速，$n_g$是波导的群折射率，$L$是微环的周长。通过解公式\ref{Equ:alpha_ccw}、公式\ref{Equ:alpha_cw}和公式\ref{Equ:St_Sr}，我们可以获得波导输出光场$S_t$与输入光场$S_i$的关系如公式\ref{Equ:St}所示。
+其中$c$是真空中的光速，$n_g$是波导的群折射率，$L$是微环的周长。通过解公式\ref{Equ:alpha_ccw}、公式\ref{Equ:alpha_cw}和公式\ref{Equ:St_Sr}，对于角频率为$\omega_0$的输入光场$S_i$，我们可以获得波导输出光场$S_t$，见公式\ref{Equ:St}所示。
 \begin{equation}
 \label{Equ:St}
-\frac{S_t}{S_i}=1-\frac{1}{\tau_i}\left(\frac{1}{j(\omega-\omega_1)+(1/\tau_i+1/\tau_l)} + \frac{1}{j(\omega-\omega_2)+(1/\tau_i+1/\tau_l)}\right)
+\frac{S_t}{S_i}=1-\frac{1}{\tau_i}\left(\frac{1}{j(\omega_0-\omega_1)+(1/\tau_i+1/\tau_l)} + \frac{1}{j(\omega_0-\omega_2)+(1/\tau_i+1/\tau_l)}\right)
 \end{equation}
 
-可以看到，此时输出光谱需要用两个洛仑兹线形(Lorentzian-shape)进行拟合，而传统的微环，只需要一个洛仑兹线性。两个洛仑兹线形的中心频率分别为$\omega_1 = \omega_0+|\mu_r|$，$\omega_2=\omega_0-|\mu_r|$。中心频率的偏移量正比于微环的反射耦合强度$\mu_r$，也就是中间反射器的反射强度$r$。在两个谐振频率出的透射率$P_r$如公式\ref{Equ:Pr}所示。
+可以看到，此时输出光谱需要用两个洛仑兹线形(Lorentzian-shape)进行拟合，而传统的微环，只需要一个洛仑兹线性。两个洛仑兹线形的中心频率分别为$\omega_1 = \omega_r+|\mu_r|$，$\omega_2=\omega_r-|\mu_r|$。中心频率的偏移量正比于微环的反射耦合强度$\mu_r$，也就是中间反射器的反射强度$r$。在两个谐振频率出的透射率$P_r$如公式\ref{Equ:Pr}所示。
 \begin{equation}
 \label{Equ:Pr}
 P_r = \left|\frac{S_t}{S_i}\right|^2_{\omega = \omega_1~or~\omega_2}= \left(\frac{\alpha_l^2}{k_i^2+\alpha_l^2}\right)^2+\frac{(k_i^4-2k_i^2\alpha_l^2)}{(k_i^2+\alpha_l^2)^2+16r^2}
@@ -322,7 +337,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 	\label{chapt5_tunable_reflection_mirror_spec_single}
 \end{figure}
 
-我们采用的直波导，以及两臂上的相位调制波导的尺寸，都是依据Imec代工厂提供的数据\cite{Imec}。硅的直波导的参数是，220~nm厚深刻蚀450~nm宽的条形波导，其在1540~nm处的等效折射率$n_{eff}$为2.368，群折射率$n_{g}$为4.329，损耗是0.2~dB/mm。相位调制波导的参数是，215~nm厚浅刻蚀155~nm，450~nm宽的脊形波导。其在1540~nm处的等效折射率$n_{eff}$为2.450，群折射率$n_{g}$为4.0367，损耗是3~dB/mm。我们假设马赫曾德两臂上的相位调制波导的长度都为20~$\mu m$，回路反射镜的长度为50 $\mu m$，并且3~dB耦合器是理想的能量均分的耦合器，那么当在两臂不同的光程差分别为0和$\pi$时，可调反射镜反射谱和透射谱如图\ref{chapt5_tunable_reflection_mirror_spec}所示。可以看到，改变两臂的相位差，仿真的反射谱和透射谱既宽又平坦。不过在实际中，由于3~dB耦合器的带宽限制，会使反射谱和透射谱的带宽减小。接下来，我们扫描其中一个相位调制波导的等效折率，分析两臂的等效折射率差$\Delta n_{eff}$与1540~nm处的反射率和透射率的关系，如图\ref{chapt5_tunable_reflection_mirror_spec_single}所示。可以看到，当$\Delta n_{eff}$变化时，反射率和透射率的变化趋势是正弦函数，$\Delta n_{eff}$的变化周期为0.0385。
+我们采用的直波导，以及两臂上的相位调制波导的尺寸，都是依据Imec代工厂提供的数据\cite{Imec}。硅的直波导的参数是，220~nm厚深刻蚀450~nm宽的条形波导，其在1540~nm处的等效折射率$n_{eff}$为2.368，群折射率$n_{g}$为4.329，损耗是0.2~dB/mm。相位调制波导的参数是，215~nm厚浅刻蚀155~nm，450~nm宽的脊形波导。其在1540~nm处的等效折射率$n_{eff}$为2.450，群折射率$n_{g}$为4.0367，损耗是2.5~dB/mm。我们假设马赫曾德两臂上的相位调制波导的长度都为200~$\mu m$，回路反射镜的长度为50 $\mu m$，并且3~dB耦合器是理想的能量均分的耦合器，那么当在两臂不同的光程差分别为0和$\pi$时，可调反射镜反射谱和透射谱如图\ref{chapt5_tunable_reflection_mirror_spec}所示。可以看到，改变两臂的相位差，仿真的反射谱和透射谱既宽又平坦。器件的最大反射率受到波导损耗影响只有0.8。接下来，我们扫描其中一个相位调制波导的等效折率，分析两臂的等效折射率差$\Delta n_{eff}$与1540~nm处的反射率和透射率的关系，如图\ref{chapt5_tunable_reflection_mirror_spec_single}所示。可以看到，当$\Delta n_{eff}$变化时，反射率和透射率的变化趋势是正弦函数，$\Delta n_{eff}$的变化周期为0.00385。
 
 \begin{figure}[htb]
 	\centering
@@ -337,7 +352,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 t\\
 r
 \end{bmatrix}
-= e^{\phi_1+\phi_2}
+= e^{i(\phi_1+\phi_2)}
 \begin{bmatrix}
 -cos(\Delta \phi) & sin(\Delta \phi)\\
 -sin(\Delta \phi) & -cos(\Delta \phi)
@@ -356,7 +371,7 @@ T = |t|^2 = cos(\Delta \phi)^2 |E_{in}|^2 = \frac{1+cos(\Delta n_{eff}\frac{4\pi
 \label{Equ:tunable_R}
 R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi L}{\lambda})}{2}|E_{in}|^2
 \end{equation}
-其中，$\Delta n_{eff}$为两臂的等效折射率差，$L$为臂长，$\lambda$是工作波长。从公式\ref{Equ:tunable_T}和公式\ref{Equ:tunable_R}可以看出，$T$和$R$随等效折率差的变化趋势与我们用Interconnect软件仿真所得的图\ref{chapt5_tunable_reflection_mirror_spec_single}相同。反射率随等效折射率差的变化周期为$\lambda/2L$。当$\lambda = 1540~nm, L = 20~\mu m$时，周期为0.0385，与图\ref{chapt5_tunable_reflection_mirror_spec_single}中所示的相同。
+其中，$\Delta n_{eff}$为两臂的等效折射率差，$L$为臂长，$\lambda$是工作波长。从公式\ref{Equ:tunable_T}和公式\ref{Equ:tunable_R}可以看出，$T$和$R$随等效折率差的变化趋势与我们用Interconnect软件仿真所得的图\ref{chapt5_tunable_reflection_mirror_spec_single}相同。反射率随等效折射率差的变化周期为$\lambda/2L$。当$\lambda = 1540~nm, L = 200~\mu m$时，周期为0.00385，与图\ref{chapt5_tunable_reflection_mirror_spec_single}中所示的相同。
 
 \begin{figure}[htb]
 	\centering
@@ -373,9 +388,9 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 	\caption{硅基可调反射镜的微环光调制器的结构示意图}
 	\label{chapt5_tunable_reflection_ring_structure}
 \end{figure}
-我们将可调反射镜与微环相结合的结构如图\ref{chapt5_tunable_reflection_ring_structure}所示。当默认状态下可调反射镜的反射率为0，微环在谐振波长处有最大的消光比，当我们调制可调反射镜的一臂的等效折射率，使可调反射镜的反射率非0时，从而使输出的谐振波长处的消光比减小，实现谐振波长处光的调制器。从图\ref{chapt5_r_k_Ex_alpha1e-2}，图\ref{chapt5_r_k_Ex_alpha1e-3}，图\ref{chapt5_r_k_Ex_alpha1e-4}可以看出，当微环的损耗越小，Q值越高时，内部反射导致的消光比的变化越明显。
+我们将可调反射镜与微环相结合的结构如图\ref{chapt5_tunable_reflection_ring_structure}所示。当默认状态下可调反射镜的反射率为0，微环在谐振波长处有最大的消光比，当我们调制可调反射镜的一臂的等效折射率，使可调反射镜的反射率非0时，从而使改变微环的输出谱，实现光强的调制。从图\ref{chapt5_r_k_Ex_alpha1e-2}，图\ref{chapt5_r_k_Ex_alpha1e-3}，图\ref{chapt5_r_k_Ex_alpha1e-4}可以看出，当微环的损耗越小，Q值越高时，内部反射导致的微环透射谱的变化越明显。
 
-我们设计的硅基可调反射镜中的相位调制区域只有20~$\mu m$，比微环调制和马赫曾德调制器中的调制区域长度都要短。这种新型调制器相比硅基马赫曾德光调制，无需实现相位调制区$\pi$相位的变化，就能实现高消光比。相比于微环光调制器，无需通过谐振峰的漂移，就能实现高相比。并且借助于可调反射镜宽光谱反射的特点，以及通过热调微环谐振峰，这种新型调制器有大的光学工作带宽。下面我们将详细介绍设计过程和调制带宽的仿真。
+我们设计的硅基可调反射镜中的相位调制区域有200~$\mu m$，介于微环调制和马赫曾德调制器的中间。这种新型光调制器相比硅基马赫曾德光调制，无需实现相位调制区$\pi$相位的变化，就能实现高消光比。相比于微环光调制器，可以通过增加调制区域的长度，减小驱动电压。另外，借助于可调反射镜宽光谱反射的特点，通过热调微环谐振峰，使这种新型光调制器有大的光学工作带宽。下面我们将详细介绍设计过程和调制带宽的仿真。
 
 \begin{figure}[htb]
 	\centering
@@ -386,7 +401,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 
 我们在设计硅基可调反射镜与微环的波导尺寸参数与上一小结\ref{tunable_reflector}相同。除此之外，我们还需要考虑微环光调制器的整体尺寸。而影响微环整体尺寸的主要是需要考虑波导的弯曲半径。对于450~nm宽的条形硅波导，波导弯曲半径与转90$^\circ$引入的损耗，见图\ref{chapt5_deep_si_bend_loss}所示。可见半径为6~$\mu m$时，损耗已经可以忽略。因此，我们设计微环的整体长度为100~$\mu m$，使器件布局后满足6~$\mu m$的弯曲半径。
 
-在反射相位调制区域，我们分析两种pn掺杂方式实现相位调制，即交趾(Interleaved)和水平侧向(Lateral) pn掺杂。根据Imec的工艺参数\cite{Imec}，交趾pn掺杂的方式\cite{li2009silicon,pantouvaki2013comparison}，在1550~nm处$V_\pi L = 0.8~V/cm$，也就意味着每伏电压使等效折射率有$1 \times  10^{-4}$的变化量。由于我们采用的集总电极的结构，这会使相位调制区形成驻波，电压加倍。因此，在集总电极的情况下，只需要1~V就能达到等效折射率$2 \times  10^{-4}$的变化量。而Imec的工艺参数中水平侧向pn掺杂的方式\cite{pantouvaki2013comparison}，在1550~nm处$V_\pi L = 0.9~V/cm$，，此时，需要1.22~V才能达到等效折射率$2 \times 10^{-4}$的变化量。
+在反射相位调制区域，我们分析采用交趾(Interleaved)pn掺杂方式实现相位调制。根据Imec的工艺参数\cite{Imec}，交趾pn掺杂的方式\cite{li2009silicon,pantouvaki2013comparison}，在1550~nm处$V_\pi L = 0.8~V/cm$，也就意味着每伏电压使等效折射率有$1 \times  10^{-4}$的变化量。由于我们采用的集总电极的结构，这会使相位调制区形成驻波，电压加倍。因此，在集总电极的情况下，只需要0.5~V就能达到等效折射率$1 \times  10^{-4}$的变化量。如果采用差分驱动，驱动电压可以进一步降低\cite{Ding2013electro,zortman2011low}。
 
 \begin{figure}[htb]
 	\small
@@ -414,7 +429,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 			\label{chapt5_reflactor_modulator_k1_IL} %% label for second subfigure
 			\includegraphics[width=8cm]{./Pictures/chapt5_reflactor_modulator_k1_IL.eps}
 		\end{minipage}}			
-	\caption{硅基可调反射镜的微环光调制器的在第一耦合系数$k_{s1}$ = 0.0348的透射谱，调制消光比(Extinction Ratio， ER)和插入损耗(Insertion Loss，IL)}
+	\caption{硅基可调反射镜的微环光调制器的在第一耦合系数$k_{i1}^2$ = 0.2的透射谱，调制消光比(Extinction Ratio， ER)和插入损耗(Insertion Loss，IL)}
 	\label{chapt5_reflactor_modulator_k1_modulator}	
 \end{figure}
 
@@ -444,14 +459,14 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 			\label{chapt5_reflactor_modulator_k2_IL} %% label for second subfigure
 			\includegraphics[width=8cm]{./Pictures/chapt5_reflactor_modulator_k2_IL.eps}
 		\end{minipage}}			
-	\caption{硅基可调反射镜的微环光调制器在第二耦合系数$k_{s2}$ = 0.0475的透射谱，调制消光比(Extinction Ratio， ER)和插入损耗(Insertion Loss，IL)}
+	\caption{硅基可调反射镜的微环光调制器在第二耦合系数$k_{i2}^2$ = 0.26的透射谱，调制消光比(Extinction Ratio， ER)和插入损耗(Insertion Loss，IL)}
 	\label{chapt5_reflactor_modulator_k2_modulator}	
 \end{figure}	
-我们继续采用Intercoonnect商业软件对整个器件的性能进行仿真计算。其中微环波导的耦合系数，可以选择两个值。耦合系数$k_{s1}$对应着微环内部没有反射时，谐振峰的损耗最大。此时，谐振峰低损耗状态是需要在相位调制器加电压，引入反射。耦合系数$k_{s2}$对应着微环内部有反射则谐振峰的消光比达到最大。而没有反射时，谐振峰处于透过状态。
+我们继续采用Intercoonnect商业软件对整个器件的性能进行仿真计算。其中微环波导的耦合系数，可以选择两个值。耦合系数$k_{i1}$对应着微环内部没有反射时，谐振峰的透过率最低。此时，谐振峰低损耗状态是需要在相位调制器加电压，引入反射。耦合系数$k_{i2}$对应着微环内部有反射则谐振峰的透过率最低。而没有反射时，谐振峰处于透过状态。
 
-图\ref{chapt5_reflactor_modulator_k1_modulator}展示了，当耦合系数处于第一个状态下($k_{s1} = 0.0348$)，等效折射率差($\Delta n_{eff} = n_{eff1}-n_{eff2}$)从0变化到$2 \times  10^{-4}$对透射谱的影响。从图\ref{chapt5_reflactor_modulator_k1}和局部放大图\ref{chapt5_reflactor_modulator_k1_large}可以看到，由于可调反射器反射谱宽的特性，所有谐振波长都会受到显著的强度调制。该调制器谐振峰之间的间距为2.9~nm，如果我们在微环上加入热电极，就可以调节谐振波长的位置，从而实现宽光学带宽的调制。图\ref{chapt5_reflactor_modulator_k1_ER}展示了在谐振波长附近的调制消光比(为图\ref{chapt5_reflactor_modulator_k1_large}中两条曲线的差值。)。可以看到对于谐振波长$\lambda_c$，调制器消光比达到了28~dB，而此时的插入损耗为9.6~dB。这个插入损耗可以通过改进工艺，降低波导的损耗，从而使微环的谐振峰，在有内部反射的情况下，损耗降低。
+图\ref{chapt5_reflactor_modulator_k1_modulator}展示了，当耦合系数处于第一个状态下($k_{i1}^2 = 0.2$)，等效折射率差($\Delta n_{eff} = n_{eff1}-n_{eff2}$)从0变化到$1 \times  10^{-4}$，对应的反射率$r^2$从0 变化到了 0.0064时，透射谱的变化。从图\ref{chapt5_reflactor_modulator_k1}和局部放大图\ref{chapt5_reflactor_modulator_k1_large}可以看到，由于可调反射器反射谱宽的特性，所有谐振波长都会受到显著的强度调制。该调制器谐振峰之间的间距为1 nm，如果我们在微环上加入热电极，就可以调节谐振波长的位置，从而实现宽光学带宽的调制。图\ref{chapt5_reflactor_modulator_k1_ER}展示了在谐振波长附近的调制消光比(为图\ref{chapt5_reflactor_modulator_k1_large}中两条曲线的差值。)。可以看到对于谐振波长$\lambda_c$，调制器消光比达到了19~dB，而此时的插入损耗为10~dB。这个插入损耗可以通过改进工艺，降低波导的损耗，从而使微环的谐振峰，在有内部反射的情况下，损耗降低。另外，由于谐振峰处的光子寿命长，会影响调制速度，因此实际应用中，工作波长也会偏离谐振峰处。
 
-我们同样分析了，当微环处于第二个可选耦合系数($k_{s2} = 0.0475$)下，器件的透射谱，消光比和插入损耗，见图\ref{chapt5_reflactor_modulator_k2_modulator}所示。从图\ref{chapt5_reflactor_modulator_k2}和图\ref{chapt5_reflactor_modulator_k2_large}可以看出，在这个耦合系数下，调制其的透射谱几乎和图\ref{chapt5_reflactor_modulator_k1}和图\ref{chapt5_reflactor_modulator_k1_large}的保持一致，除了两个工作状态下的谐振峰的消光比互换。此时，调制器消光比为26~dB，而插入损耗为8~dB，都比耦合系数为$k_{s1}=0.0348$的消光比和插入损耗小一些。
+我们同样分析了，当微环处于第二个可选耦合系数($k_{i2}^2 = 0.26$)下，器件的透射谱，消光比和插入损耗，见图\ref{chapt5_reflactor_modulator_k2_modulator}所示。从图\ref{chapt5_reflactor_modulator_k2}和图\ref{chapt5_reflactor_modulator_k2_large}可以看出，在这个耦合系数下，调制其的透射谱几乎和图\ref{chapt5_reflactor_modulator_k1}和图\ref{chapt5_reflactor_modulator_k1_large}的保持一致，除了两个工作状态下的谐振峰的消光比互换。
 
 \begin{figure}[htb]
 	\centering
@@ -462,29 +477,90 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt5_bandwidth.eps}
-	\caption{利用20~$\mu m$长的集总电极的硅基可调反射镜的微环光调制器，在Lateral和交趾Interleaved pn掺杂下，电光调制的频谱响应($R_{EO}$)}
+	\caption{利用200~$\mu m$长的集总电极的硅基可调反射镜的微环光调制器，在交趾pn掺杂下，电光调制的频谱响应($R_{EO}$)}
 	\label{chapt5_bandwidth}
 \end{figure}
 
-下面我们将分析调制器的3~dB调制带宽。硅基相位调制器的电路模型如图\ref{chapt5_tunable_reflection_ring_modulator_equit_circuit}所示。其中，$C_p$为用于接触探针的电极焊盘(pad)的寄生电容，$R_s$，$C_s$为金属电极的寄生电阻，电容。$L_j$，$R_j$和$C_j$分别为pn结的寄生电感，串联电阻和结区电容。对于交趾掺杂的相位调制器，Imec公司\cite{Imec}提供的参数为:$C_p = 9.3~fF, C_s = 56.4~fF, Rs = 904~\Omega, L_j = 0.0142~nH, R_j = 8.85~\Omega\cdot mm, C_j = 563.6~fF/mm$。因此，我们计算得到的电光调制带宽($R_{EO}$)如图\ref{chapt5_bandwidth}所示。对应的3~dB带宽达到了25~GHz。我们也可以采用水平侧向pn掺杂可以提高调制器的带宽。此pn结的$L_j = 0.0484~nH, R_j = 5.225~\Omega\cdot mm, C_j = 86.8~fF/mm$，其对应的电光调制带宽如图\ref{chapt5_bandwidth}所示，3~dB带宽达到了67~GHz。表\ref{lateral_interleaved}给出了这两种掺杂模式在电光调制3 dB带宽，动态能耗和调制电压上的比较。从中可以得到看出，水平侧向pn掺杂模式的具有大带宽，低动态调制能耗的优势。而交趾pn掺杂的调制器具有低驱动电压的优势。
+虽然这个新型光调制器工作原理和微环光调制器不一样，但是也具有光学谐振腔。因此，我们将分别从电学RC限制的调制带宽和谐振腔光子寿命限制的调制带宽分析。我们将先分析调制器电学RC限制的3~dB调制带宽。光调制器的电路模型如图\ref{chapt5_tunable_reflection_ring_modulator_equit_circuit}所示。其中，$C_p$为用于接触探针的电极焊盘(pad)的寄生电容，$R_s$，$C_s$为金属电极的寄生电阻，电容。$L_j$，$R_j$和$C_j$分别为pn结的寄生电感，串联电阻和结区电容。该光调制的电光响应$R_{EO}$公式\ref{Equ:R_EO_ring}所示。
+\begin{equation}
+\label{Equ:R_EO_ring}
+R_{EO} = \left|\frac{R_{tot}}{R_{tot}+Z_s}\cdot\frac{1}{1-\omega^2C_jL_j+j\omega C_j R_j}\right|^2
+\end{equation}
+其中，$R_{tot}$为等效电路中器件的总电阻；$Z_s$为射频源的输出阻抗，50 $\Omega$；对于交趾掺杂的相位调制器，依据Imec公司\cite{Imec}提供的电阻、电容的参数为:$C_p = 9.3~fF$， $C_s = 56.4~fF$， $Rs = 904~\Omega$， $L_j = 0.0142~nH$， $R_j = 8.85~\Omega\cdot mm$， $C_j = 563.6~fF/mm$。因此，我们计算得到的有电学RC限制的电光调制带宽($R_{EO}$)如图\ref{chapt5_bandwidth}所示，对应的3~dB带宽为14~GHz。
 
-{
-	\begin{table}[htb]
-		\zihao{5}
-		\caption{硅基可调反射镜的微环光调制器在Lateral和Interleaved pn掺杂下的性能比较}
-		\label{lateral_interleaved}
+然后，我们分析谐振腔光子寿命限制对调制带宽的影响。我们采用时域耦合耦合理论，先根据文献[\citenum{pile2014small}]的思路推导了微环中存在反射时，光子寿命对带宽的影响。当调制器被正弦信号驱动时，输出的光信号将有两个旁瓣$S_{t}^+$和$S_{t}^-$，其频率分别为$\omega_0+\omega_m$和$\omega_0-\omega_m$。$\omega_0$为输入光的角频率，$\omega_m$为调制信号的角频率。输出光可以写成公式\ref{Equ:St_m}的形式。
+\begin{equation}
+\label{Equ:St_m}
+S_t = S_{t0}e^{j\omega_0t}+S_{t1}^+\frac{e^{j(\omega_0+\omega_m)t}}{2}+S_{t1}^-\frac{e^{j(\omega_0-\omega_m)t}}{2}
+\end{equation}
+
+我们接着就可以获得调制后输出光功率的表达式：
+\begin{equation}
+\label{Equ:Pout_m}
+P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt} \right]=|S_{t0}|^2+Re\left[H(\omega_m)\Delta n e^{j\omega_mt}\right]
+\end{equation}
+其中，第一项$|S_{t0}|^2$为直流信号，而$|H(\omega_m)|^2$为器件的调制响应函数，具体表达式如公式\ref{Equ:Homega_m}所示。
+\begin{equation}
+\label{Equ:Homega_m}
+ |H(\omega_m)|^2 = |(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})/\Delta n|^2 
+\end{equation}
+
+因此，我们只需要获得$S_{t0}$，$S_{t1}^+$，和$S_{t1}^-$就可以计算得到调制响应函数。第一步，我们将公式\ref{Equ:St_m}代入公式\ref{Equ:alpha_ccw}和公式\ref{Equ:alpha_cw}就可以获得调制器处于动态工作下的tCMT方程。我们忽略高次谐波项，再根据谐振频率进行分类，可以获得6组方程。6组方程我们将其分为3对，第一对方程组为正向和反向的直流信号，分别关于$\alpha_+$和$\alpha_-$的方程组。此方程组与公式\ref{Equ:alpha_ccw}和公式\ref{Equ:alpha_cw}相同。
+
+第二对方程组为正向和反向振幅被调制产生的$\omega_0+\omega_m$上旁瓣信号，分别关于$\alpha_+^+$和$\alpha_-^+$的方程组\ref{eq:1}。
+\begin{subequations}  \label{eq:1}
+	\begin{align}  
+	&j(\omega_0+\omega_m)\alpha_+^+ = (j\omega_r-1/\tau)\alpha_+^+ +j\Delta \omega_r\alpha_+ - j\Delta \mu_r\alpha_- - j\mu_r\alpha_-^+            \label{eq:1A} \\
+	&j(\omega_0+\omega_m)\alpha_-^+ = (j\omega_r-1/\tau)\alpha_-^+ +j\Delta \omega_r\alpha_- - j\Delta \mu_r^*\alpha_+ - j\mu_r^*\alpha_+^+           \label{eq:1B}
+	\end{align}
+\end{subequations}
+
+第三对方程组为正向和反向振幅被调制产生的$\omega_0-\omega_m$下旁瓣信号，分别关于$\alpha_+^-$和$\alpha_-^-$的方程组\ref{eq:2}。
+\begin{subequations}  \label{eq:2}
+	\begin{align}  
+	&j(\omega_0-\omega_m)\alpha_+^+ = (j\omega_r-1/\tau)\alpha_+^- +j\Delta \omega_r\alpha_+ - j\Delta \mu_r\alpha_- - j\mu_r\alpha_-^-            \label{eq:2A} \\
+	&j(\omega_0-\omega_m)\alpha_-^- = (j\omega_r-1/\tau)\alpha_-^- +j\Delta \omega_r\alpha_- - j\Delta \mu_r^*\alpha_+ - j\mu_r^*\alpha_+^-           \label{eq:2B}
+	\end{align}
+\end{subequations}
+
+分别求解这三对方程组我们可以获得$\alpha_+$，$\alpha_-$，$\alpha_+^+$和$\alpha_+^-$，如下所示:
+\begin{subequations}  \label{eq:3}
+	\begin{align}  
+	&\alpha_+ = -j\mu_iS_i \frac{j\delta+\frac{1}{\tau}}{(j\delta+\frac{1}{\tau})^2+|\mu_r|^2}  	\label{eq:3A}\\
+	&\alpha_- = -\mu_i\mu_r^*S_i \frac{1}{(j\delta+\frac{1}{\tau})^2+|\mu_r|^2}  	\label{eq:3B}\\	
+	&\alpha_+^+ = \frac{j(\delta+\omega_m)+\frac{1}{\tau}}{((j\delta+\omega_m)\frac{1}{\tau})^2+|\mu_r|^2}\left[\mu_r\frac{\Delta \omega_r\alpha_- - \Delta\mu_r^*\alpha_+}{j(\delta+\omega_m)+\frac{1}{\tau}} + j\Delta \omega_r \alpha_+ -j\Delta\mu_r\alpha_-\right]             \label{eq:3C}\\
+	&\alpha_+^- = \frac{j(\delta-\omega_m)+\frac{1}{\tau}}{((j\delta-\omega_m)\frac{1}{\tau})^2+|\mu_r|^2}\left[\mu_r\frac{\Delta \omega_r\alpha_- - \Delta\mu_r^*\alpha_+}{j(\delta-\omega_m)+\frac{1}{\tau}} + j\Delta \omega_r \alpha_+ -j\Delta\mu_r\alpha_-\right]             \label{eq:3D}	
+	\end{align}
+\end{subequations}
+其中，$\delta = \omega_0-\omega_r$为工作频率和谐振频谱的差距；$\Delta \omega_r = -\Delta n \omega_r /n_g$为调制折射率导致的谐振腔谐振频率的漂移量；$\Delta \mu_r = \omega_0 L_m \Delta n/(n_g L_{tot})$为调制折射率导致的反射耦合强度的变化量。$L_m = 200~\mu m$为调制区域的长度，$L_{tot} = 550~\mu m$为整体器件的长度。接着我们将公式\ref{eq:3}带入到公式\ref{eq:4},就可以获得$S_{t0}$，$S_{t1}^+$，和$S_{t1}^-$，从而计算得到硅基反射微环光调制器的频率响应函数$|H(\omega_m)|^2$。
+\begin{subequations}  \label{eq:4}
+	\begin{align}  
+	&S_{t0} = S_i-j\mu_i\alpha_+  	\label{eq:4A}\\
+	&S_{t1}^+ = -j\mu_i\alpha_+^+ 	\label{eq:4B}\\	
+	&S_{t1}^- = -j\mu_i\alpha_+^-            \label{eq:4C}	
+	\end{align}
+\end{subequations}
+
+\begin{figure}[htb]
+	\small
+	\subfigure[]{
+	\begin{minipage}[]{0.5\textwidth}
 		\centering
-		\begin{tabular}[t]{p{4cm}ccc}
-			\hline
-			掺杂方式 &  电光调制3~dB带宽~(GHz) & 动态能耗 (fJ/bit) & 调制电压 (V)\\
-			\hline
-			Lateral pn & 67 &  2.6 & 1.22 \\
-			Interleaved pn & 25 & 2.8 & 1 \\
-			\hline
-		\end{tabular}
-	\end{table}
-}
+		\label{chapt5_optical_eo_band}
+		\includegraphics[width=8cm]{./Pictures/chapt5_optical_eo_band.eps}
+	\end{minipage}}
+	\subfigure[]{
+	\begin{minipage}[]{0.5\textwidth}
+		\centering
+		\label{chapt5_optical_total_band} %% label for second subfigure
+		\includegraphics[width=8cm]{./Pictures/chapt5_optical_total_band.eps}
+	\end{minipage}}
+	\caption{当工作波长和谐振峰的偏移量为10 pm时，两种耦合系数下器件的调制频率响应。(a)光子寿命限制的频率响应；(b)器件电学和光学整体的频率响应}
+	\label{chapt5_optical_oe_total_band}	
+\end{figure}
+				
+由于谐振峰处的光子寿命最长，所以对应的调制带宽最小。因此，在综合考虑插入损耗，消光比下，我们选取的工作波长和谐振峰的偏移量为10 pm。从图\ref{chapt5_reflactor_modulator_k1_modulator}可以看出，耦合系数为$k_{i1} = 0.2$时，消光比和插入损耗分别为 5 dB 和 6 dB。从图\ref{chapt5_reflactor_modulator_k2_modulator}可以看出，耦合系数为$k_{i2} = 0.26$时，消光比和插入损耗分别为 8 dB 和 6 dB。两个耦合系数下由光子寿命限制的频率响应$|H(\omega_m)|^2$见图\ref{chapt5_optical_eo_band}所示。可以看到光子寿命对调制带宽影响大于电学RC常数对调制带宽的影响，两个耦合系数的3 dB调制带宽都在5.7 GHz左右。 耦合系数大的3 dB带宽偏大的。其原因是耦合增大，对应的耦合损耗增加，从而使光子寿命减小，调制带宽增大。我们将电学RC限制的频率响应和光子寿命限制的频率响应相乘，就可以获得器件整体的频率响应$R_{total} = |H(\omega_m)|^2 R_{EO}$，如图\ref{chapt5_optical_total_band}所示。从中可以看到两个耦合系数下的3 dB调制带宽都减小到 4.8 GHz左右。通过比较插入损耗，消光比和带宽，我们可以发现这种光调制器工作在耦合系数为$k_{i2}$下的综合性能略优于工作在耦合系数$k_{i1}$下的综合性能。
 
 \section{本章小结}
-在本章中，我们首先通过时域耦合模理论，宏观上分析了微环中反射对透射谱的影响。可以看到对于高Q值，并且工作在临界耦合点的微环，内部微小的反射，对谐振波长的透射率有显著提高。然后我们在微环中引入光栅结构，实验上分析了微环中的不同反射强度对微环的透射率以及谐振峰劈裂的影响。我们利用频域的传输矩阵也计算了含光栅微环的透射谱，计算结果与实验结果相吻合。接着，我们设计并分析了硅基可调反射镜的结构，实现了宽光谱范围的可调反射。并且分析了这种可调反射镜结构的工艺容差。最后，我们将可调反射镜与微环相结合，分析了调制器的静态消光比，插入损耗，和动态的电光调制带宽。通过分析两种不同的掺杂模式，我们计算了在水平侧向pn掺杂模式下，调制器的驱动电压为1.22~V，动态能耗为2.6~fJ/bit，3~dB的电光调制带宽能达到67~GHz。
+在本章中，我们首先通过时域耦合模理论，宏观上分析了微环中反射对透射谱的影响。可以看到对于高Q值，并且工作在临界耦合点的微环，内部微小的反射，对谐振波长的透射率有显著提高。然后我们在微环中引入光栅结构，实验上分析了微环中的不同反射强度对微环的透射率以及谐振峰劈裂的影响。我们利用频域的传输矩阵也计算了含光栅微环的透射谱，计算结果与实验结果相吻合。接着，我们设计并分析了硅基可调反射镜的结构，实现了宽光谱范围的可调反射。并且分析了这种可调反射镜结构的工艺容差。最后，我们将可调反射镜与微环相结合，分析了不同波导与微环耦合系数对调制器的静态消光比，插入损耗和动态电光调制带宽的影响。通过分析，我们计算了在交趾pn掺杂模式下，调制器在0.5 V驱动电压下能实现8 dB的消光比。并且我们还首次分析了在调制微环内部反射率下，光子寿命对带宽的影响。最后综合考虑电学带宽和光子寿命带宽，我们发现目前的硅基反射微环光调制器的3 dB带宽受到光子寿命的限制为4.8 GHz。
 

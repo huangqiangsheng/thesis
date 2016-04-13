@@ -826,7 +826,7 @@ Jiangang Zhu, Sahin~Kaya Ozdemir, Yun-Feng Xiao, Lin Li, Lina He, Da-Ren Chen,
 
 \bibitem{qiangsheng2015fsr}
 Huang Qiangsheng, Keqi Ma, Sailing He.
-\newblock Fsr-free filter based on a coupled microring grating
+\newblock {FSR}-free filter based on a coupled microring grating
   system[C]//Optical Fiber Communication Conference.
 \newblock Optical Society of America, 2015:Tu3A--1.
 
@@ -849,5 +849,17 @@ Marianna Pantouvaki, Hui Yu, Michal Rakowski, Phillip Christie, Peter Verheyen,
   pn junctions[J].
 \newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2013.
 \newblock 19(2):7900308--7900308.
+
+\bibitem{zortman2011low}
+William~A Zortman, Anthony~L Lentine, Douglas~C Trotter, Michael~R Watts.
+\newblock Low-voltage differentially-signaled modulators[J].
+\newblock Optics express, 2011.
+\newblock 19(27):26017--26026.
+
+\bibitem{pile2014small}
+Brian Pile, Geoff Taylor.
+\newblock Small-signal analysis of microring resonator modulators[J].
+\newblock Optics express, 2014.
+\newblock 22(12):14913--14928.
 
 \end{thebibliography}
