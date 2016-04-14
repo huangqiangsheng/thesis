@@ -643,7 +643,7 @@ includehead, includefoot]{geometry}
 \newcommand\ZJUcontents{%
   % 修改目录的格式
   \renewcommand{\contentsname}{目次}
-  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
+%  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
   \renewcommand{\cftchapdotsep}{\cftdotsep}

@@ -1,4 +1,4 @@
-\chapter{硅基反射微环的光调制器}
+\chapter{基于硅基反射微环的光调制器}
 纯硅基光调制器的进展我们已经在第一章\ref{pure_simodulator}小结中有所总结。纯硅基光调制器目前都是采用调节波导折射率，从而改变谐振腔的谐振峰，或者改变马赫曾德两臂的相位差实现光强的调制。谐振腔型硅基光调制器，可以采用微环或者光子晶体结构。这类光调制器具有尺寸小，驱动电压低的特点，但是光学带宽受到谐振峰漂移量的限制。如果采用热调节微环谐振峰的位置，那么只有10~nm左右的漂移量。虽然微环光调制器可以通过增加尺寸，减小自由光谱范围(Free Spectra Range, FSR)，实现宽光谱的调制，但是这样会增加微环光调制器的电容，减小调制带宽。增加尺寸也无助于降低驱动电压，这是由于微环光调制器谐振峰的偏移量$\Delta \lambda$由公式\ref{Equ:ring_tunning}决定。
 \begin{equation}
 \label{Equ:ring_tunning}
@@ -310,7 +310,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 
 如果利用微环加光栅的结构制作调制器，我们可以通过调节每个周期的反射率$r$，根据图\ref{chapt5_ring_grating_vary_reflector}(c)，使其工作在临界点$r_c$附近。但是制作这种结构的硅基光调制器，不仅对电极套刻要求很高，而且由于光栅宽度只有30~nm到80~nm，对掺杂的精度要求也高。这驱使我们设计新的结构以实现微环内部的反射率可调。
 
-\section{硅基可调反射镜的设计} \label{tunable_reflector}
+\section{基于硅基可调反射镜的设计} \label{tunable_reflector}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt5_tunable_reflection_mirror.jpg}
@@ -381,7 +381,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 \end{figure}
 我们进一步分析了，当实际加工的3~dB耦合器并非理想的将能量均分时，对可调反射器性能的影响。由于在实验中，两个耦合器的结构相同，工艺步骤相同，因此我们默认两者的耦合效率(coupling coefficient)始终保持一样。 图\ref{chapt5_grating_ring_real_3dB}可以看出，当耦合效率在0.85至0.15之间变化时，通过调节两臂的等效折射率差，依旧能使可调反射镜达到全反射和全透过的工作点。这表明了这个可调反射镜具有很大的工艺容差。下面我将使用这个可调反射镜与微环相结合实现新型的硅基可调反射镜的微环光调制器。
 
-\section{硅基可调反射镜的微环光调制器的设计}
+\section{基于硅基可调反射镜的微环光调制器的设计}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt5_tunable_reflection_ring_structure.jpg}
@@ -507,7 +507,7 @@ P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt
 
 因此，我们只需要获得$S_{t0}$，$S_{t1}^+$，和$S_{t1}^-$就可以计算得到调制响应函数。第一步，我们将公式\ref{Equ:St_m}代入公式\ref{Equ:alpha_ccw}和公式\ref{Equ:alpha_cw}就可以获得调制器处于动态工作下的tCMT方程。我们忽略高次谐波项，再根据谐振频率进行分类，可以获得6组方程。6组方程我们将其分为3对，第一对方程组为正向和反向的直流信号，分别关于$\alpha_+$和$\alpha_-$的方程组。此方程组与公式\ref{Equ:alpha_ccw}和公式\ref{Equ:alpha_cw}相同。
 
-第二对方程组为正向和反向振幅被调制产生的$\omega_0+\omega_m$上旁瓣信号，分别关于$\alpha_+^+$和$\alpha_-^+$的方程组\ref{eq:1}。
+第二对方程组为正向和反向振幅被调制产生的$\omega_0+\omega_m$上旁瓣信号，分别为$\alpha_+^+$和$\alpha_-^+$，对应的方程组\ref{eq:1}。
 \begin{subequations}  \label{eq:1}
 	\begin{align}  
 	&j(\omega_0+\omega_m)\alpha_+^+ = (j\omega_r-1/\tau)\alpha_+^+ +j\Delta \omega_r\alpha_+ - j\Delta \mu_r\alpha_- - j\mu_r\alpha_-^+            \label{eq:1A} \\
@@ -515,7 +515,7 @@ P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt
 	\end{align}
 \end{subequations}
 
-第三对方程组为正向和反向振幅被调制产生的$\omega_0-\omega_m$下旁瓣信号，分别关于$\alpha_+^-$和$\alpha_-^-$的方程组\ref{eq:2}。
+第三对方程组为正向和反向振幅被调制产生的$\omega_0-\omega_m$下旁瓣信号，分别为$\alpha_+^-$和$\alpha_-^-$，对应的方程组\ref{eq:2}。
 \begin{subequations}  \label{eq:2}
 	\begin{align}  
 	&j(\omega_0-\omega_m)\alpha_+^+ = (j\omega_r-1/\tau)\alpha_+^- +j\Delta \omega_r\alpha_+ - j\Delta \mu_r\alpha_- - j\mu_r\alpha_-^-            \label{eq:2A} \\
@@ -532,7 +532,7 @@ P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt
 	&\alpha_+^- = \frac{j(\delta-\omega_m)+\frac{1}{\tau}}{((j\delta-\omega_m)\frac{1}{\tau})^2+|\mu_r|^2}\left[\mu_r\frac{\Delta \omega_r\alpha_- - \Delta\mu_r^*\alpha_+}{j(\delta-\omega_m)+\frac{1}{\tau}} + j\Delta \omega_r \alpha_+ -j\Delta\mu_r\alpha_-\right]             \label{eq:3D}	
 	\end{align}
 \end{subequations}
-其中，$\delta = \omega_0-\omega_r$为工作频率和谐振频谱的差距；$\Delta \omega_r = -\Delta n \omega_r /n_g$为调制折射率导致的谐振腔谐振频率的漂移量；$\Delta \mu_r = \omega_0 L_m \Delta n/(n_g L_{tot})$为调制折射率导致的反射耦合强度的变化量。$L_m = 200~\mu m$为调制区域的长度，$L_{tot} = 550~\mu m$为整体器件的长度。接着我们将公式\ref{eq:3}带入到公式\ref{eq:4},就可以获得$S_{t0}$，$S_{t1}^+$，和$S_{t1}^-$，从而计算得到硅基反射微环光调制器的频率响应函数$|H(\omega_m)|^2$。
+其中，$\delta = \omega_0-\omega_r$为工作频率和谐振频谱的差距；$\Delta \omega_r = -\Delta n \omega_r /n_g$为调制折射率导致的谐振腔谐振频率的漂移量；$\Delta \mu_r = \omega_0 L_m \Delta n/(n_g L_{tot})$为调制折射率导致的反射耦合强度的变化量。$L_m = 200~\mu m$为调制区域的长度，$L_{tot} = 550~\mu m$为整体器件的长度。接着我们将公式\ref{eq:3}带入到公式\ref{eq:4},就可以获得$S_{t0}$，$S_{t1}^+$，和$S_{t1}^-$，从而根据公式\ref{Equ:Homega_m}计算得到硅基反射微环光调制器的频率响应函数$|H(\omega_m)|^2$。
 \begin{subequations}  \label{eq:4}
 	\begin{align}  
 	&S_{t0} = S_i-j\mu_i\alpha_+  	\label{eq:4A}\\
@@ -559,7 +559,9 @@ P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt
 	\label{chapt5_optical_oe_total_band}	
 \end{figure}
 				
-由于谐振峰处的光子寿命最长，所以对应的调制带宽最小。因此，在综合考虑插入损耗，消光比下，我们选取的工作波长和谐振峰的偏移量为10 pm。从图\ref{chapt5_reflactor_modulator_k1_modulator}可以看出，耦合系数为$k_{i1} = 0.2$时，消光比和插入损耗分别为 5 dB 和 6 dB。从图\ref{chapt5_reflactor_modulator_k2_modulator}可以看出，耦合系数为$k_{i2} = 0.26$时，消光比和插入损耗分别为 8 dB 和 6 dB。两个耦合系数下由光子寿命限制的频率响应$|H(\omega_m)|^2$见图\ref{chapt5_optical_eo_band}所示。可以看到光子寿命对调制带宽影响大于电学RC常数对调制带宽的影响，两个耦合系数的3 dB调制带宽都在5.7 GHz左右。 耦合系数大的3 dB带宽偏大的。其原因是耦合增大，对应的耦合损耗增加，从而使光子寿命减小，调制带宽增大。我们将电学RC限制的频率响应和光子寿命限制的频率响应相乘，就可以获得器件整体的频率响应$R_{total} = |H(\omega_m)|^2 R_{EO}$，如图\ref{chapt5_optical_total_band}所示。从中可以看到两个耦合系数下的3 dB调制带宽都减小到 4.8 GHz左右。通过比较插入损耗，消光比和带宽，我们可以发现这种光调制器工作在耦合系数为$k_{i2}$下的综合性能略优于工作在耦合系数$k_{i1}$下的综合性能。
+由于谐振峰处的光子寿命最长，所以对应的调制带宽最小。因此，在综合考虑插入损耗，消光比下，我们选取的工作波长和谐振峰的偏移量为10 pm。从图\ref{chapt5_reflactor_modulator_k1_modulator}可以看出，耦合系数为$k_{i1} = 0.2$时，消光比和插入损耗分别为 5 dB 和 6 dB。从图\ref{chapt5_reflactor_modulator_k2_modulator}可以看出，耦合系数为$k_{i2} = 0.26$时，消光比和插入损耗分别为 8 dB 和 6 dB。两个耦合系数下由光子寿命限制的频率响应$|H(\omega_m)|^2$见图\ref{chapt5_optical_eo_band}所示。可以看到光子寿命对调制带宽影响大于电学RC常数对调制带宽的影响，两个耦合系数的3 dB调制带宽都在5.7 GHz左右。 耦合系数大的3 dB带宽偏大的。其原因是耦合增大，对应的耦合损耗增加，从而使光子寿命减小，调制带宽增大。我们将电学RC限制的频率响应和光子寿命限制的频率响应相乘，就可以获得器件整体的频率响应$R_{total} = |H(\omega_m)|^2 R_{EO}$，如图\ref{chapt5_optical_total_band}所示。从中可以看到两个耦合系数下的3 dB调制带宽都减小到 4.8 GHz左右。
+
+通过比较插入损耗，消光比和带宽，我们可以发现这种光调制器工作在耦合系数为$k_{i2}$下的综合性能略优于工作在耦合系数$k_{i1}$下的综合性能。它具有在0.5V 驱动电压下， 8 dB的消光比，6 dB的插入损耗， 4.8 GHz的3 dB调制带宽。
 
 \section{本章小结}
 在本章中，我们首先通过时域耦合模理论，宏观上分析了微环中反射对透射谱的影响。可以看到对于高Q值，并且工作在临界耦合点的微环，内部微小的反射，对谐振波长的透射率有显著提高。然后我们在微环中引入光栅结构，实验上分析了微环中的不同反射强度对微环的透射率以及谐振峰劈裂的影响。我们利用频域的传输矩阵也计算了含光栅微环的透射谱，计算结果与实验结果相吻合。接着，我们设计并分析了硅基可调反射镜的结构，实现了宽光谱范围的可调反射。并且分析了这种可调反射镜结构的工艺容差。最后，我们将可调反射镜与微环相结合，分析了不同波导与微环耦合系数对调制器的静态消光比，插入损耗和动态电光调制带宽的影响。通过分析，我们计算了在交趾pn掺杂模式下，调制器在0.5 V驱动电压下能实现8 dB的消光比。并且我们还首次分析了在调制微环内部反射率下，光子寿命对带宽的影响。最后综合考虑电学带宽和光子寿命带宽，我们发现目前的硅基反射微环光调制器的3 dB带宽受到光子寿命的限制为4.8 GHz。
