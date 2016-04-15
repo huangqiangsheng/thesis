@@ -4,13 +4,6 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem{Zuffada2012}
-M.~Zuffada.
-\newblock The industrialization of the silicon photonics: Technology road map
-  and applications[C]//Solid-State Device Research Conference (ESSDERC), 2012
-  Proceedings of the European.
-\newblock Sept 2012:7--13.
-
 \bibitem{Meint2014an}
 Meint Smit, Xaveer Leijtens, Huub Ambrosius, et~al.
 \newblock An introduction to inp-based generic integration technology[J].
@@ -22,6 +15,13 @@ Tsuyoshi Horikawa, Daisuke Shimura, Tohru Mogami.
 \newblock Low-loss silicon wire waveguides for optical integrated circuits[J].
 \newblock MRS Communications, 2016.
 \newblock FirstView:1--7.
+
+\bibitem{Zuffada2012}
+M.~Zuffada.
+\newblock The industrialization of the silicon photonics: Technology road map
+  and applications[C]//Solid-State Device Research Conference (ESSDERC), 2012
+  Proceedings of the European.
+\newblock Sept 2012:7--13.
 
 \bibitem{Shah2005}
 J.~Shah.

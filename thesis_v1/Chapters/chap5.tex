@@ -1,4 +1,4 @@
-\chapter{基于硅基反射微环的光调制器}
+\chapter{硅基反射微环的光调制器}
 纯硅基光调制器的进展我们已经在第一章\ref{pure_simodulator}小结中有所总结。纯硅基光调制器目前都是采用调节波导折射率，从而改变谐振腔的谐振峰，或者改变马赫曾德两臂的相位差实现光强的调制。谐振腔型硅基光调制器，可以采用微环或者光子晶体结构。这类光调制器具有尺寸小，驱动电压低的特点，但是光学带宽受到谐振峰漂移量的限制。如果采用热调节微环谐振峰的位置，那么只有10~nm左右的漂移量。虽然微环光调制器可以通过增加尺寸，减小自由光谱范围(Free Spectra Range, FSR)，实现宽光谱的调制，但是这样会增加微环光调制器的电容，减小调制带宽。增加尺寸也无助于降低驱动电压，这是由于微环光调制器谐振峰的偏移量$\Delta \lambda$由公式\ref{Equ:ring_tunning}决定。
 \begin{equation}
 \label{Equ:ring_tunning}
@@ -310,7 +310,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 
 如果利用微环加光栅的结构制作调制器，我们可以通过调节每个周期的反射率$r$，根据图\ref{chapt5_ring_grating_vary_reflector}(c)，使其工作在临界点$r_c$附近。但是制作这种结构的硅基光调制器，不仅对电极套刻要求很高，而且由于光栅宽度只有30~nm到80~nm，对掺杂的精度要求也高。这驱使我们设计新的结构以实现微环内部的反射率可调。
 
-\section{基于硅基可调反射镜的设计} \label{tunable_reflector}
+\section{硅基可调反射镜的设计} \label{tunable_reflector}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt5_tunable_reflection_mirror.jpg}
@@ -381,7 +381,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 \end{figure}
 我们进一步分析了，当实际加工的3~dB耦合器并非理想的将能量均分时，对可调反射器性能的影响。由于在实验中，两个耦合器的结构相同，工艺步骤相同，因此我们默认两者的耦合效率(coupling coefficient)始终保持一样。 图\ref{chapt5_grating_ring_real_3dB}可以看出，当耦合效率在0.85至0.15之间变化时，通过调节两臂的等效折射率差，依旧能使可调反射镜达到全反射和全透过的工作点。这表明了这个可调反射镜具有很大的工艺容差。下面我将使用这个可调反射镜与微环相结合实现新型的硅基可调反射镜的微环光调制器。
 
-\section{基于硅基可调反射镜的微环光调制器的设计}
+\section{硅基可调反射镜的微环光调制器的设计}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt5_tunable_reflection_ring_structure.jpg}
