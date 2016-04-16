@@ -44,7 +44,7 @@ S_t = S_i-j\mu_i\alpha_+ ~~~~~~~~~~~~ S_r = -j\mu_i\alpha_-
 \label{Equ:mu_tau}
 \mu_i^2=k_i^2\frac{c}{n_gL}=\frac{2}{\tau_i}~~~~~~~~~~~~\alpha_l^2\frac{c}{n_gL}=\frac{2}{\tau_l}~~~~~~~~~~~~\mu_r^2=r^2\frac{c}{n_gL}^2
 \end{equation}
-其中$c$是真空中的光速，$n_g$是波导的群折射率，$L$是微环的周长。通过解公式\ref{Equ:alpha_ccw}、公式\ref{Equ:alpha_cw}和公式\ref{Equ:St_Sr}，对于角频率为$\omega_0$的输入光场$S_i$，我们可以获得波导输出光场$S_t$，见公式\ref{Equ:St}所示。
+其中$c$是真空中的光速，$n_g$是波导的群折射率，$L$是微环的周长。通过解公式\ref{Equ:alpha_ccw}，公式\ref{Equ:alpha_cw}和公式\ref{Equ:St_Sr}，对于角频率为$\omega_0$的输入光场$S_i$，我们可以获得波导输出光场$S_t$，见公式\ref{Equ:St}所示。
 \begin{equation}
 \label{Equ:St}
 \frac{S_t}{S_i}=1-\frac{1}{\tau_i}\left(\frac{1}{j(\omega_0-\omega_1)+(1/\tau_i+1/\tau_l)} + \frac{1}{j(\omega_0-\omega_2)+(1/\tau_i+1/\tau_l)}\right)
@@ -87,7 +87,7 @@ P_r=\frac{1}{4}-\frac{k_i^4}{4k_i^2+16r^2}
 	\caption{当微环损耗$\alpha_l^2= 10^{-4}$时，谐振峰处的消光比与耦合系数$k_i^2$，内部反射率$r^2$的关系}
 	\label{chapt5_r_k_Ex_alpha1e-4}
 \end{figure}
-图\ref{chapt5_r_k_Ex_alpha1e-2}，\ref{chapt5_r_k_Ex_alpha1e-3}，\ref{chapt5_r_k_Ex_alpha1e-4}展示了，在不同损耗$\alpha_l$的微环中，$k_i$，$r$对谐振频率处的消光比的影响。从图\ref{chapt5_r_k_Ex_alpha1e-2}可以看到，当微环的损耗很大($\alpha_l^2 = 10^{-2}$)时，微环内部存在微弱的反射时($r^2<10^{-7}$)，对$k_i$与消光比的关系影响很弱，依旧是在$k_i=\alpha_l$时存在最大的消光比。不过此时，临界耦合处的消光比，随着反射率的增大而减弱。当微环内部存在的反射率继续增大时，$k_i$的变化对消光比的影响逐渐弱。而且谐振峰消光比最大处满足的条件不再是$k_i = \alpha_l$，而是$k_i > \alpha_l$，并且随着$r$的增加对应的$k_i$继续增大。
+图\ref{chapt5_r_k_Ex_alpha1e-2}，图\ref{chapt5_r_k_Ex_alpha1e-3}和图\ref{chapt5_r_k_Ex_alpha1e-4}展示了，在不同损耗$\alpha_l$的微环中，$k_i$，$r$对谐振频率处的消光比的影响。从图\ref{chapt5_r_k_Ex_alpha1e-2}可以看到，当微环的损耗很大($\alpha_l^2 = 10^{-2}$)时，微环内部存在微弱的反射时($r^2<10^{-7}$)，对$k_i$与消光比的关系影响很弱，依旧是在$k_i=\alpha_l$时存在最大的消光比。不过此时，临界耦合处的消光比，随着反射率的增大而减弱。当微环内部存在的反射率继续增大时，$k_i$的变化对消光比的影响逐渐弱。而且谐振峰消光比最大处满足的条件不再是$k_i = \alpha_l$，而是$k_i > \alpha_l$，并且随着$r$的增加对应的$k_i$继续增大。
 
 当微环内部损耗降低到$\alpha_l^2 = 10^{-3}$时，从图\ref{chapt5_r_k_Ex_alpha1e-3}可以看到，微环对内部的反射敏感。只有当$r^2<10^{-8}$时，微环才能保持原先的$k_i$与消光比的关系。当微环内部的反射率继续增加到$r>10^{-4}$时，谐振峰的消光比最大时的$k_i$也是随着$r$的增加而增大。并且相比于$r^2<10^{-8}$时，高的消光比只存在很窄的$k_i\approx k_i$区域，而当$r^2>10^{-2}$,高的消光比对应更宽的$k_i$区域。
 
@@ -249,7 +249,7 @@ K\Lambda = cos^{-1}\left(\frac{m_{11}+m_{22}}{2}\right)
 \label{Equ:B1BN1}
 B_{N+1} = \tau B_1 
 \end{equation}
-利用公式\ref{Equ:ring_TMM_multi}，\ref{Equ:ring_bloch}，\ref{Equ:UN}，\ref{Equ:KLambda}，\ref{Equ:B1BN1}我们可以获得$A_1$与$A_{N+1}$的关系如公式\ref{Equ:A1relationAN}所示。
+利用公式\ref{Equ:ring_TMM_multi}，公式\ref{Equ:ring_bloch}，公式\ref{Equ:UN}，公式\ref{Equ:KLambda}和公式\ref{Equ:B1BN1}我们可以获得$A_1$与$A_{N+1}$的关系如公式\ref{Equ:A1relationAN}所示。
 \begin{equation}
 \label{Equ:A1relationAN}
 A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
@@ -286,7 +286,7 @@ A_1 = \frac{M_{11}-\tau |\textbf{M}|}{1-\tau M_{22}}A_{N+1}
 	\caption{含光栅的微环的电镜图，右图是局部放大图}
 	\label{chapt5_ring_grating_reflector_structure_real}
 \end{figure}
-包含光栅的微环结构，我们是采用电子束光刻机定义图形。工艺流程与第五章\ref{fab_siwg}小结相同。SOI最上层硅的厚度是220~nm。为了防止光栅结构引起微环侧壁粗糙导致损耗，我们采用浅刻蚀70~nm宽度为600~nm的脊形波导。光栅和微环是同时用电子束光刻机定义的，无需套刻。最后加工完成的器件电镜图如图\ref{chapt5_ring_grating_reflector_structure_real}所示。我们也在输入输出波导端加上光栅耦合结构，用于和光纤的耦合。
+包含光栅的微环结构，我们是采用电子束光刻机定义图形。工艺流程与第四章\ref{fab_siwg}小结相同。SOI最上层硅的厚度是220~nm。为了防止光栅结构引起微环侧壁粗糙导致损耗，我们采用浅刻蚀70~nm宽度为600~nm的脊形波导。光栅和微环是同时用电子束光刻机定义的，无需套刻。最后加工完成的器件电镜图如图\ref{chapt5_ring_grating_reflector_structure_real}所示。我们也在输入输出波导端加上光栅耦合结构，用于和光纤的耦合。
 
 \begin{figure}[htb]
 	\centering
@@ -376,7 +376,7 @@ R = |r|^2 = sin(\Delta \phi)^2 |E_{in}|^2= \frac{1-cos(\Delta n_{eff}\frac{4\pi 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=15cm]{./Pictures/chapt5_grating_ring_real_3dB.eps}
-	\caption{对于可调反射镜，当耦合器的耦合率(coupling coefficient)变化时，改变两臂的等效折射率差$\Delta n_{eff}$对可调反射镜反射率的影响。}
+	\caption{可调反射镜中耦合器的耦合率与两臂的等效折射率差$\Delta n_{eff}$的变化对可调反射镜反射率的影响}
 	\label{chapt5_grating_ring_real_3dB}
 \end{figure}
 我们进一步分析了，当实际加工的3~dB耦合器并非理想的将能量均分时，对可调反射器性能的影响。由于在实验中，两个耦合器的结构相同，工艺步骤相同，因此我们默认两者的耦合效率(coupling coefficient)始终保持一样。 图\ref{chapt5_grating_ring_real_3dB}可以看出，当耦合效率在0.85至0.15之间变化时，通过调节两臂的等效折射率差，依旧能使可调反射镜达到全反射和全透过的工作点。这表明了这个可调反射镜具有很大的工艺容差。下面我将使用这个可调反射镜与微环相结合实现新型的硅基可调反射镜的微环光调制器。
@@ -555,7 +555,7 @@ P_{out} = |S_{t0}|^2+Re\left[(S_{t0}^*S_{t1}^{+}+S_{t0}S_{t1}^{-*})e^{j\omega_mt
 		\label{chapt5_optical_total_band} %% label for second subfigure
 		\includegraphics[width=8cm]{./Pictures/chapt5_optical_total_band.eps}
 	\end{minipage}}
-	\caption{当工作波长和谐振峰的偏移量为10 pm时，两种耦合系数下器件的调制频率响应。(a)光子寿命限制的频率响应；(b)器件电学和光学整体的频率响应}
+	\caption{当工作波长与谐振峰的偏移量为10 pm时，两种耦合系数下器件的调制频率响应：(a)光子寿命限制的频率响应；(b)器件电学和光学整体的频率响应}
 	\label{chapt5_optical_oe_total_band}	
 \end{figure}
 				

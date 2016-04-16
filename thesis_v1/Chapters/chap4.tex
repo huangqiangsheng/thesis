@@ -8,7 +8,7 @@
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/fig_ch4_bandfilling_diag.jpg}
-	\caption{ 量子阱的能带和波函数的示意图(a)有外界反向偏压下的时候；(b)在外界无电场的时候；(c)在外界正向偏压，电子子注入的时候}
+	\caption{ 量子阱的能带和波函数的示意图：(a)有外界反向偏压下的时候；(b)在外界无电场的时候；(c)在外界正向偏压，电子子注入的时候}
 	\label{fig_ch4_band_lineup}
 \end{figure}
 调制掺杂中的多量子阱 (Modulation-doped Multiple Quantum-wells) 中的能带填充效应在80年代已经被深入研究\cite{livescu1988free}。能带填充效应与QCSE效应的原理示意图见图\ref{fig_ch4_band_lineup}。当正向电子注入多量子阱中势阱的导带时，相应的电子准费米能级就被提高。当电子的准费米能级高过导带中最低的能级时，即最低的能级被二维电子气体填充慢时，导致了原本激子吸收峰对应的光子无法被吸收，因此其产生的电子无法跃迁到最低的能级处。这意味着只有更高能量的光子才会被吸收，使产生电子跃迁到准费米能级处。可以预测随着注入电子浓度的增加,使电子的准费米能级逐渐升高,导致了激子吸收峰的蓝移。除此之外，根据公式\ref{Equ:excitonabs}所示，激子吸收峰的强度与电子空穴波函数的重叠积分成平方关系。基于QCSE效应，外加的电场会使能带结构倾斜，从而电子空穴的重叠积分减弱，如图\ref{fig_ch4_band_lineup}(a)所示，导致激子吸收峰随着外界电场的增强而减弱，见图\ref{fig_ch2_te_abs}。而基于能带填充效应，由于能带结构并不会发生明显变化(只会由于电子间的多体效应导致能带结构发生微弱的形变\cite{livescu1988free})，电子和载流子的波函数与无外界电场下的波函数几乎相同，如图\ref{fig_ch4_band_lineup}(c)所示。因此激子吸收峰的强度随着电子浓度的增加而将保持一致。这为实现低驱动电压的电吸收光调制器提供了条件。
@@ -83,13 +83,13 @@ N = \frac{\tau\eta I}{qV}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/chapt4_taper_performance.jpg}
-	\caption{两段式锥形耦合结构在$1.55~\mu m$处的分析：(a)光的模场传播图；(b)键合厚度$h_{BCB}$对耦合效率的影响；(c) III-V波导和硅波导的垂直波导方向的侧向套刻误差对耦合性能的影响；(d) MQW层和SCH层锥形尖端宽度对耦合效率的影响}
+	\caption{两段式锥形耦合结构在$1.55~\mu m$处的分析：(a)光的模场传播图；(b)键合厚度$h_{BCB}$对耦合效率的影响；(c) III-V波导和硅波导的侧向套刻误差对耦合性能的影响；(d) MQW层和SCH层锥形尖端宽度对耦合效率的影响}
 	\label{chapt4_taper_performance}
 \end{figure}
 
 接下来，我们分析这种结构对工艺误差的容忍度，包含了键合层的厚度$h_{BCB}$,III-V波导和硅波导在垂直波导方向的套刻误差，以及MQW层和SCH层锥形尖端宽度对耦合效率的影响，见图\ref{chapt4_taper_performance}(b-d)所示。可以看到当$h_{BCB} < 70 ~nm$时，耦合效率都有90\%以上。当III-V波导和硅波导垂直波导方向的套刻偏差小于300~nm时，耦合效率也能保持90\%以上。而MQW层和SCH层尖端宽度的变化，容易引起反射和激发出高阶模式，因此耦合效率随着尖端宽度从0.1~$\mu m$变化到0.5~$\mu m$会有震动。当锥形的宽度大于0.6~$\mu m$时，耦合效率就会急剧下降。
 
-调制器的总长度设计$80~\mu m$。由于III-V外延片是pin结构。因此即使在无外界偏压的情况下，其内部依旧存在着内建电场，如图\ref{fig_ch2_banddiagram}(b)所示。当正向偏压为0.6 V左右时，MQW层和SCH层才处于没有外界偏压的状态。我们用Silvaco\cite{Silvaco}仿真不同偏压-1 V，0 V，0.6 V，1 V下的能带图，如图\ref{chapt4_band_diagram}所示。当低于0.6 V时，倾斜能带的基于QCSE效应的吸收谱可以利用公式\ref{Equ:excitonabs}进行计算。激子吸收峰随着外界电场的增强而往长波移动。当高于0.6 V时，依据能带填充效应，电子准费米能级的升高导致吸收谱将快速往短波移动，吸收峰随电压的漂移量可以利用公式\ref{Equ:DEEF}，\ref{Equ:E1EF}，\ref{Equ:VN}，进行计算。在此，我们仿真了激子吸收峰随偏压移动的情况，如图\ref{chapt4_bandfilling_sim}。其中偏压小于0.6 V时，吸收谱的仿真参数与图\ref{fig_ch2_te_abs}所使用的参数相同。而大于0.6 V时，基于能带填充效应，其参数是通过拟合实验结果获得的：$d_x = 11~nm,~V = 80.4~\mu m^3,~\eta = 0.3,~\tau = 0.61~ns$，以及此时的拟合电阻为66~$\Omega$。可以从图\ref{chapt4_bandfilling_sim}看到，在能带填充效应下，单位电压下吸收峰的移动速度达到50 nm/V，远大于在QCSE效应下吸收峰的移动速度，并且能带填充效应下，吸收峰的强度一直保持着，而QCES效应下吸收峰却随着反向偏压的增加而减弱。
+调制器的总长度设计$80~\mu m$。由于III-V外延片是pin结构。因此即使在无外界偏压的情况下，其内部依旧存在着内建电场，如图\ref{fig_ch2_banddiagram}(b)所示。当正向偏压为0.6 V左右时，MQW层和SCH层才处于没有外界偏压的状态。我们用Silvaco\cite{Silvaco}仿真不同偏压-1 V，0 V，0.6 V，1 V下的能带图，如图\ref{chapt4_band_diagram}所示。当低于0.6 V时，倾斜能带的基于QCSE效应的吸收谱可以利用公式\ref{Equ:excitonabs}进行计算。激子吸收峰随着外界电场的增强而往长波移动。当高于0.6 V时，依据能带填充效应，电子准费米能级的升高导致吸收谱将快速往短波移动，吸收峰随电压的漂移量可以利用公式\ref{Equ:DEEF}，公式\ref{Equ:E1EF}，公式\ref{Equ:VN}，进行计算。在此，我们仿真了激子吸收峰随偏压移动的情况，如图\ref{chapt4_bandfilling_sim}。其中偏压小于0.6 V时，吸收谱的仿真参数与图\ref{fig_ch2_te_abs}所使用的参数相同。而大于0.6 V时，基于能带填充效应，其参数是通过拟合实验结果获得的：$d_x = 11~nm,~V = 80.4~\mu m^3,~\eta = 0.3,~\tau = 0.61~ns$，以及此时的拟合电阻为66~$\Omega$。可以从图\ref{chapt4_bandfilling_sim}看到，在能带填充效应下，单位电压下吸收峰的移动速度达到50 nm/V，远大于在QCSE效应下吸收峰的移动速度，并且能带填充效应下，吸收峰的强度一直保持着，而QCES效应下吸收峰却随着反向偏压的增加而减弱。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/chapt4_band_diagram.eps}
@@ -143,7 +143,7 @@ N = \frac{\tau\eta I}{qV}
 	\begin{figure}[htb]
 		\centering
 		\includegraphics[width=14cm]{./Pictures/chapt4_bonding_diagram1.jpg}
-		\caption{(a)匀上DVS-BCB平坦化过的硅片截面示意图；(b)沉积SiO\SB{2}的III-V片子的截面示意图}
+		\caption{(a)匀上DVS-BCB平坦化过的硅片截面示意图；(b)表面沉积SiO\SB{2}的III-V片子的截面示意图}
 		\label{chapt4_bonding_diagram1}
 	\end{figure}
 	\item 解离III-V片子。将III-V相对比较大的片子，匀上光刻胶。再解离成合适大小的片子，解离时候注意晶向。波导需要沿着[0~1~-1]晶向的方向，这是因为用湿法腐蚀工艺的话，此时波导才会形成倒梯形。如果采用相垂直的方向，波导会形成正梯形。
@@ -152,11 +152,11 @@ N = \frac{\tau\eta I}{qV}
 	\begin{figure}[htb]
 		\centering
 		\includegraphics[width=14cm]{./Pictures/chapt4_bonding_diagram2.jpg}
-		\caption{(a，b)分别展示了夹在石英玻璃间垒好的硅片和III-V片子的侧视和俯视示意图；(c)玻璃化DVS-BCB过程中的温度，以及施加压力的时刻；(d)实际去除完衬底，键合好的硅基混合集成III-V片子}
+		\caption{(a, b)分别展示了夹在石英玻璃间垒好的硅片和III-V片子的侧视和俯视示意图；(c)玻璃化DVS-BCB过程中的温度，以及施加压力的时刻；(d)实际去除完衬底，键合好的硅基混合集成III-V片子}
 		\label{chapt4_bonding_diagram2}
 	\end{figure}
 	\item 倒扣III-V片子到硅片上。在室温下，将III-V片子倒扣在硅片上。倒扣III-V片子，可以用弯曲的镊子夹住III-V片子边缘实现倒扣，也用真空洗笔吸附III-V片子背面将片子倒扣。倒扣III-V片子到硅片上后，可能III-V片子不再所想要的位置，此时，需要用薄镊子，小心将III-V片子推动到所需硅片上的位置。以上操作也可以用商用的倒装键合(Flip Chip)机器实现。
-	\item 机器键合。我们使用商用的键合机器S{\"u}ss Microtec ELAN CB6L。由于这个商用键合机器是用于键合4英寸的片子，而我们的硅片也就5~cm$\times$5~cm以内。因此，我们需要将垒好的硅片和III-V片子，夹在4英寸的石英载玻片之间，如图\ref{chapt4_bonding_diagram2}(a,b)所示。随后，我们将其放入键合机的腔体内，进行在真空环境中的键合。我们可以控制腔体的温度，如图\ref{chapt4_bonding_diagram2}(c)所示，将DVS-BCB玻璃化。当温度上升到150~$^{\circ}$C时，DVS-BCB还是保持流动状态，因此我们对两个石英片加入上下的压力，通过压力，能经一步减小III-V和硅片之间的DVS-BCB的厚度，同时将III-V片子和硅片表面间的空隙被DVS-BCB填慢。当温度大于180~$^{\circ}$C时，我们释放压力，以防玻璃化后的DVS-BCB受到额外的应力。
+	\item 机器键合。我们使用商用的键合机器S{\"u}ss Microtec ELAN CB6L。由于这个商用键合机器是用于键合4英寸的片子，而我们的硅片也就5~cm$\times$5~cm以内。因此，我们需要将垒好的硅片和III-V片子，夹在4英寸的石英载玻片之间，如图\ref{chapt4_bonding_diagram2}(a, b)所示。随后，我们将其放入键合机的腔体内，进行在真空环境中的键合。我们可以控制腔体的温度，如图\ref{chapt4_bonding_diagram2}(c)所示，将DVS-BCB玻璃化。当温度上升到150~$^{\circ}$C时，DVS-BCB还是保持流动状态，因此我们对两个石英片加入上下的压力，通过压力，能经一步减小III-V和硅片之间的DVS-BCB的厚度，同时将III-V片子和硅片表面间的空隙被DVS-BCB填慢。当温度大于180~$^{\circ}$C时，我们释放压力，以防玻璃化后的DVS-BCB受到额外的应力。
 	\item 去除InP衬底。我们将键合好的片子放置到温度为40~$^{\circ}$C的HCl : H\SB{2}O = 4 : 1的溶液中。当没有气泡产生时，表明衬底已经去除干净。如果III-V片子边缘依旧有残留的衬底，尤其沿着[0~1~1]方向使。可以在匀上光刻胶后，用小刀刮掉，再用丙酮，异丙醇，去离子冲洗干净。键合后的III-V片子如图\ref{chapt4_bonding_diagram2}(d)所示。
 \end{enumerate}	
 
@@ -188,7 +188,7 @@ N = \frac{\tau\eta I}{qV}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_suspeneded_InGaAs.jpg}
-	\caption{悬挂的InGaAs层。(a)显微镜图；(b)电镜图}
+	\caption{悬挂的InGaAs层：(a)显微镜图；(b)电镜图}
 	\label{chapt4_III_V_suspeneded_InGaAs}
 \end{figure}
 
@@ -232,15 +232,15 @@ N = \frac{\tau\eta I}{qV}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt4_III_V_results.jpg}
-	\caption{制作完成的硅基混合集成光调制器(a)波导截面电镜图；(b)器件俯视显微镜图}
+	\caption{制作完成的硅基混合集成III-V光调制器：(a)波导截面电镜图；(b)器件俯视显微镜图}
 	\label{chapt4_III_V_results}
 \end{figure}
 
-虽然纯湿法制作III-V波导能够简化工艺步骤，但是有三个步骤有一定的风险。第一个是第六步去除悬挂的InGaAs。如果超声不均匀可能将波导损坏，或者部分InGaAs可能落在III-V波导上，如图\ref{chapt4_III_V_wrong_results}(1)所示，从而导致额外的损耗。第二个是MQW层和SCH层的套刻精度，套刻偏差大，将导致硅波导到III-V波导的耦合效率降低，如图\ref{chapt4_III_V_wrong_results}(2)。第三个是腐蚀MQW层和SCH层如果用不正确的腐蚀液比如使用H\SB{3}PO\SB{4}，H\SB{2}O\SB{2}，H\SB{2}O的混合液，就会导致锥形结构的侧壁粗糙度显著增加，如图\ref{chapt4_III_V_wrong_results}(3)所示。
+虽然纯湿法制作III-V波导能够简化工艺步骤，但是有三个步骤有一定的风险。第一个是第六步去除悬挂的InGaAs。如果超声不均匀可能将波导损坏，或者部分InGaAs可能落在III-V波导上，如图\ref{chapt4_III_V_wrong_results}(a)所示，从而导致额外的损耗。第二个是MQW层和SCH层的套刻精度，套刻偏差大，将导致硅波导到III-V波导的耦合效率降低，如图\ref{chapt4_III_V_wrong_results}(b)。第三个是腐蚀MQW层和SCH层如果用不正确的腐蚀液比如使用H\SB{3}PO\SB{4}，H\SB{2}O\SB{2}，H\SB{2}O的混合液，就会导致锥形结构的侧壁粗糙度显著增加，如图\ref{chapt4_III_V_wrong_results}(c)所示。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/chapt4_III_V_wrong_results.jpg}
-	\caption{(a)悬挂的InGaAs掉落到SCH上；(b)MQW层和SCH层的套刻误差；(c)MQW层和SCH层锥形结构粗糙的侧壁}
+	\caption{(a) 悬挂的InGaAs掉落到SCH上；(b) MQW层和SCH层的套刻误差；(c) MQW层和SCH层锥形结构粗糙的侧壁}
 	\label{chapt4_III_V_wrong_results}
 \end{figure}
 
@@ -308,7 +308,7 @@ N = \frac{\tau\eta I}{qV}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/chapt4_pd_static.jpg}
-	\caption{硅基混合集成III-V电吸收光调制器双工作模式下在1548~$n m$处的光探测性能：(a) 不同输入光强下，反向偏压和光电流的关系；(b)反向偏压和光响应度的关系；(c)暗电流随反向电压的变化曲线}
+	\caption{硅基混合集成III-V电吸收光调制器双工作模式下在1548~$n m$处的光探测性能：(a) 不同输入光强下，反向偏压和光电流的关系；(b)反向偏压和光响应度的关系；(c)暗电流随反向偏压的变化曲线}
 	\label{chapt4_pd_static}
 \end{figure}
 我们构建的静态测试光探测器装置与图\ref{chapt4_static_measure_setup}相同。不过，我们不需要获取光纤的输出光强，只需要记录电压源上的光电流信号即可。图\ref{chapt4_pd_static}(a)展示了在波长1548~nm，不同偏压，不同输入光强下的光电流变化。可以看到当电压缓慢增大时，光电流先增大。这是由于，激子吸收峰随着偏置电压的增加，而往长波漂移，增强了电吸收响应，使光电增大。当偏压达到-2~V时，光电流增大到最大值，然后缓慢下降。这是由于，偏压继续增大，使激子吸收峰吸收峰展宽，并且继续往长波漂移，从而使此处波长的吸收强度略微减弱。对于不同光强，光电流一直是递增状态。图\ref{chapt4_pd_static}(b)根据输入光强和光电流的线性关系，我们拟合获得光探测器的响应度。可以看到，当偏压从-0.1~V达到-2~V时，对应的光响应度从0.15~A/W增大到了0.86~A/W。继续增加反偏电压到-4~V，光电流只是微弱减小到0.79~A/W。而暗电流随电压的变化如图\ref{chapt4_pd_static}(c)。可以看到当偏压从0~V变化到-4~V时，除了由于测试原因造成的抖动，暗电流单调递增到13~nA。 因此，电吸收光调制器作为光探测器也具有暗电流小，响应度大的特点。

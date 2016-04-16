@@ -35,6 +35,6 @@ ylim([-50,0]);
 xlim([0,100]);
 line([0,100],[-25,-25],'Color','k')
 xlabel('f(GHz)');
-ylabel('Microwave Reflection |S11| [dB]');
+ylabel('Microwave Reflection |S11| ^2 [dB]');
 
 

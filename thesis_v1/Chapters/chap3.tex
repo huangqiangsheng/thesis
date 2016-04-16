@@ -22,7 +22,7 @@
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/fig_ch3_background_str.jpg}
-	\caption{ 目前硅波导和混合集成III-V波导的模式耦合结构(a) 多层锥形耦合结构\cite{kurczveil2013characterization}；(b)多段锥形耦合结构\cite{keyvaninia2009engineering}；(c)曲形锥形结构\cite{wang2012heterogeneous}}
+	\caption{ 目前硅波导和混合集成III-V波导的模式耦合结构：(a) 多层锥形耦合结构\cite{kurczveil2013characterization}；(b)多段锥形耦合结构\cite{keyvaninia2009engineering}；(c)曲形锥形结构\cite{wang2012heterogeneous}}
 	\label{fig_ch3_background_str}
 \end{figure}
 
@@ -64,12 +64,12 @@
 
 两根垂直分离的波导中两个模式相互耦合的问题已经在文献[\citenum{sun2009adiabaticity}]中进行详细的理论分析，并且给出了最短耦合长度的解析解。当两根分立波导的模式所对应的等效折射率随波导的长度有相交，并且两个光场模式的对称性相同时，那么两个波导靠近，就会有光模式的相互耦合。然而，文献[\citenum{sun2009adiabaticity}]的理论中，仅考虑了每根波导只有基模的情况。然而，实际中III-V波导，却拥有很多高阶模式。如果在耦合结构中，这些高阶模式的等效折射率变化也和硅波导的等效折射率变化有所相交，那么硅波导的部分光能量就会耦合到III-V波导的高阶模式中去。
 
-图\ref{fig_ch3_multimode}(a)展示了，当p-cladding存在时的传统III-V波导模式的等效折射率$(n_{eff})$随波导宽度变化的关系。我们可以看到此时III-V支持很多高阶模式，并且高阶模式和基模之间的等效折射率差很小。另外一方面，从图\ref{fig_ch3_multimode}(b)，我们可以看到当III-V波导没有很厚的p-cladding时，III-V波导只支持相对较少的模式。此时高阶模式和基模等效折射率的差距,见图\ref{fig_ch3_multimode}(b)，也比之前有所提高。这意味着，在硅波导的基模转化成III-V波导的基模时，III-V波导高阶模式的影响就明显减弱。因此，利用没有p-cladding层的III-V波导，可以实现硅和III-V之间紧凑的耦合结构。这种三段式锥形结构不仅拥有多层锥形耦合结构少反射率的特点\cite{kurczveil2013characterization}，也利用第一段的没有p-cladding III-V锥形波导阻止了高阶模式的产生。通过将整个锥形耦合结构分成独立的三段，我们可以对每段锥形耦合结构单独的优化。接下来，我们就讨论每段taper的优化过程。
+图\ref{fig_ch3_multimode}(a)展示了，当p-cladding存在时的传统III-V波导模式的等效折射率$(n_{eff})$随波导宽度$W_{III-V}$变化的关系。我们可以看到此时III-V支持很多高阶模式，并且高阶模式和基模之间的等效折射率差很小。另外一方面，从图\ref{fig_ch3_multimode}(b)，我们可以看到当III-V波导没有很厚的p-cladding时，III-V波导只支持相对较少的模式。此时高阶模式和基模等效折射率的差距,见图\ref{fig_ch3_multimode}(b)，也比之前有所提高。这意味着，在硅波导的基模转化成III-V波导的基模时，III-V波导高阶模式的影响就明显减弱。因此，利用没有p-cladding层的III-V波导，可以实现硅和III-V之间紧凑的耦合结构。这种三段式锥形结构不仅拥有多层锥形耦合结构少反射率的特点\cite{kurczveil2013characterization}，也利用第一段的没有p-cladding III-V锥形波导阻止了高阶模式的产生。通过将整个锥形耦合结构分成独立的三段，我们可以对每段锥形耦合结构单独的优化。接下来，我们就讨论每段taper的优化过程。
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=12cm]{./Pictures/fig_ch3_multimode.jpg}
-	\caption{模式等效折射率$n_{eff}$随着III-V波导宽度的变化：(a) III-V波导包含p-cladding层；(b)III-V波导没有p-cladding层}
+	\caption{模式等效折射率$n_{eff}$随着III-V波导宽度$W_{III-V}$的变化：(a) III-V波导包含p-cladding层；(b) III-V波导没有p-cladding层}
 	\label{fig_ch3_multimode}
 \end{figure}
 
@@ -89,7 +89,7 @@
 	\label{fig_ch3_confinement}
 \end{figure}
 
-在每段锥形结构的轮廓我们采用文献[\citenum{sun2009adiabaticity}]中的多项式进行描述\ref{Equ:exponential}:
+在每段锥形结构的轮廓我们采用文献[\citenum{sun2009adiabaticity}]中的多项式进行描述,如公式\ref{Equ:exponential}所示：
 \begin{equation}
 \label{Equ:exponential}
 W(x) = w_0+(w_1+w_0)\left(x/L_t\right)^\alpha

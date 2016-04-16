@@ -9,16 +9,16 @@
 	\label{fig_ch2_band_lineup}
 \end{figure}
 
-图\ref{fig_ch2_band_lineup}(a)展示了没有外界偏压下量子阱的导带和价带。此时，电子和空穴的波函数在空间上相互重叠，此时激子效应强度最大。当在外界电场的相互作用下，如图\ref{fig_ch2_band_lineup}(b)所示，可以看到电子和空穴的分立能级的间隔变小，并且两者的波函数在空间上相错，此时激子效应的强度减弱。图\ref{fig_ch2_absorption_spec}(a，b)展示了实验测的不同偏振下量子阱的吸收谱随着外界电场的变化而变化\cite{chao1993momentum}。从中我们可以看出，外界电场使吸收谱往红移动，并且吸收谱边缘的激子吸收峰逐渐减弱。此外，不同偏振下的吸收谱不同。图\ref{fig_ch2_absorption_spec}(c，d)展示了根据实验数据，理论计算得到的结果\cite{chao1993momentum}。可以看到理论和实验吻合的很好。量子阱中的QCSE现象，自从1984年在半导体量子阱材料被发现以来\cite{miller1984band, wood1984high}，已经可以用多套完整的物理模型进行描述\cite{chuang1995physics}。下面，我们将介绍本论文采用的物理模型和计算方法。
+图\ref{fig_ch2_band_lineup}(a)展示了没有外界偏压下量子阱的导带和价带。此时，电子和空穴的波函数在空间上相互重叠，此时激子效应强度最大。当在外界电场的相互作用下，如图\ref{fig_ch2_band_lineup}(b)所示，可以看到电子和空穴的分立能级的间隔变小，并且两者的波函数在空间上相错，此时激子效应的强度减弱。图\ref{fig_ch2_absorption_spec}(a, b)展示了实验测的不同偏振下量子阱的吸收谱随着外界电场的变化而变化\cite{chao1993momentum}。从中我们可以看出，外界电场使吸收谱往红移动，并且吸收谱边缘的激子吸收峰逐渐减弱。此外，不同偏振下的吸收谱不同。图\ref{fig_ch2_absorption_spec}(c, d)展示了根据实验数据，理论计算得到的结果\cite{chao1993momentum}。可以看到理论和实验吻合的很好。量子阱中的QCSE现象，自从1984年在半导体量子阱材料被发现以来\cite{miller1984band, wood1984high}，已经可以用多套完整的物理模型进行描述\cite{chuang1995physics}。下面，我们将介绍本论文采用的物理模型和计算方法。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/fig_ch2_absorption_spec.jpg}
-	\caption{ (a，b) 实验测量的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}；(c，d) 理论计算的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}}
+	\caption{ (a, b) 实验测量的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}；(c, d) 理论计算的量子阱TE和TM偏振光的吸收谱\cite{chao1993momentum}}
 	\label{fig_ch2_absorption_spec}
 \end{figure}
 
 \subsection{基本物理和数值计算方法}
-目前，用于计算量子阱吸收谱的商业软件只有一款昂贵的Harold EAM\cite{HarolEAM}。在此，我们采用文献[\citenum{chuang1995physics, mares1993modeling, roy1993modified, chuang1991exciton}]的方法，自己编程计算外界电场下的量子阱的吸收谱。计算吸收谱需要采用四个步骤，如图\ref{fig_ch2_flow_chart}(a)所示。通过第一步和第二布求解电子，空穴在外界下电场下的薛定谔方程\ref{Equ:Schro}得到本征能量$E$和波函数$\psi(z)$，如图\ref{fig_ch2_flow_chart}(b)所示。通过第三步和第四步求解出包含激子效应量子阱的吸收谱，如图\ref{fig_ch2_flow_chart}(c)所示。
+目前，用于计算量子阱吸收谱的商业软件只有一款昂贵的Harold EAM\cite{HarolEAM}。在此，我们采用文献[\citenum{chuang1995physics, mares1993modeling, roy1993modified, chuang1991exciton}]的方法，自己编程计算外界电场下的量子阱的吸收谱。计算吸收谱需要采用四个步骤，如图\ref{fig_ch2_flow_chart}(a)所示。通过第一步和第二布求解电子，空穴在外界下电场下的薛定谔方程，如公式\ref{Equ:Schro}所示，得到本征能量$E$和波函数$\psi(z)$，如图\ref{fig_ch2_flow_chart}(b)所示。通过第三步和第四步求解出包含激子效应量子阱的吸收谱，如图\ref{fig_ch2_flow_chart}(c)所示。
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=16cm]{./Pictures/fig_ch2_flow_chart.jpg}
@@ -28,7 +28,7 @@
 
 \begin{equation}
 \label{Equ:Schro}
-(\frac{\hbar^2}{2m}\Delta^2+V(z)+eFz)\psi(z)=E\psi(z)
+(-\frac{\hbar^2}{2m}\Delta^2+V(z)+eFz)\psi(z)=E\psi(z)
 \end{equation}
 
 第一步计算材料的导带和价带的边沿结构。量子阱是由两种材料间隔排列而成。图\ref{fig_ch2_band_diagram}展示了在材料应力情况下量子阱能带边沿结构的变化\cite{chuang1995physics}。
@@ -36,7 +36,7 @@
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=14cm]{./Pictures/fig_ch2_band_diagram.jpg}
-	\caption{有应力量子阱中的能带边沿图，(a)压缩应变；(b)无应变}
+	\caption{有应力量子阱中的能带边沿图：(a)压缩应变；(b)无应变}
 	\label{fig_ch2_band_diagram}
 \end{figure}
 
@@ -49,7 +49,7 @@
 \label{Equ:ezz}
 \epsilon_{zz} = -2\frac{C_{12}}{C_{11}}\epsilon_{xx}
 \end{equation}
-其中$C_{11}$和$C_{12}$是材料的弹性刚性常数(Elastic Stiffness Constants)。当$\epsilon_{zz}>0$时，材料处于压缩应变(Compressive Strain)；当$\epsilon_{zz}<0$时，材料处于拉伸应变(Tensile Strain)。图\ref{fig_ch2_band_diagram}(a，b)展示了量子阱在有压缩应变和无应变情况下的能带的变化。通过比较，我们可以看到，导带上能带边沿$E_c$在受到压缩应变时，移动了$P_{c}$。表达式如下：
+其中$C_{11}$和$C_{12}$是材料的弹性刚性常数(Elastic Stiffness Constants)。当$\epsilon_{zz}>0$时，材料处于压缩应变(Compressive Strain)；当$\epsilon_{zz}<0$时，材料处于拉伸应变(Tensile Strain)。图\ref{fig_ch2_band_diagram}(a, b)展示了量子阱在有压缩应变和无应变情况下的能带的变化。通过比较，我们可以看到，导带上能带边沿$E_c$在受到压缩应变时，移动了$P_{c}$。表达式如下：
 \begin{equation}
 \label{Equ:Pc}
 P_{c} = a_{c}(\epsilon_{xx}+\epsilon_{yy}+\epsilon_{zz})
@@ -77,7 +77,7 @@ E_{hh} = E_{v}^{0}(x)-P_{\epsilon}-Q_{\epsilon}
 \label{Equ:Elh}
 E_{lh} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
 \end{equation}
-其中$a_{v}$和$b$是变形势能。利用公式\ref{Equ:Econ}，\ref{Equ:Ehh}、\ref{Equ:Elh}计算量子阱两种材料的能带边缘，就可以获得薛定谔方程中的电子，轻空穴和重空穴的势能$V(z)$。
+其中$a_{v}$和$b$是变形势能。利用公式\ref{Equ:Econ}，公式\ref{Equ:Ehh}，公式\ref{Equ:Elh}计算量子阱两种材料的能带边缘，就可以获得薛定谔方程中的电子，轻空穴和重空穴的势能$V(z)$。
 
 在应力作用下，由于重空穴和轻空穴产的能带生劈裂，其等效质量，我们需要采用Luttinger parameters $\gamma_1, \gamma_2$计算。如下式所示：
 \begin{equation}
@@ -90,7 +90,7 @@ E_{lh} = E_{v}^{0}(x)-P_{\epsilon}+Q_{\epsilon}
 \end{equation}
 其中公式\ref{Equ:eff_mass_z}和公式\ref{Equ:eff_mass_xy}分别是计算垂直与量子阱方向(即z方向)和水平方向重空穴和轻空穴的等效质量\cite{eppenga1987new}。
 
-我们用于硅基混合集成III-V电吸收光调制器的多量子阱中，单个量子阱的势阱(Well)和势垒(Barrier)的组分分别是：In\SB{0.65}Al\SB{0.09}Ga\SB{0.26}As和In\SB{0.42}Al\SB{0.17}Ga\SB{0.39}As。从文献[\citenum{chuang1995physics,li2000material}]，根据它们各个元素的组分，再依据\ref{Equ:Econ}，\ref{Equ:Ehh}、\ref{Equ:Elh}、\ref{Equ:eff_mass_z}、\ref{Equ:eff_mass_xy}式可以获得如表\ref{QWmaterial}中的量子阱材料数据。其中势阱受到了0.82\%的压缩应变，势垒受到了0.73\%的拉伸应变。
+我们用于硅基混合集成III-V电吸收光调制器的多量子阱中，单个量子阱的势阱(Well)和势垒(Barrier)的组分分别是：In\SB{0.65}Al\SB{0.09}Ga\SB{0.26}As和In\SB{0.42}Al\SB{0.17}Ga\SB{0.39}As。从文献[\citenum{chuang1995physics,li2000material}]，根据它们各个元素的组分，再依据公式\ref{Equ:Econ}，公式\ref{Equ:Ehh}，公式\ref{Equ:Elh}，公式\ref{Equ:eff_mass_z}，公式\ref{Equ:eff_mass_xy}可以获得如表\ref{QWmaterial}中的量子阱材料数据。其中势阱受到了0.82\%的压缩应变，势垒受到了0.73\%的拉伸应变。
 {
 	\begin{table}[htb]
 		\zihao{5}
@@ -189,7 +189,7 @@ B_{0}
 \label{Equ:sloveE}
 f_{22}(E) = 0
 \end{equation}
-利用牛顿迭代法或者其他数值方法我们可以获得$E$的数值。然后公式\ref{Equ:kl}，\ref{Equ:Fdetail}，\ref{Equ:Pdetail}反推得到$\textbf{F}$。再假设$B_{0}$的数值，利用公式\ref{Equ:Fsimple}，我们就可以得到每个区域波函数$\psi(z)$。最后，根据粒子在整个空间出现的概率为1，对波函数进行归一化。图\ref{fig_ch2_bias_wavefunction}分别展示了在没有偏压和2 KV/cm的偏压下，利用传输矩阵，计算得到的电子，重空穴，轻空穴的最低能级和对应波函数，其中量子阱势阱的宽度 $t_w =11~nm$。在没有偏压下，电子和重空穴之间的能量间隔是$E_{e-hh} = 0.7997~eV$，当偏压为18 KV/cm时，其间隔变为$E_{e-hh} = 0.7982~eV$，表明吸收峰红移了$\Delta E_{e-hh} = 1.5~meV$。电子和轻空穴在没有偏压和18 ~KV/cm下的能量间隔$E_{e-lh}$分别是$0.8649~eV$和$0.8597~eV$，红移量为 $\Delta E_{e-lh} = 5.2~ mV$。$\Delta E_{e-lh}$ 大于 $\Delta E_{e-hh}$是由于，如表\ref{QWmaterial}所示，轻空穴的等效质量少于重空穴，并且轻空穴的势垒和势阱的能带变差相比重空穴而言更小，因此轻空穴更容易受到势能变化的影响。从图\ref{fig_ch2_bias_18KV_wf}的最后一幅轻空穴的波函数图中可以看出，轻空穴即将突破量子阱势垒的束缚。当外界电场很强时，由于粒子会有部分从势阱里逃逸，此时波函数无法用公式\ref{Equ:generalsolutionsch}来表示，需要采用Airy方程表示此时波函数的通解\cite{chuang1991exciton}。
+利用牛顿迭代法或者其他数值方法我们可以获得$E$的数值。然后公式\ref{Equ:kl}，公式\ref{Equ:Fdetail}，公式\ref{Equ:Pdetail}反推得到$\textbf{F}$。再假设$B_{0}$的数值，利用公式\ref{Equ:Fsimple}，我们就可以得到每个区域波函数$\psi(z)$。最后，根据粒子在整个空间出现的概率为1，对波函数进行归一化。图\ref{fig_ch2_bias_wavefunction}分别展示了在没有偏压和2 KV/cm的偏压下，利用传输矩阵，计算得到的电子，重空穴，轻空穴的最低能级和对应波函数，其中量子阱势阱的宽度 $t_w =11~nm$。在没有偏压下，电子和重空穴之间的能量间隔是$E_{e-hh} = 0.7997~eV$，当偏压为18 KV/cm时，其间隔变为$E_{e-hh} = 0.7982~eV$，表明吸收峰红移了$\Delta E_{e-hh} = 1.5~meV$。电子和轻空穴在没有偏压和18 ~KV/cm下的能量间隔$E_{e-lh}$分别是$0.8649~eV$和$0.8597~eV$，红移量为 $\Delta E_{e-lh} = 5.2~ mV$。$\Delta E_{e-lh}$ 大于 $\Delta E_{e-hh}$是由于，如表\ref{QWmaterial}所示，轻空穴的等效质量少于重空穴，并且轻空穴的势垒和势阱的能带变差相比重空穴而言更小，因此轻空穴更容易受到势能变化的影响。从图\ref{fig_ch2_bias_18KV_wf}的最后一幅轻空穴的波函数图中可以看出，轻空穴即将突破量子阱势垒的束缚。当外界电场很强时，由于粒子会有部分从势阱里逃逸，此时波函数无法用公式\ref{Equ:generalsolutionsch}来表示，需要采用Airy方程表示此时波函数的通解\cite{chuang1991exciton}。
 %\begin{figure}[htb]
 %	\centering
 %	\includegraphics[width=16cm]{./Pictures/fig_ch2_bias_wavefunction.jpg}
@@ -506,7 +506,7 @@ n_m = \frac{c_0}{\omega}\left(\frac{R_{con}}{2Z_C} + \frac{\omega^2}{2}C^2_jR_{s
 \label{fig_ch2_rect_microwave_property}	
 \end{figure}
 
-从图\ref{fig_ch2_rect_zc}可以看出，当波导宽度逐渐减小时或者量子阱厚度逐渐增大，导致结电容减小，因而本征阻抗逐渐提高。当$w_{wg} = 0.8~ \mu m$时，特征阻抗达到50~ $\Omega$。而量子阱厚度从0.15~$\mu m$增加到$0.2~\mu m$，本征阻抗变化量小。从图\ref{fig_ch2_rect_neff_ng}可以看出，微波损耗和微波的等效折射率同样也随着结电容的减小而减小。本征阻抗，微波损耗，微波等效折射率的变化与公式\ref{Equ:zcsimple}，\ref{Equ:nmsimple}，\ref{Equ:alphasimple}描述一致。
+从图\ref{fig_ch2_rect_zc}可以看出，当波导宽度逐渐减小时或者量子阱厚度逐渐增大，导致结电容减小，因而本征阻抗逐渐提高。当$w_{wg} = 0.8~ \mu m$时，特征阻抗达到50~ $\Omega$。而量子阱厚度从0.15~$\mu m$增加到$0.2~\mu m$，本征阻抗变化量小。从图\ref{fig_ch2_rect_neff_ng}可以看出，微波损耗和微波的等效折射率同样也随着结电容的减小而减小。本征阻抗，微波损耗，微波等效折射率的变化与公式\ref{Equ:zcsimple}，公式\ref{Equ:nmsimple}，公式\ref{Equ:alphasimple}描述一致。
 
 完美的行波电极调制器，需要满足微波的和光波群速度匹配，微波电阻和$50~\Omega$匹配。而目前，文献[\citenum{tang201150, zhang1999traveling}]中所展示的利用行波电极的电吸收光调制器，都没有达到这两点。之前的研究人员，通常采用分段式传输线电极，通过高阻抗高群速度和低阻抗低群速度的两种微波电极结构在小于微波波长尺寸内相互组合，达到阻抗匹配，相速度近似匹配的条件，以实现高的调制速度\cite{tang2012over,yuphd,Robertphd}。不过，分段传输线的电极结构尺寸大于行波电极结构。而在硅基混合集成平台上通过减小波导的宽度，以及合适量子阱高度，就能实现标准50 $\Omega$完美匹配。之所以，在之前的InP基电吸收吸收光调制器中无法通过这种方式实现完美的阻抗匹配，是因为InP基的电吸收光调制器的纵向光约束能力太弱，无法实现宽度小于1 $\mu m$的低损耗波导。
 
@@ -525,7 +525,7 @@ n_m = \frac{c_0}{\omega}\left(\frac{R_{con}}{2Z_C} + \frac{\omega^2}{2}C^2_jR_{s
 			\label{fig_ch2_rect_freq_neff_loss} %% label for second subfigure
 			\includegraphics[width=8cm]{./Pictures/fig_ch2_rect_freq_neff_loss.eps}
 		\end{minipage}}
-\caption{(a，b)分别是$w_{wg} = 0.8 ~\mu m, h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，矩形波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随频率$f$的关系}
+\caption{(a, b)分别是$w_{wg} = 0.8 ~\mu m, h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，矩形波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随频率$f$的关系}
 \label{fig_ch2_rect_freq_property}	
 \end{figure}
 
@@ -534,7 +534,7 @@ n_m = \frac{c_0}{\omega}\left(\frac{R_{con}}{2Z_C} + \frac{\omega^2}{2}C^2_jR_{s
 \label{Equ:eoresponse}
 R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2 \gamma_m L} } \left\{\frac{e^{(j\beta_o-\gamma_m)L}-1}{(j\beta_o-\gamma_m)L}+\Gamma_L e^{-2\gamma_m L} \frac{e^{(j\beta_o+\gamma_m)L}-1}{(j\beta_o+\gamma_m)L} \right\} \right|^2,
 \end{equation}
-其中，$\beta_o = 2n_g\pi/\lambda_0,~\lambda_0 = 1.55~\mu m $；微波反射系数$\Gamma_S=(Z_S-Z_C)/(Z_S+Z_C)$；$\Gamma_L=(Z_L-Z_C)/(Z_L+Z_C)$，$Z_S$，$Z_L$是源和负载的特征阻抗，在此我们取标准的$50~ \Omega$；调制器长度$L = 100~ \mu m$；依据文献[\citenum{tang2012over}]，我们取$R_{rs} C_j=1.3~ ps$。图\ref{fig_ch2_rect_3dB_S11}展示了电光响应$R_{EO}$的带宽和微波的反射系数$S_{11}$的幅值。从图\ref{fig_ch2_rect_3dB}可以看到$R_{EO}$的3~dB带宽$f_{3dB}\approx ~100 GHz$，并且图\ref{fig_ch2_rect_S11}展示了微波的反射系数在0~GHz到100~GHz的范围内都低于-25~dB。而目前最好的硅基混合集成光调制器，利用分段传输线式电极，其3~dB带宽达到74~GHz，反射系数在高频也无法保持在-20~dB以下\cite{tang2012over}。
+其中，$\beta_o = 2n_g\pi/\lambda_0,~\lambda_0 = 1.55~\mu m $；微波反射系数$\Gamma_S=(Z_S-Z_C)/(Z_S+Z_C)$；$\Gamma_L=(Z_L-Z_C)/(Z_L+Z_C)$，$Z_S$，$Z_L$是源和负载的特征阻抗，在此我们取标准的$50~ \Omega$；调制器长度$L = 100~ \mu m$；依据文献[\citenum{tang2012over}]，我们取$R_{rs} C_j=1.3~ ps$。图\ref{fig_ch2_rect_3dB_S11}展示了电光响应$R_{EO}$的带宽和微波的反射系数$|S_{11}|^2$的幅值。从图\ref{fig_ch2_rect_3dB}可以看到$R_{EO}$的3~dB带宽$f_{3dB}\approx ~100 GHz$，并且图\ref{fig_ch2_rect_S11}展示了微波的反射系数在0~GHz到100~GHz的范围内都低于-25~dB。而目前最好的硅基混合集成光调制器，利用分段传输线式电极，其3~dB带宽达到74~GHz，反射系数在高频也无法保持在-20~dB以下\cite{tang2012over}。
 
 虽然基于QCSE现象，利用矩形波导的电吸收光调制器的驱动电压只能通过增加调制器长度解决，不过其具有特征阻抗能达到$50~\Omega$的独特性，因此其在高速调制的应用中具有独特优势。
 \begin{figure}[htb]
@@ -551,7 +551,7 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 			\label{fig_ch2_rect_S11} %% label for second subfigure
 			\includegraphics[width=8cm]{./Pictures/fig_ch2_rect_S11.eps}
 		\end{minipage}}
-\caption{(a)矩形波导调制器的电光调制器带宽$R_{EO}$；(b)矩形波导调制器的微波反射系数$|S_{11}|$}
+\caption{(a)矩形波导调制器的电光调制器带宽$R_{EO}$；(b)矩形波导调制器的微波反射系数$|S_{11}|^2$}
 \label{fig_ch2_rect_3dB_S11}	
 \end{figure}
 		
@@ -607,7 +607,7 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 
 与矩形波导分析思路相同，我们分析当量子阱厚度为为$0.15~ \mu m$和$0.2 ~\mu m$时蘑菇型波导的微波特性。从图\ref{fig_ch2_ms_zc}和图\ref{fig_ch2_ms_neff_ng}可以看出，当波导宽度逐渐减小或者量子阱厚度逐渐增大，蘑菇型波导的本征阻抗，微波损耗和微波等效折射率的变化趋势与矩形波导的微波特性变化趋势相同。不过，在相同波导尺寸下，这种蘑菇型波导的本征阻抗偏小，微波等效折射率偏偏大。因此，蘑菇型波导更不容易实现阻抗匹配以及微波与光波的速度匹配。
 接下来，我们比较在与矩形相同波导宽度和量子阱高度下，蘑菇型波导的电光调制器带宽。当量子阱高度是$0.187~ \mu m$，波导宽度$w_{wg} = 0.8~ \mu m$工作波长为$1.55~ \mu m$时，$n_g = 3.525,~loss =  2\times 10^{-3} ~dB/cm^{-1} $。此时微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随工作频率$f$的关系如图\ref{fig_ch2_ms_freq_zc}和图\ref{fig_ch2_ms_freq_neff_loss}所示。
-图\ref{fig_ch2_ms_3dB}和图\ref{fig_ch2_ms_S11}分别展示了蘑菇型波导的电光响应$R_{EO}$的带宽和微波的反射系数$S_{11}$的幅值。从图\ref{fig_ch2_ms_3dB}可以看到$R_{EO}$的3~dB带宽$f_{3dB}\approx ~90 GHz$，小于矩形波导的$f_{3dB}$。并且蘑菇型波导的反射系数在25~GHz的以上时高于-25~dB，也差于矩形波导。\cite{tang2012over}。
+图\ref{fig_ch2_ms_3dB}和图\ref{fig_ch2_ms_S11}分别展示了蘑菇型波导的电光响应$R_{EO}$的带宽和微波的反射系数$|S_{11}|^2$的幅值。从图\ref{fig_ch2_ms_3dB}可以看到$R_{EO}$的3~dB带宽$f_{3dB}\approx ~90 GHz$，小于矩形波导的$f_{3dB}$。并且蘑菇型波导的反射系数在25~GHz的以上时高于-25~dB，也差于矩形波导。\cite{tang2012over}。
 
 \begin{figure}[htb]
 	\small
@@ -647,7 +647,7 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 			\label{fig_ch2_ms_S11} %% label for second subfigure
 			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_S11.eps}
 		\end{minipage}}
-	\caption{(a，b)分别是$f_m = 40~GHz$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随$w_{wg}$的关系；(c，d)分别是$w_{wg} = 0.8 ~\mu m,~ h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随微波频率$f$的关系；(e)蘑菇型波导调制器的电光调制器带宽$R_{EO}$；(f)蘑菇型波导调制器的微波反射系数$|S_{11}|$}
+	\caption{(a, b)分别是$f_m = 40~GHz$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随$w_{wg}$的关系；(c, d)分别是$w_{wg} = 0.8 ~\mu m,~ h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随微波频率$f$的关系；(e)蘑菇型波导调制器的电光调制器带宽$R_{EO}$；(f)蘑菇型波导调制器的微波反射系数$|S_{11}|^2$}
 	\label{fig_ch2_ms_3dB_S11}
 \end{figure}
 
