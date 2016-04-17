@@ -114,7 +114,11 @@ includehead, includefoot]{geometry}
       \fi
     \fi
   \fi}
-
+%\def\cleardoublepage{%
+%  \clearpage
+%  \if@twoside
+%	\c@page
+%  \fi}
 % 这个地方定义一页中浮动对象可占的最大比例
 \renewcommand{\textfraction}{0.15}
 \renewcommand{\topfraction}{0.85}
@@ -225,7 +229,7 @@ includehead, includefoot]{geometry}
   \cleardoublepage
   \thispagestyle{empty}
   {
-    \songti\zihao{-4}
+    \fangsong\zihao{-4}
     \linespread{1.3}
     \begin{center}
       {\hspace{2em}
@@ -257,7 +261,7 @@ includehead, includefoot]{geometry}
       \vspace{4mm}
       %% \ZJU@value@school \\  \zihao{-1}
       % 这个博士学位论文在def文件中已有，当然在tex文件中还可以更改
-      \centerline{\songti \zihao{-1}{\ZJU@value@degree\ZJU@label@thesis} }
+      \centerline{\fangsong \zihao{-1}{\ZJU@value@degree\ZJU@label@thesis} }
       % 这个尺寸可以更改
       \vspace{4mm}
       % 这个地方调入浙大徽标
@@ -275,23 +279,23 @@ includehead, includefoot]{geometry}
       \begin{tabular}{rl}
         {\bfseries\fangsong\zihao{3}\ZJU@label@title:} 
         &
-        \bfseries\fangsong\zihao{-2} \ZJUunderline[260pt]{\ZJU@value@title} \\[3mm]
+        \bfseries\fangsong\zihao{-2} \ZJUunderline[130pt]{\ZJU@value@title} \\[3mm]
         &
         % 这个地方是做第二行标题的判断，如果标题一行写不下，有第二行则显示，否则不显示
         \ifx\ZJU@value@titletl\undefined
           \hfil
         \else
-          {\bfseries\fangsong\zihao{-2}\ZJUunderline[260pt]{\ZJU@value@titletl}}
+          {\bfseries\fangsong\zihao{-2}\ZJUunderline[170pt]{\ZJU@value@titletl}}
         \fi \\[4mm]
         {\bfseries\fangsong\zihao{3}\ZJU@label@Etitle:} 
         &
-        {\bf\zihao{-3}\ZJUunderline[260pt]{\ZJU@value@Etitle}}\\[3mm]
+        {\bf\zihao{-3}\ZJUunderline[180pt]{\ZJU@value@Etitle}}\\[3mm]
         &
         %同样是英文标题的多行判断，如果一行写不下，有第二行显示，否则不显示第二行
         \ifx\ZJU@value@Etitletl\undefined
           \hfil
         \else
-          {\bf\zihao{-3}\ZJUunderline[260pt]{\ZJU@value@Etitletl}}
+          {\bf\zihao{-3}\ZJUunderline[190pt]{\ZJU@value@Etitletl}}
         \fi\\[2mm]
         &
         \ifx\ZJU@value@EtitletB\undefined
@@ -305,7 +309,7 @@ includehead, includefoot]{geometry}
       \vspace{15mm}  
 
       % 左右两边字体不同，定义两个宏AB来简化代码，这个功能用到了array宏包
-      \newcolumntype{A}{>{\songti}r<{}}
+      \newcolumntype{A}{>{\fangsong}r<{}}
       \newcolumntype{B}{>{\fangsong}l<{}}
       \zihao{4}
       \begin{tabular}{A@{：}B}
@@ -330,7 +334,7 @@ includehead, includefoot]{geometry}
     % 插入适当的空白
     \vfill
     % 最后一项 论文提交日期
-    \hfil{\bfseries\songti\zihao{-3}\hspace{4em}\ZJU@label@submitdate%
+    \hfil{\bfseries\fangsong\zihao{-3}\hspace{4em}\ZJU@label@submitdate%
     \ZJUunderline[150pt]{\ZJU@value@submitdate}}\hfil
   }
 }
@@ -346,11 +350,11 @@ includehead, includefoot]{geometry}
     \begin{center}
 
       % 先插入中文论文题目
-      {\bfseries\fangsong\zihao{-2}\ZJUunderline[340pt]{\ZJU@value@title}\\
+      {\bfseries\fangsong\zihao{-2}\ZJUunderline[130pt]{\ZJU@value@title}\\
       \ifx\ZJU@value@titletl\undefined
         \hfil\\
       \else
-        \ZJUunderline[300pt]{\ZJU@value@titletl}\\
+        \ZJUunderline[170pt]{\ZJU@value@titletl}\\
       \fi}
 
       % 插入一段距离
@@ -365,14 +369,14 @@ includehead, includefoot]{geometry}
 
       % 插入空白
       \vspace{8mm}
-      {\bfseries\songti\zihao{3}
+      {\bfseries\fangsong\zihao{3}
       论文作者签名：
       \ifpdf
           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.pdf}}
       \else
           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.eps}}
       \fi
-      {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
+      {\bfseries\fangsong\zihao{3}\textcolor{white}{。}}\\
 
       %\hfil\\
       指导教师签名：}
@@ -381,15 +385,15 @@ includehead, includefoot]{geometry}
       \else
            \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch_s.eps}}
       \fi
-      {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
+      {\bfseries\fangsong\zihao{3}\textcolor{white}{。}}\\
  
             
       % 插入空白
       \vspace{15mm}
       
       % 评阅人信息
-      \newcolumntype{A}{>{\songti\zihao{4}}r}
-      \newcolumntype{B}{>{\songti\zihao{4}}c}
+      \newcolumntype{A}{>{\fangsong\zihao{4}}r}
+      \newcolumntype{B}{>{\fangsong\zihao{4}}c}
       \begin{tabular}{A@{：}B}
         论文评阅人1 & \ZJUunderline[260pt]{\ZJU@value@reviewersA}\\[2.2mm]
         评阅人2 & \ZJUunderline[260pt]{\ZJU@value@reviewersB}\\[2.2mm]
@@ -415,7 +419,7 @@ includehead, includefoot]{geometry}
     % 加一段可变空白
       \vfil
     % 答辩时间
-      {\songti\zihao{4}\hfill\ZJU@label@defenddate%
+      {\fangsong\zihao{4}\hfill\ZJU@label@defenddate%
       \ZJUunderline[150pt]{\ZJU@value@defenddate}\hspace{3em}}
   }
 }
@@ -443,13 +447,13 @@ includehead, includefoot]{geometry}
     \linespread{1.3} 
     \begin{center}
       % 英文论文题目
-      {\bf\zihao{-3}\ZJUunderline[400pt]{\ZJU@value@englishtitle}\\
+      {\bf\zihao{-3}\ZJUunderline[180pt]{\ZJU@value@englishtitle}\\
       \vspace{1ex}
       % 判断英文标题有无第二行
       \ifx\ZJU@value@englishtitletl\undefined
         \hfil
       \else
-        \ZJUunderline[360pt]{\ZJU@value@englishtitletl}
+        \ZJUunderline[190pt]{\ZJU@value@englishtitletl}
       \fi}
 
       % 插入一段空白距离
@@ -582,15 +586,23 @@ includehead, includefoot]{geometry}
 \ctexset { chapter = { format={\noindent } } }
 \ctexset { chapter = { nameformat={\bfseries \zihao {-3}} } }
 \ctexset { chapter = { titleformat={\bfseries \fangsong \zihao {-3}} } }
+\ctexset { chapter = { beforeskip={1ex} } }
+\ctexset { chapter = { afterskip={1ex} } }
 \ctexset { section = { format={\noindent } } }
 \ctexset { section = { nameformat={\bfseries \zihao {4}} } }
 \ctexset { section = { titleformat={\bfseries \fangsong \zihao {4}} } }
+\ctexset { section = { beforeskip={1ex} } }
+\ctexset { section = { afterskip={1ex} } }
 \ctexset { subsection = { format={\noindent } } }
 \ctexset { subsection = { nameformat={\bfseries \zihao {-4}} } }
+\ctexset { subsection = { beforeskip={1ex} } }
+\ctexset { subsection = { afterskip={1ex} } }
 \ctexset { subsection = { titleformat={\bfseries \fangsong \zihao{-4}} } }
 \ctexset { subsubsection = { format={\noindent } } }
 \ctexset { subsubsection = { nameformat={\bfseries \zihao {-4}} } }
 \ctexset { subsubsection = { titleformat={\bfseries \zihao {-4}} } }
+\ctexset { subsubsection = { beforeskip={1ex} } }
+\ctexset { subsubsection = { afterskip={1ex} } }
 
 % 正文部分文字的行距设置
 \linespread{1.5}
