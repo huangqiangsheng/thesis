@@ -609,48 +609,6 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 接下来，我们比较在与矩形相同波导宽度和量子阱高度下，蘑菇型波导的电光调制器带宽。当量子阱高度是$0.187~ \mu m$，波导宽度$w_{wg} = 0.8~ \mu m$工作波长为$1.55~ \mu m$时，$n_g = 3.525,~loss =  2\times 10^{-3} ~dB/cm^{-1} $。此时微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随工作频率$f$的关系如图\ref{fig_ch2_ms_freq_zc}和图\ref{fig_ch2_ms_freq_neff_loss}所示。
 图\ref{fig_ch2_ms_3dB}和图\ref{fig_ch2_ms_S11}分别展示了蘑菇型波导的电光响应$R_{EO}$的带宽和微波的反射系数$|S_{11}|^2$的幅值。从图\ref{fig_ch2_ms_3dB}可以看到$R_{EO}$的3~dB带宽$f_{3dB}\approx ~90 GHz$，小于矩形波导的$f_{3dB}$。并且蘑菇型波导的反射系数在25~GHz的以上时高于-25~dB，也差于矩形波导。\cite{tang2012over}。
 
-\begin{figure}[htb]
-	\small
-	\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_zc}
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_zc.eps}
-		\end{minipage}}
-		\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_neff_ng} %% label for second subfigure
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_neff_ng.eps}
-		\end{minipage}}
-	\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_freq_zc}
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_freq_zc.eps}
-		\end{minipage}}
-	\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_freq_neff_loss} %% label for second subfigure
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_freq_neff_loss.eps}
-		\end{minipage}}
-	\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_3dB} %% label for second subfigure
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_3dB.eps}
-		\end{minipage}}
-	\subfigure[]{
-		\begin{minipage}[]{0.5\textwidth}
-			\centering
-			\label{fig_ch2_ms_S11} %% label for second subfigure
-			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_S11.eps}
-		\end{minipage}}
-	\caption{(a, b)分别是$f_m = 40~GHz$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随$w_{wg}$的关系；(c, d)分别是$w_{wg} = 0.8 ~\mu m,~ h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随微波频率$f$的关系；(e)蘑菇型波导调制器的电光调制器带宽$R_{EO}$；(f)蘑菇型波导调制器的微波反射系数$|S_{11}|^2$}
-	\label{fig_ch2_ms_3dB_S11}
-\end{figure}
-
 虽然远离量子阱区域的电极尺寸的变化对光波的影响十分微弱，但是，由于微波波长尺寸大，电极尺寸的变化对微波的特性影响十分明显。在此，我们分析地电极和源电极的尺寸变化对波导微波性能的影响。根据表\ref{rect_metal_influence}的内容，我们可以通过微调电极的尺寸，在不影响光波损耗的前提下，改善波导的微波特性。	
 {
 	\begin{table}[htb]
@@ -670,6 +628,47 @@ R_{EO} = \left|\frac{1}{1+j\omega R_{rs} C_j}\frac{T}{1-\Gamma_L \Gamma_S  e^{-2
 	\end{table}
 }
 
+\begin{figure}[!h]
+	\small
+	\subfigure[]{
+		\begin{minipage}[]{0.5\textwidth}
+			\centering
+			\label{fig_ch2_ms_zc}
+			\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_zc.eps}
+		\end{minipage}}
+		\subfigure[]{
+			\begin{minipage}[]{0.5\textwidth}
+				\centering
+				\label{fig_ch2_ms_neff_ng} %% label for second subfigure
+				\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_neff_ng.eps}
+			\end{minipage}}
+			\subfigure[]{
+				\begin{minipage}[]{0.5\textwidth}
+					\centering
+					\label{fig_ch2_ms_freq_zc}
+					\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_freq_zc.eps}
+				\end{minipage}}
+				\subfigure[]{
+					\begin{minipage}[]{0.5\textwidth}
+						\centering
+						\label{fig_ch2_ms_freq_neff_loss} %% label for second subfigure
+						\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_freq_neff_loss.eps}
+					\end{minipage}}
+					\subfigure[]{
+						\begin{minipage}[]{0.5\textwidth}
+							\centering
+							\label{fig_ch2_ms_3dB} %% label for second subfigure
+							\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_3dB.eps}
+						\end{minipage}}
+						\subfigure[]{
+							\begin{minipage}[]{0.5\textwidth}
+								\centering
+								\label{fig_ch2_ms_S11} %% label for second subfigure
+								\includegraphics[width=8cm]{./Pictures/fig_ch2_ms_S11.eps}
+							\end{minipage}}
+							\caption{(a, b)分别是$f_m = 40~GHz$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随$w_{wg}$的关系；(c, d)分别是$w_{wg} = 0.8 ~\mu m,~ h_{mqw} = 0.187 ~\mu m$时，在不同量子阱厚度下，蘑菇型波导微波的本征阻抗$Z_C$，微波损耗$loss$，微波等效折射率$n_m$随微波频率$f$的关系；(e)蘑菇型波导调制器的电光调制器带宽$R_{EO}$；(f)蘑菇型波导调制器的微波反射系数$|S_{11}|^2$}
+							\label{fig_ch2_ms_3dB_S11}
+						\end{figure}
 			
 \section{本章小结}
 在本章中，我们详细介绍了设计硅基混合集成III-V波导的两个方面。我们首先详细介绍III-V外延片量子阱结构的吸收谱计算的四个步骤。然后对于设计量子阱，这种多参数优化问题，我们首次引入了利用退火算法设计、优化量子阱结构的思路。通过合理设计退火算法中参数的取值范围，以及退火算法的权值函数，我们可以快速设计出偏振不敏感的电吸收光调制器的量子阱结构。最后，我们总结了III-V外延片的总体设计思路。第二方面是混合集成III-V波导尺寸的设计，我们分析了两种类型的波导，即矩形波导和蘑菇型波导。我们分析了波导宽度和多量子阱高度对波导光学影响，发现量子阱高度增加虽然能增强光的约束因子，但是也减弱了相同电压下的电场强度，因此对驱动电压的影响较弱。除此之外，我们分析了两种波导的微波特性。通过比较，我们发现在相同尺寸下蘑菇型波导本征阻抗偏小，而矩形波导可以实现阻抗匹配，使其3~dB的电光调制器带宽能达到100~GHz。

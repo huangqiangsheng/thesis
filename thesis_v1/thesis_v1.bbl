@@ -1,865 +1,947 @@
 \begin{thebibliography}{100}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+\providecommand{\bibauthor}[1]{#1}
+\providecommand{\bibeditor}[1]{#1}
+\providecommand{\bibtranslator}[1]{#1}
+\providecommand{\bibtitle}[1]{#1}
+\providecommand{\bibbooktitle}[1]{#1}
+\providecommand{\bibjournal}[1]{#1}
+\providecommand{\bibmark}[1]{#1}
+\providecommand{\bibcountry}[1]{#1}
+\providecommand{\bibpatentid}[1]{#1}
+\providecommand{\bibedition}[1]{#1}
+\providecommand{\biborganization}[1]{#1}
+\providecommand{\bibaddress}[1]{#1}
+\providecommand{\bibpublisher}[1]{#1}
+\providecommand{\bibinstitution}[1]{#1}
+\providecommand{\bibschool}[1]{#1}
+\providecommand{\bibvolume}[1]{#1}
+\providecommand{\bibnumber}[1]{#1}
+\providecommand{\bibversion}[1]{#1}
+\providecommand{\bibpages}[1]{#1}
+\providecommand{\bibmodifydate}[1]{#1}
+\providecommand{\bibcitedate}[1]{#1}
+\providecommand{\bibyear}[1]{#1}
+\providecommand{\bibdate}[1]{#1}
+\providecommand{\biburl}[1]{\newline\url{#1}}
 
 \bibitem{Meint2014an}
-Meint Smit, Xaveer Leijtens, Huub Ambrosius, et~al.
-\newblock An introduction to inp-based generic integration technology[J].
-\newblock Semiconductor Science and Technology, 2014.
-\newblock 29(8):083001.
+\bibauthor{SMIT M\@, LEIJTENS X\@, AMBROSIUS H, et~al}\@. \bibtitle{An
+  introduction to InP-based generic integration technology}\bibmark{[J]}\@.
+  \bibjournal{Semiconductor Science and Technology}\@, \bibyear{2014}\@,
+  \bibvolume{29}\bibnumber{(8)}\thinspace{}\textnormal{: }\bibpages{083001}\@.
 
 \bibitem{Tsuyoshi2016low}
-Tsuyoshi Horikawa, Daisuke Shimura, Tohru Mogami.
-\newblock Low-loss silicon wire waveguides for optical integrated circuits[J].
-\newblock MRS Communications, 2016.
-\newblock FirstView:1--7.
+\bibauthor{HORIKAWA T\@, SHIMURA D\@, MOGAMI T}\@. \bibtitle{Low-loss silicon
+  wire waveguides for optical integrated circuits}\bibmark{[J]}\@.
+  \bibjournal{MRS Communications}\@, \bibyear{2016}\@,
+  \bibvolume{FirstView}\thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}7}\@.
 
 \bibitem{Zuffada2012}
-M.~Zuffada.
-\newblock The industrialization of the silicon photonics: Technology road map
-  and applications[C]//Solid-State Device Research Conference (ESSDERC), 2012
-  Proceedings of the European.
-\newblock Sept 2012:7--13.
+\bibauthor{ZUFFADA M}\@. \bibtitle{The industrialization of the Silicon
+  Photonics: Technology road map and applications}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Solid-State Device Research Conference (ESSDERC),
+  2012 Proceedings of the European}\@. \bibyear{2012}\thinspace{}\textnormal{:
+  }\bibpages{7\thinspace{}\textnormal{--}\thinspace{}13}\@.
 
 \bibitem{Shah2005}
-J.~Shah.
-\newblock {DARPA'S EPIC} program: electronic and photonic integrated circuits
-  on {S}i[C]//Group IV Photonics, 2005. 2nd IEEE International Conference on.
-\newblock Sept 2005:1--3.
+\bibauthor{SHAH J}\@. \bibtitle{{DARPA'S EPIC} program: electronic and photonic
+  integrated circuits on {S}i}\bibmark{[C]} //\thinspace{}\bibbooktitle{Group
+  IV Photonics, 2005. 2nd IEEE International Conference on}\@.
+  \bibyear{2005}\thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}3}\@.
 
 \bibitem{HELIOS}
-HELIOS project.
-\newblock http://www.helios-project.eu/.
+\bibauthor{HELIOS}\@. \bibtitle{{pHotonics ELectronics functional Integration
+  on CMOS}}\bibmark{[EB/OL]}\@. \bibpublisher{{HELIOS}}\@, \bibyear{2016}
+  \bibcitedate{[2015/4/18]}\@. \newline\url{http://www.helios-project.eu/}\@.
 
 \bibitem{Arakawa2013Silicon}
-Y.~Arakawa, T.~Nakamura, Y.~Urino, T.~Fujita.
-\newblock Silicon photonics for next generation system integration platform[J].
-\newblock Communications Magazine, IEEE, March 2013.
-\newblock 51(3):72--77.
+\bibauthor{ARAKAWA Y\@, NAKAMURA T\@, URINO Y, et~al}\@. \bibtitle{Silicon
+  photonics for next generation system integration platform}\bibmark{[J]}\@.
+  \bibjournal{Communications Magazine, IEEE}\@, \bibyear{2013}\@,
+  \bibvolume{51}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{72\thinspace{}\textnormal{--}\thinspace{}77}\@.
 
 \bibitem{miller1969}
-Stewart~E Miller.
-\newblock Integrated optics: an introduction[J].
-\newblock Bell System Technical Journal, 1969.
-\newblock 48(7):2059--2069.
+\bibauthor{MILLER S~E}\@. \bibtitle{Integrated optics: an
+  introduction}\bibmark{[J]}\@. \bibjournal{Bell System Technical Journal}\@,
+  \bibyear{1969}\@, \bibvolume{48}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{2059\thinspace{}\textnormal{--}\thinspace{}2069}\@.
 
 \bibitem{Soref1993}
-Richard~A. Soref.
-\newblock Silicon-based optoelectronics[J].
-\newblock Proceedings of the IEEE, Dec 1993.
-\newblock 81(12):1687--1706.
-\newblock \doi{10.1109/5.248958}.
+\bibauthor{SOREF R~A}\@. \bibtitle{Silicon-based
+  optoelectronics}\bibmark{[J]}\@. \bibjournal{Proceedings of the IEEE}\@,
+  \bibyear{1993}\@, \bibvolume{81}\bibnumber{(12)}\thinspace{}\textnormal{:
+  }\bibpages{1687\thinspace{}\textnormal{--}\thinspace{}1706}\@.
 
 \bibitem{Paniccia2011}
-Mario~J. Paniccia.
-\newblock A perfect marriage: optics and silicon[J].
-\newblock Optik \& Photonik, 2011.
-\newblock 6(2):34--38.
+\bibauthor{PANICCIA M~J}\@. \bibtitle{A perfect marriage: optics and
+  silicon}\bibmark{[J]}\@. \bibjournal{Optik \& Photonik}\@, \bibyear{2011}\@,
+  \bibvolume{6}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{34\thinspace{}\textnormal{--}\thinspace{}38}\@.
 
 \bibitem{Assefa2012}
-S.~Assefa, S.~Shank, W.~Green, el~al.
-\newblock A 90nm {CMOS} integrated {N}ano-{P}hotonics technology for 25 {G}bps
-  {WDM} optical communications applications[C]//Electron Devices Meeting
-  (IEDM), 2012 IEEE International.
-\newblock Dec 2012:33.8.1--33.8.3.
+\bibauthor{ASSEFA S\@, SHANK S\@, GREEN W, et~al}\@. \bibtitle{A 90nm {CMOS}
+  integrated {N}ano-{P}hotonics technology for 25 {G}bps {WDM} optical
+  communications applications}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Electron Devices Meeting (IEDM), 2012 IEEE
+  International}\@. \bibyear{2012}\thinspace{}\textnormal{:
+  }\bibpages{33.8.1\thinspace{}\textnormal{--}\thinspace{}33.8.3}\@.
 
 \bibitem{sun2015single}
-Chen Sun, Mark~T Wade, Yunsup Lee, et~al.
-\newblock Single-chip microprocessor that communicates directly using light[J].
-\newblock Nature, 2015.
-\newblock 528(7583):534--538.
+\bibauthor{SUN C\@, WADE M~T\@, LEE Y, et~al}\@. \bibtitle{Single-chip
+  microprocessor that communicates directly using light}\bibmark{[J]}\@.
+  \bibjournal{Nature}\@, \bibyear{2015}\@,
+  \bibvolume{528}\bibnumber{(7583)}\thinspace{}\textnormal{:
+  }\bibpages{534\thinspace{}\textnormal{--}\thinspace{}538}\@.
 
 \bibitem{o1981kramers}
-M~O’Donnell, ET~Jaynes, JG~Miller.
-\newblock Kramers--{K}ronig relationship between ultrasonic attenuation and
-  phase velocity[J].
-\newblock The Journal of the Acoustical Society of America, 1981.
-\newblock 69(3):696--701.
+\bibauthor{O’DONNELL M\@, JAYNES E\@, MILLER J}\@.
+  \bibtitle{Kramers--{K}ronig relationship between ultrasonic attenuation and
+  phase velocity}\bibmark{[J]}\@. \bibjournal{The Journal of the Acoustical
+  Society of America}\@, \bibyear{1981}\@,
+  \bibvolume{69}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{696\thinspace{}\textnormal{--}\thinspace{}701}\@.
 
 \bibitem{xu2005micrometre}
-Qianfan Xu, Bradley Schmidt, Sameer Pradhan, Michal Lipson.
-\newblock Micrometre-scale silicon electro-optic modulator[J].
-\newblock nature, 2005.
-\newblock 435(7040):325--327.
+\bibauthor{XU Q\@, SCHMIDT B\@, PRADHAN S, et~al}\@. \bibtitle{Micrometre-scale
+  silicon electro-optic modulator}\bibmark{[J]}\@. \bibjournal{nature}\@,
+  \bibyear{2005}\@, \bibvolume{435}\bibnumber{(7040)}\thinspace{}\textnormal{:
+  }\bibpages{325\thinspace{}\textnormal{--}\thinspace{}327}\@.
 
 \bibitem{liu2004high}
-Ansheng Liu, Richard Jones, Ling Liao, et~al.
-\newblock A high-speed silicon optical modulator based on a
-  metal--oxide--semiconductor capacitor[J].
-\newblock Nature, 2004.
-\newblock 427(6975):615--618.
+\bibauthor{LIU A\@, JONES R\@, LIAO L, et~al}\@. \bibtitle{A high-speed silicon
+  optical modulator based on a metal--oxide--semiconductor
+  capacitor}\bibmark{[J]}\@. \bibjournal{Nature}\@, \bibyear{2004}\@,
+  \bibvolume{427}\bibnumber{(6975)}\thinspace{}\textnormal{:
+  }\bibpages{615\thinspace{}\textnormal{--}\thinspace{}618}\@.
 
 \bibitem{Midrio2012graphene}
-Michele Midrio, Stefano Boscolo, Michele Moresco, et~al.
-\newblock Graphene--assisted critically--coupled optical ring modulator[J].
-\newblock Opt. Express, Oct 2012.
-\newblock 20(21):23144--23155.
+\bibauthor{MIDRIO M\@, BOSCOLO S\@, MORESCO M, et~al}\@.
+  \bibtitle{Graphene--assisted critically--coupled optical ring
+  modulator}\bibmark{[J]}\@. \bibjournal{Opt. Express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(21)}\thinspace{}\textnormal{:
+  }\bibpages{23144\thinspace{}\textnormal{--}\thinspace{}23155}\@.
 
 \bibitem{phare2015graphene}
-Christopher~T Phare, Yoon-Ho~Daniel Lee, Jaime Cardenas, Michal Lipson.
-\newblock Graphene electro-optic modulator with 30 {GH}z bandwidth[J].
-\newblock Nature Photonics, 2015.
-\newblock 9(8):511--514.
+\bibauthor{PHARE C~T\@, LEE Y-H~D\@, CARDENAS J, et~al}\@. \bibtitle{Graphene
+  electro-optic modulator with 30 {GH}z bandwidth}\bibmark{[J]}\@.
+  \bibjournal{Nature Photonics}\@, \bibyear{2015}\@,
+  \bibvolume{9}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{511\thinspace{}\textnormal{--}\thinspace{}514}\@.
 
 \bibitem{tang201150}
-Yongbo Tang, Hui-Wen Chen, Siddharth Jain, et~al.
-\newblock 50 {G}b/s hybrid silicon traveling-wave electroabsorption
-  modulator[J].
-\newblock Optics express, 2011.
-\newblock 19(7):5811--5816.
+\bibauthor{TANG Y\@, CHEN H-W\@, JAIN S, et~al}\@. \bibtitle{50 {G}b/s hybrid
+  silicon traveling-wave electroabsorption modulator}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2011}\@,
+  \bibvolume{19}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{5811\thinspace{}\textnormal{--}\thinspace{}5816}\@.
 
 \bibitem{Dong2012coherent}
-Po~Dong, Chongjin Xie, Long Chen, et~al.
-\newblock 112-{G}b/s monolithic {PDM-QPSK} modulator in silicon[J].
-\newblock Opt. Express, Dec 2012.
-\newblock 20(26):B624--B629.
+\bibauthor{DONG P\@, XIE C\@, CHEN L, et~al}\@. \bibtitle{112-{G}b/s monolithic
+  {PDM-QPSK} modulator in silicon}\bibmark{[J]}\@. \bibjournal{Opt. Express}\@,
+  \bibyear{2012}\@, \bibvolume{20}\bibnumber{(26)}\thinspace{}\textnormal{:
+  }\bibpages{B624\thinspace{}\textnormal{--}\thinspace{}B629}\@.
 
 \bibitem{tang2012energy}
-Yongbo Tang, Jonathan Peters, John~E Bowers.
-\newblock Energy efficient hybrid silicon electroabsorption modulator for 40
-  {G}b/s, 1-{V}olt uncooled operation[J].
-\newblock IEEE Photonics Technololy Letters, 2012.
-\newblock 24(19).
+\bibauthor{TANG Y\@, PETERS J\@, BOWERS J~E}\@. \bibtitle{Energy Efficient
+  Hybrid Silicon Electroabsorption Modulator for 40 {G}b/s, 1-{V}olt Uncooled
+  Operation}\bibmark{[J]}\@. \bibjournal{IEEE Photonics Technololy Letters}\@,
+  \bibyear{2012}\@, \bibvolume{24}\bibnumber{(19)}\@.
 
 \bibitem{tang2012over}
-Yongbo Tang, Jonathan~D Peters, John~E Bowers.
-\newblock Over 67 {GH}z bandwidth hybrid silicon electroabsorption modulator
-  with asymmetric segmented electrode for 1.3 $\mu$m transmission[J].
-\newblock Optics express, 2012.
-\newblock 20(10):11529--11535.
+\bibauthor{TANG Y\@, PETERS J~D\@, BOWERS J~E}\@. \bibtitle{Over 67 {GH}z
+  bandwidth hybrid silicon electroabsorption modulator with asymmetric
+  segmented electrode for 1.3 $\mu$m transmission}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{11529\thinspace{}\textnormal{--}\thinspace{}11535}\@.
 
 \bibitem{chen2011forty}
-Hui-Wen Chen, Jonathan~D Peters, John~E Bowers.
-\newblock Forty {G}b/s hybrid silicon mach-zehnder modulator with low chirp[J].
-\newblock Optics express, 2011.
-\newblock 19(2):1455--1460.
+\bibauthor{CHEN H-W\@, PETERS J~D\@, BOWERS J~E}\@. \bibtitle{Forty {G}b/s
+  hybrid silicon Mach-Zehnder modulator with low chirp}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2011}\@,
+  \bibvolume{19}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{1455\thinspace{}\textnormal{--}\thinspace{}1460}\@.
 
 \bibitem{soref1987electrooptical}
-Richard~A Soref, Brian~R Bennett.
-\newblock Electrooptical effects in silicon[J].
-\newblock Quantum Electronics, IEEE Journal of, 1987.
-\newblock 23(1):123--129.
+\bibauthor{SOREF R~A\@, BENNETT B~R}\@. \bibtitle{Electrooptical effects in
+  silicon}\bibmark{[J]}\@. \bibjournal{Quantum Electronics, IEEE Journal of}\@,
+  \bibyear{1987}\@, \bibvolume{23}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{123\thinspace{}\textnormal{--}\thinspace{}129}\@.
 
 \bibitem{cocorullo1992thermo}
-G~Cocorullo, I~Rendina.
-\newblock Thermo-optical modulation at 1.5 $\mu$m in silicon etalon[J].
-\newblock Electronics Letters, 1992.
-\newblock 28(1):83--85.
+\bibauthor{COCORULLO G\@, RENDINA I}\@. \bibtitle{Thermo-optical modulation at
+  1.5 $\mu$m in silicon etalon}\bibmark{[J]}\@. \bibjournal{Electronics
+  Letters}\@, \bibyear{1992}\@,
+  \bibvolume{28}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{83\thinspace{}\textnormal{--}\thinspace{}85}\@.
 
 \bibitem{manipatruni2007high}
-Sasikanth Manipatruni, Qianfan Xu, Bradley Schmidt, Jagat Shakya, Michal
-  Lipson.
-\newblock High speed carrier injection 18 {G}b/s silicon micro-ring
-  electro-optic modulator[J].
-\newblock Lasers and Electro-Optics Society, 2007:537--538.
+\bibauthor{MANIPATRUNI S\@, XU Q\@, SCHMIDT B, et~al}\@. \bibtitle{High speed
+  carrier injection 18 {G}b/s silicon micro-ring electro-optic
+  modulator}\bibmark{[J]}\@. \bibjournal{Lasers and Electro-Optics Society}\@,
+  \bibyear{2007}\thinspace{}\textnormal{:
+  }\bibpages{537\thinspace{}\textnormal{--}\thinspace{}538}\@.
 
 \bibitem{fujikata201025}
-Junichi Fujikata, Jun Ushida, Takahiro Nakamura, Yu~Ming-Bin, Zhu ShiYang, Ding
-  Liang, Patrick~Lo Guo-Qiang, Dim-Lee Kwong.
-\newblock 25 {GH}z operation of silicon optical modulator with projection {MOS}
-  structure[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2010:OMI3.
+\bibauthor{FUJIKATA J\@, USHIDA J\@, NAKAMURA T, et~al}\@. \bibtitle{25 {GH}z
+  operation of silicon optical modulator with projection {MOS}
+  structure}\bibmark{[C]} //\thinspace{}\bibbooktitle{Optical Fiber
+  Communication Conference}\@. \bibyear{2010}\thinspace{}\textnormal{:
+  }\bibpages{OMI3}\@.
 
 \bibitem{Xiao201360}
-Xi~Xiao, Hao Xu, Xianyao Li, et~al.
-\newblock 60 {G}bit/s silicon modulators with enhanced electro-optical
-  efficiency[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2013:OW4J--3.
+\bibauthor{XIAO X\@, XU H\@, LI X, et~al}\@. \bibtitle{60 {G}bit/s silicon
+  modulators with enhanced electro-optical efficiency}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Optical Fiber Communication Conference}\@.
+  \bibyear{2013}\thinspace{}\textnormal{:
+  }\bibpages{OW4J\thinspace{}\textnormal{--}\thinspace{}3}\@.
 
 \bibitem{Imec}
-Imec-e{PIX}fab.
-\newblock http://www.europractice-ic.com/siphotonics\_general.php.
+\bibauthor{IMEC-EPIXFAB}\@. \bibtitle{{Europractice Silicon Photonics MPW
+  offer}}\bibmark{[EB/OL]}\@. \bibpublisher{{The EUROPRACTICE Silicon Photonics
+  Support Team}}\@, \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.europractice-ic.com/SiPhotonics\_general.php}\@.
 
 \bibitem{absil2015silicon}
-Philippe~P Absil, Peter Verheyen, Peter De~Heyn, et~al.
-\newblock Silicon photonics integrated circuits: a manufacturing platform for
-  high density, low power optical i/o’s[J].
-\newblock Optics express, 2015.
-\newblock 23(7):9369--9378.
+\bibauthor{ABSIL P~P\@, VERHEYEN P\@, DE~HEYN P, et~al}\@. \bibtitle{Silicon
+  photonics integrated circuits: a manufacturing platform for high density, low
+  power optical I/O’s}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
+  \bibyear{2015}\@, \bibvolume{23}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{9369\thinspace{}\textnormal{--}\thinspace{}9378}\@.
 
 \bibitem{novack201330}
-Ari Novack, Yang Liu, Ran Ding, et~al.
-\newblock A 30 {GH}z silicon photonic platform[C]//SPIE Optics+
-  Optoelectronics.
-\newblock International Society for Optics and Photonics, 2013:878107--878107.
+\bibauthor{NOVACK A\@, LIU Y\@, DING R, et~al}\@. \bibtitle{A 30 {GH}z silicon
+  photonic platform}\bibmark{[C]} //\thinspace{}\bibbooktitle{SPIE Optics+
+  Optoelectronics}\@. \bibyear{2013}\thinspace{}\textnormal{:
+  }\bibpages{878107\thinspace{}\textnormal{--}\thinspace{}878107}\@.
 
 \bibitem{narasimha2006high}
-S~Narasimha, Kohei Onishi, HM~Nayfeh, et~al.
-\newblock High performance 45-nm soi technology with enhanced strain, porous
-  low-k beol, and immersion lithography[C]//Electron Devices Meeting, 2006.
-  IEDM'06. International.
-\newblock IEEE, 2006:1--4.
+\bibauthor{NARASIMHA S\@, ONISHI K\@, NAYFEH H, et~al}\@. \bibtitle{High
+  performance 45-nm SOI technology with enhanced strain, porous low-k BEOL, and
+  immersion lithography}\bibmark{[C]} //\thinspace{}\bibbooktitle{Electron
+  Devices Meeting, 2006. IEDM'06. International}\@.
+  \bibyear{2006}\thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}4}\@.
 
 \bibitem{xu2012high}
-Hao Xu, Xi~Xiao, Xianyao Li, et~al.
-\newblock High speed silicon {M}ach--{Z}ehnder modulator based on interleaved
-  {PN} junctions[J].
-\newblock Optics express, 2012.
-\newblock 20(14):15093--15099.
+\bibauthor{XU H\@, XIAO X\@, LI X, et~al}\@. \bibtitle{High speed silicon
+  {M}ach--{Z}ehnder modulator based on interleaved {PN}
+  junctions}\bibmark{[J]}\@. \bibjournal{Optics express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(14)}\thinspace{}\textnormal{:
+  }\bibpages{15093\thinspace{}\textnormal{--}\thinspace{}15099}\@.
 
 \bibitem{xiao2013high}
-Xi~Xiao, Hao Xu, Xianyao Li, et~al.
-\newblock High-speed, low-loss silicon {M}ach--{Z}ehnder modulators with doping
-  optimization[J].
-\newblock Optics express, 2013.
-\newblock 21(4):4116--4125.
+\bibauthor{XIAO X\@, XU H\@, LI X, et~al}\@. \bibtitle{High-speed, low-loss
+  silicon {M}ach--{Z}ehnder modulators with doping
+  optimization}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
+  \bibyear{2013}\@, \bibvolume{21}\bibnumber{(4)}\thinspace{}\textnormal{:
+  }\bibpages{4116\thinspace{}\textnormal{--}\thinspace{}4125}\@.
 
 \bibitem{timurdogan2014ultralow}
-Erman Timurdogan, Cheryl~M Sorace-Agaskar, Jie Sun, et~al.
-\newblock An ultralow power athermal silicon modulator[J].
-\newblock Nature communications, 2014.
-\newblock 5.
+\bibauthor{TIMURDOGAN E\@, SORACE-AGASKAR C~M\@, SUN J, et~al}\@. \bibtitle{An
+  ultralow power athermal silicon modulator}\bibmark{[J]}\@. \bibjournal{Nature
+  communications}\@, \bibyear{2014}\@, \bibvolume{5}\@.
 
 \bibitem{shakoor2014ultra}
-Abdul Shakoor, Kengo Nozaki, Eiichi Kuramochi, Katsuhiko Nishiguchi, Akihiko
-  Shinya, Masaya Notomi.
-\newblock Ultra-low energy 1{D} silicon photonic crystal electro-optic
-  modulator with sub-100-mv switching voltage[C]//Integrated Photonics
-  Research, Silicon and Nanophotonics.
-\newblock Optical Society of America, 2014:IW3A--6.
+\bibauthor{SHAKOOR A\@, NOZAKI K\@, KURAMOCHI E, et~al}\@. \bibtitle{Ultra-Low
+  Energy 1{D} Silicon Photonic Crystal Electro-Optic Modulator with Sub-100-mV
+  Switching Voltage}\bibmark{[C]} //\thinspace{}\bibbooktitle{Integrated
+  Photonics Research, Silicon and Nanophotonics}\@.
+  \bibyear{2014}\thinspace{}\textnormal{:
+  }\bibpages{IW3A\thinspace{}\textnormal{--}\thinspace{}6}\@.
 
 \bibitem{Pantouvaki201556}
-M.~Pantouvaki, P.~Verheyen, J.~De~Coster, et~al.
-\newblock 56 {G}b/s ring modulator on a 300mm silicon photonics
-  platform[C]//Optical Communication (ECOC), 2015 European Conference on.
-\newblock Sept 2015:1--3.
+\bibauthor{PANTOUVAKI M\@, VERHEYEN P\@, DE~COSTER J, et~al}\@. \bibtitle{56
+  {G}b/s ring modulator on a 300mm silicon photonics platform}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Optical Communication (ECOC), 2015 European
+  Conference on}\@. \bibyear{2015}\thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}3}\@.
 
 \bibitem{Ziebell201240}
-Melissa Ziebell, Delphine Marris-Morini, Gilles Rasigade, et~al.
-\newblock 40 {G}bit/s low-loss silicon optical modulator based on a pipin
-  diode[J].
-\newblock Opt. Express, May 2012.
-\newblock 20(10):10591--10596.
+\bibauthor{ZIEBELL M\@, MARRIS-MORINI D\@, RASIGADE G, et~al}\@. \bibtitle{40
+  {G}bit/s low-loss silicon optical modulator based on a pipin
+  diode}\bibmark{[J]}\@. \bibjournal{Opt. Express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{10591\thinspace{}\textnormal{--}\thinspace{}10596}\@.
 
 \bibitem{Baba201350}
-Takeshi Baba, Suguru Akiyama, Masahiko Imai, et~al.
-\newblock 50-{G}b/s ring-resonator-based silicon modulator[J].
-\newblock Opt. Express, May 2013.
-\newblock 21(10):11869--11876.
+\bibauthor{BABA T\@, AKIYAMA S\@, IMAI M, et~al}\@. \bibtitle{50-{G}b/s
+  ring-resonator-based silicon modulator}\bibmark{[J]}\@. \bibjournal{Opt.
+  Express}\@, \bibyear{2013}\@,
+  \bibvolume{21}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{11869\thinspace{}\textnormal{--}\thinspace{}11876}\@.
 
 \bibitem{Ding2013electro}
-Jianfeng Ding, Ruiqiang Ji, Lei Zhang, Lin Yang.
-\newblock Electro-optical response analysis of a 40 {G}b/s silicon
-  {M}ach-{Z}ehnder optical modulator[J].
-\newblock J. Lightwave Technol., Jul 2013.
-\newblock 31(14):2434--2440.
+\bibauthor{DING J\@, JI R\@, ZHANG L, et~al}\@. \bibtitle{Electro-Optical
+  Response Analysis of a 40 {G}b/s Silicon {M}ach-{Z}ehnder Optical
+  Modulator}\bibmark{[J]}\@. \bibjournal{J. Lightwave Technol.}\@,
+  \bibyear{2013}\@, \bibvolume{31}\bibnumber{(14)}\thinspace{}\textnormal{:
+  }\bibpages{2434\thinspace{}\textnormal{--}\thinspace{}2440}\@.
 
 \bibitem{reed2010silicon}
-Graham~T Reed, G~Mashanovich, FY~Gardes, DJ~Thomson.
-\newblock Silicon optical modulators[J].
-\newblock Nature photonics, 2010.
-\newblock 4(8):518--526.
+\bibauthor{REED G~T\@, MASHANOVICH G\@, GARDES F, et~al}\@. \bibtitle{Silicon
+  optical modulators}\bibmark{[J]}\@. \bibjournal{Nature photonics}\@,
+  \bibyear{2010}\@, \bibvolume{4}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{518\thinspace{}\textnormal{--}\thinspace{}526}\@.
 
 \bibitem{frova1965franz}
-Andrea Frova, Paul Handler.
-\newblock Franz-{K}eldysh effect in the space-charge region of a germanium p- n
-  junction[J].
-\newblock Physical Review, 1965.
-\newblock 137(6A):A1857.
+\bibauthor{FROVA A\@, HANDLER P}\@. \bibtitle{Franz-{K}eldysh Effect in the
+  Space-Charge Region of a Germanium p- n Junction}\bibmark{[J]}\@.
+  \bibjournal{Physical Review}\@, \bibyear{1965}\@,
+  \bibvolume{137}\bibnumber{(6A)}\thinspace{}\textnormal{: }\bibpages{A1857}\@.
 
 \bibitem{liu2008waveguide}
-Jifeng Liu, Mark Beals, Andrew Pomerene, et~al.
-\newblock Waveguide-integrated, ultralow-energy {G}e{S}i electro-absorption
-  modulators[J].
-\newblock Nature Photonics, 2008.
-\newblock 2(7):433--437.
+\bibauthor{LIU J\@, BEALS M\@, POMERENE A, et~al}\@.
+  \bibtitle{Waveguide-integrated, ultralow-energy {G}e{S}i electro-absorption
+  modulators}\bibmark{[J]}\@. \bibjournal{Nature Photonics}\@,
+  \bibyear{2008}\@, \bibvolume{2}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{433\thinspace{}\textnormal{--}\thinspace{}437}\@.
 
 \bibitem{kuo2005strong}
-Yu-Hsuan Kuo, Yong~Kyu Lee, Yangsi Ge, et~al.
-\newblock Strong quantum-confined {S}tark effect in germanium quantum-well
-  structures on silicon[J].
-\newblock Nature, 2005.
-\newblock 437(7063):1334--1336.
+\bibauthor{KUO Y-H\@, LEE Y~K\@, GE Y, et~al}\@. \bibtitle{Strong
+  quantum-confined {S}tark effect in germanium quantum-well structures on
+  silicon}\bibmark{[J]}\@. \bibjournal{Nature}\@, \bibyear{2005}\@,
+  \bibvolume{437}\bibnumber{(7063)}\thinspace{}\textnormal{:
+  }\bibpages{1334\thinspace{}\textnormal{--}\thinspace{}1336}\@.
 
 \bibitem{rong2010quantum}
-Yiwen Rong, Yangsi Ge, Yijie Huo, Marco Fiorentino, M~Tan, T~Kamins, Tomasz~J
-  Ochalski, Guillaume Huyet, JS~Harris.
-\newblock Quantum-confined {S}tark effect in {G}e/{S}i{G}e quantum wells on
-  si[J].
-\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2010.
-\newblock 16(1):85--92.
+\bibauthor{RONG Y\@, GE Y\@, HUO Y, et~al}\@. \bibtitle{Quantum-confined
+  {S}tark effect in {G}e/{S}i{G}e quantum wells on Si}\bibmark{[J]}\@.
+  \bibjournal{Selected Topics in Quantum Electronics, IEEE Journal of}\@,
+  \bibyear{2010}\@, \bibvolume{16}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{85\thinspace{}\textnormal{--}\thinspace{}92}\@.
 
 \bibitem{srinivasan201650gb}
-Ashwyn Srinivasan, Peter Verheyen, Roger Loo, Ingrid De~Wolf, Marianna
-  Pantouvaki, Guy Lepage, Sadhishkumar Balakrishnan, Wendy Vanherle, Philippe
-  Absil, Joris Van~Campenhout.
-\newblock 50gb/s {C}-band {G}e{S}i waveguide electro-absorption
-  modulator[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2016:Tu3D--7.
+\bibauthor{SRINIVASAN A\@, VERHEYEN P\@, LOO R, et~al}\@. \bibtitle{50Gb/s
+  {C}-band {G}e{S}i Waveguide Electro-Absorption Modulator}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Optical Fiber Communication Conference}\@.
+  \bibyear{2016}\thinspace{}\textnormal{:
+  }\bibpages{Tu3D\thinspace{}\textnormal{--}\thinspace{}7}\@.
 
 \bibitem{Srinivasan201656}
-S.A. Srinivasan, M.~Pantouvaki, S.~Gupta, et~al.
-\newblock 56 {G}b/s germanium waveguide electro-absorption modulator[J].
-\newblock Lightwave Technology, Journal of, Jan 2016.
-\newblock 34(2):419--424.
+\bibauthor{SRINIVASAN S\@, PANTOUVAKI M\@, GUPTA S, et~al}\@. \bibtitle{56
+  {G}b/s Germanium Waveguide Electro-Absorption Modulator}\bibmark{[J]}\@.
+  \bibjournal{Lightwave Technology, Journal of}\@, \bibyear{2016}\@,
+  \bibvolume{34}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{419\thinspace{}\textnormal{--}\thinspace{}424}\@.
 
 \bibitem{Dazeng2013high}
-Dazeng Feng, Wei Qian, Hong Liang, et~al.
-\newblock High-speed {G}e{S}i electroabsorption modulator on the {SOI}
-  waveguide platform[J].
-\newblock Selected Topics in Quantum Electronics, IEEE Journal of, Nov 2013.
-\newblock 19(6):64--73.
+\bibauthor{FENG D\@, QIAN W\@, LIANG H, et~al}\@. \bibtitle{High-Speed {G}e{S}i
+  Electroabsorption Modulator on the {SOI} Waveguide Platform}\bibmark{[J]}\@.
+  \bibjournal{Selected Topics in Quantum Electronics, IEEE Journal of}\@,
+  \bibyear{2013}\@, \bibvolume{19}\bibnumber{(6)}\thinspace{}\textnormal{:
+  }\bibpages{64\thinspace{}\textnormal{--}\thinspace{}73}\@.
 
 \bibitem{chaisakul201223}
-Papichaya Chaisakul, Delphine Marris-Morini, Mohamed-Sa{\"\i}d Rouifed, et~al.
-\newblock 23 {GH}z {G}e/{S}i{G}e multiple quantum well electro-absorption
-  modulator[J].
-\newblock Optics express, 2012.
-\newblock 20(3):3219--3224.
+\bibauthor{CHAISAKUL P\@, MARRIS-MORINI D\@, ROUIFED M-S, et~al}\@.
+  \bibtitle{23 {GH}z {G}e/{S}i{G}e multiple quantum well electro-absorption
+  modulator}\bibmark{[J]}\@. \bibjournal{Optics express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{3219\thinspace{}\textnormal{--}\thinspace{}3224}\@.
 
 \bibitem{novoselov2004electric}
-Kostya~S Novoselov, Andre~K Geim, SV~Morozov, et~al.
-\newblock Electric field effect in atomically thin carbon films[J].
-\newblock science, 2004.
-\newblock 306(5696):666--669.
+\bibauthor{NOVOSELOV K~S\@, GEIM A~K\@, MOROZOV S, et~al}\@. \bibtitle{Electric
+  field effect in atomically thin carbon films}\bibmark{[J]}\@.
+  \bibjournal{science}\@, \bibyear{2004}\@,
+  \bibvolume{306}\bibnumber{(5696)}\thinspace{}\textnormal{:
+  }\bibpages{666\thinspace{}\textnormal{--}\thinspace{}669}\@.
 
 \bibitem{liu2011graphene}
-Ming Liu, Xiaobo Yin, Erick Ulin-Avila, et~al.
-\newblock A graphene-based broadband optical modulator[J].
-\newblock Nature, 2011.
-\newblock 474(7349):64--67.
+\bibauthor{LIU M\@, YIN X\@, ULIN-AVILA E, et~al}\@. \bibtitle{A graphene-based
+  broadband optical modulator}\bibmark{[J]}\@. \bibjournal{Nature}\@,
+  \bibyear{2011}\@, \bibvolume{474}\bibnumber{(7349)}\thinspace{}\textnormal{:
+  }\bibpages{64\thinspace{}\textnormal{--}\thinspace{}67}\@.
 
 \bibitem{liu2012double}
-Ming Liu, Xiaobo Yin, Xiang Zhang.
-\newblock Double-layer graphene optical modulator[J].
-\newblock Nano letters, 2012.
-\newblock 12(3):1482--1485.
+\bibauthor{LIU M\@, YIN X\@, ZHANG X}\@. \bibtitle{Double-layer graphene
+  optical modulator}\bibmark{[J]}\@. \bibjournal{Nano letters}\@,
+  \bibyear{2012}\@, \bibvolume{12}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{1482\thinspace{}\textnormal{--}\thinspace{}1485}\@.
 
 \bibitem{hu2014broadband}
-YT~Hu, M~Pantouvaki, S~Brems, et~al.
-\newblock Broadband 10{G}b/s graphene electro-absorption modulator on silicon
-  for chip-level optical interconnects[C]//Electron Devices Meeting (IEDM),
-  2014 IEEE International.
-\newblock IEEE, 2014:5--6.
+\bibauthor{HU Y\@, PANTOUVAKI M\@, BREMS S, et~al}\@. \bibtitle{Broadband
+  10{G}b/s graphene electro-absorption modulator on silicon for chip-level
+  optical interconnects}\bibmark{[C]} //\thinspace{}\bibbooktitle{Electron
+  Devices Meeting (IEDM), 2014 IEEE International}\@.
+  \bibyear{2014}\thinspace{}\textnormal{:
+  }\bibpages{5\thinspace{}\textnormal{--}\thinspace{}6}\@.
 
 \bibitem{hu2016broadband}
-Yingtao Hu, Marianna Pantouvaki, Joris Campenhout, et~al.
-\newblock Broadband 10 {G}b/s operation of graphene electro-absorption
-  modulator on silicon[J].
-\newblock Laser \& Photonics Reviews, 2016.
+\bibauthor{HU Y\@, PANTOUVAKI M\@, CAMPENHOUT J, et~al}\@. \bibtitle{Broadband
+  10 {G}b/s operation of graphene electro-absorption modulator on
+  silicon}\bibmark{[J]}\@. \bibjournal{Laser \& Photonics Reviews}\@,
+  \bibyear{2016}\@.
 
 \bibitem{lee2002broadband}
-Mark Lee, Howard~E Katz, Christoph Erben, et~al.
-\newblock Broadband modulation of light by using an electro-optic polymer[J].
-\newblock Science, 2002.
-\newblock 298(5597):1401--1403.
+\bibauthor{LEE M\@, KATZ H~E\@, ERBEN C, et~al}\@. \bibtitle{Broadband
+  modulation of light by using an electro-optic polymer}\bibmark{[J]}\@.
+  \bibjournal{Science}\@, \bibyear{2002}\@,
+  \bibvolume{298}\bibnumber{(5597)}\thinspace{}\textnormal{:
+  }\bibpages{1401\thinspace{}\textnormal{--}\thinspace{}1403}\@.
 
 \bibitem{palmer2014high}
-Robert Palmer, Sebastian Koeber, Delwin~L Elder, et~al.
-\newblock High-speed, low drive-voltage silicon-organic hybrid modulator based
-  on a binary-chromophore electro-optic material[J].
-\newblock Journal of Lightwave Technology, 2014.
-\newblock 32(16):2726--2734.
+\bibauthor{PALMER R\@, KOEBER S\@, ELDER D~L, et~al}\@. \bibtitle{High-speed,
+  low drive-voltage silicon-organic hybrid modulator based on a
+  binary-chromophore electro-optic material}\bibmark{[J]}\@.
+  \bibjournal{Journal of Lightwave Technology}\@, \bibyear{2014}\@,
+  \bibvolume{32}\bibnumber{(16)}\thinspace{}\textnormal{:
+  }\bibpages{2726\thinspace{}\textnormal{--}\thinspace{}2734}\@.
 
 \bibitem{koeber2015femtojoule}
-Sebastian Koeber, Robert Palmer, Matthias Lauermann, et~al.
-\newblock Femtojoule electro-optic modulation using a silicon-organic hybrid
-  device[J].
-\newblock Light Sci. Appl, 2015.
-\newblock 4(2):e255.
+\bibauthor{KOEBER S\@, PALMER R\@, LAUERMANN M, et~al}\@. \bibtitle{Femtojoule
+  electro-optic modulation using a silicon-organic hybrid
+  device}\bibmark{[J]}\@. \bibjournal{Light Sci. Appl}\@, \bibyear{2015}\@,
+  \bibvolume{4}\bibnumber{(2)}\thinspace{}\textnormal{: }\bibpages{e255}\@.
 
 \bibitem{haffner2015all}
-C~Haffner, W~Heni, Y~Fedoryshyn, et~al.
-\newblock All-plasmonic {M}ach--{Z}ehnder modulator enabling optical high-speed
-  communication at the microscale[J].
-\newblock Nature Photonics, 2015.
-\newblock 9(8):525--528.
+\bibauthor{HAFFNER C\@, HENI W\@, FEDORYSHYN Y, et~al}\@.
+  \bibtitle{All-plasmonic {M}ach--{Z}ehnder modulator enabling optical
+  high-speed communication at the microscale}\bibmark{[J]}\@.
+  \bibjournal{Nature Photonics}\@, \bibyear{2015}\@,
+  \bibvolume{9}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{525\thinspace{}\textnormal{--}\thinspace{}528}\@.
 
 \bibitem{almeida2004guiding}
-Vilson~R Almeida, Qianfan Xu, Carlos~A Barrios, Michal Lipson.
-\newblock Guiding and confining light in void nanostructure[J].
-\newblock Optics letters, 2004.
-\newblock 29(11):1209--1211.
+\bibauthor{ALMEIDA V~R\@, XU Q\@, BARRIOS C~A, et~al}\@. \bibtitle{Guiding and
+  confining light in void nanostructure}\bibmark{[J]}\@. \bibjournal{Optics
+  letters}\@, \bibyear{2004}\@,
+  \bibvolume{29}\bibnumber{(11)}\thinspace{}\textnormal{:
+  }\bibpages{1209\thinspace{}\textnormal{--}\thinspace{}1211}\@.
 
 \bibitem{liu2015recent}
-Jialei Liu, Guangming Xu, Fenggang Liu, et~al.
-\newblock Recent advances in polymer electro-optic modulators[J].
-\newblock Rsc Advances, 2015.
-\newblock 5(21):15784--15794.
+\bibauthor{LIU J\@, XU G\@, LIU F, et~al}\@. \bibtitle{Recent advances in
+  polymer electro-optic modulators}\bibmark{[J]}\@. \bibjournal{Rsc
+  Advances}\@, \bibyear{2015}\@,
+  \bibvolume{5}\bibnumber{(21)}\thinspace{}\textnormal{:
+  }\bibpages{15784\thinspace{}\textnormal{--}\thinspace{}15794}\@.
 
 \bibitem{heni2015high}
-W~Heni, C~Hoessbacher, C~Haffner, et~al.
-\newblock High speed plasmonic modulator array enabling dense optical
-  interconnect solutions[J].
-\newblock Optics express, 2015.
-\newblock 23(23):29746--29757.
+\bibauthor{HENI W\@, HOESSBACHER C\@, HAFFNER C, et~al}\@. \bibtitle{High speed
+  plasmonic modulator array enabling dense optical interconnect
+  solutions}\bibmark{[J]}\@. \bibjournal{Optics express}\@, \bibyear{2015}\@,
+  \bibvolume{23}\bibnumber{(23)}\thinspace{}\textnormal{:
+  }\bibpages{29746\thinspace{}\textnormal{--}\thinspace{}29757}\@.
 
 \bibitem{chen2014hybrid}
-Li~Chen, Qiang Xu, Michael~G Wood, Ronald~M Reano.
-\newblock Hybrid silicon and lithium niobate electro-optical ring modulator[J].
-\newblock Optica, 2014.
-\newblock 1(2):112--118.
+\bibauthor{CHEN L\@, XU Q\@, WOOD M~G, et~al}\@. \bibtitle{Hybrid silicon and
+  lithium niobate electro-optical ring modulator}\bibmark{[J]}\@.
+  \bibjournal{Optica}\@, \bibyear{2014}\@,
+  \bibvolume{1}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{112\thinspace{}\textnormal{--}\thinspace{}118}\@.
 
 \bibitem{xiong2014active}
-Chi Xiong, Wolfram~HP Pernice, Joseph~H Ngai, et~al.
-\newblock Active silicon integrated nanophotonics: ferroelectric {B}a{T}io3
-  devices[J].
-\newblock Nano letters, 2014.
-\newblock 14(3):1419--1425.
+\bibauthor{XIONG C\@, PERNICE W~H\@, NGAI J~H, et~al}\@. \bibtitle{Active
+  silicon integrated nanophotonics: ferroelectric {B}a{T}iO3
+  devices}\bibmark{[J]}\@. \bibjournal{Nano letters}\@, \bibyear{2014}\@,
+  \bibvolume{14}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{1419\thinspace{}\textnormal{--}\thinspace{}1425}\@.
 
 \bibitem{george2015lanthanide}
-JP~George, PF~Smet, Jonas Botterman, et~al.
-\newblock Lanthanide-assisted deposition of strongly electro-optic {PZT} thin
-  films on silicon: Toward integrated active nanophotonic devices[J].
-\newblock ACS applied materials \& interfaces, 2015.
-\newblock 7(24):13350--13359.
+\bibauthor{GEORGE J\@, SMET P\@, BOTTERMAN J, et~al}\@.
+  \bibtitle{Lanthanide-Assisted Deposition of Strongly Electro-optic {PZT} Thin
+  Films on Silicon: Toward Integrated Active Nanophotonic
+  Devices}\bibmark{[J]}\@. \bibjournal{ACS applied materials \& interfaces}\@,
+  \bibyear{2015}\@, \bibvolume{7}\bibnumber{(24)}\thinspace{}\textnormal{:
+  }\bibpages{13350\thinspace{}\textnormal{--}\thinspace{}13359}\@.
 
 \bibitem{miller1984band}
-DAB Miller, DS~Chemla, TC~Damen, et~al.
-\newblock Band-edge electroabsorption in quantum well structures: the
-  quantum-confined stark effect[J].
-\newblock Physical Review Letters, 1984.
-\newblock 53(22):2173.
+\bibauthor{MILLER D\@, CHEMLA D\@, DAMEN T, et~al}\@. \bibtitle{Band-edge
+  electroabsorption in quantum well structures: the quantum-confined Stark
+  effect}\bibmark{[J]}\@. \bibjournal{Physical Review Letters}\@,
+  \bibyear{1984}\@, \bibvolume{53}\bibnumber{(22)}\thinspace{}\textnormal{:
+  }\bibpages{2173}\@.
 
 \bibitem{wood1984high}
-TH~Wood, CA~Burrus, DAB Miller, et~al.
-\newblock High-speed optical modulation with gaas/gaalas quantum wells in
-  ap-i-n diode structure[J].
-\newblock Applied Physics Letters, 1984.
-\newblock 44(1):16--18.
+\bibauthor{WOOD T\@, BURRUS C\@, MILLER D, et~al}\@. \bibtitle{High-speed
+  optical modulation with GaAs/GaAlAs quantum wells in ap-i-n diode
+  structure}\bibmark{[J]}\@. \bibjournal{Applied Physics Letters}\@,
+  \bibyear{1984}\@, \bibvolume{44}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{16\thinspace{}\textnormal{--}\thinspace{}18}\@.
 
 \bibitem{chacinski2009monolithically}
-Marek Chaci{\'n}ski, Urban Westergren, Bj{\"o}rn Stoltz, et~al.
-\newblock Monolithically integrated 100 {GH}z {DFB-TWEAM}[J].
-\newblock Journal of Lightwave Technology, 2009.
-\newblock 27(16):3410--3415.
+\bibauthor{CHACI{\'N}SKI M\@, WESTERGREN U\@, STOLTZ B, et~al}\@.
+  \bibtitle{Monolithically integrated 100 {GH}z {DFB-TWEAM}}\bibmark{[J]}\@.
+  \bibjournal{Journal of Lightwave Technology}\@, \bibyear{2009}\@,
+  \bibvolume{27}\bibnumber{(16)}\thinspace{}\textnormal{:
+  }\bibpages{3410\thinspace{}\textnormal{--}\thinspace{}3415}\@.
 
 \bibitem{kazmierski2009100}
-Christophe Kazmierski, Agnieszka Konczykowska, Filipe Jorge, et~al.
-\newblock 100 {G}b/s operation of an {A}l{G}a{I}n{A}s semi-insulating buried
-  heterojunction {EML}[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2009:OThT7.
+\bibauthor{KAZMIERSKI C\@, KONCZYKOWSKA A\@, JORGE F, et~al}\@. \bibtitle{100
+  {G}b/s operation of an {A}l{G}a{I}n{A}s semi-insulating buried heterojunction
+  {EML}}\bibmark{[C]} //\thinspace{}\bibbooktitle{Optical Fiber Communication
+  Conference}\@. \bibyear{2009}\thinspace{}\textnormal{: }\bibpages{OThT7}\@.
 
 \bibitem{poirier2015inp}
-Maxime Poirier, Marcel Boudreau, Yu-Min Lin, et~al.
-\newblock In{P} integrated coherent transmitter for 100 {G}b/s {DP-QPSK}
-  transmission[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2015:Th4F--1.
+\bibauthor{POIRIER M\@, BOUDREAU M\@, LIN Y-M, et~al}\@. \bibtitle{In{P}
+  Integrated Coherent Transmitter for 100 {G}b/s {DP-QPSK}
+  transmission}\bibmark{[C]} //\thinspace{}\bibbooktitle{Optical Fiber
+  Communication Conference}\@. \bibyear{2015}\thinspace{}\textnormal{:
+  }\bibpages{Th4F\thinspace{}\textnormal{--}\thinspace{}1}\@.
 
 \bibitem{miller1985electric}
-DAB Miller, DS~Chemla, TC~Damen, AC~Gossard, W~Wiegmann, TH~Wood, CA~Burrus.
-\newblock Electric field dependence of optical absorption near the band gap of
-  quantum-well structures[J].
-\newblock Physical Review B, 1985.
-\newblock 32(2):1043.
+\bibauthor{MILLER D\@, CHEMLA D\@, DAMEN T, et~al}\@. \bibtitle{Electric field
+  dependence of optical absorption near the band gap of quantum-well
+  structures}\bibmark{[J]}\@. \bibjournal{Physical Review B}\@,
+  \bibyear{1985}\@, \bibvolume{32}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{1043}\@.
 
 \bibitem{welstand1996dual}
-RB~Welstand, SA~Pappert, CK~Sun, et~al.
-\newblock Dual-function electroabsorption waveguide modulator/detector for
-  optoelectronic transceiver applications[J].
-\newblock Photonics Technology Letters, IEEE, 1996.
-\newblock 8(11):1540--1542.
+\bibauthor{WELSTAND R\@, PAPPERT S\@, SUN C, et~al}\@. \bibtitle{Dual-function
+  electroabsorption waveguide modulator/detector for optoelectronic transceiver
+  applications}\bibmark{[J]}\@. \bibjournal{Photonics Technology Letters,
+  IEEE}\@, \bibyear{1996}\@,
+  \bibvolume{8}\bibnumber{(11)}\thinspace{}\textnormal{:
+  }\bibpages{1540\thinspace{}\textnormal{--}\thinspace{}1542}\@.
 
 \bibitem{chen2016wavelength}
-K.~Chen, Q.~Huang, J.~Zhang, et~al.
-\newblock Wavelength-multiplexed duplex transceiver based on {III-V/S}i hybrid
-  integration for off-chip and on-chip optical interconnects[J].
-\newblock Photonics Journal, IEEE, Feb 2016.
-\newblock 8(1):1--10.
+\bibauthor{CHEN K\@, HUANG Q\@, ZHANG J, et~al}\@.
+  \bibtitle{Wavelength-Multiplexed Duplex Transceiver Based on {III-V/S}i
+  Hybrid Integration for Off-Chip and On-Chip Optical
+  Interconnects}\bibmark{[J]}\@. \bibjournal{Photonics Journal, IEEE}\@,
+  \bibyear{2016}\@, \bibvolume{8}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}10}\@.
 
 \bibitem{zhou2014compact}
-Pei Zhou, Shilong Pan, Dan Zhu, et~al.
-\newblock A compact optoelectronic oscillator based on an electroabsorption
-  modulated laser[J].
-\newblock Photonics Technology Letters, IEEE, 2014.
-\newblock 26(1):86--88.
+\bibauthor{ZHOU P\@, PAN S\@, ZHU D, et~al}\@. \bibtitle{A compact
+  optoelectronic oscillator based on an electroabsorption modulated
+  laser}\bibmark{[J]}\@. \bibjournal{Photonics Technology Letters, IEEE}\@,
+  \bibyear{2014}\@, \bibvolume{26}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{86\thinspace{}\textnormal{--}\thinspace{}88}\@.
 
 \bibitem{wang2015room}
-Zhechao Wang, Bin Tian, Marianna Pantouvaki, et~al.
-\newblock Room-temperature {I}n{P} distributed feedback laser array directly
-  grown on silicon[J].
-\newblock Nature Photonics, 2015.
-\newblock 9(12):837--842.
+\bibauthor{WANG Z\@, TIAN B\@, PANTOUVAKI M, et~al}\@.
+  \bibtitle{Room-temperature {I}n{P} distributed feedback laser array directly
+  grown on silicon}\bibmark{[J]}\@. \bibjournal{Nature Photonics}\@,
+  \bibyear{2015}\@, \bibvolume{9}\bibnumber{(12)}\thinspace{}\textnormal{:
+  }\bibpages{837\thinspace{}\textnormal{--}\thinspace{}842}\@.
 
 \bibitem{liang2010hybrid}
-Di~Liang, Gunther Roelkens, Roel Baets, John~E Bowers.
-\newblock Hybrid integrated platforms for silicon photonics[J].
-\newblock Materials, 2010.
-\newblock 3(3):1782--1802.
+\bibauthor{LIANG D\@, ROELKENS G\@, BAETS R, et~al}\@. \bibtitle{Hybrid
+  integrated platforms for silicon photonics}\bibmark{[J]}\@.
+  \bibjournal{Materials}\@, \bibyear{2010}\@,
+  \bibvolume{3}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{1782\thinspace{}\textnormal{--}\thinspace{}1802}\@.
 
 \bibitem{roelkens2010iii}
-G{\"u}nther Roelkens, Liu Liu, Di~Liang, et~al.
-\newblock {III-V}/silicon photonics for on-chip and intra-chip optical
-  interconnects[J].
-\newblock Laser \& Photonics Reviews, 2010.
-\newblock 4(6):751--779.
+\bibauthor{ROELKENS G\@, LIU L\@, LIANG D, et~al}\@. \bibtitle{{III-V}/silicon
+  photonics for on-chip and intra-chip optical interconnects}\bibmark{[J]}\@.
+  \bibjournal{Laser \& Photonics Reviews}\@, \bibyear{2010}\@,
+  \bibvolume{4}\bibnumber{(6)}\thinspace{}\textnormal{:
+  }\bibpages{751\thinspace{}\textnormal{--}\thinspace{}779}\@.
 
 \bibitem{liang2010recent}
-Di~Liang, John~E Bowers.
-\newblock Recent progress in lasers on silicon[J].
-\newblock Nature Photonics, 2010.
-\newblock 4(8):511--517.
+\bibauthor{LIANG D\@, BOWERS J~E}\@. \bibtitle{Recent progress in lasers on
+  silicon}\bibmark{[J]}\@. \bibjournal{Nature Photonics}\@, \bibyear{2010}\@,
+  \bibvolume{4}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{511\thinspace{}\textnormal{--}\thinspace{}517}\@.
 
 \bibitem{duan2014hybrid}
-Guang-Hua Duan, Christophe Jany, Alban Le~Liepvre, et~al.
-\newblock Hybrid {III}--{V} on silicon lasers for photonic integrated circuits
-  on silicon[J].
-\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2014.
-\newblock 20(4):158--170.
+\bibauthor{DUAN G-H\@, JANY C\@, LE~LIEPVRE A, et~al}\@. \bibtitle{Hybrid
+  {III}--{V} on Silicon Lasers for Photonic Integrated Circuits on
+  Silicon}\bibmark{[J]}\@. \bibjournal{Selected Topics in Quantum Electronics,
+  IEEE Journal of}\@, \bibyear{2014}\@,
+  \bibvolume{20}\bibnumber{(4)}\thinspace{}\textnormal{:
+  }\bibpages{158\thinspace{}\textnormal{--}\thinspace{}170}\@.
 
 \bibitem{pasquariello2002plasma}
-Donato Pasquariello, Klas Hjort.
-\newblock Plasma-assisted {I}n{P}-to-{S}i low temperature wafer bonding[J].
-\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2002.
-\newblock 8(1):118--131.
+\bibauthor{PASQUARIELLO D\@, HJORT K}\@. \bibtitle{Plasma-assisted
+  {I}n{P}-to-{S}i low temperature wafer bonding}\bibmark{[J]}\@.
+  \bibjournal{Selected Topics in Quantum Electronics, IEEE Journal of}\@,
+  \bibyear{2002}\@, \bibvolume{8}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{118\thinspace{}\textnormal{--}\thinspace{}131}\@.
 
 \bibitem{fang2006electrically}
-Alexander~W Fang, Hyundai Park, Oded Cohen, et~al.
-\newblock Electrically pumped hybrid {A}l{G}a{I}n{A}s-silicon evanescent
-  laser[J].
-\newblock Optics express, 2006.
-\newblock 14(20):9203--9210.
+\bibauthor{FANG A~W\@, PARK H\@, COHEN O, et~al}\@. \bibtitle{Electrically
+  pumped hybrid {A}l{G}a{I}n{A}s-silicon evanescent laser}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2006}\@,
+  \bibvolume{14}\bibnumber{(20)}\thinspace{}\textnormal{:
+  }\bibpages{9203\thinspace{}\textnormal{--}\thinspace{}9210}\@.
 
 \bibitem{kuo2008high}
-Ying-hao Kuo, Hui-Wen Chen, John~E Bowers.
-\newblock High speed hybrid silicon evanescent electroabsorption modulator[J].
-\newblock Optics express, 2008.
-\newblock 16(13):9936--9941.
+\bibauthor{KUO Y-H\@, CHEN H-W\@, BOWERS J~E}\@. \bibtitle{High speed hybrid
+  silicon evanescent electroabsorption modulator}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2008}\@,
+  \bibvolume{16}\bibnumber{(13)}\thinspace{}\textnormal{:
+  }\bibpages{9936\thinspace{}\textnormal{--}\thinspace{}9941}\@.
 
 \bibitem{roelkens2015iii}
-Gunther Roelkens, Amin Abassi, Paolo Cardile, et~al.
-\newblock {III-V-on-S}ilicon photonic devices for optical communication and
-  sensing[J].
-\newblock Photonics, 2015.
-\newblock 2(3):969.
+\bibauthor{ROELKENS G\@, ABASSI A\@, CARDILE P, et~al}\@.
+  \bibtitle{{III-V-on-S}ilicon Photonic Devices for Optical Communication and
+  Sensing}\bibmark{[J]}\@. \bibjournal{Photonics}\@, \bibyear{2015}\@,
+  \bibvolume{2}\bibnumber{(3)}\thinspace{}\textnormal{: }\bibpages{969}\@.
 
 \bibitem{stankovic2010evanescently}
-Stevan Stankovi{\'c}, G{\"u}nther Roelkens, Dries Van~Thourhout, et~al.
-\newblock Evanescently-coupled hybrid {III-V}/silicon laser based on {DVS-BCB}
-  bonding[C]//15th Annual symposium of the IEEE Photonics Benelux Chapter 2010.
-\newblock TNO, 2010:77--80.
+\bibauthor{STANKOVI{\'C} S\@, ROELKENS G\@, VAN~THOURHOUT D, et~al}\@.
+  \bibtitle{Evanescently-coupled hybrid {III-V}/silicon laser based on
+  {DVS-BCB} bonding}\bibmark{[C]} //\thinspace{}\bibbooktitle{15th Annual
+  symposium of the IEEE Photonics Benelux Chapter 2010}\@.
+  \bibyear{2010}\thinspace{}\textnormal{:
+  }\bibpages{77\thinspace{}\textnormal{--}\thinspace{}80}\@.
 
 \bibitem{gunther2007}
-Gunther Roelkens.
-\newblock Heterogeneous {III-V/S}ilicon Photonics: Bonding Technology and
-  Integrated Devices[D].
-\newblock Belgium:Ghent University, 2007.
+\bibauthor{ROELKENS G}\@. \bibtitle{Heterogeneous {III-V/S}ilicon Photonics:
+  Bonding Technology and Integrated Devices}\bibmark{[D]}\@.
+  \bibaddress{Belgium}\thinspace{}\textnormal{: }\bibschool{Ghent
+  University}\@, \bibyear{2007}\@.
 
 \bibitem{Srinivasan2012micro}
-S.~Srinivasan, Di~Liang, M.~Fiorentino, et~al.
-\newblock Micro-ring resonator based electro-absorption modulators on the
-  hybrid {III-V} on silicon platform[C]//Optical Interconnects Conference, 2012
-  IEEE.
-\newblock May 2012:22--23.
+\bibauthor{SRINIVASAN S\@, LIANG D\@, FIORENTINO M, et~al}\@.
+  \bibtitle{Micro-ring resonator based electro-absorption modulators on the
+  hybrid {III-V} on silicon platform}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Optical Interconnects Conference, 2012 IEEE}\@.
+  \bibyear{2012}\thinspace{}\textnormal{:
+  }\bibpages{22\thinspace{}\textnormal{--}\thinspace{}23}\@.
 
 \bibitem{fu20155}
-Xin Fu, Jianxin Cheng, Qiangsheng Huang, et~al.
-\newblock 5 x 20 {G}b/s heterogeneously integrated {III-V} on silicon
-  electro-absorption modulator array with arrayed waveguide grating
-  multiplexer[J].
-\newblock Optics express, 2015.
-\newblock 23(14):18686--18693.
+\bibauthor{FU X\@, CHENG J\@, HUANG Q, et~al}\@. \bibtitle{5 x 20 {G}b/s
+  heterogeneously integrated {III-V} on silicon electro-absorption modulator
+  array with arrayed waveguide grating multiplexer}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2015}\@,
+  \bibvolume{23}\bibnumber{(14)}\thinspace{}\textnormal{:
+  }\bibpages{18686\thinspace{}\textnormal{--}\thinspace{}18693}\@.
 
 \bibitem{keldysh1958effect}
-LV~Keldysh.
-\newblock The effect of a strong electric field on the optical properties of
-  insulating crystals[J].
-\newblock Sov. Phys. JETP, 1958.
-\newblock 7(5):788--790.
+\bibauthor{KELDYSH L}\@. \bibtitle{The effect of a strong electric field on the
+  optical properties of insulating crystals}\bibmark{[J]}\@. \bibjournal{Sov.
+  Phys. JETP}\@, \bibyear{1958}\@,
+  \bibvolume{7}\bibnumber{(5)}\thinspace{}\textnormal{:
+  }\bibpages{788\thinspace{}\textnormal{--}\thinspace{}790}\@.
 
 \bibitem{franz1958einfluss}
-Walter Franz.
-\newblock Einfluss eines elektrischen feldes auf eine optische
-  absorptionskante[J].
-\newblock Zeitschrift f{\"u}r Naturforschung A, 1958.
-\newblock 13(6):484--489.
+\bibauthor{FRANZ W}\@. \bibtitle{Einfluss eines elektrischen Feldes auf eine
+  optische Absorptionskante}\bibmark{[J]}\@. \bibjournal{Zeitschrift f{\"u}r
+  Naturforschung A}\@, \bibyear{1958}\@,
+  \bibvolume{13}\bibnumber{(6)}\thinspace{}\textnormal{:
+  }\bibpages{484\thinspace{}\textnormal{--}\thinspace{}489}\@.
 
 \bibitem{chao1993momentum}
-Calvin Yi-Ping Chao, Shun~Lien Chuang.
-\newblock Momentum-space solution of exciton excited states and
-  heavy-hole--light-hole mixing in quantum wells[J].
-\newblock Physical Review B, 1993.
-\newblock 48(11):8210.
+\bibauthor{CHAO C~Y-P\@, CHUANG S~L}\@. \bibtitle{Momentum-space solution of
+  exciton excited states and heavy-hole--light-hole mixing in quantum
+  wells}\bibmark{[J]}\@. \bibjournal{Physical Review B}\@, \bibyear{1993}\@,
+  \bibvolume{48}\bibnumber{(11)}\thinspace{}\textnormal{: }\bibpages{8210}\@.
 
 \bibitem{chuang1995physics}
-Shun~Lien Chuang, Shun~L Chuang.
-\newblock Physics of optoelectronic devices[M].
-\newblock United States of America:Wiley New York, 1995.
+\bibauthor{CHUANG S~L\@, CHUANG S~L}\@. \bibbooktitle{Physics of optoelectronic
+  devices}\bibmark{[M]}\@. \bibaddress{United States of
+  America}\thinspace{}\textnormal{: }\bibpublisher{Wiley New York}\@,
+  \bibyear{1995}\@.
 
 \bibitem{HarolEAM}
-Harold EAM.
-\newblock https://www.photond.com/products/harold/harold\_features\_07.htm.
+\bibauthor{EAM H}\@. \bibtitle{PHOTON DESIGN}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{Photon Design}}\@, \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{https://www.photond.com/products/harold/harold\_features\_07.htm}\@.
 
 \bibitem{mares1993modeling}
-PJ~Mares, SL~Chuang.
-\newblock Modeling of self-electro-optic-effect devices[J].
-\newblock Journal of applied physics, 1993.
-\newblock 74(2):1388--1397.
+\bibauthor{MARES P\@, CHUANG S}\@. \bibtitle{Modeling of
+  self-electro-optic-effect devices}\bibmark{[J]}\@. \bibjournal{Journal of
+  applied physics}\@, \bibyear{1993}\@,
+  \bibvolume{74}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{1388\thinspace{}\textnormal{--}\thinspace{}1397}\@.
 
 \bibitem{roy1993modified}
-Sukhdev Roy, Ajoy~K Ghatak, IC~Goyal, RL~Gallawa.
-\newblock Modified airy function method for the analysis of tunneling problems
-  in optical waveguides and quantum-well structures[J].
-\newblock Quantum Electronics, IEEE Journal of, 1993.
-\newblock 29(2):340--345.
+\bibauthor{ROY S\@, GHATAK A~K\@, GOYAL I, et~al}\@. \bibtitle{Modified Airy
+  function method for the analysis of tunneling problems in optical waveguides
+  and quantum-well structures}\bibmark{[J]}\@. \bibjournal{Quantum Electronics,
+  IEEE Journal of}\@, \bibyear{1993}\@,
+  \bibvolume{29}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{340\thinspace{}\textnormal{--}\thinspace{}345}\@.
 
 \bibitem{chuang1991exciton}
-Shun-Lien Chuang, Stefan Schmitt-Rink, David~AB Miller, Daniel~S Chemla.
-\newblock Exciton green’s-function approach to optical absorption in a
-  quantum well with an applied electric field[J].
-\newblock Physical Review B, 1991.
-\newblock 43(2):1500.
+\bibauthor{CHUANG S-L\@, SCHMITT-RINK S\@, MILLER D~A, et~al}\@.
+  \bibtitle{Exciton Green’s-function approach to optical absorption in a
+  quantum well with an applied electric field}\bibmark{[J]}\@.
+  \bibjournal{Physical Review B}\@, \bibyear{1991}\@,
+  \bibvolume{43}\bibnumber{(2)}\thinspace{}\textnormal{: }\bibpages{1500}\@.
 
 \bibitem{li2000material}
-E~Herbert Li.
-\newblock Material parameters of ingaasp and inalgaas systems for use in
-  quantum well structures at low and room temperatures[J].
-\newblock Physica E: Low-dimensional systems and Nanostructures, 2000.
-\newblock 5(4):215--273.
+\bibauthor{LI E~H}\@. \bibtitle{Material parameters of InGaAsP and InAlGaAs
+  systems for use in quantum well structures at low and room
+  temperatures}\bibmark{[J]}\@. \bibjournal{Physica E: Low-dimensional systems
+  and Nanostructures}\@, \bibyear{2000}\@,
+  \bibvolume{5}\bibnumber{(4)}\thinspace{}\textnormal{:
+  }\bibpages{215\thinspace{}\textnormal{--}\thinspace{}273}\@.
 
 \bibitem{eppenga1987new}
-R.~Eppenga, M.~F.~H. Schuurmans, S.~Colak.
-\newblock New \textit{k\ensuremath{\cdot}p} theory for
-  {G}a{A}s/{G}a$_{1\mathrm{-}\mathrm{x}}${A}$1_{\mathrm{x}}$as-type quantum
-  wells[J].
-\newblock Phys. Rev. B, Jul 1987.
-\newblock 36:1554--1564.
+\bibauthor{EPPENGA R\@, SCHUURMANS M~F~H\@, COLAK S}\@. \bibtitle{New
+  \textit{k\ensuremath{\cdot}p} theory for
+  {G}a{A}s/{G}a$_{1\mathrm{-}\mathrm{x}}${A}$1_{\mathrm{x}}$As-type quantum
+  wells}\bibmark{[J]}\@. \bibjournal{Phys. Rev. B}\@, \bibyear{1987}\@,
+  \bibvolume{36}\thinspace{}\textnormal{:
+  }\bibpages{1554\thinspace{}\textnormal{--}\thinspace{}1564}\@.
 
 \bibitem{yamanishi1984comment}
-Masamichi Yamanishi, Ikuo Suemune.
-\newblock Comment on polarization dependent momentum matrix elements in quantum
-  well lasers[J].
-\newblock Japanese Journal of Applied Physics, 1984.
-\newblock 23(1A):L35.
+\bibauthor{YAMANISHI M\@, SUEMUNE I}\@. \bibtitle{Comment on polarization
+  dependent momentum matrix elements in quantum well lasers}\bibmark{[J]}\@.
+  \bibjournal{Japanese Journal of Applied Physics}\@, \bibyear{1984}\@,
+  \bibvolume{23}\bibnumber{(1A)}\thinspace{}\textnormal{: }\bibpages{L35}\@.
 
 \bibitem{asada1984gain}
-Masahiro Asada, Atsushi Kameyama, Yasuharu Suematsu.
-\newblock Gain and intervalence band absorption in quantum-well lasers[J].
-\newblock Quantum Electronics, IEEE Journal of, 1984.
-\newblock 20(7):745--753.
+\bibauthor{ASADA M\@, KAMEYAMA A\@, SUEMATSU Y}\@. \bibtitle{Gain and
+  intervalence band absorption in quantum-well lasers}\bibmark{[J]}\@.
+  \bibjournal{Quantum Electronics, IEEE Journal of}\@, \bibyear{1984}\@,
+  \bibvolume{20}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{745\thinspace{}\textnormal{--}\thinspace{}753}\@.
 
 \bibitem{Kirkpatrick671}
-S.~Kirkpatrick, C.~D. Gelatt, M.~P. Vecchi.
-\newblock Optimization by simulated annealing[J].
-\newblock Science, 1983.
-\newblock 220(4598):671--680.
+\bibauthor{KIRKPATRICK S\@, GELATT C~D\@, VECCHI M~P}\@. \bibtitle{Optimization
+  by Simulated Annealing}\bibmark{[J]}\@. \bibjournal{Science}\@,
+  \bibyear{1983}\@, \bibvolume{220}\bibnumber{(4598)}\thinspace{}\textnormal{:
+  }\bibpages{671\thinspace{}\textnormal{--}\thinspace{}680}\@.
 
 \bibitem{chen2011high}
-Hui-Wen Chen.
-\newblock High-Speed Hybrid Silicon Mach-Zehnder Modulator and Tunable
-  Microwave Filter[D].
-\newblock California, USA:University of California Santa Barbara, 2011.
+\bibauthor{CHEN H-W}\@. \bibtitle{High-Speed Hybrid Silicon Mach-Zehnder
+  Modulator and Tunable Microwave Filter}\bibmark{[D]}\@.
+  \bibaddress{California, USA}\thinspace{}\textnormal{: }\bibschool{University
+  of California Santa Barbara}\@, \bibyear{2011}\@.
 
 \bibitem{yongbophd}
-唐涌波.
-\newblock
-  硅基波导光栅耦合器与高速电吸收光调制器的研究[D].
-\newblock 中国杭州:浙江大学, 2011.
+\bibauthor{唐涌波}\@.
+  \bibtitle{硅基波导光栅耦合器与高速电吸收光调制器的研究}\bibmark{[D]}\@.
+  \bibaddress{中国杭州}\thinspace{}\textnormal{:
+  }\bibschool{浙江大学}\@, \bibyear{2011}\@.
 
 \bibitem{zhang1999traveling}
-Shengzhong Zhang.
-\newblock Traveling-wave electroabsorption modulators[D].
-\newblock California, USA:University of California Santa Barbara, 1999.
+\bibauthor{ZHANG S}\@. \bibtitle{Traveling-wave electroabsorption
+  modulators}\bibmark{[D]}\@. \bibaddress{California,
+  USA}\thinspace{}\textnormal{: }\bibschool{University of California Santa
+  Barbara}\@, \bibyear{1999}\@.
 
 \bibitem{Robertphd}
-Robert Lew{\'e}n.
-\newblock High-{S}peed Electroabsorption Modulators and p-i-n Photodiodes for
-  Fiber-Optic Communications[D].
-\newblock Stockholm, Sweden:Royal Institute of Technology, 2003.
+\bibauthor{LEW{\'E}N R}\@. \bibtitle{High-{S}peed Electroabsorption Modulators
+  and p-i-n Photodiodes for Fiber-Optic Communications}\bibmark{[D]}\@.
+  \bibaddress{Stockholm, Sweden}\thinspace{}\textnormal{: }\bibschool{Royal
+  Institute of Technology}\@, \bibyear{2003}\@.
 
 \bibitem{yuphd}
-于弋川.
-\newblock 高速半导体电吸收光调制器与MSM光探测器研究[D].
-\newblock 中国杭州:浙江大学, 2007.
+\bibauthor{于弋川}\@.
+  \bibtitle{高速半导体电吸收光调制器与MSM光探测器研究}\bibmark{[D]}\@.
+  \bibaddress{中国杭州}\thinspace{}\textnormal{:
+  }\bibschool{浙江大学}\@, \bibyear{2007}\@.
 
 \bibitem{chiu2005enhanced}
-Yi-Jen Chiu, Tsu-Hsiu Wu, Wen-Chin Cheng, et~al.
-\newblock Enhanced performance in traveling-wave electroabsorption modulators
-  based on undercut-etching the active-region[J].
-\newblock Photonics Technology Letters, IEEE, 2005.
-\newblock 17(10):2065--2067.
+\bibauthor{CHIU Y-J\@, WU T-H\@, CHENG W-C, et~al}\@. \bibtitle{Enhanced
+  performance in traveling-wave electroabsorption modulators based on
+  undercut-etching the active-region}\bibmark{[J]}\@. \bibjournal{Photonics
+  Technology Letters, IEEE}\@, \bibyear{2005}\@,
+  \bibvolume{17}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{2065\thinspace{}\textnormal{--}\thinspace{}2067}\@.
 
 \bibitem{modesolution}
-Lumerical~MODE Solutions.
-\newblock https://www.lumerical.com/tcad-products/mode/.
+\bibauthor{LUMERICAL}\@. \bibtitle{{Lumerical MODE
+  Solutions}}\bibmark{[EB/OL]}\@. \bibpublisher{{Lumerical Solution}}\@,
+  \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{https://www.lumerical.com/tcad-products/mode/}\@.
 
 \bibitem{ansyshfss}
-ANSYS HFSS.
-\newblock http://www.ansys.com/products/electronics/ansys-hfss.
+\bibauthor{ANSYS}\@. \bibtitle{{ANSYS HFSS}}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{Ansys}}\@, \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.ansys.com/Products/Electronics/ANSYS-HFSS}\@.
 
 \bibitem{li1999ultrahigh}
-GL~Li, CK~Sun, SA~Pappert, et~al.
-\newblock Ultrahigh-speed traveling-wave electroabsorption modulator-design and
-  analysis[J].
-\newblock Microwave Theory and Techniques, IEEE Transactions on, 1999.
-\newblock 47(7):1177--1183.
+\bibauthor{LI G\@, SUN C\@, PAPPERT S, et~al}\@. \bibtitle{Ultrahigh-speed
+  traveling-wave electroabsorption modulator-design and
+  analysis}\bibmark{[J]}\@. \bibjournal{Microwave Theory and Techniques, IEEE
+  Transactions on}\@, \bibyear{1999}\@,
+  \bibvolume{47}\bibnumber{(7)}\thinspace{}\textnormal{:
+  }\bibpages{1177\thinspace{}\textnormal{--}\thinspace{}1183}\@.
 
 \bibitem{tang2008design}
-Yongbo Tang, Yichuan Yu, Yuqian Ye, et~al.
-\newblock Design and optimization of an arbitrarily segmented traveling wave
-  electrode for an ultrahigh speed electroabsorption modulator[J].
-\newblock Optics Communications, 2008.
-\newblock 281(20):5177--5182.
+\bibauthor{TANG Y\@, YU Y\@, YE Y, et~al}\@. \bibtitle{Design and optimization
+  of an arbitrarily segmented traveling wave electrode for an ultrahigh speed
+  electroabsorption modulator}\bibmark{[J]}\@. \bibjournal{Optics
+  Communications}\@, \bibyear{2008}\@,
+  \bibvolume{281}\bibnumber{(20)}\thinspace{}\textnormal{:
+  }\bibpages{5177\thinspace{}\textnormal{--}\thinspace{}5182}\@.
 
 \bibitem{kurczveil2013characterization}
-Geza Kurczveil, Paolo Pintus, Martijn~JR Heck, Jonathan~D Peters, John~E
-  Bowers.
-\newblock Characterization of insertion loss and back reflection in passive
-  hybrid silicon tapers[J].
-\newblock Photonics Journal, IEEE, 2013.
-\newblock 5(2):6600410--6600410.
+\bibauthor{KURCZVEIL G\@, PINTUS P\@, HECK M~J, et~al}\@.
+  \bibtitle{Characterization of insertion loss and back reflection in passive
+  hybrid silicon tapers}\bibmark{[J]}\@. \bibjournal{Photonics Journal,
+  IEEE}\@, \bibyear{2013}\@,
+  \bibvolume{5}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{6600410\thinspace{}\textnormal{--}\thinspace{}6600410}\@.
 
 \bibitem{keyvaninia2009engineering}
-Shahram Keyvaninia, G{\"u}nther Roelkens, Dries Van~Thourhout.
-\newblock Engineering the heterogeneously integrated {III-V/SOI} tunable
-  laser[C]//Proceedings of 14th Ann. Symp. IEEE Photonics Benelux Chapter.
-\newblock 2009:141--144.
+\bibauthor{KEYVANINIA S\@, ROELKENS G\@, VAN~THOURHOUT D}\@.
+  \bibtitle{Engineering the heterogeneously integrated {III-V/SOI} tunable
+  laser}\bibmark{[C]} //\thinspace{}\bibbooktitle{Proceedings of 14th Ann.
+  Symp. IEEE Photonics Benelux Chapter}\@.
+  \bibyear{2009}\thinspace{}\textnormal{:
+  }\bibpages{141\thinspace{}\textnormal{--}\thinspace{}144}\@.
 
 \bibitem{wang2012heterogeneous}
-Qian Wang, Doris Keh~Ting Ng, Yadong Wang, Yongqiang Wei, Jing Pu, Payam
-  Rabiei, Seng~Tiong Ho.
-\newblock Heterogeneous {S}i/{III-V} integration and the optical vertical
-  interconnect access[J].
-\newblock Optics Express, 2012.
-\newblock 20(15):16745--16756.
+\bibauthor{WANG Q\@, NG D~K~T\@, WANG Y, et~al}\@. \bibtitle{Heterogeneous
+  {S}i/{III-V} integration and the optical vertical interconnect
+  access}\bibmark{[J]}\@. \bibjournal{Optics Express}\@, \bibyear{2012}\@,
+  \bibvolume{20}\bibnumber{(15)}\thinspace{}\textnormal{:
+  }\bibpages{16745\thinspace{}\textnormal{--}\thinspace{}16756}\@.
 
 \bibitem{sun2009adiabaticity}
-Xiankai Sun, Hsi-Chun Liu, Amnon Yariv.
-\newblock Adiabaticity criterion and the shortest adiabatic mode transformer in
-  a coupled-waveguide system[J].
-\newblock Optics letters, 2009.
-\newblock 34(3):280--282.
+\bibauthor{SUN X\@, LIU H-C\@, YARIV A}\@. \bibtitle{Adiabaticity criterion and
+  the shortest adiabatic mode transformer in a coupled-waveguide
+  system}\bibmark{[J]}\@. \bibjournal{Optics letters}\@, \bibyear{2009}\@,
+  \bibvolume{34}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{280\thinspace{}\textnormal{--}\thinspace{}282}\@.
 
 \bibitem{fdtdsolution}
-Lumerical~FDTD Solutions.
-\newblock https://www.lumerical.com/tcad-products/fdtd/.
+\bibauthor{LUMERICAL}\@. \bibtitle{{Lumerical FDTD
+  Solutions}}\bibmark{[EB/OL]}\@. \bibpublisher{{Lumerical Solution}}\@,
+  \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{https://www.lumerical.com/tcad-products/fdtd/}\@.
 
 \bibitem{man2403}
-ma{-}N 2403 negative~tone photoresist.
-\newblock
-  http://www.microresist.de/en/products/negative-photoresists/e-beam-deep-uv-lithography/ma-n-2400-mr-ebl-6000-series.
+\bibauthor{{MICRO RESIST TECHNOLOGY}}\@. \bibtitle{ma{-}N 2403 negative tone
+  photoresist}\bibmark{[EB/OL]}\@. \bibpublisher{{micro resist technology
+  GmbH}}\@, \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.microresist.de/en/products/negative-photoresists/e-beam-deep-uv-lithography/ma-n-2400-mr-ebl-6000-series}\@.
 
 \bibitem{ZEP520}
-ZEP 520.
-\newblock http://www.zeonchemicals.com/electronicmaterials/.
+\bibauthor{{ZEON}}\@. \bibtitle{{ZEP 520}}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{ZEON CHEMICALS}}\@, \bibyear{2016}
+  \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.zeonchemicals.com/ElectronicMaterials/}\@.
 
 \bibitem{fukano2006very}
-Hideki Fukano, Takayuki Yamanaka, Munehisa Tamura, Yasuhiro Kondo.
-\newblock Very-low-driving-voltage electroabsorption modulators operating at 40
-  {G}b/s[J].
-\newblock Journal of Lightwave Technology, 2006.
-\newblock 24(5):2219.
+\bibauthor{FUKANO H\@, YAMANAKA T\@, TAMURA M, et~al}\@.
+  \bibtitle{Very-low-driving-voltage electroabsorption modulators operating at
+  40 {G}b/s}\bibmark{[J]}\@. \bibjournal{Journal of Lightwave Technology}\@,
+  \bibyear{2006}\@, \bibvolume{24}\bibnumber{(5)}\thinspace{}\textnormal{:
+  }\bibpages{2219}\@.
 
 \bibitem{Marpaung2013integrated}
-D.~Marpaung, C.~Roeloffzen, R.~Heideman, A.~Leinse, S.~Sales, J.~Capmany.
-\newblock Integrated microwave photonics[J].
-\newblock Laser Photonics Rev., 2013.
-\newblock 7:506.
+\bibauthor{MARPAUNG D\@, ROELOFFZEN C\@, HEIDEMAN R, et~al}\@.
+  \bibtitle{Integrated microwave photonics}\bibmark{[J]}\@. \bibjournal{Laser
+  Photonics Rev.}\@, \bibyear{2013}\@, \bibvolume{7}\thinspace{}\textnormal{:
+  }\bibpages{506}\@.
 
 \bibitem{gulow-voltage2013}
-Xiaodong Gu, Shoki Shimizu, Toshikazu Shimada, et~al.
-\newblock Low-voltage electro-absorption optical modulator based on slow-light
-  bragg reflector waveguide[J].
-\newblock Applied Physics Letters, 2013.
-\newblock 102(3):031118.
+\bibauthor{GU X\@, SHIMIZU S\@, SHIMADA T, et~al}\@. \bibtitle{Low-voltage
+  electro-absorption optical modulator based on slow-light Bragg reflector
+  waveguide}\bibmark{[J]}\@. \bibjournal{Applied Physics Letters}\@,
+  \bibyear{2013}\@, \bibvolume{102}\bibnumber{(3)}\thinspace{}\textnormal{:
+  }\bibpages{031118}\@.
 
 \bibitem{livescu1988free}
-Gabriela Livescu, David~AB Miller, DS~Chemla, et~al.
-\newblock Free carrier and many-body effects in absorption spectra of
-  modulation-doped quantum wells[J].
-\newblock IEEE J Quantum Electron, 1988.
-\newblock 24(8):1677--1689.
+\bibauthor{LIVESCU G\@, MILLER D~A\@, CHEMLA D, et~al}\@. \bibtitle{Free
+  carrier and many-body effects in absorption spectra of modulation-doped
+  quantum wells}\bibmark{[J]}\@. \bibjournal{IEEE J Quantum Electron}\@,
+  \bibyear{1988}\@, \bibvolume{24}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{1677\thinspace{}\textnormal{--}\thinspace{}1689}\@.
 
 \bibitem{coldren1995diode}
-L.~A. Coldren, S.~W. Corzine.
-\newblock Diode Lasers and Photonic Integrated Circuits[M].
-\newblock 1. New York:John Wiley \& Sons, Inc., 1995.
+\bibauthor{COLDREN L~A\@, CORZINE S~W}\@. \bibbooktitle{Diode Lasers and
+  Photonic Integrated Circuits}\bibmark{[M]}\@. \bibedition{\mbox{1st~ed}}\@.
+  \bibaddress{New York}\thinspace{}\textnormal{: }\bibpublisher{John Wiley \&
+  Sons, Inc.}\@, \bibyear{1995}\@.
 
 \bibitem{kalinovsky1993free}
-VS~Kalinovsky, TV~Shubina, I~Yu Shvechikov, AA~Toropov.
-\newblock Free-carrier effects in {G}a{A}s single modulation-doped quantum well
-  as applied to active {Q}-switching of injection lasers[J].
-\newblock J PHYS III, 1993.
-\newblock 3(5):1021--1032.
+\bibauthor{KALINOVSKY V\@, SHUBINA T\@, SHVECHIKOV I~Y, et~al}\@.
+  \bibtitle{Free-carrier effects in {G}a{A}s single modulation-doped quantum
+  well as applied to active {Q}-switching of injection lasers}\bibmark{[J]}\@.
+  \bibjournal{J PHYS III}\@, \bibyear{1993}\@,
+  \bibvolume{3}\bibnumber{(5)}\thinspace{}\textnormal{:
+  }\bibpages{1021\thinspace{}\textnormal{--}\thinspace{}1032}\@.
 
 \bibitem{Silvaco}
-Silvaco.
-\newblock http://www.silvaco.com/index.html.
+\bibauthor{SILVACO}\@. \bibtitle{{Silvaco Products}}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{Silvaco}}\@, \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.silvaco.com/index.html}\@.
 
 \bibitem{dvsbcb35}
-{CYCLOTENE} 3022-35 series.
-\newblock http://www.dow.com/cyclotene/prod/302235.htm.
+\bibauthor{{DOW}}\@. \bibtitle{{CYCLOTENE} 3022-35 series}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{The Dow Chemical Company}}\@, \bibyear{2016}
+  \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.dow.com/cyclotene/prod/302235.htm}\@.
 
 \bibitem{keyvaninia2013ultra}
-Shahram Keyvaninia, Muhammad Muneeb, Stevan Stankovi{\'c}, et~al.
-\newblock Ultra-thin {DVS-BCB} adhesive bonding of {III-V} wafers, dies and
-  multiple dies to a patterned silicon-on-insulator substrate[J].
-\newblock Optical Materials Express, 2013.
-\newblock 3(1):35--46.
+\bibauthor{KEYVANINIA S\@, MUNEEB M\@, STANKOVI{\'C} S, et~al}\@.
+  \bibtitle{Ultra-thin {DVS-BCB} adhesive bonding of {III-V} wafers, dies and
+  multiple dies to a patterned silicon-on-insulator substrate}\bibmark{[J]}\@.
+  \bibjournal{Optical Materials Express}\@, \bibyear{2013}\@,
+  \bibvolume{3}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{35\thinspace{}\textnormal{--}\thinspace{}46}\@.
 
 \bibitem{dvsbcb46}
-{CYCLOTENE} 3022-46 series.
-\newblock http://www.dow.com/cyclotene/prod/302246.htm.
+\bibauthor{{DOW}}\@. \bibtitle{{CYCLOTENE} 3022-46 series}\bibmark{[EB/OL]}\@.
+  \bibpublisher{{The Dow Chemical Company}}\@, \bibyear{2016}
+  \bibcitedate{[2016/4/18]}\@.
+  \newline\url{http://www.dow.com/cyclotene/prod/302246.htm}\@.
 
 \bibitem{yariv2006photonics}
-Amnon Yariv, Pochi Yeh.
-\newblock Photonics: optical electronics in modern communications[M].
-\newblock United States of America:Oxford University Press, Inc., 2006.
+\bibauthor{YARIV A\@, YEH P}\@. \bibbooktitle{Photonics: optical electronics in
+  modern communications}\bibmark{[M]}\@. \bibaddress{United States of
+  America}\thinspace{}\textnormal{: }\bibpublisher{Oxford University Press,
+  Inc.}\@, \bibyear{2006}\@.
 
 \bibitem{haus1984waves}
-Hermann~A. Haus.
-\newblock Waves and fields in optoelectronics[M].
-\newblock United States of America:Prentice-Hall, Inc., 1984.
+\bibauthor{HAUS H~A}\@. \bibbooktitle{Waves and fields in
+  optoelectronics}\bibmark{[M]}\@. \bibaddress{United States of
+  America}\thinspace{}\textnormal{: }\bibpublisher{Prentice-Hall, Inc.}\@,
+  \bibyear{1984}\@.
 
 \bibitem{Li2016design}
-Ang Li, Qiangsheng Huang, Wim Bogaerts.
-\newblock Design of a single all-silicon ring resonator with a 150 nm free
-  spectral range and a 100 nm tuning range around 1550 nm[J].
-\newblock Photon. Res., Apr 2016.
-\newblock 4(2):84--92.
+\bibauthor{LI A\@, HUANG Q\@, BOGAERTS W}\@. \bibtitle{Design of a single
+  all-silicon ring resonator with a 150 nm free spectral range and a 100 nm
+  tuning range around 1550 nm}\bibmark{[J]}\@. \bibjournal{Photon. Res.}\@,
+  \bibyear{2016}\@, \bibvolume{4}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{84\thinspace{}\textnormal{--}\thinspace{}92}\@.
 
 \bibitem{little1997microring}
-Brent~E Little, Sai~T Chu, Hermann~A Haus, et~al.
-\newblock Microring resonator channel dropping filters[J].
-\newblock Lightwave Technology, Journal of, 1997.
-\newblock 15(6):998--1005.
+\bibauthor{LITTLE B~E\@, CHU S~T\@, HAUS H~A, et~al}\@. \bibtitle{Microring
+  resonator channel dropping filters}\bibmark{[J]}\@. \bibjournal{Lightwave
+  Technology, Journal of}\@, \bibyear{1997}\@,
+  \bibvolume{15}\bibnumber{(6)}\thinspace{}\textnormal{:
+  }\bibpages{998\thinspace{}\textnormal{--}\thinspace{}1005}\@.
 
 \bibitem{zhu2010chip}
-Jiangang Zhu, Sahin~Kaya Ozdemir, Yun-Feng Xiao, Lin Li, Lina He, Da-Ren Chen,
-  Lan Yang.
-\newblock On-chip single nanoparticle detection and sizing by mode splitting in
-  an ultrahigh-{Q} microresonator[J].
-\newblock Nature Photonics, 2010.
-\newblock 4(1):46--49.
+\bibauthor{ZHU J\@, OZDEMIR S~K\@, XIAO Y-F, et~al}\@. \bibtitle{On-chip single
+  nanoparticle detection and sizing by mode splitting in an ultrahigh-{Q}
+  microresonator}\bibmark{[J]}\@. \bibjournal{Nature Photonics}\@,
+  \bibyear{2010}\@, \bibvolume{4}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{46\thinspace{}\textnormal{--}\thinspace{}49}\@.
 
 \bibitem{qiangsheng2015fsr}
-Huang Qiangsheng, Keqi Ma, Sailing He.
-\newblock {FSR}-free filter based on a coupled microring grating
-  system[C]//Optical Fiber Communication Conference.
-\newblock Optical Society of America, 2015:Tu3A--1.
+\bibauthor{HUANG Q\@, MA K\@, HE S}\@. \bibtitle{{FSR}-free filter based on a
+  coupled microring grating system}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Optical Fiber Communication Conference}\@.
+  \bibyear{2015}\thinspace{}\textnormal{:
+  }\bibpages{Tu3A\thinspace{}\textnormal{--}\thinspace{}1}\@.
 
 \bibitem{interconnect}
-Lumerical~Interconnect Solutions.
-\newblock https://www.lumerical.com/tcad-products/interconnect/.
+\bibauthor{LUMERICAL}\@. \bibtitle{{Lumerical Interconnect
+  Solutions}}\bibmark{[EB/OL]}\@. \bibpublisher{{Lumerical Solution}}\@,
+  \bibyear{2016} \bibcitedate{[2016/4/18]}\@.
+  \newline\url{https://www.lumerical.com/tcad-products/interconnect/}\@.
 
 \bibitem{li2009silicon}
-Zhi-Yong Li, Dan-Xia Xu, W~Ross McKinnon, Siegfried Janz, Jens~H Schmid, Pavel
-  Cheben, Jin-Zhong Yu.
-\newblock Silicon waveguide modulator based on carrier depletion in
-  periodically interleaved {PN} junctions[J].
-\newblock Optics express, 2009.
-\newblock 17(18):15947--15958.
+\bibauthor{LI Z-Y\@, XU D-X\@, MCKINNON W~R, et~al}\@. \bibtitle{Silicon
+  waveguide modulator based on carrier depletion in periodically interleaved
+  {PN} junctions}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
+  \bibyear{2009}\@, \bibvolume{17}\bibnumber{(18)}\thinspace{}\textnormal{:
+  }\bibpages{15947\thinspace{}\textnormal{--}\thinspace{}15958}\@.
 
 \bibitem{pantouvaki2013comparison}
-Marianna Pantouvaki, Hui Yu, Michal Rakowski, Phillip Christie, Peter Verheyen,
-  Guy Lepage, Nele Van~Hoovels, Philippe Absil, Joris Van~Campenhout.
-\newblock Comparison of silicon ring modulators with interdigitated and lateral
-  pn junctions[J].
-\newblock Selected Topics in Quantum Electronics, IEEE Journal of, 2013.
-\newblock 19(2):7900308--7900308.
+\bibauthor{PANTOUVAKI M\@, YU H\@, RAKOWSKI M, et~al}\@. \bibtitle{Comparison
+  of silicon ring modulators with interdigitated and lateral PN
+  junctions}\bibmark{[J]}\@. \bibjournal{Selected Topics in Quantum
+  Electronics, IEEE Journal of}\@, \bibyear{2013}\@,
+  \bibvolume{19}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{7900308\thinspace{}\textnormal{--}\thinspace{}7900308}\@.
 
 \bibitem{zortman2011low}
-William~A Zortman, Anthony~L Lentine, Douglas~C Trotter, Michael~R Watts.
-\newblock Low-voltage differentially-signaled modulators[J].
-\newblock Optics express, 2011.
-\newblock 19(27):26017--26026.
+\bibauthor{ZORTMAN W~A\@, LENTINE A~L\@, TROTTER D~C, et~al}\@.
+  \bibtitle{Low-voltage differentially-signaled modulators}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2011}\@,
+  \bibvolume{19}\bibnumber{(27)}\thinspace{}\textnormal{:
+  }\bibpages{26017\thinspace{}\textnormal{--}\thinspace{}26026}\@.
 
 \bibitem{pile2014small}
-Brian Pile, Geoff Taylor.
-\newblock Small-signal analysis of microring resonator modulators[J].
-\newblock Optics express, 2014.
-\newblock 22(12):14913--14928.
+\bibauthor{PILE B\@, TAYLOR G}\@. \bibtitle{Small-signal analysis of microring
+  resonator modulators}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
+  \bibyear{2014}\@, \bibvolume{22}\bibnumber{(12)}\thinspace{}\textnormal{:
+  }\bibpages{14913\thinspace{}\textnormal{--}\thinspace{}14928}\@.
 
 \end{thebibliography}

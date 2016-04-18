@@ -3,7 +3,7 @@
 \contentsline {chapter}{摘要}{III}{chapter*.2}
 \contentsline {chapter}{Abstract}{V}{chapter*.3}
 \cftpagenumbersoff {chapter}
-\contentsline {chapter}{\hbox to\hsize {\hss 目\hspace {2em}次\hss }}{VII}{chapter*.4}
+\contentsline {chapter}{目次}{VII}{chapter*.4}
 \cftpagenumberson {chapter}
 \contentsline {chapter}{\numberline {1\hspace {0.3em}}绪论}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}硅基光电子集成技术的发展与现状}{1}{section.1.1}
@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {2.3}波导的设计}{35}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}矩形波导的设计}{35}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}蘑菇型波导的设计}{42}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}本章小结}{45}{section.2.4}
+\contentsline {section}{\numberline {2.4}本章小结}{46}{section.2.4}
 \contentsline {chapter}{\numberline {3\hspace {0.3em}}硅波导和混合集成III-V波导的模式耦合}{47}{chapter.3}
 \contentsline {section}{\numberline {3.1}背景介绍}{47}{section.3.1}
 \contentsline {section}{\numberline {3.2}紧凑型三段式耦合结构的设计}{48}{section.3.2}

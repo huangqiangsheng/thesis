@@ -47,7 +47,7 @@
 %英文题目
 \Etitle{Novel Low Driving-Voltage}
 % 如果一行写不下，同中文题目设定，一行写不下则写两行，不需要就注释掉
-\Etitletl{Optical Modulator on Silicon}
+\Etitletl{Optical Modulators on Silicon}
 
 % 作者
 \author{黄强盛}
@@ -110,7 +110,7 @@
 % 英文题名
 \englishtitle{Novel Low Driving-Voltage}
 % 如果题名一行写不下，就写到第二行，不需要则将其注释掉
-\englishtitletl{Optical Modulator on Silicon}
+\englishtitletl{Optical Modulators on Silicon}
 
 % 评阅人信息，名字，职称，单位尽量用简写，否则会写不下
 %\EreviewersA{Name\hspace{1.5em}Professional Title\hspace{1.5em}Organization}
@@ -153,6 +153,8 @@
 \renewcommand{\footrulewidth}{0pt}%
 \fancyfoot[RO]{\zihao{-5} ~\thepage~}
 \fancyfoot[LE]{\zihao{-5} ~\thepage~}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 勘误页，一般没有
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,6 +213,16 @@
 %\fancyhead[R]{\songti\zihao{-5}\leftmark}
 \fancyfoot[RO]{\zihao{-5} ~\thepage~}
 \fancyfoot[LE]{\zihao{-5} ~\thepage~}
+
+\fancypagestyle{plain}{%
+\fancyhf{}% 先清除当前页面的页眉页脚定义，是fancyhdr包中的定义
+\renewcommand{\headrulewidth}{0.4pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead[CE]{\songti\zihao{-5}\FancheadCEName}
+\fancyhead[CO]{\songti\zihao{-5}\leftmark}
+\fancyfoot[RO]{\zihao{-5} ~\thepage~}
+\fancyfoot[LE]{\zihao{-5} ~\thepage~}
+}
 
 \include{./Chapters/chap1}
 

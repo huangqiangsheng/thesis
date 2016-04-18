@@ -107,7 +107,7 @@ includehead, includefoot]{geometry}
     \ifodd
       \c@page
     \else
-      \thispagestyle{empty}%
+%      \thispagestyle{empty}%如果自动生成的空白不包含页码，则取消这个注释
       \hbox{}\newpage
       \if@twocolumn
         \hbox{}\newpage
@@ -229,7 +229,7 @@ includehead, includefoot]{geometry}
   \cleardoublepage
   \thispagestyle{empty}
   {
-    \fangsong\zihao{-4}
+    \songti\zihao{-4}
     \linespread{1.3}
     \begin{center}
       {\hspace{2em}
@@ -261,7 +261,7 @@ includehead, includefoot]{geometry}
       \vspace{4mm}
       %% \ZJU@value@school \\  \zihao{-1}
       % 这个博士学位论文在def文件中已有，当然在tex文件中还可以更改
-      \centerline{\fangsong \zihao{-1}{\ZJU@value@degree\ZJU@label@thesis} }
+      \centerline{\songti \zihao{-1}{\ZJU@value@degree\ZJU@label@thesis} }
       % 这个尺寸可以更改
       \vspace{4mm}
       % 这个地方调入浙大徽标
@@ -309,7 +309,7 @@ includehead, includefoot]{geometry}
       \vspace{15mm}  
 
       % 左右两边字体不同，定义两个宏AB来简化代码，这个功能用到了array宏包
-      \newcolumntype{A}{>{\fangsong}r<{}}
+      \newcolumntype{A}{>{\songti}r<{}}
       \newcolumntype{B}{>{\fangsong}l<{}}
       \zihao{4}
       \begin{tabular}{A@{：}B}
@@ -334,7 +334,7 @@ includehead, includefoot]{geometry}
     % 插入适当的空白
     \vfill
     % 最后一项 论文提交日期
-    \hfil{\bfseries\fangsong\zihao{-3}\hspace{4em}\ZJU@label@submitdate%
+    \hfil{\bfseries\songti\zihao{-3}\hspace{4em}\ZJU@label@submitdate%
     \ZJUunderline[150pt]{\ZJU@value@submitdate}}\hfil
   }
 }
@@ -369,14 +369,14 @@ includehead, includefoot]{geometry}
 
       % 插入空白
       \vspace{8mm}
-      {\bfseries\fangsong\zihao{3}
+      {\bfseries\songti\zihao{3}
       论文作者签名：
       \ifpdf
           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.pdf}}
       \else
           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.eps}}
       \fi
-      {\bfseries\fangsong\zihao{3}\textcolor{white}{。}}\\
+      {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
 
       %\hfil\\
       指导教师签名：}
@@ -385,15 +385,15 @@ includehead, includefoot]{geometry}
       \else
            \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch_s.eps}}
       \fi
-      {\bfseries\fangsong\zihao{3}\textcolor{white}{。}}\\
+      {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
  
             
       % 插入空白
       \vspace{15mm}
       
       % 评阅人信息
-      \newcolumntype{A}{>{\fangsong\zihao{4}}r}
-      \newcolumntype{B}{>{\fangsong\zihao{4}}c}
+      \newcolumntype{A}{>{\songti\zihao{4}}r}
+      \newcolumntype{B}{>{\songti\zihao{4}}c}
       \begin{tabular}{A@{：}B}
         论文评阅人1 & \ZJUunderline[260pt]{\ZJU@value@reviewersA}\\[2.2mm]
         评阅人2 & \ZJUunderline[260pt]{\ZJU@value@reviewersB}\\[2.2mm]
@@ -419,7 +419,7 @@ includehead, includefoot]{geometry}
     % 加一段可变空白
       \vfil
     % 答辩时间
-      {\fangsong\zihao{4}\hfill\ZJU@label@defenddate%
+      {\songti\zihao{4}\hfill\ZJU@label@defenddate%
       \ZJUunderline[150pt]{\ZJU@value@defenddate}\hspace{3em}}
   }
 }
@@ -655,8 +655,8 @@ includehead, includefoot]{geometry}
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
   % 修改目录的格式
-%  \renewcommand{\contentsname}{目次}
-  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
+  \renewcommand{\contentsname}{目次}
+%  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
   \renewcommand{\cftchapdotsep}{\cftdotsep}
@@ -717,7 +717,8 @@ includehead, includefoot]{geometry}
   \setlength{\bibhang}{2em}
   \renewcommand{\bibfont}{\fangsong\zihao{5}}
 
-  \bibliographystyle{ZJUthesis}
+%  \bibliographystyle{ZJUthesis}
+  \bibliographystyle{gbt7714-2005}
   \bibliography{#1}
 }
 
