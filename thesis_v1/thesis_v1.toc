@@ -39,14 +39,14 @@
 \contentsline {section}{\numberline {4.3}混合集成调制器的制作}{68}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}制作硅波导}{68}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}基于DVS-BCB的粘贴键合的工艺}{71}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}制作III-V波导}{74}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}制作III-V波导}{73}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}金属电极退火}{79}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}硅基混合集成III-V电吸收光调制器的性能测试}{80}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}静态性能}{80}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}动态性能}{82}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}硅基混合集成III-V电吸收光调制器的双工作模式}{84}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}光探测器的静态性能}{84}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}光探测器的动态性能}{84}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}光探测器的动态性能}{85}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}单片集成的光收发模块}{86}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}本章小结}{89}{section.4.6}
 \contentsline {chapter}{\numberline {5\hspace {0.3em}}硅基反射微环的光调制器}{91}{chapter.5}
