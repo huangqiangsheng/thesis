@@ -277,7 +277,7 @@ includehead, includefoot]{geometry}
     \begin{center}
       % 论文题目部分内容，可以修改
       \begin{tabular}{rl}
-        {\bfseries\fangsong\zihao{3}\ZJU@label@title:} 
+        {\bfseries\songti\zihao{3}\ZJU@label@title:} 
         &
         \bfseries\fangsong\zihao{-2} \ZJUunderline[130pt]{\ZJU@value@title} \\[3mm]
         &
@@ -285,23 +285,23 @@ includehead, includefoot]{geometry}
         \ifx\ZJU@value@titletl\undefined
           \hfil
         \else
-          {\bfseries\fangsong\zihao{-2}\ZJUunderline[170pt]{\ZJU@value@titletl}}
+          {\bfseries\fangsong\zihao{-2}\ZJUunderline[165pt]{\ZJU@value@titletl}}
         \fi \\[4mm]
-        {\bfseries\fangsong\zihao{3}\ZJU@label@Etitle:} 
+        {\bfseries\songti\zihao{3}\ZJU@label@Etitle:} 
         &
-        {\bf\zihao{-3}\ZJUunderline[180pt]{\ZJU@value@Etitle}}\\[3mm]
+        {\bf\zihao{3}\ZJUunderline[190pt]{\ZJU@value@Etitle}}\\[3mm]
         &
         %同样是英文标题的多行判断，如果一行写不下，有第二行显示，否则不显示第二行
         \ifx\ZJU@value@Etitletl\undefined
           \hfil
         \else
-          {\bf\zihao{-3}\ZJUunderline[190pt]{\ZJU@value@Etitletl}}
+          {\bf\zihao{3}\ZJUunderline[205pt]{\ZJU@value@Etitletl}}
         \fi\\[2mm]
         &
         \ifx\ZJU@value@EtitletB\undefined
           \hfil
         \else
-          {\bf\zihao{-3}\ZJUunderline[260pt]{\ZJU@value@EtitletB}}
+          {\bf\zihao{3}\ZJUunderline[290pt]{\ZJU@value@EtitletB}}
         \fi\\
       \end{tabular}
 
@@ -354,7 +354,7 @@ includehead, includefoot]{geometry}
       \ifx\ZJU@value@titletl\undefined
         \hfil\\
       \else
-        \ZJUunderline[170pt]{\ZJU@value@titletl}\\
+        \ZJUunderline[165pt]{\ZJU@value@titletl}\\
       \fi}
 
       % 插入一段距离
@@ -447,13 +447,13 @@ includehead, includefoot]{geometry}
     \linespread{1.3} 
     \begin{center}
       % 英文论文题目
-      {\bf\zihao{-3}\ZJUunderline[180pt]{\ZJU@value@englishtitle}\\
+      {\bf\zihao{3}\ZJUunderline[190pt]{\ZJU@value@englishtitle}\\
       \vspace{1ex}
       % 判断英文标题有无第二行
       \ifx\ZJU@value@englishtitletl\undefined
         \hfil
       \else
-        \ZJUunderline[190pt]{\ZJU@value@englishtitletl}
+        \ZJUunderline[205pt]{\ZJU@value@englishtitletl}
       \fi}
 
       % 插入一段空白距离
