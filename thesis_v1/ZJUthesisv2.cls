@@ -46,8 +46,10 @@
 % super参数，引用标号为上标格式
 \RequirePackage[sort&compress,longnamesfirst,square,super,comma]{natbib}
 % 设置图片，表格头字体选项。间距10pt，字号为小字号，加粗字体，标题与题目间距1个字符
-\RequirePackage[margin=10pt,font={small,bf},labelsep=quad]{caption}
-%\RequirePackage[margin=10pt,font={small},labelsep=quad]{caption}
+%\RequirePackage[margin=10pt,font={small,bf},labelsep=quad]{caption}
+\RequirePackage[margin=10pt,labelsep=quad]{caption}
+\DeclareCaptionFont{fangsong}{\fangsong\zihao{5}}
+\captionsetup{margin=10pt,font={fangsong},labelsep=quad}
 % 粗线型表格需要的扩展包
 \RequirePackage{booktabs}
 % 计算宽度使用的包
@@ -306,7 +308,7 @@ includehead, includefoot]{geometry}
       \end{tabular}
 
       % 这个距离可以修改
-      \vspace{15mm}  
+      \vspace{12mm}  
 
       % 左右两边字体不同，定义两个宏AB来简化代码，这个功能用到了array宏包
       \newcolumntype{A}{>{\songti}r<{}}
@@ -594,13 +596,13 @@ includehead, includefoot]{geometry}
 \ctexset { section = { beforeskip={1ex} } }
 \ctexset { section = { afterskip={1ex} } }
 \ctexset { subsection = { format={\noindent } } }
-\ctexset { subsection = { nameformat={\bfseries \zihao {-4}} } }
+\ctexset { subsection = { nameformat={ \zihao {-4}} } }
 \ctexset { subsection = { beforeskip={1ex} } }
 \ctexset { subsection = { afterskip={1ex} } }
-\ctexset { subsection = { titleformat={\bfseries \fangsong \zihao{-4}} } }
+\ctexset { subsection = { titleformat={ \fangsong \zihao{-4}} } }
 \ctexset { subsubsection = { format={\noindent } } }
-\ctexset { subsubsection = { nameformat={\bfseries \zihao {-4}} } }
-\ctexset { subsubsection = { titleformat={\bfseries \zihao {-4}} } }
+\ctexset { subsubsection = { nameformat={ \zihao {-4}} } }
+\ctexset { subsubsection = { titleformat={ \zihao {-4}} } }
 \ctexset { subsubsection = { beforeskip={1ex} } }
 \ctexset { subsubsection = { afterskip={1ex} } }
 
@@ -655,8 +657,8 @@ includehead, includefoot]{geometry}
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
   % 修改目录的格式
-  \renewcommand{\contentsname}{目次}
-%  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
+%  \renewcommand{\contentsname}{目次}
+  \renewcommand{\contentsname}{\centerline{目\hspace{2em}次}}
   \renewcommand{\cftchapfont}{\fangsong\zihao{-4}}
   \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
   \renewcommand{\cftchapdotsep}{\cftdotsep}
