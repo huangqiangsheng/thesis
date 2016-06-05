@@ -870,6 +870,25 @@
   \bibcitedate{[2016/4/18]}\@.
   \newline\url{http://www.dow.com/cyclotene/prod/302246.htm}\@.
 
+\bibitem{sacher2008dynamics}
+\bibauthor{SACHER W~D\@, POON J~K}\@. \bibtitle{Dynamics of microring resonator
+  modulators}\bibmark{[J]}\@. \bibjournal{Optics express}\@, \bibyear{2008}\@,
+  \bibvolume{16}\bibnumber{(20)}\thinspace{}\textnormal{:
+  }\bibpages{15741\thinspace{}\textnormal{--}\thinspace{}15753}\@.
+
+\bibitem{pile2014small}
+\bibauthor{PILE B\@, TAYLOR G}\@. \bibtitle{Small-signal analysis of microring
+  resonator modulators}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
+  \bibyear{2014}\@, \bibvolume{22}\bibnumber{(12)}\thinspace{}\textnormal{:
+  }\bibpages{14913\thinspace{}\textnormal{--}\thinspace{}14928}\@.
+
+\bibitem{sacher2013coupling}
+\bibauthor{SACHER W\@, GREEN W\@, ASSEFA S, et~al}\@. \bibtitle{Coupling
+  modulation of microrings at rates beyond the linewidth limit}\bibmark{[J]}\@.
+  \bibjournal{Optics express}\@, \bibyear{2013}\@,
+  \bibvolume{21}\bibnumber{(8)}\thinspace{}\textnormal{:
+  }\bibpages{9722\thinspace{}\textnormal{--}\thinspace{}9733}\@.
+
 \bibitem{yariv2006photonics}
 \bibauthor{YARIV A\@, YEH P}\@. \bibbooktitle{Photonics: optical electronics in
   modern communications}\bibmark{[M]}\@. \bibaddress{United States of
@@ -937,11 +956,5 @@
   \bibjournal{Optics express}\@, \bibyear{2011}\@,
   \bibvolume{19}\bibnumber{(27)}\thinspace{}\textnormal{:
   }\bibpages{26017\thinspace{}\textnormal{--}\thinspace{}26026}\@.
-
-\bibitem{pile2014small}
-\bibauthor{PILE B\@, TAYLOR G}\@. \bibtitle{Small-signal analysis of microring
-  resonator modulators}\bibmark{[J]}\@. \bibjournal{Optics express}\@,
-  \bibyear{2014}\@, \bibvolume{22}\bibnumber{(12)}\thinspace{}\textnormal{:
-  }\bibpages{14913\thinspace{}\textnormal{--}\thinspace{}14928}\@.
 
 \end{thebibliography}
